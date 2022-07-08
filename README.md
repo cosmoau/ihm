@@ -1,6 +1,6 @@
 # ihm
 
-A temporary home for iHostMe during company acquisition.
+A temporary home for ihostme during company acquisition.
 
 ### Develop
 
