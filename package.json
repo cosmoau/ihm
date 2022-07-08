@@ -1,0 +1,41 @@
+{
+  "name": "ihm",
+  "description": "A temporary home for iHostMe during company acquisition.",
+  "version": "1.0.0",
+  "author": "Jackson Dolman <jackson@cosmogroup.io>",
+  "bugs": {
+    "url": "https://github.com/cosmo-au/ihm/issues"
+  },
+  "dependencies": {
+    "@cosmo-au/design-system": "^2.0.2",
+    "dayjs": "^1.11.3",
+    "next": "^12.2.0",
+    "next-seo": "^5.4.0",
+    "phosphor-react": "^1.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "eslint": "^8.19.0",
+    "eslint-config-dolmios": "^1.0.5",
+    "typescript": "^4.7.4"
+  },
+  "homepage": "https://github.com/cosmo-au/ihm#readme",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.1",
+  "prettier": "eslint-config-dolmios/.prettierrc.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmo-au/ihm.git"
+  },
+  "scripts": {
+    "build": "next build",
+    "build:sitemap": "next-sitemap",
+    "clean": "next lint && prettier --write '**/*.{js,jsx,tsx,ts}' '!node_modules/**' '!.git/**' '!.next/**' ",
+    "dev": "next dev -p 420",
+    "lint": "next lint"
+  }
+}
