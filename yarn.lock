@@ -5,6 +5,13 @@ __metadata:
   version: 7
   cacheKey: 9
 
+"@corex/deepmerge@npm:^4.0.29":
+  version: 4.0.29
+  resolution: "@corex/deepmerge@npm:4.0.29"
+  checksum: fbe14b855c14f618cc0d1afee143f56215315f04ea024440bb3811496a3779ef41d3e445f38dd8bdfc2f2f864d80edf6283d75e23159e31ae790fa4c45156ffa
+  languageName: node
+  linkType: hard
+
 "@cosmo-au/design-system@npm:^2.0.5":
   version: 2.0.5
   resolution: "@cosmo-au/design-system@npm:2.0.5"
@@ -1234,6 +1241,7 @@ __metadata:
     eslint-config-dolmios: "npm:^1.0.5"
     next: "npm:^12.2.2"
     next-seo: "npm:^5.4.0"
+    next-sitemap: "npm:^3.1.10"
     phosphor-react: "npm:^1.4.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -1591,6 +1599,22 @@ __metadata:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
   checksum: 5e25f978b4f787d37161f7281096af44220096eb20f2545eaa72ea9261986b28999f8dace08d65551a49e1cce406e50aa555e7a83faba956939ef80d5972093e
+  languageName: node
+  linkType: hard
+
+"next-sitemap@npm:^3.1.10":
+  version: 3.1.10
+  resolution: "next-sitemap@npm:3.1.10"
+  dependencies:
+    "@corex/deepmerge": "npm:^4.0.29"
+    minimist: "npm:^1.2.6"
+  peerDependencies:
+    "@next/env": "*"
+    next: "*"
+  bin:
+    next-sitemap: bin/next-sitemap.mjs
+    next-sitemap-cjs: bin/next-sitemap.cjs
+  checksum: d370c1f8332b7594d450cd3b60ad34d8118fcd6cec55cba4025493f4663a78f794f3a9f15e96a03c0b06c5e19bdc32d9dda53fc913f8505fde5787852c3dd977
   languageName: node
   linkType: hard
 
