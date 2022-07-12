@@ -1,4 +1,4 @@
-import { Stack, Text, View, Box, Badge, Button, Image } from '@cosmo-au/design-system';
+import { Stack, Text, View, Element, Box, Badge, Button, Image } from '@cosmo-au/design-system';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { Heart } from 'phosphor-react';
@@ -24,8 +24,8 @@ export default function Home(): JSX.Element {
             }}>
             <Text as='h1'>Bespoke Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
             <Text as='h5' accent bottom={5}>
-              ihostme® by Cosmo is the go-to team for managing the rental of your holiday home and all your hosting and short term property management needs. We maximise your
-              occupancy by listing your property on the top booking sites.
+              by Cosmo is the go-to team for managing the rental of your holiday home and all your hosting and short term property management needs. We maximise your occupancy by
+              listing your property on the top booking sites.
             </Text>
             <Button theme='solid' inline={4}>
               <Link href='/start'>
@@ -52,12 +52,26 @@ export default function Home(): JSX.Element {
         <Stack direction='row'>
           <Stack direction='column' width={60} offset={20} align='center'>
             <a href='https://cosmogroup.io'>
-              <Badge theme='pink' icon={<Heart weight='duotone' />}>
-                ihostme is now part of Cosmo AU Pty Ltd
-              </Badge>
+              <Element
+                css={{
+                  '*': {
+                    svg: {
+                      marginTop: 0,
+                    },
+                    verticalAlign: 'middle',
+                  },
+                }}>
+                <Badge theme='pink' icon={<Heart weight='duotone' />}>
+                  ihostme is now part of Cosmo
+                </Badge>
+              </Element>
             </a>
-            <Text as='h2' top={5} bottom={6}>
-              ihostme® operates out of the top holiday destinations in Victoria.
+            <Text as='h2' top={5}>
+              operates out of the top holiday destinations in Victoria.
+            </Text>
+            <Text as='h5' bottom={6}>
+              We are a team of highly skilled and experienced property managers who are dedicated to providing the best service to owners and investors, from Point Lonsdale to
+              Hobart.
             </Text>
             <Link href='/locations'>
               <a>

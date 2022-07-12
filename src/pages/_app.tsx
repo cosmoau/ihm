@@ -8,7 +8,7 @@ import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <Provider>
+    <Provider locked='light'>
       <DefaultSeo
         openGraph={{
           title: 'ihostme - Airbnb, Stayz & Booking.com',

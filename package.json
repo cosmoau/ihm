@@ -7,14 +7,15 @@
     "url": "https://github.com/cosmo-au/ihm/issues"
   },
   "dependencies": {
-    "@cosmo-au/design-system": "^2.0.4",
+    "@cosmo-au/design-system": "^2.0.5",
+    "@typeform/embed-react": "^1.17.0",
     "dayjs": "^1.11.3",
-    "next": "^12.2.1",
+    "next": "^12.2.2",
     "next-seo": "^5.4.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.2.0"
+    "react-hot-toast": "^2.3.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",

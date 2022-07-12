@@ -28,7 +28,7 @@ export default function Header(): JSX.Element {
                   display: 'inline-flex',
                   verticalAlign: 'middle',
                 }}>
-                <Image src='/images/logo.png ' alt='logo' width={100} height={45} />
+                <Image src='/images/logo.png' alt='logo' width={100} height={45} />
               </Element>
             </a>
           </Link>
@@ -88,9 +88,14 @@ export default function Header(): JSX.Element {
               </Text>
             </a>
           </Link>
-          <Link href='/'>
+          <Link href='/testimonials'>
             <a>
-              <Text as='h5' inline={5}>
+              <Text
+                as='h5'
+                inline={5}
+                css={{
+                  opacity: router.pathname === '/testimonials' ? 0.6 : 1,
+                }}>
                 Testimonials
               </Text>
             </a>
@@ -107,9 +112,14 @@ export default function Header(): JSX.Element {
               </Text>
             </a>
           </Link>
-          <Link href='/'>
+          <Link href='/locations'>
             <a>
-              <Text as='h5' inline='auto'>
+              <Text
+                as='h5'
+                inline='auto'
+                css={{
+                  opacity: router.pathname === '/locations' ? 0.6 : 1,
+                }}>
                 Service Areas
               </Text>
             </a>

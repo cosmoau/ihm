@@ -25,7 +25,7 @@ export default function Custom404(): JSX.Element {
       <View container top={8} bottom={8}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={60} offset={20} align='center'>
-            <Text as='h3'>Sorry, the page you are looking for is not available. </Text>
+            <Text as='h2'>Sorry, the page you are looking for is not available. </Text>
             <Text as='h5' bottom={6}>
               Feel free to browse our site from the menu at the top of the page, or if you have a question - get in touch
             </Text>
