@@ -83,7 +83,7 @@ export default function Home(): JSX.Element {
 
   return (
     <>
-      <NextSeo title='ihostme' titleTemplate='%s' />
+      <NextSeo title='ihostme by Cosmo' titleTemplate='%s' />
       <View inverted container top={8} bottom={8}>
         <Stack direction='row'>
           <Stack
