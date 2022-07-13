@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { getCssText } from '@cosmo-au/design-system';
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 import React from 'react';
 
 export default function Document(): JSX.Element {
@@ -8,6 +9,8 @@ export default function Document(): JSX.Element {
     <Html lang='en'>
       <Head>
         <meta charSet='UTF-8' />
+        <meta name='description' content='ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.' />
+        <meta name='keywords' content='ihostme, hosting, property, management, rental, stayz, booking, airbnb, stayz, cosmo, cosmogroup.io, booking, airbnb' />
 
         <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
@@ -20,13 +23,8 @@ export default function Document(): JSX.Element {
       <body>
         <Main />
         <NextScript />
-        <script defer type='text/javascript' src='https://api.pirsch.io/pirsch.js' id='pirschjs' data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD' />{' '}
-        <script
-          src='https://embed.small.chat/TPZDU8ELRC02GTL5PG5R.js'
-          async
-          style={{
-            zIndex: '10',
-          }}></script>
+        <Script strategy='beforeInteractive' defer src='https://api.pirsch.io/pirsch.js' id='pirschjs' data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD' />{' '}
+        <Script strategy='afterInteractive' async src='https://embed.small.chat/TPZDU8ELRC02GTL5PG5R.js'></Script>
       </body>
     </Html>
   );

@@ -7,7 +7,7 @@
     "url": "https://github.com/cosmo-au/ihm/issues"
   },
   "dependencies": {
-    "@cosmo-au/design-system": "^2.0.5",
+    "@cosmo-au/design-system": "^2.0.6",
     "@typeform/embed-react": "^1.17.0",
     "dayjs": "^1.11.3",
     "next": "^12.2.2",

@@ -8,14 +8,7 @@ export default function Testimonials(): JSX.Element {
       <NextSeo title='Customer Testimonials' />
       <View inverted container top={8} bottom={8}>
         <Stack direction='row'>
-          <Stack
-            direction='column'
-            width={50}
-            offset={25}
-            align='center'
-            css={{
-              paddingRight: '$7',
-            }}>
+          <Stack direction='column' align='center'>
             <Text as='h1'>Customer Testimonials</Text>
           </Stack>
         </Stack>
@@ -32,6 +25,11 @@ export default function Testimonials(): JSX.Element {
                     justifyContent: 'center',
                     verticalAlign: 'middle',
                     marginRight: '$5',
+                    phone: {
+                      display: 'block',
+                      marginRight: 0,
+                      marginBottom: '$3',
+                    },
                   }}>
                   <Avatar image='/images/testimonial-01.jpg' width={66} fallback='' />
                 </Element>
@@ -69,7 +67,14 @@ export default function Testimonials(): JSX.Element {
               <Text as='h6'>We have been with ihostme® for over 6 years and I wouldn’t consider anyone else to manage our property.</Text>
             </Box>
           </Stack>
-          <Stack direction='column' width={50}>
+          <Stack
+            direction='column'
+            width={50}
+            css={{
+              phone: {
+                paddingTop: '$5',
+              },
+            }}>
             <Box theme='border'>
               <Element bottom={5}>
                 <Element
@@ -79,6 +84,11 @@ export default function Testimonials(): JSX.Element {
                     justifyContent: 'center',
                     verticalAlign: 'middle',
                     marginRight: '$5',
+                    phone: {
+                      display: 'block',
+                      marginRight: 0,
+                      marginBottom: '$3',
+                    },
                   }}>
                   <Avatar image='/images/testimonial-02.jpg' width={66} fallback='' />
                 </Element>

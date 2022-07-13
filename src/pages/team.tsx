@@ -8,14 +8,7 @@ export default function Team(): JSX.Element {
       <NextSeo title='Meet the Team' />
       <View inverted container top={8} bottom={8}>
         <Stack direction='row'>
-          <Stack
-            direction='column'
-            width={50}
-            offset={25}
-            align='center'
-            css={{
-              paddingRight: '$7',
-            }}>
+          <Stack direction='column' align='center'>
             <Text as='h1'>Meet the Team</Text>
           </Stack>
         </Stack>

@@ -28,7 +28,7 @@ export default function Header(): JSX.Element {
                   display: 'inline-flex',
                   verticalAlign: 'middle',
                 }}>
-                <Image src='/images/logo.png' alt='logo' width={100} height={45} />
+                <Image src='/images/logo.png' alt='logo' width={150 * 0.66} height={68 * 0.66} />
               </Element>
             </a>
           </Link>
@@ -42,7 +42,7 @@ export default function Header(): JSX.Element {
           widthTablet={60}
           widthPhone={50}>
           <a href='https://app.cosmogroup.io' target='_blank'>
-            <Button theme='border' inline={4}>
+            <Button theme='border' inline={4} aria-label='Sign In'>
               Sign In
             </Button>
           </a>
@@ -71,7 +71,7 @@ export default function Header(): JSX.Element {
                 value: '/start',
               },
             ]}
-            trigger={<Button>Menu</Button>}
+            trigger={<Button aria-label='Open Navigation Menu'>Menu</Button>}
           />
         </Stack>
         <Stack
@@ -134,13 +134,13 @@ export default function Header(): JSX.Element {
             hidden: 'tablet',
           }}>
           <a href='https://app.cosmogroup.io' target='_blank'>
-            <Button theme='border' inline={4}>
+            <Button theme='border' inline={4} aria-label='Sign In'>
               Sign In
             </Button>
           </a>
           <Link href='/start'>
             <a>
-              <Button inline='auto' theme='solid'>
+              <Button inline='auto' theme='solid' aria-label='Get Started'>
                 Get Started
               </Button>
             </a>

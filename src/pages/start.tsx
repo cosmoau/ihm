@@ -2,21 +2,18 @@
 import { Stack, Text, View, Box, Badge } from '@cosmo-au/design-system';
 import { Widget } from '@typeform/embed-react';
 import { NextSeo } from 'next-seo';
-export default function Testimonials(): JSX.Element {
+import { useRouter } from 'next/router';
+
+export default function Start(): JSX.Element {
+  const router = useRouter();
   return (
     <>
-      <NextSeo title='Customer Testimonials' />
+      <NextSeo title={router.query.city ? `${router.query.city} Property Management` : 'Get Started'} />
+
       <View inverted container top={8} bottom={8}>
         <Stack direction='row'>
-          <Stack
-            direction='column'
-            width={50}
-            offset={25}
-            align='center'
-            css={{
-              paddingRight: '$7',
-            }}>
-            <Text as='h1'>Get Started</Text>
+          <Stack direction='column' align='center'>
+            <Text as='h1'>{router.query.city ? `List your home in ${router.query.city}` : 'Get Started'}</Text>
             <Text as='h5' accent>
               Get your free earnings estimation and chat with our team to see how we can help you.
             </Text>

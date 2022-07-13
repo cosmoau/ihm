@@ -1,4 +1,5 @@
 import { View, Image, Button, Stack, Text, Element, Badge } from '@cosmo-au/design-system';
+import Link from 'next/link';
 import { ChatCircle, Phone } from 'phosphor-react';
 
 export default function Footer(): JSX.Element {
@@ -39,14 +40,34 @@ export default function Footer(): JSX.Element {
               available for a minimum of 140 nights per year and we will provide a free estimate.
             </Text>
             <Element bottom={6}>
-              <Badge theme='border' inline={4} icon={<ChatCircle />}>
+              <Badge
+                theme='border'
+                inline={4}
+                icon={<ChatCircle />}
+                css={{
+                  phone: {
+                    marginTop: '$2',
+                  },
+                }}>
                 <a href='mailto:contact@cosmogroup.io'>contact@cosmogroup.io</a>
               </Badge>
-              <Badge theme='border' inline='auto' icon={<Phone />}>
+              <Badge
+                theme='border'
+                inline='auto'
+                icon={<Phone />}
+                css={{
+                  phone: {
+                    marginTop: '$2',
+                  },
+                }}>
                 <a href='tel:+61370355800'>(03) 7035 5800</a>
               </Badge>
             </Element>
-            <Button>Get your estimate</Button>
+            <Button aria-label='Get an estimate'>
+              <Link href='/start'>
+                <a>Get an estimate</a>
+              </Link>
+            </Button>
           </Stack>
         </Stack>
       </View>

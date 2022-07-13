@@ -12,9 +12,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cosmo-au/design-system@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "@cosmo-au/design-system@npm:2.0.5"
+"@cosmo-au/design-system@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@cosmo-au/design-system@npm:2.0.6"
   peerDependencies:
     dayjs: "*"
     next: ">=12.1.0"
@@ -22,7 +22,7 @@ __metadata:
     react: ">=17.0.2"
     react-dom: ">=17.0.2"
     react-hot-toast: ">=2.0.0"
-  checksum: bf3603fa92369d1d3c703965bdf0a0327342503210c6c283e2707bf3651791ead67bcc19a33897e0f689d216142c7071a06d7c68bfb7a74905119b4d2b6abf63
+  checksum: eff1ebab295a4c73535e2166fd8da15fb17834bca74ad4c12a0ccadfa0c60f782e27593274ad326c87357a2eb1644374430e98fcffdeb15488e00150796936cd
   languageName: node
   linkType: hard
 
@@ -1232,7 +1232,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ihm@workspace:."
   dependencies:
-    "@cosmo-au/design-system": "npm:^2.0.5"
+    "@cosmo-au/design-system": "npm:^2.0.6"
     "@typeform/embed-react": "npm:^1.17.0"
     "@types/node": "npm:^18.0.3"
     "@types/react": "npm:^18.0.15"

@@ -1,9 +1,86 @@
-import { Stack, Text, View, Element, Box, Badge, Button, Image } from '@cosmo-au/design-system';
+import { Stack, Text, View, Element, Box, Badge, Button, Image, Table, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Avatar } from '@cosmo-au/design-system';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { Heart } from 'phosphor-react';
 
 export default function Home(): JSX.Element {
+  const locations = [
+    'Geelong',
+    'Portarlington',
+    'Queenscliff',
+    'Point Lonsdale',
+    'Ocean Grove',
+    'Barwon Heads',
+    'Torquay',
+    'Jan Juc',
+    'Anglesea',
+    'Bellarine Peninsula',
+    'Aireys Inlet',
+    'Fairhaven',
+    'Lorne',
+    'Apollo Bay',
+    'Surf Coast',
+    'Mornington',
+    'Mt Eliza',
+    'Mt Martha',
+    'Sorrento',
+    'Portsea',
+    'Rye',
+    'Flinders',
+    'Balnarring',
+    'Somers',
+    'Red Hill',
+    'Safety Beach',
+    'Mornington Peninsula',
+    'Cowes',
+    'Smiths Beach',
+    'Ventnor',
+    'Cape Woolamai',
+    'Rhyll',
+    'San Remo',
+    'Phillip Island',
+    'Cape Paterson',
+    'Venus Bay',
+    'Inverloch',
+    'Bass Coast',
+    'South Gippsland',
+    'Hobart',
+  ];
+
+  // render locations as TableCell within a TableRow, 4 per row
+  const renderLocations = (): JSX.Element => {
+    const rows = [];
+    for (let i = 0; i < locations.length; i += 4) {
+      const row = [];
+      for (let j = 0; j < 4; j++) {
+        const location = locations[i + j];
+        if (location) {
+          row.push(
+            <TableCell key={location}>
+              <Link href={`/start?city=${location}`}>
+                <a>
+                  <Element
+                    css={{
+                      display: 'inline-block',
+                      verticalAlign: 'middle',
+                      marginRight: '$2',
+                    }}>
+                    <Avatar image={`/images/location-${location.toLowerCase().replace(/\s/g, '')}.jpg`} width={15} fallback='' />
+                  </Element>
+                  <Text as='h6' inline='auto'>
+                    {location}
+                  </Text>
+                </a>
+              </Link>
+            </TableCell>
+          );
+        }
+      }
+      rows.push(<TableRow key={i}>{row}</TableRow>);
+    }
+    return <TableBody>{rows}</TableBody>;
+  };
+
   return (
     <>
       <NextSeo title='ihostme' titleTemplate='%s' />
@@ -22,17 +99,17 @@ export default function Home(): JSX.Element {
                 paddingTop: 0,
               },
             }}>
-            <Text as='h1'>Bespoke Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
+            <Text as='h1'>Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
             <Text as='h5' accent bottom={5}>
               <b>ihostme® by Cosmo</b> is the go-to team for managing the rental of your holiday home and all your hosting and short term property management needs. We maximise
               your occupancy by listing your property on the top booking sites.
             </Text>
-            <Button theme='solid' inline={4}>
+            <Button theme='solid' inline={4} aria-label='List your home'>
               <Link href='/start'>
                 <a>List your home</a>
               </Link>
             </Button>
-            <Button>
+            <Button aria-label='Chat with our team'>
               <a href='mailto:contact@cosmogroup.io'>Chat with us</a>
             </Button>
           </Stack>
@@ -44,7 +121,7 @@ export default function Home(): JSX.Element {
                 height: '30rem',
               },
             }}>
-            <Image src='/images/misc-01.jpg' alt='airbnb' layout='fill' borderRadius={3} objectFit='cover' />
+            <Image src='/images/misc-01.jpg' alt='airbnb' layout='fill' borderRadius={3} objectFit='cover' priority />
           </Stack>
         </Stack>
       </View>
@@ -73,9 +150,36 @@ export default function Home(): JSX.Element {
               We are a team of highly skilled and experienced property managers who are dedicated to providing the best service to owners and investors, from Point Lonsdale to
               Hobart.
             </Text>
+            <Element
+              bottom={7}
+              css={{
+                hidden: 'tablet',
+              }}>
+              <Table
+                css={{
+                  border: '0.1rem solid $border',
+
+                  '*': {
+                    textAlign: 'center !important',
+                  },
+                }}>
+                <TableHead>
+                  <TableRow
+                    css={{
+                      display: 'none',
+                    }}>
+                    <TableHeadCell>&nbsp;</TableHeadCell>
+                    <TableHeadCell>&nbsp;</TableHeadCell>
+                    <TableHeadCell>&nbsp;</TableHeadCell>
+                    <TableHeadCell>&nbsp;</TableHeadCell>
+                  </TableRow>
+                </TableHead>
+                {renderLocations()}
+              </Table>
+            </Element>
             <Link href='/locations'>
               <a>
-                <Button>Explore our service areas</Button>
+                <Button aria-label='Explore our service areas'>Explore our service areas</Button>
               </a>
             </Link>
           </Stack>

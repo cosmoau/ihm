@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           site_name: 'ihostme',
           images: [
             {
-              url: 'https://cosmogroup.io/images/general/01.jpg',
+              url: 'https://ihostme.com.au/images/meta.jpg',
               alt: 'Cosmo',
             },
           ],
