@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Stack, Text, View, Box, Avatar } from '@cosmo-au/design-system';
+import { Stack, Text, View, Box, Avatar, Badge } from '@cosmo-au/design-system';
 import { NextSeo } from 'next-seo';
 
 export default function Team(): JSX.Element {
@@ -25,10 +25,16 @@ export default function Team(): JSX.Element {
           <Stack direction='column' width={25}>
             <Box theme='border'>
               <Avatar image='/images/team-kyle.jpg' fallback='Kyle' width={80} />
-              <Text as='h4' top={4}>
+              <Text
+                as='h4'
+                top={4}
+                css={{
+                  marginBottom: '0.4rem !important',
+                  paddingBottom: '0',
+                }}>
                 Kyle Fitzsimmons
               </Text>
-              <Text as='h6'>Managing Director</Text>
+              <Badge>Managing Director</Badge>
             </Box>
           </Stack>
           <Stack
@@ -41,10 +47,16 @@ export default function Team(): JSX.Element {
             }}>
             <Box theme='border'>
               <Avatar image='/images/team-jayne.jpg' fallback='Jayne' width={80} />
-              <Text as='h4' top={4}>
+              <Text
+                as='h4'
+                top={4}
+                css={{
+                  marginBottom: '0.4rem !important',
+                  paddingBottom: '0',
+                }}>
                 Jayne Parker
               </Text>
-              <Text as='h6'>Chief of Stuff (Back Office)</Text>
+              <Badge>Chief of Stuff (Back Office)</Badge>
             </Box>
           </Stack>
           <Stack
@@ -57,10 +69,16 @@ export default function Team(): JSX.Element {
             }}>
             <Box theme='border'>
               <Avatar image='/images/team-sharon.jpg' fallback='Jayne' width={80} />
-              <Text as='h4' top={4}>
+              <Text
+                as='h4'
+                top={4}
+                css={{
+                  marginBottom: '0.4rem !important',
+                  paddingBottom: '0',
+                }}>
                 Sharon Elliott
               </Text>
-              <Text as='h6'>Regional Coordinator - Vic East</Text>
+              <Badge>Regional Coordinator - Vic East</Badge>
             </Box>
           </Stack>
           <Stack
@@ -73,10 +91,16 @@ export default function Team(): JSX.Element {
             }}>
             <Box theme='border'>
               <Avatar image='/images/team-victoria.jpg' fallback='Jayne' width={80} />
-              <Text as='h4' top={4}>
-                Victoria Mills{' '}
+              <Text
+                as='h4'
+                top={4}
+                css={{
+                  marginBottom: '0.4rem !important',
+                  paddingBottom: '0',
+                }}>
+                Victoria Mills
               </Text>
-              <Text as='h6'>Regional Coordinator - Vic West</Text>
+              <Badge>Regional Coordinator - Vic West</Badge>
             </Box>
           </Stack>
         </Stack>
