@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { getCssText } from '@cosmo-au/design-system';
+import { getCssText } from '@withcosmo/design-system';
 import { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 import React from 'react';

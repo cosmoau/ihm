@@ -1,4 +1,4 @@
-import { View, Stack, Text, Button, Element, Dropdown } from '@cosmo-au/design-system';
+import { View, Stack, Text, Button, Element, Dropdown } from '@withcosmo/design-system';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';

@@ -1,5 +1,5 @@
 /* eslint-disable import/no-unresolved */
-import { Provider } from '@cosmo-au/design-system';
+import { Provider } from '@withcosmo/design-system';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 

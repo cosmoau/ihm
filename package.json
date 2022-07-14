@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "author": "Jackson Dolman <jackson@cosmogroup.io>",
   "bugs": {
-    "url": "https://github.com/cosmo-au/ihm/issues"
+    "url": "https://github.com/withcosmo/ihm/issues"
   },
   "dependencies": {
-    "@cosmo-au/design-system": "^2.0.6",
     "@typeform/embed-react": "^1.17.0",
+    "@withcosmo/design-system": "^2.0.6",
     "dayjs": "^1.11.3",
     "next": "^12.2.2",
     "next-seo": "^5.4.0",
@@ -25,13 +25,13 @@
     "eslint-config-dolmios": "^1.0.5",
     "typescript": "^4.7.4"
   },
-  "homepage": "https://github.com/cosmo-au/ihm#readme",
+  "homepage": "https://github.com/withcosmo/ihm#readme",
   "license": "MIT",
   "packageManager": "yarn@3.2.1",
   "prettier": "eslint-config-dolmios/.prettierrc.json",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cosmo-au/ihm.git"
+    "url": "git+https://github.com/withcosmo/ihm.git"
   },
   "scripts": {
     "build": "next build",

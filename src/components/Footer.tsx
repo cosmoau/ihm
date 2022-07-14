@@ -1,4 +1,4 @@
-import { View, Image, Button, Stack, Text, Element, Badge } from '@cosmo-au/design-system';
+import { View, Image, Button, Stack, Text, Element, Badge } from '@withcosmo/design-system';
 import Link from 'next/link';
 import { ChatCircle, Phone } from 'phosphor-react';
 

@@ -12,20 +12,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cosmo-au/design-system@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "@cosmo-au/design-system@npm:2.0.6"
-  peerDependencies:
-    dayjs: "*"
-    next: ">=12.1.0"
-    phosphor-react: ">=1.4.0"
-    react: ">=17.0.2"
-    react-dom: ">=17.0.2"
-    react-hot-toast: ">=2.0.0"
-  checksum: eff1ebab295a4c73535e2166fd8da15fb17834bca74ad4c12a0ccadfa0c60f782e27593274ad326c87357a2eb1644374430e98fcffdeb15488e00150796936cd
-  languageName: node
-  linkType: hard
-
 "@eslint/eslintrc@npm:^1.3.0":
   version: 1.3.0
   resolution: "@eslint/eslintrc@npm:1.3.0"
@@ -374,6 +360,20 @@ __metadata:
     "@typescript-eslint/types": "npm:5.30.0"
     eslint-visitor-keys: "npm:^3.3.0"
   checksum: 6ffb6defba3f25e5657456c0e95775c49e73c157525b8acdcf4b9b0cf99e6c3c5b727449fb2dabdecfc487a3a2d95e31c2b118e51595322362fc146403bafdbd
+  languageName: node
+  linkType: hard
+
+"@withcosmo/design-system@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@withcosmo/design-system@npm:2.0.6"
+  peerDependencies:
+    dayjs: "*"
+    next: ">=12.1.0"
+    phosphor-react: ">=1.4.0"
+    react: ">=17.0.2"
+    react-dom: ">=17.0.2"
+    react-hot-toast: ">=2.0.0"
+  checksum: eb6850e7595b04519845258e648451b053419a76e7e858301d7be40bb2728c19e130e4363f8a0f0e7a670cae5121b8b9b6c98945aa08a2dd60167d2ea82d3af5
   languageName: node
   linkType: hard
 
@@ -1232,10 +1232,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ihm@workspace:."
   dependencies:
-    "@cosmo-au/design-system": "npm:^2.0.6"
     "@typeform/embed-react": "npm:^1.17.0"
     "@types/node": "npm:^18.0.3"
     "@types/react": "npm:^18.0.15"
+    "@withcosmo/design-system": "npm:^2.0.6"
     dayjs: "npm:^1.11.3"
     eslint: "npm:^8.19.0"
     eslint-config-dolmios: "npm:^1.0.5"

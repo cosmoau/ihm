@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Stack, Text, View, Box } from '@cosmo-au/design-system';
+import { Stack, Text, View, Box } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 

@@ -1,4 +1,4 @@
-import { Stack, Text, View, Element, Box, Badge, Button, Image, Table, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Avatar } from '@cosmo-au/design-system';
+import { Stack, Text, View, Element, Box, Badge, Button, Image, Table, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Avatar } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { Heart } from 'phosphor-react';

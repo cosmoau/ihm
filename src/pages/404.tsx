@@ -1,4 +1,4 @@
-import { Stack, Text, View, Button } from '@cosmo-au/design-system';
+import { Stack, Text, View, Button } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 
 export default function Custom404(): JSX.Element {

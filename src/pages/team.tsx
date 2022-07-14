@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Stack, Text, View, Box, Avatar, Badge } from '@cosmo-au/design-system';
+import { Stack, Text, View, Box, Avatar, Badge } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 
 export default function Team(): JSX.Element {
