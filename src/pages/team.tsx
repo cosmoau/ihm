@@ -49,7 +49,7 @@ export default function Team(): JSX.Element {
                 }}>
                 Jayne Parker
               </Text>
-              <Badge>Chief of Stuff (Back Office)</Badge>
+              <Badge>Head of Projects</Badge>
             </Box>
           </Stack>
           <Stack
@@ -71,7 +71,7 @@ export default function Team(): JSX.Element {
                 }}>
                 Sharon Elliott
               </Text>
-              <Badge>Regional Coordinator - Vic East</Badge>
+              <Badge>Regional Coordinator, Vic East</Badge>
             </Box>
           </Stack>
           <Stack
@@ -93,7 +93,7 @@ export default function Team(): JSX.Element {
                 }}>
                 Victoria Mills
               </Text>
-              <Badge>Regional Coordinator - Vic West</Badge>
+              <Badge>Regional Coordinator, Vic West</Badge>
             </Box>
           </Stack>
         </Stack>
