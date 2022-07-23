@@ -24,7 +24,6 @@ export default function Document(): JSX.Element {
         <Main />
         <NextScript />
         <Script strategy='beforeInteractive' defer src='https://api.pirsch.io/pirsch.js' id='pirschjs' data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD' />{' '}
-        <Script strategy='afterInteractive' async src='https://embed.small.chat/TPZDU8ELRC02GTL5PG5R.js'></Script>
       </body>
     </Html>
   );
