@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Stack, Text, View, Box, Badge } from '@withcosmo/design-system';
 import { Widget } from '@typeform/embed-react';
+import { Stack, Text, View, Box, Badge } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 
