@@ -363,17 +363,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@withcosmo/design-system@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "@withcosmo/design-system@npm:2.0.6"
+"@withcosmo/design-system@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "@withcosmo/design-system@npm:2.0.7"
   peerDependencies:
-    dayjs: "*"
-    next: ">=12.1.0"
-    phosphor-react: ">=1.4.0"
-    react: ">=17.0.2"
-    react-dom: ">=17.0.2"
-    react-hot-toast: ">=2.0.0"
-  checksum: eb6850e7595b04519845258e648451b053419a76e7e858301d7be40bb2728c19e130e4363f8a0f0e7a670cae5121b8b9b6c98945aa08a2dd60167d2ea82d3af5
+    dayjs: ~1.11.4
+    next: ~12.2.3
+    phosphor-react: ~1.4.1
+    react: ~18.2.0
+    react-dom: ~18.2.0
+    react-hot-toast: ~2.3.0
+  checksum: adc3fbb7265b152869c7a335c832a84367a09eb49a5c773a66cfa503113931cbf31e272301aa6434e7967f06219a46d158f069c20c828ab1fd5cb2b68a2a1f3d
   languageName: node
   linkType: hard
 
@@ -1235,7 +1235,7 @@ __metadata:
     "@typeform/embed-react": "npm:^1.18.0"
     "@types/node": "npm:^18.0.6"
     "@types/react": "npm:^18.0.15"
-    "@withcosmo/design-system": "npm:^2.0.6"
+    "@withcosmo/design-system": "npm:^2.0.7"
     dayjs: "npm:^1.11.4"
     eslint: "npm:^8.20.0"
     eslint-config-dolmios: "npm:^1.0.5"
