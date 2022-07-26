@@ -143,7 +143,7 @@ export default function Home(): JSX.Element {
                 </Badge>
               </Element>
             </a>
-            <Text as='h2' top={5}>
+            <Text as='h3' top={5}>
               ihostme operates out of the top holiday destinations
             </Text>
             <Text as='h5' bottom={6}>

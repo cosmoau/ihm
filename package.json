@@ -8,18 +8,18 @@
   },
   "dependencies": {
     "@typeform/embed-react": "^1.18.0",
-    "@withcosmo/design-system": "^2.0.7",
+    "@withcosmo/design-system": "^2.0.8",
     "dayjs": "^1.11.4",
     "next": "^12.2.3",
     "next-seo": "^5.5.0",
-    "next-sitemap": "^3.1.11",
+    "next-sitemap": "^3.1.13",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.3.0"
   },
   "devDependencies": {
-    "@types/node": "^18.0.6",
+    "@types/node": "^18.6.1",
     "@types/react": "^18.0.15",
     "eslint": "^8.20.0",
     "eslint-config-dolmios": "^1.0.5",

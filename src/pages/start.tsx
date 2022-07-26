@@ -13,7 +13,7 @@ export default function Start(): JSX.Element {
       <View inverted container top={8} bottom={8}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
-            <Text as='h1'>{router.query.city ? `List your home in ${router.query.city}` : 'Get Started'}</Text>
+            <Text as='h2'>{router.query.city ? `List your home in ${router.query.city}` : 'Get Started'}</Text>
             <Text as='h5' accent>
               Get your free earnings estimation and chat with our team to see how we can help you.
             </Text>

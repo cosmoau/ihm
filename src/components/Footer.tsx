@@ -34,7 +34,7 @@ export default function Footer(): JSX.Element {
                 paddingBottom: 0,
               },
             }}>
-            <Text as='h2'>Let us help you unlock your property’s earning potential today!</Text>
+            <Text as='h3'>Let us help you unlock your property’s earning potential today!</Text>
             <Text as='h5' bottom={3}>
               ihostme® manage properties with potential to earn in excess of $50,000 gross income per year through short term rentals. Please contact us if your property is
               available for a minimum of 140 nights per year and we will provide a free estimate.

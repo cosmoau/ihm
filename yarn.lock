@@ -214,10 +214,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.0.6":
-  version: 18.0.6
-  resolution: "@types/node@npm:18.0.6"
-  checksum: 93c725b99e31b855e6a363dd26ebd99d83815f2f2e4b84cb24a492c69c437c812b216759d4715da7171c76c87b5c32e18dda81de00fa6122a9d0dfdaee128300
+"@types/node@npm:^18.6.1":
+  version: 18.6.1
+  resolution: "@types/node@npm:18.6.1"
+  checksum: 3433d312e77e34f1dd58573d83d1479b7983ea73e8a71d1e0612717c31137283bb412240137ccc816af45bed2674cd735861c88b06513f683636a8110d1949b1
   languageName: node
   linkType: hard
 
@@ -363,17 +363,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@withcosmo/design-system@npm:^2.0.7":
-  version: 2.0.7
-  resolution: "@withcosmo/design-system@npm:2.0.7"
+"@withcosmo/design-system@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "@withcosmo/design-system@npm:2.0.8"
   peerDependencies:
-    dayjs: ~1.11.4
-    next: ~12.2.3
-    phosphor-react: ~1.4.1
-    react: ~18.2.0
-    react-dom: ~18.2.0
-    react-hot-toast: ~2.3.0
-  checksum: adc3fbb7265b152869c7a335c832a84367a09eb49a5c773a66cfa503113931cbf31e272301aa6434e7967f06219a46d158f069c20c828ab1fd5cb2b68a2a1f3d
+    dayjs: "*"
+    next: "*"
+    phosphor-react: "*"
+    react: "*"
+    react-dom: "*"
+    react-hot-toast: "*"
+  checksum: 0338eff0000ef496dd5a7187f18e5a46ce2c03bb0045e4e7235c42b019923d954f6a394a7c09daab66508583fe5432ba7d6990431973745db180118b51383171
   languageName: node
   linkType: hard
 
@@ -1233,15 +1233,15 @@ __metadata:
   resolution: "ihm@workspace:."
   dependencies:
     "@typeform/embed-react": "npm:^1.18.0"
-    "@types/node": "npm:^18.0.6"
+    "@types/node": "npm:^18.6.1"
     "@types/react": "npm:^18.0.15"
-    "@withcosmo/design-system": "npm:^2.0.7"
+    "@withcosmo/design-system": "npm:^2.0.8"
     dayjs: "npm:^1.11.4"
     eslint: "npm:^8.20.0"
     eslint-config-dolmios: "npm:^1.0.5"
     next: "npm:^12.2.3"
     next-seo: "npm:^5.5.0"
-    next-sitemap: "npm:^3.1.11"
+    next-sitemap: "npm:^3.1.13"
     phosphor-react: "npm:^1.4.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -1602,9 +1602,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^3.1.11":
-  version: 3.1.11
-  resolution: "next-sitemap@npm:3.1.11"
+"next-sitemap@npm:^3.1.13":
+  version: 3.1.13
+  resolution: "next-sitemap@npm:3.1.13"
   dependencies:
     "@corex/deepmerge": "npm:^4.0.29"
     minimist: "npm:^1.2.6"
@@ -1614,7 +1614,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: fed4c8b3041f2256e1c00fbf5a31c081ebfdd1803ea895d729f7a418fdf1846814522c526403216a76a22ceed73c5755cbed5a5e31429357ec28168bb639bdea
+  checksum: 08a03683eecc063ab93ba1ea9106d45a668059ef77ea18cb8efb656ee40008e6db9d8571482cfb9faadb5667f3b3dd068890b9a8a5985ea5254277b579074ccf
   languageName: node
   linkType: hard
 

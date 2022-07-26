@@ -9,7 +9,7 @@ export default function Testimonials(): JSX.Element {
       <View inverted container top={8} bottom={8}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
-            <Text as='h1'>Customer Testimonials</Text>
+            <Text as='h2'>Customer Testimonials</Text>
           </Stack>
         </Stack>
       </View>
