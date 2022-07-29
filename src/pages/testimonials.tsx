@@ -6,14 +6,14 @@ export default function Testimonials(): JSX.Element {
   return (
     <>
       <NextSeo title='Customer Testimonials' />
-      <View inverted container top={8} bottom={8}>
+      <View inverted container top={7} bottom={7}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
             <Text as='h2'>Customer Testimonials</Text>
           </Stack>
         </Stack>
       </View>
-      <View container top={8} bottom={8}>
+      <View container top={7} bottom={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={50}>
             <Box theme='border'>

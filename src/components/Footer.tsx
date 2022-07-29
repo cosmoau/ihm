@@ -5,9 +5,9 @@ import { ChatCircle, Phone } from 'phosphor-react';
 export default function Footer(): JSX.Element {
   return (
     <>
-      <View container bottom={8}>
+      <View container bottom={7}>
         <Stack
-          top={8}
+          top={7}
           direction='row'
           css={{
             borderTop: '1px solid $border',
@@ -40,17 +40,19 @@ export default function Footer(): JSX.Element {
               available for a minimum of 140 nights per year and we will provide a free estimate.
             </Text>
             <Element bottom={6}>
-              <Badge
-                theme='border'
-                inline={4}
-                icon={<ChatCircle />}
-                css={{
-                  phone: {
-                    marginTop: '$2',
-                  },
-                }}>
-                <a href='mailto:contact@cosmogroup.io'>contact@cosmogroup.io</a>
-              </Badge>
+              <a href='mailto:contact@cosmogroup.io'>
+                <Badge
+                  theme='border'
+                  inline={4}
+                  icon={<ChatCircle />}
+                  css={{
+                    phone: {
+                      marginTop: '$2',
+                    },
+                  }}>
+                  contact@cosmogroup.io
+                </Badge>
+              </a>
               <Badge
                 theme='border'
                 inline='auto'
@@ -105,17 +107,17 @@ export default function Footer(): JSX.Element {
               },
             }}>
             <Text as='h6' inline={4} accent>
-              <a href='https://cosmogroup.io/legal/privacy' target='_blank'>
+              <a href='https://cosmogroup.io/legal/privacy' target='_blank' rel='noreferrer'>
                 Privacy Policy
               </a>
             </Text>
             <Text as='h6' inline={4} accent>
-              <a href='https://cosmogroup.io/legal/service' target='_blank'>
+              <a href='https://cosmogroup.io/legal/service' target='_blank' rel='noreferrer'>
                 Terms of Service
               </a>
             </Text>
             <Text as='h6' inline={4} accent>
-              <a href='https://cosmogroup.io/legal/occupant' target='_blank'>
+              <a href='https://cosmogroup.io/legal/occupant' target='_blank' rel='noreferrer'>
                 Occupancy Policy
               </a>
             </Text>

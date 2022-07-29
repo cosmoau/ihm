@@ -5,17 +5,17 @@ export default function Custom404(): JSX.Element {
   return (
     <>
       <NextSeo title='Page not found' />
-      <View inverted container top={8} bottom={8}>
+      <View inverted container top={7} bottom={7}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
-            <Text as='h1'>Page not found</Text>
+            <Text as='h2'>Page not found</Text>
           </Stack>
         </Stack>
       </View>
-      <View container top={8} bottom={8}>
+      <View container top={7} bottom={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={60} offset={20} align='center'>
-            <Text as='h2'>Sorry, the page you are looking for is not available. </Text>
+            <Text as='h3'>Sorry, the page you are looking for is not available. </Text>
             <Text as='h5' bottom={6}>
               Feel free to browse our site from the menu at the top of the page, or if you have a question - get in touch
             </Text>

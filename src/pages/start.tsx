@@ -10,7 +10,7 @@ export default function Start(): JSX.Element {
     <>
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : 'Get Started'} />
 
-      <View inverted container top={8} bottom={8}>
+      <View inverted container top={7} bottom={7}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
             <Text as='h2'>{router.query.city ? `List your home in ${router.query.city}` : 'Get Started'}</Text>
@@ -20,7 +20,7 @@ export default function Start(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top={8} bottom={8}>
+      <View container top={7} bottom={7}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
             <Box theme='border'>

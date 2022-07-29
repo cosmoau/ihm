@@ -41,7 +41,7 @@ export default function Header(): JSX.Element {
           align='right'
           widthTablet={60}
           widthPhone={50}>
-          <a href='https://app.cosmogroup.io' target='_blank'>
+          <a href='https://app.cosmogroup.io' target='_blank' rel='noreferrer'>
             <Button theme='border' inline={4} aria-label='Sign In'>
               Sign In
             </Button>
@@ -133,7 +133,7 @@ export default function Header(): JSX.Element {
           css={{
             hidden: 'tablet',
           }}>
-          <a href='https://app.cosmogroup.io' target='_blank'>
+          <a href='https://app.cosmogroup.io' target='_blank' rel='noreferrer'>
             <Button theme='border' inline={4} aria-label='Sign In'>
               Sign In
             </Button>

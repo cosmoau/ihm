@@ -84,13 +84,13 @@ export default function Home(): JSX.Element {
   return (
     <>
       <NextSeo title='ihostme by Cosmo' titleTemplate='%s' />
-      <View inverted container top={8} bottom={8}>
+      <View inverted container top={7} bottom={7}>
         <Stack direction='row'>
           <Stack
             direction='column'
             width={50}
-            top={7}
-            bottom={7}
+            top={6}
+            bottom={6}
             css={{
               paddingRight: '$7',
 
@@ -125,7 +125,7 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top={8} bottom={8}>
+      <View container top={7} bottom={7}>
         <Stack direction='row'>
           <Stack direction='column' width={60} offset={20} align='center'>
             <a href='https://cosmogroup.io'>
@@ -184,7 +184,7 @@ export default function Home(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction='row' flex='stretch' top={8}>
+        <Stack direction='row' flex='stretch' top={7}>
           <Stack direction='column' width={33}>
             <Box theme='border' image='/images/misc-02.jpg'>
               <Text as='h4'>Your One Stop Hosting Shop</Text>
@@ -220,7 +220,7 @@ export default function Home(): JSX.Element {
             }}>
             <Box theme='border' image='/images/misc-04.jpg'>
               <Text as='h4'>Your Holiday Home in Good Hands</Text>
-              <Text as='h6'>We've developed an intuitive app that gives you full transparency of bookings and property performance.</Text>
+              <Text as='h6'>We&apos;ve developed an intuitive app that gives you full transparency of bookings and property performance.</Text>
               <Text as='h6'>We also have an experienced client support team available 7/11 and specialist housekeepers to take care of all the little details.</Text>
             </Box>
           </Stack>

@@ -6,14 +6,14 @@ export default function Team(): JSX.Element {
   return (
     <>
       <NextSeo title='Meet the Team' />
-      <View inverted container top={8} bottom={8}>
+      <View inverted container top={7} bottom={7}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
             <Text as='h2'>Meet the Team</Text>
           </Stack>
         </Stack>
       </View>
-      <View container top={8} bottom={8}>
+      <View container top={7} bottom={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={25}>
             <Box theme='border'>
