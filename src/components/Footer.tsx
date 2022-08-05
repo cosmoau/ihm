@@ -1,78 +1,83 @@
 import { View, Image, Button, Stack, Text, Element, Badge } from '@withcosmo/design-system';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { ChatCircle, Phone } from 'phosphor-react';
 
 export default function Footer(): JSX.Element {
+  const router = useRouter();
   return (
     <>
-      <View container bottom={7}>
-        <Stack
-          top={7}
-          direction='row'
-          css={{
-            borderTop: '1px solid $border',
-          }}>
+      {router.pathname !== '/start' && (
+        <View container bottom={7}>
           <Stack
-            direction='column'
-            width={50}
+            top={7}
+            direction='row'
             css={{
-              phone: {
-                height: '30rem',
-              },
+              borderTop: '1px solid $border',
             }}>
-            <Image src='/images/misc-05.jpg' alt='airbnb' layout='fill' borderRadius={3} objectFit='cover' />
-          </Stack>
-          <Stack
-            top={6}
-            bottom={6}
-            direction='column'
-            width={50}
-            css={{
-              paddingLeft: '$7',
-              phone: {
-                paddingLeft: '$3',
-                paddingBottom: 0,
-              },
-            }}>
-            <Text as='h3'>Let us help you unlock your property’s earning potential today!</Text>
-            <Text as='h5' bottom={3}>
-              ihostme® manage properties with potential to earn in excess of $50,000 gross income per year through short term rentals. Please contact us if your property is
-              available for a minimum of 140 nights per year and we will provide a free estimate.
-            </Text>
-            <Element bottom={6}>
-              <a href='mailto:contact@cosmogroup.io'>
+            <Stack
+              direction='column'
+              width={50}
+              css={{
+                phone: {
+                  height: '30rem',
+                },
+              }}>
+              <Image src='/images/misc-05.jpg' alt='airbnb' layout='fill' borderRadius={3} objectFit='cover' />
+            </Stack>
+            <Stack
+              top={6}
+              bottom={6}
+              direction='column'
+              width={50}
+              css={{
+                paddingLeft: '$7',
+                phone: {
+                  paddingLeft: '$3',
+                  paddingBottom: 0,
+                },
+              }}>
+              <Text as='h3'>Let us help you unlock your property’s earning potential today!</Text>
+              <Text as='h5' bottom={3}>
+                ihostme® manage properties with potential to earn in excess of $50,000 gross income per year through short term rentals. Please contact us if your property is
+                available for a minimum of 140 nights per year and we will provide a free estimate.
+              </Text>
+              <Element bottom={6}>
+                <a href='mailto:contact@cosmogroup.io'>
+                  <Badge
+                    theme='border'
+                    inline={4}
+                    icon={<ChatCircle />}
+                    css={{
+                      phone: {
+                        marginTop: '$2',
+                      },
+                    }}>
+                    contact@cosmogroup.io
+                  </Badge>
+                </a>
                 <Badge
                   theme='border'
-                  inline={4}
-                  icon={<ChatCircle />}
+                  inline='auto'
+                  icon={<Phone />}
                   css={{
                     phone: {
                       marginTop: '$2',
                     },
                   }}>
-                  contact@cosmogroup.io
+                  <a href='tel:+61370355800'>(03) 7035 5800</a>
                 </Badge>
-              </a>
-              <Badge
-                theme='border'
-                inline='auto'
-                icon={<Phone />}
-                css={{
-                  phone: {
-                    marginTop: '$2',
-                  },
-                }}>
-                <a href='tel:+61370355800'>(03) 7035 5800</a>
-              </Badge>
-            </Element>
-            <Button aria-label='Get an estimate'>
-              <Link href='/start'>
-                <a>Get an estimate</a>
-              </Link>
-            </Button>
+              </Element>
+              <Button aria-label='Get an estimate'>
+                <Link href='/start'>
+                  <a>Get an estimate</a>
+                </Link>
+              </Button>
+            </Stack>
           </Stack>
-        </Stack>
-      </View>
+        </View>
+      )}
+
       <View
         inverted
         container

@@ -9,29 +9,36 @@ export default function Start(): JSX.Element {
   return (
     <>
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : 'Get Started'} />
-
-      <View inverted container top={7} bottom={7}>
+      <View inverted container top={7} bottom={8}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
             <Text as='h2'>{router.query.city ? `List your home in ${router.query.city}` : 'Get Started'}</Text>
             <Text as='h5' accent>
               Get your free earnings estimation and chat with our team to see how we can help you.
             </Text>
+            <Badge theme='pink'>All applications are reviewed and facilitated by our parent company, Cosmo.</Badge>
           </Stack>
         </Stack>
       </View>
-      <View container top={7} bottom={7}>
-        <Stack direction='row'>
-          <Stack direction='column' align='center'>
-            <Box theme='border'>
+      <View inverted container bottom={8}>
+        <Stack direction='row' flex='stretch'>
+          <Stack direction='column' width={80} offset={10} widthTablet={100} offsetTablet={0} align='center'>
+            <Box
+              css={{
+                borderRadius: '$3',
+                '*': {
+                  fontSize: '$h1 !important',
+                },
+              }}>
               <Widget
-                id='niHmNErF'
+                id='Va37c3wL'
+                opacity={0}
+                disableAutoFocus
+                height={666}
                 style={{
-                  height: '55.0rem',
                   overflowY: 'visible',
                 }}
               />
-              <Badge theme='pink'>Please note, all sign ups and estimations are provided by our parent company, Cosmo.</Badge>
             </Box>
           </Stack>
         </Stack>
