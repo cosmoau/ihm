@@ -67,6 +67,10 @@ export default function Header(): JSX.Element {
                 value: '/locations',
               },
               {
+                label: 'Contact',
+                value: '/contact',
+              },
+              {
                 label: 'Get Started',
                 value: '/start',
               },
@@ -112,6 +116,18 @@ export default function Header(): JSX.Element {
               </Text>
             </a>
           </Link>
+          <Link href='/contact'>
+            <a>
+              <Text
+                as='h5'
+                inline={5}
+                css={{
+                  opacity: router.pathname === '/team' ? 0.6 : 1,
+                }}>
+                Contact
+              </Text>
+            </a>
+          </Link>
           <Link href='/locations'>
             <a>
               <Text
@@ -120,7 +136,7 @@ export default function Header(): JSX.Element {
                 css={{
                   opacity: router.pathname === '/locations' ? 0.6 : 1,
                 }}>
-                Service Areas
+                Locations
               </Text>
             </a>
           </Link>

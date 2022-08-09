@@ -267,10 +267,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.6.4":
-  version: 18.6.4
-  resolution: "@types/node@npm:18.6.4"
-  checksum: fc453dd2b541f5812ba1a8f957f577727cf2d8aee886f1d5c03eb153b2b3373d2e0953c5bd2b7a5b184073bc317f54ec91f1ec4830a58eda4a833e90654021de
+"@types/node@npm:^18.6.5":
+  version: 18.6.5
+  resolution: "@types/node@npm:18.6.5"
+  checksum: e3e66c9a84b94010a57c1b9dac882c08484278d74f9d120dbe6a3e45d00740d178bd1d34a5deee28197c94b9f4359153b637bab9b305328e865027e9987a0f3d
   languageName: node
   linkType: hard
 
@@ -281,14 +281,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.0.15":
-  version: 18.0.15
-  resolution: "@types/react@npm:18.0.15"
+"@types/react@npm:^18.0.17":
+  version: 18.0.17
+  resolution: "@types/react@npm:18.0.17"
   dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: e22cc388d1c145aa184787e44dc28db4789976c704cd5db475c170bb76a560eb81def5f346cfe750949bb3d43ad88822b8cbb9f19b1286e3795892a8263e7715
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 18cae64f5bfd6bb58fbd8ee2ba52ec82de844f114254e26de7b513e4b86621f643f9b71d7066958cd571b0d78cb86cbceda449c5289f9349ca573df29ab69252
   languageName: node
   linkType: hard
 
@@ -478,9 +478,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@withcosmo/design-system@npm:^2.0.12":
-  version: 2.0.12
-  resolution: "@withcosmo/design-system@npm:2.0.12"
+"@withcosmo/design-system@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@withcosmo/design-system@npm:2.1.0"
   peerDependencies:
     dayjs: "*"
     next: "*"
@@ -488,7 +488,7 @@ __metadata:
     react: "*"
     react-dom: "*"
     react-hot-toast: "*"
-  checksum: 60a7e3dfcf47602d9d65e88ecc7c1f4d754f3169cdea52933e98e99abc77f23f68bc7edf17ed2a327b4562a8419b1a1d577674c77acf3131e27c6e0a965f4c42
+  checksum: 11e55ad575fdabd7f2c93a1ec362a292523cd4dc498295d8d4eae30752b5bdc79672048c17844bba8c67431f4b5ca900ef5a75581cf781a8d0e21a42efc25684
   languageName: node
   linkType: hard
 
@@ -1562,17 +1562,18 @@ __metadata:
   resolution: "ihm@workspace:."
   dependencies:
     "@typeform/embed-react": ^1.19.0
-    "@types/node": ^18.6.4
-    "@types/react": ^18.0.15
-    "@withcosmo/design-system": ^2.0.12
+    "@types/node": ^18.6.5
+    "@types/react": ^18.0.17
+    "@withcosmo/design-system": ^2.1.0
     dayjs: ^1.11.4
     eslint: ^8.21.0
     eslint-config-dolmios: ^1.0.5
     eslint-config-next: ^12.2.4
     next: ^12.2.4
     next-seo: ^5.5.0
-    next-sitemap: ^3.1.16
+    next-sitemap: ^3.1.17
     phosphor-react: ^1.4.1
+    prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-hot-toast: ^2.3.0
@@ -1967,9 +1968,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^3.1.16":
-  version: 3.1.16
-  resolution: "next-sitemap@npm:3.1.16"
+"next-sitemap@npm:^3.1.17":
+  version: 3.1.17
+  resolution: "next-sitemap@npm:3.1.17"
   dependencies:
     "@corex/deepmerge": ^4.0.29
     minimist: ^1.2.6
@@ -1979,7 +1980,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: 4292a95134dffa4623c0c091a2698d273c696b91e055844b9d7915b36f950ae7487ec25d60ee9a873af788b118d41ac498b2af906f1765689567bbf24e1160a5
+  checksum: 102df717c886bea055a41974cfc7f360840ce34b5cc976245ebca956a348f3be07598fd55370cff261e5e4df3974ba676c2ad4da50bf1004ba1fddd57874fbea
   languageName: node
   linkType: hard
 
@@ -2286,7 +2287,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.6.2":
+"prettier@npm:^2.6.2, prettier@npm:^2.7.1":
   version: 2.7.1
   resolution: "prettier@npm:2.7.1"
   bin:

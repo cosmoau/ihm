@@ -7,7 +7,7 @@ export default function Footer(): JSX.Element {
   const router = useRouter();
   return (
     <>
-      {router.pathname !== '/start' && (
+      {router.pathname !== '/start' && router.pathname !== '/contact' && (
         <View container bottom={7}>
           <Stack
             top={7}
