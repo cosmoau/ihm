@@ -35,6 +35,9 @@ export default function Start(): JSX.Element {
                 opacity={0}
                 disableAutoFocus
                 height={666}
+                hidden={{
+                  url: 'ihostme.com.au',
+                }}
                 style={{
                   overflowY: 'visible',
                 }}
