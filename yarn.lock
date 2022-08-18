@@ -478,16 +478,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@withcosmo/design-system@npm:^2.1.4":
-  version: 2.1.4
-  resolution: "@withcosmo/design-system@npm:2.1.4"
+"@withcosmo/design-system@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@withcosmo/design-system@npm:2.1.6"
   peerDependencies:
     next: "*"
     phosphor-react: "*"
     react: "*"
     react-dom: "*"
     react-hot-toast: "*"
-  checksum: 86660de205fc802a1d1143b7aece8303ca460e9fe973ca9ab3950e442095e69a5687092538660bd437862acdbc803cff08d66690150969036efeefe64839bd67
+  checksum: 801c790ea9f7e201cfa62fc753b8bdcfb13f8bfff473e02d111e64e2f6b543a1a134ec1d5e56dfaf048597208e787d69f1540a19631bedefa1ddcd1fa325c295
   languageName: node
   linkType: hard
 
@@ -1563,7 +1563,7 @@ __metadata:
     "@typeform/embed-react": ^1.19.0
     "@types/node": ^18.7.6
     "@types/react": ^18.0.17
-    "@withcosmo/design-system": ^2.1.4
+    "@withcosmo/design-system": ^2.1.6
     dayjs: ^1.11.5
     eslint: ^8.22.0
     eslint-config-dolmios: ^1.0.5
