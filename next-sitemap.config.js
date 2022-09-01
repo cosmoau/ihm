@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
 module.exports = {
-  siteUrl: 'https://ihostme.com.au',
+  siteUrl: 'https://ihm.cosmogroup.io',
   generateRobotsTxt: true, // (optional)
 };

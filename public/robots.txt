@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ihostme.com.au
+Host: https://ihm.cosmogroup.io
 
 # Sitemaps
-Sitemap: https://ihostme.com.au/sitemap.xml
+Sitemap: https://ihm.cosmogroup.io/sitemap.xml

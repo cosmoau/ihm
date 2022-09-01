@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Widget } from '@typeform/embed-react';
-import { Stack, Text, View, Box, Badge } from '@withcosmo/design-system';
+import { Stack, Text, View, Box } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 
@@ -16,7 +16,6 @@ export default function Start(): JSX.Element {
             <Text as='h5' accent>
               Get your free earnings estimation and chat with our team to see how we can help you.
             </Text>
-            <Badge theme='pink'>All applications are reviewed and facilitated by our parent company, Cosmo.</Badge>
           </Stack>
         </Stack>
       </View>
@@ -24,6 +23,7 @@ export default function Start(): JSX.Element {
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={80} offset={10} widthTablet={100} offsetTablet={0} align='center'>
             <Box
+              theme='fill'
               css={{
                 borderRadius: '$3',
                 '*': {
@@ -36,7 +36,7 @@ export default function Start(): JSX.Element {
                 disableAutoFocus
                 height={666}
                 hidden={{
-                  url: 'ihostme.com.au',
+                  url: 'ihm.cosmogroup.io',
                 }}
                 style={{
                   overflowY: 'visible',

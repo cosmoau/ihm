@@ -1,4 +1,4 @@
-import { Stack, Text, View, Element, Box, Badge, Button, Image, Table, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Avatar } from '@withcosmo/design-system';
+import { Stack, Text, View, Box, Badge, Button, Image, Avatar } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { Heart } from 'phosphor-react';
@@ -47,40 +47,6 @@ export default function Home(): JSX.Element {
     'Hobart',
   ];
 
-  // render locations as TableCell within a TableRow, 4 per row
-  const renderLocations = (): JSX.Element => {
-    const rows = [];
-    for (let i = 0; i < locations.length; i += 4) {
-      const row = [];
-      for (let j = 0; j < 4; j++) {
-        const location = locations[i + j];
-        if (location) {
-          row.push(
-            <TableCell key={location}>
-              <Link href={`/start?city=${location}`}>
-                <a>
-                  <Element
-                    css={{
-                      display: 'inline-block',
-                      verticalAlign: 'middle',
-                      marginRight: '$2',
-                    }}>
-                    <Avatar image={`/images/location-${location.toLowerCase().replace(/\s/g, '')}.jpg`} width={15} fallback='' />
-                  </Element>
-                  <Text as='h6' inline='auto'>
-                    {location}
-                  </Text>
-                </a>
-              </Link>
-            </TableCell>
-          );
-        }
-      }
-      rows.push(<TableRow key={i}>{row}</TableRow>);
-    }
-    return <TableBody>{rows}</TableBody>;
-  };
-
   return (
     <>
       <NextSeo title='ihostme by Cosmo' titleTemplate='%s' />
@@ -104,12 +70,12 @@ export default function Home(): JSX.Element {
               <b>ihostme® by Cosmo</b> is the go-to team for managing the rental of your holiday home and all your hosting and short term property management needs. We maximise
               your occupancy by listing your property on the top booking sites.
             </Text>
-            <Button theme='solid' inline={4} aria-label='List your home'>
+            <Button name='list' theme='solid' inline={4} ariaLabel='List your home'>
               <Link href='/start'>
                 <a>List your home</a>
               </Link>
             </Button>
-            <Button aria-label='Chat with our team'>
+            <Button name='chat' ariaLabel='Chat with our team'>
               <a href='mailto:contact@cosmogroup.io'>Chat with us</a>
             </Button>
           </Stack>
@@ -129,19 +95,9 @@ export default function Home(): JSX.Element {
         <Stack direction='row'>
           <Stack direction='column' width={60} offset={20} align='center'>
             <a href='https://cosmogroup.io'>
-              <Element
-                css={{
-                  '*': {
-                    svg: {
-                      marginTop: 0,
-                    },
-                    verticalAlign: 'middle',
-                  },
-                }}>
-                <Badge theme='pink' icon={<Heart />}>
-                  ihostme is now part of Cosmo
-                </Badge>
-              </Element>
+              <Badge theme='pink' icon={<Heart />}>
+                ihostme is now part of Cosmo
+              </Badge>
             </a>
             <Text as='h3' top={5}>
               ihostme operates out of the top holiday destinations
@@ -150,43 +106,47 @@ export default function Home(): JSX.Element {
               We are a team of highly skilled and experienced property managers who are dedicated to providing the best service to owners and investors, from Point Lonsdale to
               Hobart.
             </Text>
-            <Element
-              bottom={7}
-              css={{
-                hidden: 'tablet',
-              }}>
-              <Table
-                css={{
-                  border: '0.1rem solid $border',
+          </Stack>
+        </Stack>
+        <Stack direction='row'>
+          <Stack direction='column' align='center'>
+            <Stack bottom={7}>
+              <Link href='/locations'>
+                <a>
+                  {locations.map((location, index) => (
+                    <Stack
+                      key={index}
+                      css={{
+                        display: 'inline-block',
+                        marginRight: '$4',
+                        paddingBottom: '$4',
+                      }}>
+                      <Badge theme='borderHover' css={{ borderColor: 'rgba(0,0,0,0.05)' }}>
+                        <Stack
+                          css={{
+                            display: 'flex',
+                            verticalAlign: 'middle',
+                            alignItems: 'center',
+                            marginRight: '$2',
+                          }}>
+                          <Avatar image={`/images/location-${location.toLowerCase().replace(/\s/g, '')}.jpg`} width={15} fallback='' />{' '}
+                        </Stack>
 
-                  '*': {
-                    textAlign: 'center !important',
-                  },
-                }}>
-                <TableHead>
-                  <TableRow
-                    css={{
-                      display: 'none',
-                    }}>
-                    <TableHeadCell>&nbsp;</TableHeadCell>
-                    <TableHeadCell>&nbsp;</TableHeadCell>
-                    <TableHeadCell>&nbsp;</TableHeadCell>
-                    <TableHeadCell>&nbsp;</TableHeadCell>
-                  </TableRow>
-                </TableHead>
-                {renderLocations()}
-              </Table>
-            </Element>
-            <Link href='/locations'>
-              <a>
-                <Button aria-label='Explore our service areas'>Explore our service areas</Button>
-              </a>
-            </Link>
+                        <Text as='h6' inline={'auto'} accent>
+                          {location}
+                          {index !== locations.length - 1 ? '' : ''}
+                        </Text>
+                      </Badge>
+                    </Stack>
+                  ))}
+                </a>
+              </Link>
+            </Stack>
           </Stack>
         </Stack>
         <Stack direction='row' flex='stretch' top={7}>
           <Stack direction='column' width={33}>
-            <Box theme='border' image='/images/misc-02.jpg'>
+            <Box image='/images/misc-02.jpg'>
               <Text as='h4'>Your One Stop Hosting Shop</Text>
               <Text as='h6'>We understand that your vacation rental is more than just an investment—it’s your home away from home.</Text>
               <Text as='h6'>
@@ -202,7 +162,7 @@ export default function Home(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box theme='border' image='/images/misc-03.jpg'>
+            <Box image='/images/misc-03.jpg'>
               <Text as='h4'>Simple, Easy Pricing</Text>
               <Text as='h6'>
                 Our standard management fee is 20% + GST for fully hosted clients, or 14% + GST for those who already have their own housekeeping and maintenance team in place.
@@ -218,7 +178,7 @@ export default function Home(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box theme='border' image='/images/misc-04.jpg'>
+            <Box image='/images/misc-04.jpg'>
               <Text as='h4'>Your Holiday Home in Good Hands</Text>
               <Text as='h6'>We&apos;ve developed an intuitive app that gives you full transparency of bookings and property performance.</Text>
               <Text as='h6'>We also have an experienced client support team available 7/11 and specialist housekeepers to take care of all the little details.</Text>

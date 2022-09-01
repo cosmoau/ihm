@@ -16,7 +16,7 @@ export default function Team(): JSX.Element {
       <View container top={7} bottom={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={25}>
-            <Box theme='border'>
+            <Box>
               <Avatar image='/images/team-kyle.jpg' fallback='Kyle' width={80} />
               <Text
                 as='h4'
@@ -38,7 +38,7 @@ export default function Team(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box theme='border'>
+            <Box>
               <Avatar image='/images/team-jayne.jpg' fallback='Jayne' width={80} />
               <Text
                 as='h4'
@@ -60,7 +60,7 @@ export default function Team(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box theme='border'>
+            <Box>
               <Avatar image='/images/team-sharon.jpg' fallback='Jayne' width={80} />
               <Text
                 as='h4'
@@ -82,7 +82,7 @@ export default function Team(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box theme='border'>
+            <Box>
               <Avatar image='/images/team-victoria.jpg' fallback='Jayne' width={80} />
               <Text
                 as='h4'

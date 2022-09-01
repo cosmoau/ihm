@@ -1,4 +1,4 @@
-import { View, Stack, Text, Button, Element, Dropdown } from '@withcosmo/design-system';
+import { View, Stack, Text, Button, Dropdown } from '@withcosmo/design-system';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -23,13 +23,13 @@ export default function Header(): JSX.Element {
         <Stack direction='column' width={25} widthTablet={40} widthPhone={50}>
           <Link href='/'>
             <a>
-              <Element
+              <Stack
                 css={{
                   display: 'inline-flex',
                   verticalAlign: 'middle',
                 }}>
                 <Image src='/images/logo.png' alt='logo' width={150 * 0.66} height={68 * 0.66} />
-              </Element>
+              </Stack>
             </a>
           </Link>
         </Stack>
@@ -42,7 +42,7 @@ export default function Header(): JSX.Element {
           widthTablet={60}
           widthPhone={50}>
           <a href='https://app.cosmogroup.io' target='_blank' rel='noreferrer'>
-            <Button theme='border' inline={4} aria-label='Sign In'>
+            <Button name='sign-in' inline={4} ariaLabel='Sign In'>
               Sign In
             </Button>
           </a>
@@ -75,7 +75,11 @@ export default function Header(): JSX.Element {
                 value: '/start',
               },
             ]}
-            trigger={<Button aria-label='Open Navigation Menu'>Menu</Button>}
+            trigger={
+              <Button name='menu' theme='solid' ariaLabel='Open Navigation Menu'>
+                Menu
+              </Button>
+            }
           />
         </Stack>
         <Stack
@@ -122,7 +126,7 @@ export default function Header(): JSX.Element {
                 as='h5'
                 inline={5}
                 css={{
-                  opacity: router.pathname === '/team' ? 0.6 : 1,
+                  opacity: router.pathname === '/contact' ? 0.6 : 1,
                 }}>
                 Contact
               </Text>
@@ -149,15 +153,15 @@ export default function Header(): JSX.Element {
           css={{
             hidden: 'tablet',
           }}>
-          <a href='https://app.cosmogroup.io' target='_blank' rel='noreferrer'>
-            <Button theme='border' inline={4} aria-label='Sign In'>
-              Sign In
+          <a href='https://cosmogroup.io' target='_blank' rel='noreferrer'>
+            <Button name='pushback' inline={4} ariaLabel='Learn more on our main website.'>
+              Learn More
             </Button>
           </a>
           <Link href='/start'>
             <a>
-              <Button inline='auto' theme='solid' aria-label='Get Started'>
-                Get Started
+              <Button name='get-started' inline='auto' theme='solid' ariaLabel='Get Started'>
+                Join Cosmo
               </Button>
             </a>
           </Link>

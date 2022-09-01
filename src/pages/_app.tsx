@@ -8,18 +8,18 @@ import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <Provider locked='light'>
+    <Provider locked='light' default='light'>
       <DefaultSeo
         openGraph={{
           title: 'ihostme - Airbnb, Stayz & Booking.com Management by Cosmo',
           description: 'ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.',
           type: 'website',
           locale: 'en_AU',
-          url: 'https://ihostme.com.au',
+          url: 'https://ihm.cosmogroup.io',
           site_name: 'ihostme by Cosmo',
           images: [
             {
-              url: 'https://ihostme.com.au/images/meta.jpg',
+              url: 'https://ihm.cosmogroup.io/images/meta.jpg',
               alt: 'Cosmo',
             },
           ],

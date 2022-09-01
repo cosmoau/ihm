@@ -1,4 +1,4 @@
-import { View, Image, Button, Stack, Text, Element, Badge } from '@withcosmo/design-system';
+import { View, Image, Button, Stack, Text, Badge } from '@withcosmo/design-system';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ChatCircle, Phone } from 'phosphor-react';
@@ -13,7 +13,7 @@ export default function Footer(): JSX.Element {
             top={7}
             direction='row'
             css={{
-              borderTop: '1px solid $border',
+              borderTop: '1px solid $borderHover',
             }}>
             <Stack
               direction='column'
@@ -42,7 +42,7 @@ export default function Footer(): JSX.Element {
                 ihostme® manage properties with potential to earn in excess of $50,000 gross income per year through short term rentals. Please contact us if your property is
                 available for a minimum of 140 nights per year and we will provide a free estimate.
               </Text>
-              <Element bottom={6}>
+              <Stack bottom={6}>
                 <a href='mailto:contact@cosmogroup.io'>
                   <Badge
                     theme='border'
@@ -67,8 +67,9 @@ export default function Footer(): JSX.Element {
                   }}>
                   <a href='tel:+61370355800'>(03) 7035 5800</a>
                 </Badge>
-              </Element>
-              <Button aria-label='Get an estimate'>
+              </Stack>
+
+              <Button ariaLabel='Get an estimate' name='estimate'>
                 <Link href='/start'>
                   <a>Get an estimate</a>
                 </Link>

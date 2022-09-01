@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Stack, Text, View, Box, Element, Avatar, Badge } from '@withcosmo/design-system';
+import { Stack, Text, View, Box, Avatar, Badge } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 
 export default function Testimonials(): JSX.Element {
@@ -16,9 +16,9 @@ export default function Testimonials(): JSX.Element {
       <View container top={7} bottom={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={50}>
-            <Box theme='border'>
-              <Element bottom={5}>
-                <Element
+            <Box>
+              <Stack bottom={5}>
+                <Stack
                   css={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -32,8 +32,8 @@ export default function Testimonials(): JSX.Element {
                     },
                   }}>
                   <Avatar image='/images/testimonial-01.jpg' width={66} fallback='' />
-                </Element>
-                <Element
+                </Stack>
+                <Stack
                   css={{
                     display: 'inline-block',
                     verticalAlign: 'middle',
@@ -47,9 +47,9 @@ export default function Testimonials(): JSX.Element {
                     The Woodville, Ocean Grove
                   </Text>
                   <Badge>Josie Pileio and Rob Farrugia, Owners</Badge>
-                </Element>
-              </Element>
-              <Text as='h6'>
+                </Stack>
+              </Stack>
+              <Text as='h6' top={4}>
                 We were moving overseas and from the very beginning when we were just considering our options, ihostme were able to provide advice, support and the peace of mind to
                 just make it happen!
               </Text>
@@ -75,9 +75,9 @@ export default function Testimonials(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box theme='border'>
-              <Element bottom={5}>
-                <Element
+            <Box>
+              <Stack bottom={5}>
+                <Stack
                   css={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -91,8 +91,8 @@ export default function Testimonials(): JSX.Element {
                     },
                   }}>
                   <Avatar image='/images/testimonial-02.jpg' width={66} fallback='' />
-                </Element>
-                <Element
+                </Stack>
+                <Stack
                   css={{
                     display: 'inline-block',
                     verticalAlign: 'middle',
@@ -106,10 +106,10 @@ export default function Testimonials(): JSX.Element {
                     Blue Waters Retreat, Ocean Grove
                   </Text>
                   <Badge>Lorien and Dean Platt, Owners</Badge>
-                </Element>
-              </Element>
+                </Stack>
+              </Stack>
 
-              <Text as='h6'>
+              <Text as='h6' top={4}>
                 ihostme provided invaluable assistance and advice in getting my property ready to list within 2 weeks of first contact, despite being away on holidays themselves at
                 the time! ihostme’s marketing expertise ensured that the house was booked for every weekend, plus significant numbers of week days as well.
               </Text>

@@ -19,7 +19,7 @@ export default function Custom404(): JSX.Element {
             <Text as='h5' bottom={6}>
               Feel free to browse our site from the menu at the top of the page, or if you have a question - get in touch
             </Text>
-            <Button aria-label='Chat with our team'>
+            <Button ariaLabel='Chat with our team' name='chat'>
               <a href='mailto:contact@cosmogroup.io'>Chat with us</a>
             </Button>
           </Stack>
