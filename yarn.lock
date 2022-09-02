@@ -487,9 +487,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@withcosmo/design-system@npm:^2.1.10":
-  version: 2.1.10
-  resolution: "@withcosmo/design-system@npm:2.1.10"
+"@withcosmo/design-system@npm:^2.1.12":
+  version: 2.1.12
+  resolution: "@withcosmo/design-system@npm:2.1.12"
   dependencies:
     "@stitches/react": ^1.2.8
     next: ^12.2.5
@@ -506,7 +506,7 @@ __metadata:
     react-dom: ^18.2.0
     react-hot-toast: ^2.3.0
     typescript: ^4.8.2
-  checksum: 9391fe25299e2d100c9b88a6a7bd8c05802676f55323dd77d8bb9eaaba5bd4b6908dd1fe0942be29a27ed3986cdc0d253ec64f89e431482e91c41166750b1ec0
+  checksum: 7e424f7fa27882afb866736745c1480789a8424a2692ed04532dbf17b541c711b0dfa6cd67f3b00f41976faa4f6f320b43ed8e4fbf4511b929dc430c91ecf538
   languageName: node
   linkType: hard
 
@@ -1582,7 +1582,7 @@ __metadata:
     "@typeform/embed-react": ^1.19.0
     "@types/node": ^18.7.14
     "@types/react": ^18.0.18
-    "@withcosmo/design-system": ^2.1.10
+    "@withcosmo/design-system": ^2.1.12
     dayjs: ^1.11.5
     eslint: ^8.22.0
     eslint-config-dolmios: ^1.0.5

@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@typeform/embed-react": "^1.19.0",
-    "@withcosmo/design-system": "^2.1.10",
+    "@withcosmo/design-system": "^2.1.12",
     "dayjs": "^1.11.5",
     "next": "^12.2.5",
     "next-seo": "^5.5.0",
