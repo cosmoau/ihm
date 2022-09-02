@@ -1,4 +1,5 @@
 import { View, Image, Button, Stack, Text, Badge } from '@withcosmo/design-system';
+import dayjs from 'dayjs';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ChatCircle, Phone } from 'phosphor-react';
@@ -8,13 +9,8 @@ export default function Footer(): JSX.Element {
   return (
     <>
       {router.pathname !== '/start' && router.pathname !== '/contact' && (
-        <View container bottom={7}>
-          <Stack
-            top={7}
-            direction='row'
-            css={{
-              borderTop: '1px solid $borderHover',
-            }}>
+        <View container top={8} bottom={7}>
+          <Stack direction='row'>
             <Stack
               direction='column'
               width={50}
@@ -37,7 +33,7 @@ export default function Footer(): JSX.Element {
                   paddingBottom: 0,
                 },
               }}>
-              <Text as='h3'>Let us help you unlock your property’s earning potential today!</Text>
+              <Text as='h3'>Let us help you unlock your property’s earning potential today</Text>
               <Text as='h5' bottom={3}>
                 ihostme® manage properties with potential to earn in excess of $50,000 gross income per year through short term rentals. Please contact us if your property is
                 available for a minimum of 140 nights per year and we will provide a free estimate.
@@ -82,8 +78,8 @@ export default function Footer(): JSX.Element {
       <View
         inverted
         container
-        top={6}
-        bottom={6}
+        top={5}
+        bottom={5}
         css={{
           zIndex: '1 !important',
         }}>
@@ -100,7 +96,7 @@ export default function Footer(): JSX.Element {
               hidden: 'phone',
             }}>
             <Text as='h6' accent>
-              ihostme® - part of the Cosmo family.
+              ihostme® by Cosmo
             </Text>
           </Stack>
           <Stack
@@ -126,6 +122,30 @@ export default function Footer(): JSX.Element {
               <a href='https://cosmogroup.io/legal/occupant' target='_blank' rel='noreferrer'>
                 Occupancy Policy
               </a>
+            </Text>
+          </Stack>
+        </Stack>
+        <Stack
+          css={{
+            opacity: 0.42,
+          }}
+          direction='row'
+          top={6}>
+          <Stack align='center' direction='column'>
+            <Text accent as='small' bottom={2} css={{ marginBottom: '0 !important', visible: 'phone' }}>
+              © {dayjs().format('YYYY')} Cosmo. Level 22, 120 Spencer St, Melbourne, Victoria 3000, Australia
+            </Text>
+            <Text accent as='small' css={{ fontSize: '1.1rem' }}>
+              We are not financial advisors, lawyers or accountants. Always double-check any piece of information before taking action. We partner with{' '}
+              <Text
+                as='span'
+                css={{
+                  borderBottom: '0.1rem solid $border',
+                }}
+                inline={'auto'}>
+                <a href='https://planare.dev'>Planare LLC</a>
+              </Text>{' '}
+              for our software and data needs.
             </Text>
           </Stack>
         </Stack>

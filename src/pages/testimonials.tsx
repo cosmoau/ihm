@@ -13,7 +13,7 @@ export default function Testimonials(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top={7} bottom={7}>
+      <View container top={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={50}>
             <Box>

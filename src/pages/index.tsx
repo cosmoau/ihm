@@ -91,7 +91,7 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top={7} bottom={7}>
+      <View container top={7}>
         <Stack direction='row'>
           <Stack direction='column' width={60} offset={20} align='center'>
             <a href='https://cosmogroup.io'>
@@ -110,7 +110,7 @@ export default function Home(): JSX.Element {
         </Stack>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
-            <Stack bottom={7}>
+            <Stack>
               <Link href='/locations'>
                 <a>
                   {locations.map((location, index) => (
@@ -144,7 +144,9 @@ export default function Home(): JSX.Element {
             </Stack>
           </Stack>
         </Stack>
-        <Stack direction='row' flex='stretch' top={7}>
+      </View>
+      <View container top={7}>
+        <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={33}>
             <Box image='/images/misc-02.jpg'>
               <Text as='h4'>Your One Stop Hosting Shop</Text>

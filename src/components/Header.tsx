@@ -91,7 +91,7 @@ export default function Header(): JSX.Element {
           }}>
           <Link href='/'>
             <a>
-              <Text as='h5' inline={5}>
+              <Text as='h5' inline={4}>
                 Home
               </Text>
             </a>
@@ -100,7 +100,7 @@ export default function Header(): JSX.Element {
             <a>
               <Text
                 as='h5'
-                inline={5}
+                inline={4}
                 css={{
                   opacity: router.pathname === '/testimonials' ? 0.6 : 1,
                 }}>
@@ -112,7 +112,7 @@ export default function Header(): JSX.Element {
             <a>
               <Text
                 as='h5'
-                inline={5}
+                inline={4}
                 css={{
                   opacity: router.pathname === '/team' ? 0.6 : 1,
                 }}>
@@ -124,7 +124,7 @@ export default function Header(): JSX.Element {
             <a>
               <Text
                 as='h5'
-                inline={5}
+                inline={4}
                 css={{
                   opacity: router.pathname === '/contact' ? 0.6 : 1,
                 }}>

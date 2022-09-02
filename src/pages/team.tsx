@@ -13,21 +13,22 @@ export default function Team(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top={7} bottom={7}>
+      <View container top={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={25}>
             <Box>
-              <Avatar image='/images/team-kyle.jpg' fallback='Kyle' width={80} />
+              <Avatar image='/images/team-kyle.jpg' fallback='Kyle' width={66} />
               <Text
                 as='h4'
-                top={4}
+                top={3}
+                bottom={3}
                 css={{
                   marginBottom: '0.4rem !important',
                   paddingBottom: '0',
                 }}>
                 Kyle Fitzsimmons
               </Text>
-              <Badge>Managing Director</Badge>
+              <Badge theme='border'>Managing Director</Badge>
             </Box>
           </Stack>
           <Stack
@@ -39,17 +40,18 @@ export default function Team(): JSX.Element {
               },
             }}>
             <Box>
-              <Avatar image='/images/team-jayne.jpg' fallback='Jayne' width={80} />
+              <Avatar image='/images/team-jayne.jpg' fallback='Jayne' width={66} />
               <Text
                 as='h4'
-                top={4}
+                bottom={3}
+                top={3}
                 css={{
                   marginBottom: '0.4rem !important',
                   paddingBottom: '0',
                 }}>
                 Jayne Parker
               </Text>
-              <Badge>Head of Projects</Badge>
+              <Badge theme='border'>Head of Projects</Badge>
             </Box>
           </Stack>
           <Stack
@@ -61,17 +63,18 @@ export default function Team(): JSX.Element {
               },
             }}>
             <Box>
-              <Avatar image='/images/team-sharon.jpg' fallback='Jayne' width={80} />
+              <Avatar image='/images/team-sharon.jpg' fallback='Jayne' width={66} />
               <Text
                 as='h4'
-                top={4}
+                top={3}
+                bottom={3}
                 css={{
                   marginBottom: '0.4rem !important',
                   paddingBottom: '0',
                 }}>
                 Sharon Elliott
               </Text>
-              <Badge>Regional Coordinator, Vic East</Badge>
+              <Badge theme='border'>Regional Coordinator, Vic East</Badge>
             </Box>
           </Stack>
           <Stack
@@ -83,17 +86,18 @@ export default function Team(): JSX.Element {
               },
             }}>
             <Box>
-              <Avatar image='/images/team-victoria.jpg' fallback='Jayne' width={80} />
+              <Avatar image='/images/team-victoria.jpg' fallback='Jayne' width={66} />
               <Text
                 as='h4'
-                top={4}
+                top={3}
+                bottom={3}
                 css={{
                   marginBottom: '0.4rem !important',
                   paddingBottom: '0',
                 }}>
                 Victoria Mills
               </Text>
-              <Badge>Regional Coordinator, Vic West</Badge>
+              <Badge theme='border'>Regional Coordinator, Vic West</Badge>
             </Box>
           </Stack>
         </Stack>
