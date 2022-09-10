@@ -36,7 +36,7 @@ export default function Contact(): JSX.Element {
                 disableAutoFocus
                 height={555}
                 hidden={{
-                  url: 'ihm.cosmogroup.io',
+                  url: 'ihostme.com.au',
                 }}
                 style={{
                   overflowY: 'visible',
