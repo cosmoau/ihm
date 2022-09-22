@@ -33,7 +33,6 @@ export default function Start(): JSX.Element {
               <Widget
                 id='Va37c3wL'
                 opacity={0}
-                disableAutoFocus
                 height={666}
                 hidden={{
                   url: 'ihostme.com.au',

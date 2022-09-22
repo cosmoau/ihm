@@ -39,7 +39,7 @@ export default function Testimonials(): JSX.Element {
                     verticalAlign: 'middle',
                   }}>
                   <Text
-                    as='h4'
+                    as='h3'
                     css={{
                       marginBottom: '0.4rem !important',
                       paddingBottom: '0',
@@ -98,7 +98,7 @@ export default function Testimonials(): JSX.Element {
                     verticalAlign: 'middle',
                   }}>
                   <Text
-                    as='h4'
+                    as='h3'
                     css={{
                       marginBottom: '0.4rem !important',
                       paddingBottom: '0',
