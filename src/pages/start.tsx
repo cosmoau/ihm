@@ -25,10 +25,10 @@ export default function Start(): JSX.Element {
             <Box
               theme='fill'
               css={{
-                borderRadius: '$3',
                 '*': {
                   fontSize: '$h1 !important',
                 },
+                borderRadius: '$3',
               }}>
               <Widget
                 id='Va37c3wL'

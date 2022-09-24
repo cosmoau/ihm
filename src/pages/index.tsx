@@ -124,10 +124,10 @@ export default function Home(): JSX.Element {
                       <Badge theme='borderHover' css={{ borderColor: 'rgba(0,0,0,0.05)' }}>
                         <Stack
                           css={{
-                            display: 'flex',
-                            verticalAlign: 'middle',
                             alignItems: 'center',
+                            display: 'flex',
                             marginRight: '$2',
+                            verticalAlign: 'middle',
                           }}>
                           <Avatar image={`/images/location-${location.toLowerCase().replace(/\s/g, '')}.jpg`} width={15} fallback='' />{' '}
                         </Stack>

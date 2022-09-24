@@ -20,16 +20,16 @@ export default function Testimonials(): JSX.Element {
               <Stack bottom={5}>
                 <Stack
                   css={{
-                    display: 'inline-flex',
                     alignItems: 'center',
+                    display: 'inline-flex',
                     justifyContent: 'center',
-                    verticalAlign: 'middle',
                     marginRight: '$5',
                     phone: {
                       display: 'block',
-                      marginRight: 0,
                       marginBottom: '$3',
+                      marginRight: 0,
                     },
+                    verticalAlign: 'middle',
                   }}>
                   <Avatar image='/images/testimonial-01.jpg' width={66} fallback='' />
                 </Stack>
@@ -79,16 +79,16 @@ export default function Testimonials(): JSX.Element {
               <Stack bottom={5}>
                 <Stack
                   css={{
-                    display: 'inline-flex',
                     alignItems: 'center',
+                    display: 'inline-flex',
                     justifyContent: 'center',
-                    verticalAlign: 'middle',
                     marginRight: '$5',
                     phone: {
                       display: 'block',
-                      marginRight: 0,
                       marginBottom: '$3',
+                      marginRight: 0,
                     },
+                    verticalAlign: 'middle',
                   }}>
                   <Avatar image='/images/testimonial-02.jpg' width={66} fallback='' />
                 </Stack>

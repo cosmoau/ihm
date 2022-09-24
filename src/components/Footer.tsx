@@ -29,8 +29,8 @@ export default function Footer(): JSX.Element {
               css={{
                 paddingLeft: '$7',
                 phone: {
-                  paddingLeft: '$3',
                   paddingBottom: 0,
+                  paddingLeft: '$3',
                 },
               }}>
               <Text as='h3'>Let us help you unlock your property’s earning potential today</Text>

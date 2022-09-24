@@ -13,10 +13,10 @@ export default function Header(): JSX.Element {
       top={4}
       css={{
         a: {
-          transition: '$default',
           '&:hover': {
             opacity: 0.6,
           },
+          transition: '$default',
         },
       }}>
       <Stack direction='row' flex='center'>
