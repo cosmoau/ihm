@@ -1,3 +1,5 @@
+/** @format */
+
 import { View, Image, Button, Stack, Text, Badge } from '@withcosmo/design-system';
 import dayjs from 'dayjs';
 import Link from 'next/link';
@@ -19,7 +21,13 @@ export default function Footer(): JSX.Element {
                   height: '30rem',
                 },
               }}>
-              <Image src='/images/misc-05.jpg' alt='airbnb' layout='fill' borderRadius={3} objectFit='cover' />
+              <Image
+                src='/images/misc-05.jpg'
+                alt='airbnb'
+                layout='fill'
+                borderRadius={3}
+                objectFit='cover'
+              />
             </Stack>
             <Stack
               top={6}
@@ -33,10 +41,14 @@ export default function Footer(): JSX.Element {
                   paddingLeft: '$3',
                 },
               }}>
-              <Text as='h3'>Let us help you unlock your property’s earning potential today</Text>
+              <Text as='h3'>
+                Let us help you unlock your property’s earning potential today
+              </Text>
               <Text as='h5' bottom={3}>
-                ihostme® manage properties with potential to earn in excess of $50,000 gross income per year through short term rentals. Please contact us if your property is
-                available for a minimum of 140 nights per year and we will provide a free estimate.
+                ihostme® manage properties with potential to earn in excess of $50,000
+                gross income per year through short term rentals. Please contact us if
+                your property is available for a minimum of 140 nights per year and we
+                will provide a free estimate.
               </Text>
               <Stack bottom={6}>
                 <a href='mailto:contact@cosmogroup.io'>
@@ -109,17 +121,26 @@ export default function Footer(): JSX.Element {
               },
             }}>
             <Text as='h6' inline={4} accent>
-              <a href='https://cosmogroup.io/legal/privacy' target='_blank' rel='noreferrer'>
+              <a
+                href='https://cosmogroup.io/legal/privacy'
+                target='_blank'
+                rel='noreferrer'>
                 Privacy Policy
               </a>
             </Text>
             <Text as='h6' inline={4} accent>
-              <a href='https://cosmogroup.io/legal/service' target='_blank' rel='noreferrer'>
+              <a
+                href='https://cosmogroup.io/legal/service'
+                target='_blank'
+                rel='noreferrer'>
                 Terms of Service
               </a>
             </Text>
             <Text as='h6' inline={4} accent>
-              <a href='https://cosmogroup.io/legal/occupant' target='_blank' rel='noreferrer'>
+              <a
+                href='https://cosmogroup.io/legal/occupant'
+                target='_blank'
+                rel='noreferrer'>
                 Occupancy Policy
               </a>
             </Text>
@@ -132,11 +153,17 @@ export default function Footer(): JSX.Element {
           direction='row'
           top={6}>
           <Stack align='center' direction='column'>
-            <Text accent as='small' bottom={2} css={{ marginBottom: '0 !important', visible: 'phone' }}>
-              © {dayjs().format('YYYY')} Cosmo. Level 22, 120 Spencer St, Melbourne, Victoria 3000, Australia
+            <Text
+              accent
+              as='small'
+              bottom={2}
+              css={{ marginBottom: '0 !important', visible: 'phone' }}>
+              © {dayjs().format('YYYY')} Cosmo. Level 22, 120 Spencer St, Melbourne,
+              Victoria 3000, Australia
             </Text>
             <Text accent as='small' css={{ fontSize: '1.1rem' }}>
-              We are not financial advisors, lawyers or accountants. Always double-check any piece of information before taking action. We partner with{' '}
+              We are not financial advisors, lawyers or accountants. Always double-check
+              any piece of information before taking action. We partner with{' '}
               <Text
                 as='span'
                 css={{

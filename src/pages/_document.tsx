@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/** @format */
+
 import { getCssText } from '@withcosmo/design-system';
 import { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
@@ -9,8 +10,14 @@ export default function Document(): JSX.Element {
     <Html lang='en'>
       <Head>
         <meta charSet='UTF-8' />
-        <meta name='description' content='ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.' />
-        <meta name='keywords' content='ihostme, hosting, property, management, rental, stayz, booking, airbnb, stayz, cosmo, cosmogroup.io, booking, airbnb' />
+        <meta
+          name='description'
+          content='ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.'
+        />
+        <meta
+          name='keywords'
+          content='ihostme, hosting, property, management, rental, stayz, booking, airbnb, stayz, cosmo, cosmogroup.io, booking, airbnb'
+        />
 
         <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
@@ -23,12 +30,19 @@ export default function Document(): JSX.Element {
       <body>
         <Main />
         <NextScript />
-        <Script strategy='beforeInteractive' defer src='https://api.pirsch.io/pirsch.js' id='pirschjs' data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD' />{' '}
+        <Script
+          strategy='beforeInteractive'
+          defer
+          src='https://api.pirsch.io/pirsch.js'
+          id='pirschjs'
+          data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD'
+        />{' '}
       </body>
     </Html>
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 Document.getInitialProps = async function getInitialProps(ctx: any): Promise<any> {
   const results = await ctx.defaultGetInitialProps(ctx);
   const stitchesCssString = getCssText();

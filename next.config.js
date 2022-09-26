@@ -1,4 +1,9 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/**
+ * /* eslint-disable @typescript-eslint/explicit-function-return-type
+ *
+ * @format
+ */
+
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {

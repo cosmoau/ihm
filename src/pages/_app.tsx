@@ -1,4 +1,9 @@
-/* eslint-disable import/no-unresolved */
+/**
+ * /* eslint-disable import/no-unresolved
+ *
+ * @format
+ */
+
 import { Provider } from '@withcosmo/design-system';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
@@ -11,7 +16,8 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     <Provider locked='light' default='light'>
       <DefaultSeo
         openGraph={{
-          description: 'ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.',
+          description:
+            'ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.',
           images: [
             {
               alt: 'Cosmo',

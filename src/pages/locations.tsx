@@ -1,4 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/**
+ * /* eslint-disable @typescript-eslint/no-explicit-any
+ *
+ * @format
+ */
+
 import { Stack, Text, View, Box } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
@@ -19,7 +24,10 @@ export default function Locations(): JSX.Element {
           <Stack direction='column' width={20}>
             <Link href='/start?city=Geelong'>
               <a>
-                <Box imageHeight='9rem' image='/images/location-geelong.jpg' imageAlt='Geelong'>
+                <Box
+                  imageHeight='9rem'
+                  image='/images/location-geelong.jpg'
+                  imageAlt='Geelong'>
                   <Text as='h3'>Geelong</Text>
                 </Box>
               </a>

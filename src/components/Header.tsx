@@ -1,3 +1,5 @@
+/** @format */
+
 import { View, Stack, Text, Button, Dropdown } from '@withcosmo/design-system';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,7 +18,7 @@ export default function Header(): JSX.Element {
           '&:hover': {
             opacity: 0.6,
           },
-          transition: '$default',
+          'transition': '$default',
         },
       }}>
       <Stack direction='row' flex='center'>
@@ -28,7 +30,12 @@ export default function Header(): JSX.Element {
                   display: 'inline-flex',
                   verticalAlign: 'middle',
                 }}>
-                <Image src='/images/logo.png' alt='logo' width={150 * 0.66} height={68 * 0.66} />
+                <Image
+                  src='/images/logo.png'
+                  alt='logo'
+                  width={150 * 0.66}
+                  height={68 * 0.66}
+                />
               </Stack>
             </a>
           </Link>
@@ -41,7 +48,7 @@ export default function Header(): JSX.Element {
           align='right'
           widthTablet={60}
           widthPhone={50}>
-          <a href='https://app.cosmogroup.io' target='_blank' rel='noreferrer'>
+          <a href='https://v1.cosmogroup.io' target='_blank' rel='noreferrer'>
             <Button name='sign-in' inline={4} ariaLabel='Sign In'>
               Sign In
             </Button>
@@ -154,13 +161,20 @@ export default function Header(): JSX.Element {
             hidden: 'tablet',
           }}>
           <a href='https://cosmogroup.io' target='_blank' rel='noreferrer'>
-            <Button name='pushback' inline={4} ariaLabel='Learn more on our main website.'>
+            <Button
+              name='pushback'
+              inline={4}
+              ariaLabel='Learn more on our main website.'>
               Learn More
             </Button>
           </a>
           <Link href='/start'>
             <a>
-              <Button name='get-started' inline='auto' theme='solid' ariaLabel='Get Started'>
+              <Button
+                name='get-started'
+                inline='auto'
+                theme='solid'
+                ariaLabel='Get Started'>
                 Join Cosmo
               </Button>
             </a>

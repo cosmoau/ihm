@@ -1,4 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/**
+ * /* eslint-disable @typescript-eslint/no-explicit-any
+ *
+ * @format
+ */
+
 import { Stack, Text, View, Box, Avatar, Badge } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 
