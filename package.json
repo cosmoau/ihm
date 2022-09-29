@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@typeform/embed-react": "^1.21.0",
-    "@withcosmo/design-system": "^2.2.8",
+    "@withcosmo/design-system": "^2.2.9",
     "dayjs": "^1.11.5",
     "next": "^12.3.1",
     "next-seo": "^5.5.0",
@@ -18,14 +18,14 @@
     "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.22",
+    "@types/node": "^18.7.23",
     "@types/react": "^18.0.21",
     "eslint": "^8.24.0",
     "eslint-config-dolmios": "^1.1.0",
     "eslint-config-next": "^12.3.1",
-    "next-sitemap": "^3.1.22",
+    "next-sitemap": "^3.1.23",
     "prettier": "^2.7.1",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.4"
   },
   "homepage": "https://github.com/withcosmo/ihm#readme",
   "license": "MIT",

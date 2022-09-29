@@ -1,6 +1,6 @@
 /** @format */
 
-import { View, Stack, Text, Button, Dropdown } from '@withcosmo/design-system';
+import { View, Stack, Button, Dropdown } from '@withcosmo/design-system';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -9,18 +9,7 @@ export default function Header(): JSX.Element {
   const router = useRouter();
 
   return (
-    <View
-      inverted
-      container
-      top={4}
-      css={{
-        a: {
-          '&:hover': {
-            opacity: 0.6,
-          },
-          'transition': '$default',
-        },
-      }}>
+    <View inverted container top={4}>
       <Stack direction='row' flex='center'>
         <Stack direction='column' width={25} widthTablet={40} widthPhone={50}>
           <Link href='/'>
@@ -98,57 +87,51 @@ export default function Header(): JSX.Element {
           }}>
           <Link href='/'>
             <a>
-              <Text as='h5' inline={4}>
-                Home
-              </Text>
+              <Button theme='minimal'>Home</Button>
             </a>
           </Link>
           <Link href='/testimonials'>
             <a>
-              <Text
-                as='h5'
-                inline={4}
+              <Button
+                theme={router.pathname === '/testimonials' ? 'fill' : 'minimal'}
                 css={{
                   opacity: router.pathname === '/testimonials' ? 0.6 : 1,
                 }}>
                 Testimonials
-              </Text>
+              </Button>
             </a>
           </Link>
           <Link href='/team'>
             <a>
-              <Text
-                as='h5'
-                inline={4}
+              <Button
+                theme={router.pathname === '/team' ? 'fill' : 'minimal'}
                 css={{
                   opacity: router.pathname === '/team' ? 0.6 : 1,
                 }}>
                 Team
-              </Text>
+              </Button>
             </a>
           </Link>
           <Link href='/contact'>
             <a>
-              <Text
-                as='h5'
-                inline={4}
+              <Button
+                theme={router.pathname === '/contact' ? 'fill' : 'minimal'}
                 css={{
                   opacity: router.pathname === '/contact' ? 0.6 : 1,
                 }}>
                 Contact
-              </Text>
+              </Button>
             </a>
           </Link>
           <Link href='/locations'>
             <a>
-              <Text
-                as='h5'
-                inline='auto'
+              <Button
+                theme={router.pathname === '/locations' ? 'fill' : 'minimal'}
                 css={{
                   opacity: router.pathname === '/locations' ? 0.6 : 1,
                 }}>
                 Locations
-              </Text>
+              </Button>
             </a>
           </Link>
         </Stack>
@@ -163,6 +146,7 @@ export default function Header(): JSX.Element {
           <a href='https://cosmogroup.io' target='_blank' rel='noreferrer'>
             <Button
               name='pushback'
+              theme='fill'
               inline={4}
               ariaLabel='Learn more on our main website.'>
               Learn More

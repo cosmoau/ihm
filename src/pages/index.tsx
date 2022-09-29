@@ -83,14 +83,13 @@ export default function Home(): JSX.Element {
               We maximise your occupancy by listing your property on the top booking
               sites.
             </Text>
-            <Button name='list' theme='solid' inline={4} ariaLabel='List your home'>
-              <Link href='/start'>
-                <a>List your home</a>
-              </Link>
-            </Button>
-            <Button name='chat' ariaLabel='Chat with our team'>
-              <a href='mailto:contact@cosmogroup.io'>Chat with us</a>
-            </Button>
+            <Link href='/start'>
+              <a>
+                <Button name='list' theme='fill' ariaLabel='List your home'>
+                  List your home
+                </Button>
+              </a>
+            </Link>
           </Stack>
           <Stack
             direction='column'
@@ -115,7 +114,7 @@ export default function Home(): JSX.Element {
         <Stack direction='row'>
           <Stack direction='column' width={60} offset={20} align='center'>
             <a href='https://cosmogroup.io'>
-              <Badge theme='pink' icon={<Heart />}>
+              <Badge theme='blue' icon={<Heart />}>
                 ihostme is now part of Cosmo
               </Badge>
             </a>
