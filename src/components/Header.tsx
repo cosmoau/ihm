@@ -38,12 +38,13 @@ export default function Header(): JSX.Element {
           widthTablet={60}
           widthPhone={50}>
           <a href='https://v1.cosmogroup.io' target='_blank' rel='noreferrer'>
-            <Button name='sign-in' inline={4} ariaLabel='Sign In'>
+            <Button name='sign-in' inline={4} ariaLabel='Sign In' theme='fill'>
               Sign In
             </Button>
           </a>
           <Dropdown
             submenu
+            width='16rem'
             align='right'
             options={[
               {
@@ -143,13 +144,9 @@ export default function Header(): JSX.Element {
           css={{
             hidden: 'tablet',
           }}>
-          <a href='https://cosmogroup.io' target='_blank' rel='noreferrer'>
-            <Button
-              name='pushback'
-              theme='fill'
-              inline={4}
-              ariaLabel='Learn more on our main website.'>
-              Learn More
+          <a href='https://v1.cosmogroup.io' target='_blank' rel='noreferrer'>
+            <Button name='sign-in' inline={4} ariaLabel='Sign In' theme='fill'>
+              Sign In
             </Button>
           </a>
           <Link href='/start'>

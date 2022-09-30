@@ -74,6 +74,7 @@ export default function Home(): JSX.Element {
               phone: {
                 paddingRight: '$3',
                 paddingTop: 0,
+                textAlign: 'center',
               },
             }}>
             <Text as='h1'>Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
