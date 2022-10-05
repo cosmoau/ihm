@@ -4,7 +4,7 @@
  * @format
  */
 
-import { Stack, Text, View, Box, Avatar, Badge } from '@withcosmo/design-system';
+import { Stack, Text, View, Box, Avatar, Badge } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 
 export default function Testimonials(): JSX.Element {

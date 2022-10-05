@@ -4,7 +4,7 @@
  * @format
  */
 
-import { Provider } from '@withcosmo/design-system';
+import { Provider } from '@cosmoau/ui';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 

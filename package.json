@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "author": "Jackson <mail@planare.dev>",
   "bugs": {
-    "url": "https://github.com/withcosmo/ihm/issues"
+    "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@typeform/embed-react": "^1.21.0",
-    "@withcosmo/design-system": "^2.2.9",
+    "@cosmoau/ui": "^1.0.0",
+    "@typeform/embed-react": "^2.0.0",
     "dayjs": "^1.11.5",
     "next": "^12.3.1",
     "next-seo": "^5.5.0",
@@ -18,7 +18,7 @@
     "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.23",
+    "@types/node": "^18.8.2",
     "@types/react": "^18.0.21",
     "eslint": "^8.24.0",
     "eslint-config-dolmios": "^1.1.0",
@@ -27,13 +27,13 @@
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
-  "homepage": "https://github.com/withcosmo/ihm#readme",
+  "homepage": "https://github.com/cosmoau/ihm#readme",
   "license": "MIT",
   "packageManager": "yarn@3.2.3",
   "prettier": "eslint-config-dolmios/.prettierrc.json",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/withcosmo/ihm.git"
+    "url": "git+https://github.com/cosmoau/ihm.git"
   },
   "scripts": {
     "build": "next build",

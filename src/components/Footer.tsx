@@ -1,6 +1,6 @@
 /** @format */
 
-import { View, Image, Button, Stack, Text, Badge } from '@withcosmo/design-system';
+import { View, Image, Button, Stack, Text, Badge } from '@cosmoau/ui';
 import dayjs from 'dayjs';
 import Link from 'next/link';
 import { useRouter } from 'next/router';

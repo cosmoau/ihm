@@ -1415,6 +1415,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cosmoau/ui@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@cosmoau/ui@npm:1.0.0"
+  dependencies:
+    "@stitches/react": ^1.2.8
+    "@types/node": ^18.8.2
+    "@types/react": ^18.0.21
+    eslint: ^8.24.0
+    eslint-config-dolmios: ^1.1.0
+    eslint-config-next: ^12.3.1
+    microbundle: ^0.15.1
+    next: ^12.3.1
+    parcel: ^2.7.0
+    path-browserify: ^1.0.1
+    phosphor-react: ^1.4.1
+    prettier: ^2.7.1
+    process: ^0.11.10
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-hot-toast: ^2.4.0
+    typescript: ^4.8.4
+    usehooks-ts: ^2.7.2
+    util: ^0.12.4
+  peerDependencies:
+    next: ^12.3.1
+    phosphor-react: ^1.4.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 1ecaa58ad9e19f36178411726a1181c433f70a1fe35447d60bd9850fb6fceb818a79c3dd408caa0e1b339521726b7deced683f3867d481207c0ade388e320c90
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^1.3.2":
   version: 1.3.2
   resolution: "@eslint/eslintrc@npm:1.3.2"
@@ -2629,22 +2661,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typeform/embed-react@npm:^1.21.0":
-  version: 1.21.0
-  resolution: "@typeform/embed-react@npm:1.21.0"
+"@typeform/embed-react@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@typeform/embed-react@npm:2.0.0"
   dependencies:
-    "@typeform/embed": 1.38.0
+    "@typeform/embed": 2.0.0
     fast-deep-equal: ^3.1.3
   peerDependencies:
     react: ">=16.8.0"
-  checksum: 1d91cb797dfe7b27e08798f7a571f34724a8f56bf9c89a8ed2a454820efce2de4db44fd4a18f446573784c28f79478f269c1719500e1b332e7ea34ea77ffa185
+  checksum: 8520bb10442c6f1a9e094cced8e24ecc8428b2dd6f169e991a527199f4641c9b7cc3601cf2a1ff17cecdb97c0b9b744a0cf55c0565da627e75e1f3b04d9676e0
   languageName: node
   linkType: hard
 
-"@typeform/embed@npm:1.38.0":
-  version: 1.38.0
-  resolution: "@typeform/embed@npm:1.38.0"
-  checksum: 41115134e5cee28f5e031181b4525c7885d23707699cf183921110262717c7544bfd101428267410b812914c235687783e373ce98e37bdc447d72f8177663597
+"@typeform/embed@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@typeform/embed@npm:2.0.0"
+  checksum: c018ef1a0fe19613fc8b6667fc32d3777bb27e0da0e3cc1fa9d2161d29a2f7c1d43279540efff3c42993827e3a978e9f24fd804f49854f8158bb7f68d732de81
   languageName: node
   linkType: hard
 
@@ -2676,10 +2708,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.7.23":
-  version: 18.7.23
-  resolution: "@types/node@npm:18.7.23"
-  checksum: 2c8df0830d8345e5cd1ca17feb9cf43fa667aae749888e0a068c5c1b35eaedd2f9b24ed987a0758078395edf7a03681e5e0b7790a518ff7afe1ff6d8459f7b4a
+"@types/node@npm:*, @types/node@npm:^18.8.2":
+  version: 18.8.2
+  resolution: "@types/node@npm:18.8.2"
+  checksum: b7c74dea0e835fb7faf69b4a2e87d43c1d228d88adacdff464d9e92d18a0b43bec6147b9eb3287650ac75fe5af730c53391869d02175e6b032dcb99ae2f54c92
   languageName: node
   linkType: hard
 
@@ -2903,39 +2935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@withcosmo/design-system@npm:^2.2.9":
-  version: 2.2.9
-  resolution: "@withcosmo/design-system@npm:2.2.9"
-  dependencies:
-    "@stitches/react": ^1.2.8
-    "@types/node": ^18.7.23
-    "@types/react": ^18.0.21
-    eslint: ^8.24.0
-    eslint-config-dolmios: ^1.1.0
-    eslint-config-next: ^12.3.1
-    microbundle: ^0.15.1
-    next: ^12.3.1
-    parcel: ^2.7.0
-    path-browserify: ^1.0.1
-    phosphor-react: ^1.4.1
-    prettier: ^2.7.1
-    process: ^0.11.10
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-hot-toast: ^2.4.0
-    typescript: ^4.8.4
-    usehooks-ts: ^2.7.1
-    util: ^0.12.4
-  peerDependencies:
-    next: ^12.3.1
-    phosphor-react: ^1.4.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  checksum: 2871f284454715ffe6b2b445b5004b809a61b744636798c5e3e434e814125b9298fcba8de528e4ca7b7e6dbfbb0a7971a3150f5d6bb550d1425849d81a4c3b0d
-  languageName: node
-  linkType: hard
-
-"abbrev@npm:1":
+"abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
   checksum: a4a97ec07d7ea112c517036882b2ac22f3109b7b19077dc656316d07d308438aac28e4d9746dc4d84bf6b1e75b4a7b0a5f3cb30592419f128ca9a8cee3bcfa17
@@ -3420,9 +3420,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001400, caniuse-lite@npm:^1.0.30001407":
-  version: 1.0.30001414
-  resolution: "caniuse-lite@npm:1.0.30001414"
-  checksum: 97210cfd15ded093b20c33d35bef9711a88402c3345411dad420c991a41a3e38ad17fd66721e8334c86e9b2e4aa2c1851d3631f1441afb73b92d93b2b8ca890d
+  version: 1.0.30001416
+  resolution: "caniuse-lite@npm:1.0.30001416"
+  checksum: 4d93f449aeb3527877892647beb53a01b71eef6d63907b65ed2f6d07b2fb2a9b739ebbb60adc02baa16df26fba81be9f207312159a1cf864251ad79b884db0a3
   languageName: node
   linkType: hard
 
@@ -3488,14 +3488,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cliui@npm:^7.0.2":
-  version: 7.0.4
-  resolution: "cliui@npm:7.0.4"
+"cliui@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "cliui@npm:8.0.1"
   dependencies:
     string-width: ^4.2.0
-    strip-ansi: ^6.0.0
+    strip-ansi: ^6.0.1
     wrap-ansi: ^7.0.0
-  checksum: ce2e8f578a4813806788ac399b9e866297740eecd4ad1823c27fd344d78b22c5f8597d548adbcc46f0573e43e21e751f39446c5a5e804a12aace402b7a315d7f
+  checksum: 79648b3b0045f2e285b76fb2e24e207c6db44323581e421c3acbd0e86454cba1b37aea976ab50195a49e7384b871e6dfb2247ad7dec53c02454ac6497394cb56
   languageName: node
   linkType: hard
 
@@ -3608,11 +3608,11 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.25.1":
-  version: 3.25.3
-  resolution: "core-js-compat@npm:3.25.3"
+  version: 3.25.5
+  resolution: "core-js-compat@npm:3.25.5"
   dependencies:
     browserslist: ^4.21.4
-  checksum: f35f4f706695e542bf8bb35cff9b5865105a8c5c012409d703852ad7c9c43ace2371ec8b56d9f6629760dbb4a49529553e57eca5308522cbeedb44b97be8a2db
+  checksum: 30686b750d675b685426ee25e41e30b83aa05ff7b79def94b457529d05c1ad123cd4d0b70d9162b077a15dc9f6f177ee997d846d0a3324176dd3c504e917309c
   languageName: node
   linkType: hard
 
@@ -3975,9 +3975,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.251":
-  version: 1.4.269
-  resolution: "electron-to-chromium@npm:1.4.269"
-  checksum: 6ec25565588c374016a9af4150c813d5139f4eb10fcfeb3dcb4541603bfa98933d4fa595ef3ccf96dd2da6478d985b48562b976462ca6f32c6d0b095201c6245
+  version: 1.4.272
+  resolution: "electron-to-chromium@npm:1.4.272"
+  checksum: 61774a483072bf96d6badd653a8a094d2aa56d9ec7f6475dfbb3540d2c80fe3f21bdbaa9cecf8b200174c43f63ec4ba2dc56c335af006b38c0a844be9a23e5f7
   languageName: node
   linkType: hard
 
@@ -5156,10 +5156,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ihm@workspace:."
   dependencies:
-    "@typeform/embed-react": ^1.21.0
-    "@types/node": ^18.7.23
+    "@cosmoau/ui": ^1.0.0
+    "@typeform/embed-react": ^2.0.0
+    "@types/node": ^18.8.2
     "@types/react": ^18.0.21
-    "@withcosmo/design-system": ^2.2.9
     dayjs: ^1.11.5
     eslint: ^8.24.0
     eslint-config-dolmios: ^1.1.0
@@ -6368,14 +6368,14 @@ __metadata:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 9.1.0
-  resolution: "node-gyp@npm:9.1.0"
+  version: 9.2.0
+  resolution: "node-gyp@npm:9.2.0"
   dependencies:
     env-paths: ^2.2.0
     glob: ^7.1.4
     graceful-fs: ^4.2.6
     make-fetch-happen: ^10.0.3
-    nopt: ^5.0.0
+    nopt: ^6.0.0
     npmlog: ^6.0.0
     rimraf: ^3.0.2
     semver: ^7.3.5
@@ -6383,7 +6383,7 @@ __metadata:
     which: ^2.0.2
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 1437fa4a879b5b9010604128e8da8609b57c66034262087539ee04a8b764b8436af2be01bab66f8fc729a3adba2dcc21b10a32b9f552696c3fa8cd657d134fc4
+  checksum: 91f0589eabbd37f0d4e3fe9918f1f9e25afc707f6e107f0133be19c5aac62e731d92abdc2b106258665a4487b18cc2878d3fcd3dc2c6cffd68da1cb2a5ccf450
   languageName: node
   linkType: hard
 
@@ -6394,14 +6394,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nopt@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "nopt@npm:5.0.0"
+"nopt@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "nopt@npm:6.0.0"
   dependencies:
-    abbrev: 1
+    abbrev: ^1.0.0
   bin:
     nopt: bin/nopt.js
-  checksum: d35fdec187269503843924e0114c0c6533fb54bbf1620d0f28b4b60ba01712d6687f62565c55cc20a504eff0fbe5c63e22340c3fad549ad40469ffb611b04f2f
+  checksum: 82149371f8be0c4b9ec2f863cc6509a7fd0fa729929c009f3a58e4eb0c9e4cae9920e8f1f8eb46e7d032fec8fb01bede7f0f41a67eb3553b7b8e14fa53de1dac
   languageName: node
   linkType: hard
 
@@ -7233,13 +7233,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.2.1":
-  version: 8.4.16
-  resolution: "postcss@npm:8.4.16"
+  version: 8.4.17
+  resolution: "postcss@npm:8.4.17"
   dependencies:
     nanoid: ^3.3.4
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: 10eee25efd77868036403858577da0cefaf2e0905feeaba5770d5438ccdddba3d01cba8063e96b8aac4c6daa0ed413dd5ae0554a433a3c4db38df1d134cffc1f
+  checksum: a6d9096dd711e17f7b1d18ff5dcb4fdedf3941d5a3dc8b0e4ea873b8f31972d57f73d6da9a8aed7ff389eb52190ed34f6a94f299a7f5ddc68b08a24a48f77eb9
   languageName: node
   linkType: hard
 
@@ -7817,7 +7817,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.3.7":
+"semver@npm:^7.3.5":
+  version: 7.3.8
+  resolution: "semver@npm:7.3.8"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.3.7":
   version: 7.3.7
   resolution: "semver@npm:7.3.7"
   dependencies:
@@ -7904,12 +7915,12 @@ __metadata:
   linkType: hard
 
 "socks@npm:^2.6.2":
-  version: 2.7.0
-  resolution: "socks@npm:2.7.0"
+  version: 2.7.1
+  resolution: "socks@npm:2.7.1"
   dependencies:
     ip: ^2.0.0
     smart-buffer: ^4.2.0
-  checksum: 0b5d94e2b3c11e7937b40fc5dac1e80d8b92a330e68c51f1d271ce6980c70adca42a3f8cd47c4a5769956bada074823b53374f2dc5f2ea5c2121b222dec6eadf
+  checksum: 259d9e3e8e1c9809a7f5c32238c3d4d2a36b39b83851d0f573bfde5f21c4b1288417ce1af06af1452569cd1eb0841169afd4998f0e04ba04656f6b7f0e46d748
   languageName: node
   linkType: hard
 
@@ -8168,8 +8179,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.0.0, terser@npm:^5.2.0, terser@npm:^5.7.0":
-  version: 5.15.0
-  resolution: "terser@npm:5.15.0"
+  version: 5.15.1
+  resolution: "terser@npm:5.15.1"
   dependencies:
     "@jridgewell/source-map": ^0.3.2
     acorn: ^8.5.0
@@ -8177,7 +8188,7 @@ __metadata:
     source-map-support: ~0.5.20
   bin:
     terser: bin/terser
-  checksum: b2358c989fcb76b4a1c265f60e175c950d3f776e5f619a9f58f54e8d2d792cd6b4cca86071834075f3b9943556d695357bafdd4ee2390de2fc9fd96ba3efa8c8
+  checksum: 9880a1e0956983a1ce5de204ea35121c0009fa41d582a6904ae850e1953a1a2cc021168439565280c5a8eee67c85a874175627e24989b046c7a72589b81c3979
   languageName: node
   linkType: hard
 
@@ -8383,8 +8394,8 @@ __metadata:
   linkType: hard
 
 "update-browserslist-db@npm:^1.0.9":
-  version: 1.0.9
-  resolution: "update-browserslist-db@npm:1.0.9"
+  version: 1.0.10
+  resolution: "update-browserslist-db@npm:1.0.10"
   dependencies:
     escalade: ^3.1.1
     picocolors: ^1.0.0
@@ -8392,7 +8403,7 @@ __metadata:
     browserslist: ">= 4.21.0"
   bin:
     browserslist-lint: cli.js
-  checksum: f625899b236f6a4d7f62b56be1b8da230c5563d1fef84d3ef148f2e1a3f11a5a4b3be4fd7e3703e51274c116194017775b10afb4de09eb2c0d09d36b90f1f578
+  checksum: 12db73b4f63029ac407b153732e7cd69a1ea8206c9100b482b7d12859cd3cd0bc59c602d7ae31e652706189f1acb90d42c53ab24a5ba563ed13aebdddc5561a0
   languageName: node
   linkType: hard
 
@@ -8414,13 +8425,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"usehooks-ts@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "usehooks-ts@npm:2.7.1"
+"usehooks-ts@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "usehooks-ts@npm:2.7.2"
   peerDependencies:
     react: ^16.8.0  || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
-  checksum: 316e96c141c129e5b592a4cfd9e803f62b56d6b22ed76534cc9e95a8d9277d157c4915d0460ae6ca634462ad7c5ef4c41cd439e061ed3932a0563a968a07e221
+  checksum: c4edfc53aa60f6c107c8724dbd60c06b5888f1905091797c1639255924dd45ea337355c5d51e4826f7f07c0167742f9f2d3bf23e11fb6d9b15ad7abe01d1d51d
   languageName: node
   linkType: hard
 
@@ -8574,17 +8585,17 @@ __metadata:
   linkType: hard
 
 "yargs@npm:^17.5.1":
-  version: 17.5.1
-  resolution: "yargs@npm:17.5.1"
+  version: 17.6.0
+  resolution: "yargs@npm:17.6.0"
   dependencies:
-    cliui: ^7.0.2
+    cliui: ^8.0.1
     escalade: ^3.1.1
     get-caller-file: ^2.0.5
     require-directory: ^2.1.1
     string-width: ^4.2.3
     y18n: ^5.0.5
     yargs-parser: ^21.0.0
-  checksum: 00d58a2c052937fa044834313f07910fd0a115dec5ee35919e857eeee3736b21a4eafa8264535800ba8bac312991ce785ecb8a51f4d2cc8c4676d865af1cfbde
+  checksum: 604bdb4a6395a870540d2f3fea083c8e28441f12da8fd05b172b1e68480f00ed73d76be4a05fac19de9bf55ec7729b41e81cf555cccaed700aa192e4fff64872
   languageName: node
   linkType: hard
 

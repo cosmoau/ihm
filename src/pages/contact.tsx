@@ -5,7 +5,7 @@
  */
 
 import { Widget } from '@typeform/embed-react';
-import { Stack, Text, View, Box, Badge } from '@withcosmo/design-system';
+import { Stack, Text, View, Box, Badge } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import { EnvelopeSimple, Phone } from 'phosphor-react';
 export default function Contact(): JSX.Element {

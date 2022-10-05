@@ -4,7 +4,7 @@
  * @format
  */
 
-import { Stack, Text, View, Box } from '@withcosmo/design-system';
+import { Stack, Text, View, Box } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 

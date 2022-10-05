@@ -1,15 +1,6 @@
 /** @format */
 
-import {
-  Stack,
-  Text,
-  View,
-  Box,
-  Badge,
-  Button,
-  Image,
-  Avatar,
-} from '@withcosmo/design-system';
+import { Stack, Text, View, Box, Badge, Button, Image, Avatar } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { Heart } from 'phosphor-react';

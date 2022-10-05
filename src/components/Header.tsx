@@ -1,6 +1,6 @@
 /** @format */
 
-import { View, Stack, Button, Dropdown } from '@withcosmo/design-system';
+import { View, Stack, Button, Dropdown } from '@cosmoau/ui';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
