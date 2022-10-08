@@ -36,7 +36,8 @@ export default function Document(): JSX.Element {
           src='https://api.pirsch.io/pirsch.js'
           id='pirschjs'
           data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD'
-        />{' '}
+        />
+        <script async src='https://embed.small.chat/TPZDU8ELRC046EH1B7LY.js' />
       </body>
     </Html>
   );
@@ -58,9 +59,6 @@ Document.getInitialProps = async function getInitialProps(ctx: any): Promise<any
         {results.styles}
         <style>
           {`
-    #Smallchat {
-        z-index: 10 !important;
-    }
             html {
               font-size: 62.5%;
               position: relative;

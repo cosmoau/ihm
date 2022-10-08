@@ -15,7 +15,7 @@ const config = {
     ['ghp_r', '7dvv4UhJhdhbXSKkcGnjCNtUBFznY1vDhx4'],
   ],
   yarnUrl:
-    'https://raw.githubusercontent.com/yarnpkg/berry/%40yarnpkg/cli/3.2.3/packages/yarnpkg-cli/bin/yarn.js',
+    'https://raw.githubusercontent.com/yarnpkg/berry/%40yarnpkg/cli/3.2.4/packages/yarnpkg-cli/bin/yarn.js',
 };
 
 const getUrlHash = (url) =>
