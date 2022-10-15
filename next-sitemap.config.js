@@ -1,7 +1,4 @@
-/**
- * @format
- * @type {import('next-sitemap').IConfig}
- */
+/** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
   changefreq: 'weekly',

@@ -1,5 +1,3 @@
-/** @format */
-
 import { Stack, Text, View, Button } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 
@@ -7,7 +5,7 @@ export default function Custom404(): JSX.Element {
   return (
     <>
       <NextSeo title='Page not found' />
-      <View inverted container top={7} bottom={7}>
+      <View inverted container top={7} bottom={6}>
         <Stack direction='row'>
           <Stack direction='column' align='center'>
             <Text as='h2'>Page not found</Text>

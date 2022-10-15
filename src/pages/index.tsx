@@ -1,9 +1,7 @@
-/** @format */
-
 import { Stack, Text, View, Box, Badge, Button, Image, Avatar } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
-import { Heart } from 'phosphor-react';
+import { Heart, HouseSimple, Key } from 'phosphor-react';
 
 export default function Home(): JSX.Element {
   const locations = [
@@ -52,28 +50,30 @@ export default function Home(): JSX.Element {
   return (
     <>
       <NextSeo title='ihostme by Cosmo' titleTemplate='%s' />
-      <View inverted container top={7} bottom={7}>
-        <Stack direction='row'>
+      <View inverted container top={6} bottom={6}>
+        <Stack direction='row' bottom={3}>
           <Stack
             direction='column'
             width={50}
-            top={6}
-            bottom={6}
+            top={7}
+            bottom={7}
             css={{
               paddingRight: '$7',
 
               phone: {
+                paddingBottom: '$6',
                 paddingRight: '$3',
                 paddingTop: 0,
                 textAlign: 'center',
               },
             }}>
-            <Text as='h1'>Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
+            <Text as='h1'>
+              Airbnb, Stayz, Booking.com and Homes & Villas by Marriott Management
+            </Text>
             <Text as='h5' accent bottom={5}>
-              <b>ihostme® by Cosmo</b> is the go-to team for managing the rental of your
-              holiday home and all your hosting and short term property management needs.
-              We maximise your occupancy by listing your property on the top booking
-              sites.
+              We are the go-to team for managing the rental of your holiday home and all
+              your hosting and shortterm property management needs. We maximise your
+              occupancy by listing your property on the top booking sites.
             </Text>
             <Link href='/start'>
               <a>
@@ -92,7 +92,7 @@ export default function Home(): JSX.Element {
               },
             }}>
             <Image
-              src='/images/misc-01.jpg'
+              src='/images/misc-07.jpg'
               alt='airbnb'
               layout='fill'
               borderRadius={3}
@@ -106,7 +106,16 @@ export default function Home(): JSX.Element {
         <Stack direction='row'>
           <Stack direction='column' width={60} offset={20} align='center'>
             <a href='https://cosmogroup.io'>
-              <Badge theme='blue' icon={<Heart />}>
+              <Badge
+                theme='blue'
+                icon={
+                  <Avatar
+                    css={{ marginTop: '-0.1rem', verticalAlign: 'middle' }}
+                    image='/images/cosmo.png'
+                    fallback=''
+                    width={20}
+                  />
+                }>
                 ihostme is now part of Cosmo
               </Badge>
             </a>
@@ -168,8 +177,11 @@ export default function Home(): JSX.Element {
       <View container top={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={33}>
-            <Box image='/images/misc-02.jpg'>
-              <Text as='h4'>Your One Stop Hosting Shop</Text>
+            <Box theme='fill'>
+              <HouseSimple size={30} />
+              <Text as='h4' top={4}>
+                Your One Stop Hosting Shop
+              </Text>
               <Text as='h6'>
                 We understand that your vacation rental is more than just an
                 investment—it’s your home away from home.
@@ -189,8 +201,11 @@ export default function Home(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box image='/images/misc-03.jpg'>
-              <Text as='h4'>Simple, Easy Pricing</Text>
+            <Box theme='fill'>
+              <Key size={30} />
+              <Text as='h4' top={4}>
+                Simple, Easy Pricing
+              </Text>
               <Text as='h6'>
                 Our standard management fee is 20% + GST for fully hosted clients, or 14%
                 + GST for those who already have their own housekeeping and maintenance
@@ -210,8 +225,11 @@ export default function Home(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box image='/images/misc-04.jpg'>
-              <Text as='h4'>Your Holiday Home in Good Hands</Text>
+            <Box theme='fill'>
+              <Heart size={30} />
+              <Text as='h4' top={4}>
+                Your Holiday Home in Good Hands
+              </Text>
               <Text as='h6'>
                 We&apos;ve developed an intuitive app that gives you full transparency of
                 bookings and property performance.

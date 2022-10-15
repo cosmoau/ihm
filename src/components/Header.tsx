@@ -1,5 +1,3 @@
-/** @format */
-
 import { View, Stack, Button, Dropdown } from '@cosmoau/ui';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,7 +7,7 @@ export default function Header(): JSX.Element {
   const router = useRouter();
 
   return (
-    <View inverted container top={4}>
+    <View inverted top={4}>
       <Stack direction='row' flex='center'>
         <Stack direction='column' width={25} widthTablet={40} widthPhone={50}>
           <Link href='/'>
@@ -22,8 +20,8 @@ export default function Header(): JSX.Element {
                 <Image
                   src='/images/logo.png'
                   alt='logo'
-                  width={150 * 0.66}
-                  height={68 * 0.66}
+                  width={150 * 0.55}
+                  height={68 * 0.55}
                 />
               </Stack>
             </a>
@@ -38,8 +36,8 @@ export default function Header(): JSX.Element {
           widthTablet={60}
           widthPhone={50}>
           <a href='https://v1.cosmogroup.io' target='_blank' rel='noreferrer'>
-            <Button name='sign-in' inline={4} ariaLabel='Sign In' theme='fill'>
-              Sign In
+            <Button name='sign-in' inline={4} ariaLabel='Owners' theme='fill'>
+              Owners
             </Button>
           </a>
           <Dropdown
@@ -96,7 +94,10 @@ export default function Header(): JSX.Element {
               <Button
                 theme={router.pathname === '/testimonials' ? 'fill' : 'minimal'}
                 css={{
-                  opacity: router.pathname === '/testimonials' ? 0.6 : 1,
+                  color:
+                    router.pathname === '/testimonials'
+                      ? '$accent !important'
+                      : 'inherit',
                 }}>
                 Testimonials
               </Button>
@@ -107,9 +108,22 @@ export default function Header(): JSX.Element {
               <Button
                 theme={router.pathname === '/team' ? 'fill' : 'minimal'}
                 css={{
-                  opacity: router.pathname === '/team' ? 0.6 : 1,
+                  color: router.pathname === '/team' ? '$accent !important' : 'inherit',
                 }}>
                 Team
+              </Button>
+            </a>
+          </Link>
+
+          <Link href='/locations'>
+            <a>
+              <Button
+                theme={router.pathname === '/locations' ? 'fill' : 'minimal'}
+                css={{
+                  color:
+                    router.pathname === '/locations' ? '$accent !important' : 'inherit',
+                }}>
+                Locations
               </Button>
             </a>
           </Link>
@@ -118,20 +132,10 @@ export default function Header(): JSX.Element {
               <Button
                 theme={router.pathname === '/contact' ? 'fill' : 'minimal'}
                 css={{
-                  opacity: router.pathname === '/contact' ? 0.6 : 1,
+                  color:
+                    router.pathname === '/contact' ? '$accent !important' : 'inherit',
                 }}>
                 Contact
-              </Button>
-            </a>
-          </Link>
-          <Link href='/locations'>
-            <a>
-              <Button
-                theme={router.pathname === '/locations' ? 'fill' : 'minimal'}
-                css={{
-                  opacity: router.pathname === '/locations' ? 0.6 : 1,
-                }}>
-                Locations
               </Button>
             </a>
           </Link>
@@ -145,8 +149,8 @@ export default function Header(): JSX.Element {
             hidden: 'tablet',
           }}>
           <a href='https://v1.cosmogroup.io' target='_blank' rel='noreferrer'>
-            <Button name='sign-in' inline={4} ariaLabel='Sign In' theme='fill'>
-              Sign In
+            <Button name='sign-in' inline={4} ariaLabel='Owners' theme='fill'>
+              Owners
             </Button>
           </a>
           <Link href='/start'>
@@ -156,7 +160,7 @@ export default function Header(): JSX.Element {
                 inline='auto'
                 theme='solid'
                 ariaLabel='Get Started'>
-                Join Cosmo
+                Get Started
               </Button>
             </a>
           </Link>

@@ -1,9 +1,3 @@
-/**
- * /* eslint-disable @typescript-eslint/no-explicit-any
- *
- * @format
- */
-
 import { Stack, Text, View, Box } from '@cosmoau/ui';
 import { Widget } from '@typeform/embed-react';
 import { NextSeo } from 'next-seo';
@@ -18,9 +12,9 @@ export default function Start(): JSX.Element {
           router.query.city ? `${router.query.city} Property Management` : 'Get Started'
         }
       />
-      <View inverted container top={7} bottom={8}>
+      <View inverted container top={7} bottom={7}>
         <Stack direction='row'>
-          <Stack direction='column' align='center'>
+          <Stack direction='column' width={50}>
             <Text as='h2'>
               {router.query.city
                 ? `List your home in ${router.query.city}`
@@ -35,20 +29,11 @@ export default function Start(): JSX.Element {
       </View>
       <View inverted container bottom={8}>
         <Stack direction='row' flex='stretch'>
-          <Stack
-            direction='column'
-            width={80}
-            offset={10}
-            widthTablet={100}
-            offsetTablet={0}
-            align='center'>
+          <Stack direction='column'>
             <Box
               theme='fill'
               css={{
-                '*': {
-                  fontSize: '$h1 !important',
-                },
-                'borderRadius': '$3',
+                borderRadius: '$3',
               }}>
               <Widget
                 id='Va37c3wL'

@@ -1,8 +1,4 @@
-/** @format */
-
-import { View, Image, Button, Stack, Text, Badge } from '@cosmoau/ui';
-import dayjs from 'dayjs';
-import Link from 'next/link';
+import { View, Image, Button, Stack, Text, Badge, Avatar } from '@cosmoau/ui';
 import { useRouter } from 'next/router';
 import { ChatCircle, Phone } from 'phosphor-react';
 
@@ -22,7 +18,7 @@ export default function Footer(): JSX.Element {
                 },
               }}>
               <Image
-                src='/images/misc-05.jpg'
+                src='/images/misc-06.jpg'
                 alt='airbnb'
                 layout='fill'
                 borderRadius={3}
@@ -44,13 +40,13 @@ export default function Footer(): JSX.Element {
               <Text as='h3'>
                 Let us help you unlock your property’s earning potential today
               </Text>
-              <Text as='h5' bottom={3}>
+              <Text as='h5'>
                 ihostme® manage properties with potential to earn in excess of $50,000
                 gross income per year through short term rentals. Please contact us if
                 your property is available for a minimum of 140 nights per year and we
                 will provide a free estimate.
               </Text>
-              <Stack bottom={6}>
+              <Stack top={6}>
                 <a href='mailto:contact@cosmogroup.io'>
                   <Badge
                     theme='border'
@@ -58,7 +54,8 @@ export default function Footer(): JSX.Element {
                     icon={<ChatCircle />}
                     css={{
                       phone: {
-                        marginTop: '$2',
+                        marginBottom: '$3',
+                        marginTop: '$3',
                       },
                     }}>
                     contact@cosmogroup.io
@@ -70,110 +67,65 @@ export default function Footer(): JSX.Element {
                   icon={<Phone />}
                   css={{
                     phone: {
-                      marginTop: '$2',
+                      marginBottom: '$3',
+                      marginTop: '$3',
                     },
                   }}>
                   <a href='tel:+61370355800'>(03) 7035 5800</a>
                 </Badge>
               </Stack>
-
-              <Button ariaLabel='Get an estimate' name='estimate'>
-                <Link href='/start'>
-                  <a>Get an estimate</a>
-                </Link>
-              </Button>
             </Stack>
           </Stack>
         </View>
       )}
 
-      <View
-        inverted
-        container
-        top={5}
-        bottom={5}
-        css={{
-          zIndex: '1 !important',
-        }}>
-        <Stack
-          direction='row'
-          flex='center'
-          css={{
-            zIndex: '1 !important',
-          }}>
-          <Stack
-            direction='column'
-            width={40}
-            css={{
-              hidden: 'phone',
-            }}>
+      <View inverted container top={6} bottom={6}>
+        <Stack direction='row' css={{ visible: 'phone' }} bottom={6}>
+          <Stack direction='column'>
+            <Text as='h3'>ihostme</Text>
             <Text as='h6' accent>
-              ihostme® by Cosmo
-            </Text>
-          </Stack>
-          <Stack
-            direction='column'
-            width={60}
-            align='right'
-            css={{
-              phone: {
-                textAlign: 'center',
-              },
-            }}>
-            <Text as='h6' inline={4} accent>
-              <a
-                href='https://cosmogroup.io/legal/privacy'
-                target='_blank'
-                rel='noreferrer'>
-                Privacy Policy
-              </a>
-            </Text>
-            <Text as='h6' inline={4} accent>
-              <a
-                href='https://cosmogroup.io/legal/service'
-                target='_blank'
-                rel='noreferrer'>
-                Terms of Service
-              </a>
-            </Text>
-            <Text as='h6' inline={4} accent>
-              <a
-                href='https://cosmogroup.io/legal/occupant'
-                target='_blank'
-                rel='noreferrer'>
-                Occupancy Policy
-              </a>
+              The go-to team you can trust to handle your short-term rental hosting and
+              holiday home management needs.
             </Text>
           </Stack>
         </Stack>
-        <Stack
-          css={{
-            opacity: 0.42,
-          }}
-          direction='row'
-          top={6}>
-          <Stack align='center' direction='column'>
-            <Text
-              accent
-              as='small'
-              bottom={2}
-              css={{ marginBottom: '0 !important', visible: 'phone' }}>
-              © {dayjs().format('YYYY')} Cosmo. Level 22, 120 Spencer St, Melbourne,
-              Victoria 3000, Australia
-            </Text>
-            <Text accent as='small' css={{ fontSize: '1.1rem' }}>
-              We are not financial advisors, lawyers or accountants. Always double-check
-              any piece of information before taking action. We partner with{' '}
+
+        <Stack direction='row' flex='center'>
+          <Stack direction='column' width={40} widthPhone={60}>
+            <Stack bottom={5}>
               <Text
-                as='span'
+                as='h3'
+                inline={5}
                 css={{
-                  borderBottom: '0.1rem solid $border',
-                }}
-                inline={'auto'}>
-                <a href='https://planare.dev'>Planare LLC</a>
-              </Text>{' '}
-              for our software and data needs.
+                  hidden: 'phone',
+                  verticalAlign: 'middle',
+                }}>
+                ihostme
+              </Text>
+
+              <Badge
+                icon={
+                  <Avatar
+                    image='/images/cosmo.png'
+                    width={20}
+                    fallback=''
+                    css={{
+                      marginTop: '-0.1rem',
+                      verticalAlign: 'middle',
+                    }}
+                  />
+                }>
+                Proudly part of Cosmo
+              </Badge>
+            </Stack>
+            <Text as='h6' accent css={{ hidden: 'phone' }}>
+              The go-to team you can trust to handle your short-term rental hosting and
+              holiday home management needs.
             </Text>
+            <a href='https://cosmogroup.io'></a>
+          </Stack>
+          <Stack direction='column' width={60} widthPhone={40} align='right'>
+            <Button>Privacy Policy</Button>
           </Stack>
         </Stack>
       </View>

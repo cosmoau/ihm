@@ -1,9 +1,3 @@
-/**
- * /* eslint-disable import/no-unresolved
- *
- * @format
- */
-
 import { Provider } from '@cosmoau/ui';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';

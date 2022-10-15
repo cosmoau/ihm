@@ -1,9 +1,3 @@
-/**
- * /* eslint-disable @typescript-eslint/no-explicit-any
- *
- * @format
- */
-
 import { Stack, Text, View, Box, Avatar, Badge } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 
@@ -11,9 +5,9 @@ export default function Testimonials(): JSX.Element {
   return (
     <>
       <NextSeo title='Customer Testimonials' />
-      <View inverted container top={7} bottom={7}>
+      <View inverted container top={7} bottom={6}>
         <Stack direction='row'>
-          <Stack direction='column' align='center'>
+          <Stack direction='column'>
             <Text as='h2'>Customer Testimonials</Text>
           </Stack>
         </Stack>
@@ -21,7 +15,7 @@ export default function Testimonials(): JSX.Element {
       <View container top={7}>
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={50}>
-            <Box>
+            <Box theme='fill'>
               <Stack bottom={5}>
                 <Stack
                   css={{
@@ -43,15 +37,8 @@ export default function Testimonials(): JSX.Element {
                     display: 'inline-block',
                     verticalAlign: 'middle',
                   }}>
-                  <Text
-                    as='h3'
-                    css={{
-                      marginBottom: '0.4rem !important',
-                      paddingBottom: '0',
-                    }}>
-                    The Woodville, Ocean Grove
-                  </Text>
-                  <Badge>Josie Pileio and Rob Farrugia, Owners</Badge>
+                  <Text as='h4'>The Woodville, Ocean Grove</Text>
+                  <Badge theme='border'>Josie Pileio and Rob Farrugia, Owners</Badge>
                 </Stack>
               </Stack>
               <Text as='h6' top={4}>
@@ -87,7 +74,7 @@ export default function Testimonials(): JSX.Element {
                 paddingTop: '$5',
               },
             }}>
-            <Box>
+            <Box theme='fill'>
               <Stack bottom={5}>
                 <Stack
                   css={{
@@ -109,15 +96,8 @@ export default function Testimonials(): JSX.Element {
                     display: 'inline-block',
                     verticalAlign: 'middle',
                   }}>
-                  <Text
-                    as='h3'
-                    css={{
-                      marginBottom: '0.4rem !important',
-                      paddingBottom: '0',
-                    }}>
-                    Blue Waters Retreat, Ocean Grove
-                  </Text>
-                  <Badge>Lorien and Dean Platt, Owners</Badge>
+                  <Text as='h4'>Blue Waters Retreat, Ocean Grove</Text>
+                  <Badge theme='border'>Lorien and Dean Platt, Owners</Badge>
                 </Stack>
               </Stack>
 

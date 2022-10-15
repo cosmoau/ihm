@@ -1,18 +1,12 @@
-/**
- * /* eslint-disable @typescript-eslint/explicit-function-return-type
- *
- * @format
- */
-
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-
   images: {
     domains: ['images.unsplash.com'],
   },
+  reactStrictMode: true,
+
+  swcMinify: true,
 };
 
 module.exports = nextConfig;
