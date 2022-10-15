@@ -79,7 +79,7 @@ export default function Footer(): JSX.Element {
         </View>
       )}
 
-      <View inverted container top={6} bottom={6}>
+      <View inverted container top={6} bottom={6} css={{ zIndex: 201 }}>
         <Stack direction='row' css={{ visible: 'phone' }} bottom={6}>
           <Stack direction='column'>
             <Text as='h3'>ihostme</Text>
@@ -92,7 +92,13 @@ export default function Footer(): JSX.Element {
 
         <Stack direction='row' flex='center'>
           <Stack direction='column' width={40} widthPhone={60}>
-            <Stack bottom={5}>
+            <Stack
+              bottom={5}
+              css={{
+                phone: {
+                  paddingBottom: '0 !important',
+                },
+              }}>
               <Text
                 as='h3'
                 inline={5}

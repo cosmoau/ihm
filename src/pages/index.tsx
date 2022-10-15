@@ -70,7 +70,7 @@ export default function Home(): JSX.Element {
             <Text as='h1'>Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
             <Text as='h5' accent bottom={5}>
               We are your local experts for managing the rental of your holiday home and
-              all your hosting and shor-tterm property management needs. We maximise your
+              all your hosting and short-term property management needs. We maximise your
               occupancy by listing your property on the top booking sites.
             </Text>
             <Link href='/start'>
