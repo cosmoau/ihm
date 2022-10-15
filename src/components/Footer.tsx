@@ -122,10 +122,11 @@ export default function Footer(): JSX.Element {
               The go-to team you can trust to handle your short-term rental hosting and
               holiday home management needs.
             </Text>
-            <a href='https://cosmogroup.io'></a>
           </Stack>
           <Stack direction='column' width={60} widthPhone={40} align='right'>
-            <Button>Privacy Policy</Button>
+            <a href='https://cosmogroup.io/legal' target='_blank' rel='noreferrer'>
+              <Button>Privacy Policy</Button>
+            </a>
           </Stack>
         </Stack>
       </View>
