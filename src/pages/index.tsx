@@ -67,9 +67,7 @@ export default function Home(): JSX.Element {
                 textAlign: 'center',
               },
             }}>
-            <Text as='h1'>
-              Airbnb, Stayz, Booking.com and Homes & Villas by Marriott Management
-            </Text>
+            <Text as='h1'>Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
             <Text as='h5' accent bottom={5}>
               We are the go-to team for managing the rental of your holiday home and all
               your hosting and shortterm property management needs. We maximise your
