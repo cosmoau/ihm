@@ -17,13 +17,7 @@ export default function Footer(): JSX.Element {
                   height: '30rem',
                 },
               }}>
-              <Image
-                src='/images/misc-06.jpg'
-                alt='airbnb'
-                layout='fill'
-                borderRadius={3}
-                objectFit='cover'
-              />
+              <Image src='/images/misc-06.jpg' alt='airbnb' fill borderRadius={3} />
             </Stack>
             <Stack
               top={6}

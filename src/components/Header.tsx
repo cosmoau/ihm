@@ -11,20 +11,18 @@ export default function Header(): JSX.Element {
       <Stack direction='row' flex='center'>
         <Stack direction='column' width={25} widthTablet={40} widthPhone={50}>
           <Link href='/'>
-            <a>
-              <Stack
-                css={{
-                  display: 'inline-flex',
-                  verticalAlign: 'middle',
-                }}>
-                <Image
-                  src='/images/logo.png'
-                  alt='logo'
-                  width={150 * 0.55}
-                  height={68 * 0.55}
-                />
-              </Stack>
-            </a>
+            <Stack
+              css={{
+                display: 'inline-flex',
+                verticalAlign: 'middle',
+              }}>
+              <Image
+                src='/images/logo.png'
+                alt='logo'
+                width={150 * 0.55}
+                height={68 * 0.55}
+              />
+            </Stack>
           </Link>
         </Stack>
         <Stack
@@ -85,59 +83,46 @@ export default function Header(): JSX.Element {
             hidden: 'tablet',
           }}>
           <Link href='/'>
-            <a>
-              <Button theme='minimal'>Home</Button>
-            </a>
+            <Button theme='minimal'>Home</Button>
           </Link>
           <Link href='/testimonials'>
-            <a>
-              <Button
-                theme={router.pathname === '/testimonials' ? 'fill' : 'minimal'}
-                css={{
-                  color:
-                    router.pathname === '/testimonials'
-                      ? '$accent !important'
-                      : 'inherit',
-                }}>
-                Testimonials
-              </Button>
-            </a>
+            <Button
+              theme={router.pathname === '/testimonials' ? 'fill' : 'minimal'}
+              css={{
+                color:
+                  router.pathname === '/testimonials' ? '$accent !important' : 'inherit',
+              }}>
+              Testimonials
+            </Button>
           </Link>
           <Link href='/team'>
-            <a>
-              <Button
-                theme={router.pathname === '/team' ? 'fill' : 'minimal'}
-                css={{
-                  color: router.pathname === '/team' ? '$accent !important' : 'inherit',
-                }}>
-                Team
-              </Button>
-            </a>
+            <Button
+              theme={router.pathname === '/team' ? 'fill' : 'minimal'}
+              css={{
+                color: router.pathname === '/team' ? '$accent !important' : 'inherit',
+              }}>
+              Team
+            </Button>
           </Link>
 
           <Link href='/locations'>
-            <a>
-              <Button
-                theme={router.pathname === '/locations' ? 'fill' : 'minimal'}
-                css={{
-                  color:
-                    router.pathname === '/locations' ? '$accent !important' : 'inherit',
-                }}>
-                Locations
-              </Button>
-            </a>
+            <Button
+              theme={router.pathname === '/locations' ? 'fill' : 'minimal'}
+              css={{
+                color:
+                  router.pathname === '/locations' ? '$accent !important' : 'inherit',
+              }}>
+              Locations
+            </Button>
           </Link>
           <Link href='/contact'>
-            <a>
-              <Button
-                theme={router.pathname === '/contact' ? 'fill' : 'minimal'}
-                css={{
-                  color:
-                    router.pathname === '/contact' ? '$accent !important' : 'inherit',
-                }}>
-                Contact
-              </Button>
-            </a>
+            <Button
+              theme={router.pathname === '/contact' ? 'fill' : 'minimal'}
+              css={{
+                color: router.pathname === '/contact' ? '$accent !important' : 'inherit',
+              }}>
+              Contact
+            </Button>
           </Link>
         </Stack>
 
@@ -154,15 +139,13 @@ export default function Header(): JSX.Element {
             </Button>
           </a>
           <Link href='/start'>
-            <a>
-              <Button
-                name='get-started'
-                inline='auto'
-                theme='solid'
-                ariaLabel='Get Started'>
-                Get Started
-              </Button>
-            </a>
+            <Button
+              name='get-started'
+              inline='auto'
+              theme='solid'
+              ariaLabel='Get Started'>
+              Get Started
+            </Button>
           </Link>
         </Stack>
       </Stack>

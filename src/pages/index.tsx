@@ -50,20 +50,19 @@ export default function Home(): JSX.Element {
   return (
     <>
       <NextSeo title='ihostme by Cosmo' titleTemplate='%s' />
-      <View inverted container top={6} bottom={6}>
-        <Stack direction='row' bottom={3}>
+      <View inverted container top={7} bottom={7}>
+        <Stack direction='row'>
           <Stack
             direction='column'
             width={50}
-            top={7}
-            bottom={7}
+            top={6}
+            bottom={6}
             css={{
               paddingRight: '$7',
 
               phone: {
                 paddingBottom: '$6',
-                paddingRight: '$3',
-                paddingTop: 0,
+                paddingTop: '0 !important',
                 textAlign: 'center',
               },
             }}>
@@ -74,11 +73,9 @@ export default function Home(): JSX.Element {
               occupancy by listing your property on the top booking sites.
             </Text>
             <Link href='/start'>
-              <a>
-                <Button name='list' theme='fill' ariaLabel='List your home'>
-                  List your home
-                </Button>
-              </a>
+              <Button name='list' theme='fill' ariaLabel='List your home'>
+                List your home
+              </Button>
             </Link>
           </Stack>
           <Stack
@@ -92,9 +89,8 @@ export default function Home(): JSX.Element {
             <Image
               src='/images/misc-07.jpg'
               alt='airbnb'
-              layout='fill'
+              fill
               borderRadius={3}
-              objectFit='cover'
               priority
             />
           </Stack>
@@ -131,42 +127,38 @@ export default function Home(): JSX.Element {
           <Stack direction='column' align='center'>
             <Stack>
               <Link href='/locations'>
-                <a>
-                  {locations.map((location, index) => (
-                    <Stack
-                      key={index}
-                      css={{
-                        display: 'inline-block',
-                        marginRight: '$4',
-                        paddingBottom: '$4',
-                      }}>
-                      <Badge
-                        theme='borderHover'
-                        css={{ borderColor: 'rgba(0,0,0,0.05)' }}>
-                        <Stack
-                          css={{
-                            alignItems: 'center',
-                            display: 'flex',
-                            marginRight: '$2',
-                            verticalAlign: 'middle',
-                          }}>
-                          <Avatar
-                            image={`/images/location-${location
-                              .toLowerCase()
-                              .replace(/\s/g, '')}.jpg`}
-                            width={15}
-                            fallback=''
-                          />{' '}
-                        </Stack>
+                {locations.map((location, index) => (
+                  <Stack
+                    key={index}
+                    css={{
+                      display: 'inline-block',
+                      marginRight: '$4',
+                      paddingBottom: '$4',
+                    }}>
+                    <Badge theme='borderHover' css={{ borderColor: 'rgba(0,0,0,0.05)' }}>
+                      <Stack
+                        css={{
+                          alignItems: 'center',
+                          display: 'flex',
+                          marginRight: '$2',
+                          verticalAlign: 'middle',
+                        }}>
+                        <Avatar
+                          image={`/images/location-${location
+                            .toLowerCase()
+                            .replace(/\s/g, '')}.jpg`}
+                          width={15}
+                          fallback=''
+                        />{' '}
+                      </Stack>
 
-                        <Text as='h6' inline={'auto'} accent>
-                          {location}
-                          {index !== locations.length - 1 ? '' : ''}
-                        </Text>
-                      </Badge>
-                    </Stack>
-                  ))}
-                </a>
+                      <Text as='h6' inline={'auto'} accent>
+                        {location}
+                        {index !== locations.length - 1 ? '' : ''}
+                      </Text>
+                    </Badge>
+                  </Stack>
+                ))}
               </Link>
             </Stack>
           </Stack>
