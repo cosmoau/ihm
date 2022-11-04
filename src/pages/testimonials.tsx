@@ -41,12 +41,12 @@ export default function Testimonials(): JSX.Element {
                   <Badge theme='border'>Josie Pileio and Rob Farrugia, Owners</Badge>
                 </Stack>
               </Stack>
-              <Text as='h6' top={4}>
+              <Text as='h6' accent top={4}>
                 We were moving overseas and from the very beginning when we were just
                 considering our options, ihostme were able to provide advice, support and
                 the peace of mind to just make it happen!
               </Text>
-              <Text as='h6'>
+              <Text as='h6' accent>
                 ihostme arranged everything from setting up our listing on the various
                 sites available, prepared the host information, all the welcome packs and
                 all other host related resources ready for our guests. The guest feedback
@@ -54,13 +54,13 @@ export default function Testimonials(): JSX.Element {
                 received and the experience they have whilst staying in our home.
               </Text>
 
-              <Text as='h6'>
+              <Text as='h6' accent>
                 We find both Dave and Jayne to be very professional, attentive and very
                 knowledgeable about the management of our property and their friendly and
                 approachable manner makes it even more enjoyable to work with them.
               </Text>
 
-              <Text as='h6'>
+              <Text as='h6' accent>
                 We have been with ihostme® for over 6 years and I wouldn’t consider anyone
                 else to manage our property.
               </Text>
@@ -101,7 +101,7 @@ export default function Testimonials(): JSX.Element {
                 </Stack>
               </Stack>
 
-              <Text as='h6' top={4}>
+              <Text as='h6' accent top={4}>
                 ihostme provided invaluable assistance and advice in getting my property
                 ready to list within 2 weeks of first contact, despite being away on
                 holidays themselves at the time! ihostme’s marketing expertise ensured
@@ -109,19 +109,19 @@ export default function Testimonials(): JSX.Element {
                 week days as well.
               </Text>
 
-              <Text as='h6'>
+              <Text as='h6' accent>
                 I have found the services provided through ihostme® to be extremely
                 helpful, enabling me to leave all aspects of AirBnB management in their
                 capable and experienced hands, and providing peace of mind that it is all
                 under control.
               </Text>
-              <Text as='h6'>
+              <Text as='h6' accent>
                 They are very professional, great communicators and problem solvers and
                 clearly willing to go the extra mile to facilitate a positive experience
                 all round for owners as well as the all-important guests.
               </Text>
 
-              <Text as='h6'>
+              <Text as='h6' accent>
                 I highly recommend the ihostme® service and would be surprised if it
                 doesn’t continue to grow beyond Ocean Grove and the immediate surrounds as
                 word travels of their sterling service.

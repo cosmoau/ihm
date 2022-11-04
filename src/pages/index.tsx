@@ -1,7 +1,6 @@
 import { Stack, Text, View, Box, Badge, Button, Image, Avatar } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
-import { Heart, HouseSimple, Key } from 'phosphor-react';
 
 export default function Home(): JSX.Element {
   const locations = [
@@ -50,18 +49,19 @@ export default function Home(): JSX.Element {
   return (
     <>
       <NextSeo title='ihostme by Cosmo' titleTemplate='%s' />
-      <View inverted container top={7} bottom={7}>
+      <View inverted container top={6} bottom={6}>
         <Stack direction='row'>
           <Stack
             direction='column'
             width={50}
-            top={6}
-            bottom={6}
+            top={8}
+            bottom={8}
             css={{
               paddingRight: '$7',
 
               phone: {
                 paddingBottom: '$6',
+                paddingRight: '$5',
                 paddingTop: '0 !important',
                 textAlign: 'center',
               },
@@ -168,15 +168,12 @@ export default function Home(): JSX.Element {
         <Stack direction='row' flex='stretch'>
           <Stack direction='column' width={33}>
             <Box theme='fill'>
-              <HouseSimple size={30} />
-              <Text as='h4' top={4}>
-                Your One Stop Hosting Shop
-              </Text>
-              <Text as='h6'>
+              <Text as='h4'>Your One Stop Hosting Shop</Text>
+              <Text as='h6' accent>
                 We understand that your vacation rental is more than just an
                 investment—it’s your home away from home.
               </Text>
-              <Text as='h6'>
+              <Text as='h6' accent>
                 That’s why we offer a complete suite of services to help you manage your
                 property, from real-time pricing optimisation to guest and bookings
                 management.
@@ -192,16 +189,13 @@ export default function Home(): JSX.Element {
               },
             }}>
             <Box theme='fill'>
-              <Key size={30} />
-              <Text as='h4' top={4}>
-                Simple, Easy Pricing
-              </Text>
-              <Text as='h6'>
+              <Text as='h4'>Simple, Easy Pricing</Text>
+              <Text as='h6' accent>
                 Our standard management fee is 20% + GST for fully hosted clients, or 14%
                 + GST for those who already have their own housekeeping and maintenance
                 team in place.
               </Text>
-              <Text as='h6'>
+              <Text as='h6' accent>
                 We also have a one-time set up fee from $400, and third-party charges are
                 at cost.
               </Text>
@@ -216,15 +210,12 @@ export default function Home(): JSX.Element {
               },
             }}>
             <Box theme='fill'>
-              <Heart size={30} />
-              <Text as='h4' top={4}>
-                Your Holiday Home in Good Hands
-              </Text>
-              <Text as='h6'>
+              <Text as='h4'>Your Holiday Home in Good Hands</Text>
+              <Text as='h6' accent>
                 We&apos;ve developed an intuitive app that gives you full transparency of
                 bookings and property performance.
               </Text>
-              <Text as='h6'>
+              <Text as='h6' accent>
                 We also have an experienced client support team available 7/11 and
                 specialist housekeepers to take care of all the little details.
               </Text>
