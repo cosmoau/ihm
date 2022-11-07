@@ -31,14 +31,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cosmoau/ui@npm:^1.0.17":
-  version: 1.0.17
-  resolution: "@cosmoau/ui@npm:1.0.17"
+"@cosmoau/ui@npm:^1.0.18":
+  version: 1.0.18
+  resolution: "@cosmoau/ui@npm:1.0.18"
+  dependencies:
+    "@stitches/react": ^1.2.8
+    phosphor-react: ^1.4.1
+    react-hot-toast: ^2.4.0
+    usehooks-ts: ^2.9.1
   peerDependencies:
-    next: ^12.3.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  checksum: f4491019d6b64cc66f356f7a6450941a7e4e8e070a62f6c7fab6775f65114e883cf2cdb4ab467690951a129675b2430a4724818b9be3c8a08a8de1447e2ffda0
+    "@stitches/react": ">=1.2.8"
+    phosphor-react: ">=1.4.1"
+    react: ">=18.2.0"
+    react-dom: ">=18.2.0"
+    react-hot-toast: ">=2.4.0"
+    usehooks-ts: ">=2.9.1"
+  checksum: ba804a645c06b1652cf9ab8fe85f76d084e8fc1a120ae45234e05850cfbff081e1c7d0777a9af5c71c3d69c2e461f422ff09f00674cea85a0227930540891472
   languageName: node
   linkType: hard
 
@@ -1574,7 +1582,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ihm@workspace:."
   dependencies:
-    "@cosmoau/ui": ^1.0.17
+    "@cosmoau/ui": ^1.0.18
     "@stitches/react": ^1.2.8
     "@typeform/embed-react": ^2.1.0
     "@types/node": ^18.11.9
