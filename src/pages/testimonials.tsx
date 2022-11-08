@@ -1,19 +1,67 @@
-import { Stack, Text, View, Box, Avatar, Badge } from '@cosmoau/ui';
+import { Stack, Text, View, Box, Avatar, Badge, Image, fadeIn } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 
 export default function Testimonials(): JSX.Element {
   return (
     <>
-      <NextSeo title='Customer Testimonials' />
-      <View inverted container top={7} bottom={6}>
-        <Stack direction='row'>
-          <Stack direction='column'>
-            <Text as='h2'>Customer Testimonials</Text>
+      <NextSeo title='Client Testimonials' />
+      <View
+        inverted
+        top={5}
+        css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
+        <Stack direction='row' minimal>
+          <Stack direction='column' width={50} widthPhone={55} minimal>
+            <Box
+              theme='fill'
+              css={{
+                background: 'rgb(33, 52, 68) !important',
+                borderBottomRightRadius: '0 !important',
+                borderTopRightRadius: '0 !important',
+                padding: '$7 $6',
+
+                phone: {
+                  padding: '$6 $5',
+                },
+              }}>
+              <Text
+                as='h2'
+                css={{
+                  animation: `${fadeIn}  0.5s ease-in-out`,
+                }}>
+                <Text as='span' css={{ hiddenInline: 'phone' }}>
+                  Client&nbsp;
+                </Text>
+                Testimonials
+              </Text>
+            </Box>
+          </Stack>
+          <Stack minimal direction='column' width={50} widthPhone={45}>
+            <Image
+              src='/images/misc-10.jpg'
+              alt='airbnb'
+              fill
+              css={{
+                img: {
+                  borderBottomRightRadius: '$3 !important',
+                  borderTopRightRadius: '$3 !important',
+                },
+              }}
+            />
           </Stack>
         </Stack>
       </View>
-      <View container top={7}>
-        <Stack direction='row' flex='stretch'>
+
+      <View
+        container
+        top={7}
+        bottom={7}
+        css={{
+          phone: { paddingBottom: '$5', paddingTop: '$5' },
+        }}>
+        <Stack
+          direction='row'
+          flex='stretch'
+          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column' width={50}>
             <Box theme='fill'>
               <Stack bottom={5}>
@@ -30,7 +78,7 @@ export default function Testimonials(): JSX.Element {
                     },
                     verticalAlign: 'middle',
                   }}>
-                  <Avatar image='/images/testimonial-01.jpg' width={66} fallback='' />
+                  <Avatar image='/images/testimonial-01.jpg' width={100} fallback='' />
                 </Stack>
                 <Stack
                   css={{
@@ -38,7 +86,7 @@ export default function Testimonials(): JSX.Element {
                     verticalAlign: 'middle',
                   }}>
                   <Text as='h4'>The Woodville, Ocean Grove</Text>
-                  <Badge theme='border'>Josie Pileio and Rob Farrugia, Owners</Badge>
+                  <Badge>Josie Pileio and Rob Farrugia, Owners</Badge>
                 </Stack>
               </Stack>
               <Text as='h6' accent top={4}>
@@ -89,7 +137,7 @@ export default function Testimonials(): JSX.Element {
                     },
                     verticalAlign: 'middle',
                   }}>
-                  <Avatar image='/images/testimonial-02.jpg' width={66} fallback='' />
+                  <Avatar image='/images/testimonial-02.jpg' width={100} fallback='' />
                 </Stack>
                 <Stack
                   css={{
@@ -97,7 +145,7 @@ export default function Testimonials(): JSX.Element {
                     verticalAlign: 'middle',
                   }}>
                   <Text as='h4'>Blue Waters Retreat, Ocean Grove</Text>
-                  <Badge theme='border'>Lorien and Dean Platt, Owners</Badge>
+                  <Badge>Lorien and Dean Platt, Owners</Badge>
                 </Stack>
               </Stack>
 

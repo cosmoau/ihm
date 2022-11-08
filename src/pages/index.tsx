@@ -1,8 +1,14 @@
-import { Stack, Text, View, Box, Badge, Button, Image, Avatar } from '@cosmoau/ui';
+import { Stack, Text, View, Box, Badge, Image, Avatar, Input, fadeIn } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import { toast } from 'react-hot-toast';
 
 export default function Home(): JSX.Element {
+  const router = useRouter();
+  const [email, setEmail] = useState('');
+
   const locations = [
     'Geelong',
     'Portarlington',
@@ -48,83 +54,132 @@ export default function Home(): JSX.Element {
 
   return (
     <>
-      <NextSeo title='ihostme by Cosmo' titleTemplate='%s' />
-      <View inverted container top={6} bottom={6}>
-        <Stack direction='row'>
-          <Stack
-            direction='column'
-            width={50}
-            top={8}
-            bottom={8}
-            css={{
-              paddingRight: '$7',
+      <NextSeo title='ihostme' titleTemplate='%s' />
 
-              phone: {
-                paddingBottom: '$6',
-                paddingRight: '$5',
-                paddingTop: '0 !important',
-                textAlign: 'center',
-              },
-            }}>
-            <Text as='h1'>Airbnb, Stayz, Booking.com and Homes & Villas Management</Text>
-            <Text as='h5' accent bottom={5}>
-              We are your local experts for managing the rental of your holiday home and
-              all your hosting and short-term property management needs. We maximise your
-              occupancy by listing your property on the top booking sites.
-            </Text>
-            <Link href='/start'>
-              <Button name='list' theme='fill' ariaLabel='List your home'>
-                List your home
-              </Button>
-            </Link>
+      <View
+        inverted
+        top={5}
+        css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
+        <Stack direction='row' minimal>
+          <Stack direction='column' width={50} minimal>
+            <Box
+              theme='fill'
+              css={{
+                '::placeholder': {
+                  color: '$text',
+                  fontSize: '$p !important',
+                  opacity: 0.6,
+                },
+                'background': 'rgb(33, 52, 68) !important',
+                'borderBottomRightRadius': '0 !important',
+                'borderTopRightRadius': '0 !important',
+
+                'button': {
+                  background: '$blueOverlay !important',
+                  borderColor: '$blueBorder !important',
+                  color: '$text !important',
+                  fontWeight: 'bold !important',
+                  opacity: 1,
+                },
+
+                'padding': 'calc($8 * 1.5) $6',
+
+                'phone': {
+                  borderBottomLeftRadius: '0 !important',
+                  borderBottomRightRadius: '0 !important',
+                  borderTopLeftRadius: '$3 !important',
+                  borderTopRightRadius: '$3 !important',
+                  padding: '$6 $5',
+                },
+              }}>
+              <Text
+                as='h1'
+                css={{
+                  animation: `${fadeIn}  0.5s ease-in-out`,
+                }}>
+                Airbnb and Holiday Home Management on all the major booking platforms.
+              </Text>
+              <Text
+                as='h5'
+                accent
+                bottom={6}
+                css={{
+                  animation: `${fadeIn}  0.8s ease-in-out`,
+                }}>
+                We're your local short-term property management experts. With{' '}
+                <b>ihostme</b>, you can achieve better occupancy rates and revenue on
+                Airbnb, Stayz, Vrbo, HomeAway, Booking.com and Homes & Villas Management
+                by Marriott.
+              </Text>
+
+              <Input
+                listen
+                type='email'
+                placeholder='Your email address'
+                onChange={(e): void => setEmail(e.target.value)}
+                submitFunction={(): void => {
+                  if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+                    router.push(`/start?email=${email}`);
+                  } else {
+                    toast.error('Please enter a valid email address');
+                  }
+                }}
+                submitValid
+                submit='💌 Free estimate'
+                css={{
+                  animation: `${fadeIn} 1s ease-in-out`,
+                }}
+              />
+            </Box>
           </Stack>
           <Stack
+            minimal
             direction='column'
             width={50}
             css={{
-              phone: {
-                height: '30rem',
-              },
+              animation: `${fadeIn} 0.5s ease-in-out`,
+              phone: { height: '40rem' },
             }}>
             <Image
               src='/images/misc-07.jpg'
               alt='airbnb'
               fill
-              borderRadius={3}
-              priority
+              css={{
+                img: {
+                  borderBottomRightRadius: '$3 !important',
+                  borderTopRightRadius: '$3 !important',
+
+                  phone: {
+                    borderBottomLeftRadius: '$3 !important',
+                    borderBottomRightRadius: '$3 !important',
+                    borderTopLeftRadius: '0 !important',
+                    borderTopRightRadius: '0 !important',
+                  },
+                },
+              }}
             />
           </Stack>
         </Stack>
       </View>
+
       <View container top={7}>
-        <Stack direction='row'>
-          <Stack direction='column' width={60} offset={20} align='center'>
-            <a href='https://cosmogroup.io'>
-              <Badge
-                theme='blue'
-                icon={
-                  <Avatar
-                    css={{ marginTop: '-0.1rem', verticalAlign: 'middle' }}
-                    image='/images/cosmo.png'
-                    fallback=''
-                    width={20}
-                  />
-                }>
-                ihostme is now part of Cosmo
-              </Badge>
-            </a>
+        <Stack
+          direction='row'
+          align='center'
+          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+          <Stack direction='column' width={50} offset={25}>
             <Text as='h3' top={5}>
               ihostme operates out of the top holiday destinations
             </Text>
-            <Text as='h5' bottom={6}>
+            <Text as='h5'>
               We are a team of highly skilled and experienced property managers who are
               dedicated to providing the best service to owners and investors, from Point
               Lonsdale to Hobart.
             </Text>
           </Stack>
         </Stack>
-        <Stack direction='row'>
-          <Stack direction='column' align='center'>
+        <Stack direction='row' top={6} css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+          <Stack direction='column' width={100} align='center'>
             <Stack>
               <Link href='/locations'>
                 {locations.map((location, index) => (
@@ -133,9 +188,9 @@ export default function Home(): JSX.Element {
                     css={{
                       display: 'inline-block',
                       marginRight: '$4',
-                      paddingBottom: '$4',
+                      paddingTop: '$4',
                     }}>
-                    <Badge theme='borderHover' css={{ borderColor: 'rgba(0,0,0,0.05)' }}>
+                    <Badge theme='border' css={{ borderColor: 'rgba(0,0,0,0.05)' }}>
                       <Stack
                         css={{
                           alignItems: 'center',
@@ -164,8 +219,11 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top={7}>
-        <Stack direction='row' flex='stretch'>
+      <View container top={7} bottom={7}>
+        <Stack
+          direction='row'
+          flex='stretch'
+          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column' width={33}>
             <Box theme='fill'>
               <Text as='h4'>Your One Stop Hosting Shop</Text>

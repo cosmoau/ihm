@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       <DefaultSeo
         openGraph={{
           description:
-            'ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.',
+            'We are your local experts for managing the rental of your holiday home and all your hosting and short-term property management needs.',
           images: [
             {
               alt: 'Cosmo',
@@ -19,12 +19,12 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
             },
           ],
           locale: 'en_AU',
-          site_name: 'ihostme by Cosmo',
-          title: 'ihostme - Airbnb, Stayz & Booking.com Management by Cosmo',
+          site_name: 'ihostme',
+          title: 'ihostme - Australian Airbnb, Stayz & Booking.com Management',
           type: 'website',
           url: 'https://ihostme.com.au',
         }}
-        titleTemplate={'%s - ihostme by Cosmo'}
+        titleTemplate={'%s | ihostme'}
       />
 
       <Header />

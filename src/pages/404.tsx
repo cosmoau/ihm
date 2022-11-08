@@ -1,28 +1,74 @@
-import { Stack, Text, View, Button } from '@cosmoau/ui';
+import { Stack, Image, Text, View, Button, Box, fadeIn } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 
 export default function Custom404(): JSX.Element {
   return (
     <>
       <NextSeo title='Page not found' />
-      <View inverted container top={7} bottom={6}>
-        <Stack direction='row'>
-          <Stack direction='column' align='center'>
-            <Text as='h2'>Page not found</Text>
+      <View
+        inverted
+        top={5}
+        css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
+        <Stack direction='row' minimal>
+          <Stack direction='column' width={50} widthPhone={55} minimal>
+            <Box
+              theme='fill'
+              css={{
+                background: 'rgb(33, 52, 68) !important',
+                borderBottomRightRadius: '0 !important',
+                borderTopRightRadius: '0 !important',
+                padding: '$7 $6',
+
+                phone: {
+                  padding: '$6 $5',
+                },
+              }}>
+              <Text
+                as='h2'
+                css={{
+                  animation: `${fadeIn}  0.5s ease-in-out`,
+                }}>
+                <Text as='span' css={{ hiddenInline: 'phone' }}>
+                  Page&nbsp;
+                </Text>
+                Not Found
+              </Text>
+            </Box>
+          </Stack>
+          <Stack minimal direction='column' width={50} widthPhone={45}>
+            <Image
+              src='/images/misc-09.jpg'
+              alt='airbnb'
+              fill
+              css={{
+                img: {
+                  borderBottomRightRadius: '$3 !important',
+                  borderTopRightRadius: '$3 !important',
+                },
+              }}
+            />
           </Stack>
         </Stack>
       </View>
-      <View container top={7} bottom={7}>
-        <Stack direction='row' flex='stretch'>
-          <Stack direction='column' width={60} offset={20} align='center'>
+
+      <View
+        container
+        top={7}
+        bottom={7}
+        css={{
+          phone: { paddingBottom: '$5', paddingTop: '$5' },
+        }}>
+        <Stack direction='row' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+          <Stack direction='column'>
             <Text as='h3'>Sorry, the page you are looking for is not available. </Text>
             <Text as='h5' bottom={6}>
               Feel free to browse our site from the menu at the top of the page, or if you
               have a question - get in touch
             </Text>
-            <Button ariaLabel='Chat with our team' name='chat'>
-              <a href='mailto:contact@cosmogroup.io'>Chat with us</a>
-            </Button>
+            <Link href='/'>
+              <Button ariaLabel='Go to our homepage'>Go to our homepage</Button>
+            </Link>
           </Stack>
         </Stack>
       </View>

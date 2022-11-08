@@ -1,5 +1,12 @@
 import { getCssText } from '@cosmoau/ui';
-import { Html, Head, Main, NextScript } from 'next/document';
+import {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps,
+} from 'next/document';
 import Script from 'next/script';
 import React from 'react';
 
@@ -35,7 +42,7 @@ export default function Document(): JSX.Element {
           id='pirschjs'
           data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD'
         />
-        <Script strategy='beforeInteractive' id='SmallChat' async>
+        <Script strategy='afterInteractive' id='SmallChat' async>
           {`
            window.Smallchat = {
                 config: {
@@ -89,8 +96,9 @@ export default function Document(): JSX.Element {
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-Document.getInitialProps = async function getInitialProps(ctx: any): Promise<any> {
+Document.getInitialProps = async function getInitialProps(
+  ctx: DocumentContext
+): Promise<DocumentInitialProps> {
   const results = await ctx.defaultGetInitialProps(ctx);
   const stitchesCssString = getCssText();
 
@@ -112,7 +120,7 @@ Document.getInitialProps = async function getInitialProps(ctx: any): Promise<any
             zIndex: 200;
           }
             html {
-              font-size: 62.5%;
+              font-size: 61.5%;
               position: relative;
               height: 100%;
               margin: 0;

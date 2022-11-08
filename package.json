@@ -7,7 +7,7 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.0.19",
+    "@cosmoau/ui": "^1.1.1",
     "@stitches/react": "^1.2.8",
     "@typeform/embed-react": "^2.1.0",
     "dayjs": "^1.11.6",
@@ -23,8 +23,9 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "eslint": "^8.27.0",
-    "eslint-config-dolmios": "^1.1.1",
+    "eslint-config-dolmios": "^1.2.0",
     "eslint-config-next": "^13.0.2",
+    "eslint-config-prettier": "^8.5.0",
     "next-sitemap": "^3.1.30",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
