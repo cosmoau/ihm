@@ -35,13 +35,7 @@ export default function Document(): JSX.Element {
       <body>
         <Main />
         <NextScript />
-        <Script
-          strategy='beforeInteractive'
-          defer
-          src='https://api.pirsch.io/pirsch.js'
-          id='pirschjs'
-          data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD'
-        />
+
         <Script strategy='afterInteractive' id='SmallChat' async>
           {`
            window.Smallchat = {
@@ -90,7 +84,13 @@ export default function Document(): JSX.Element {
               }, false);
           `}
         </Script>
-        <script async src='https://embed.small.chat/TPZDU8ELRC046EH1B7LY.js' />
+        <Script
+          defer
+          strategy='beforeInteractive'
+          src='https://api.pirsch.io/pirsch.js'
+          id='pirschjs'
+          data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD'
+        />
       </body>
     </Html>
   );
