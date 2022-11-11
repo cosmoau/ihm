@@ -14,7 +14,7 @@ export default function Testimonials(): JSX.Element {
             <Box
               theme='fill'
               css={{
-                background: 'rgb(33, 52, 68) !important',
+                background: '$accentIHM !important',
                 borderBottomRightRadius: '0 !important',
                 borderTopRightRadius: '0 !important',
                 padding: '$7 $6',

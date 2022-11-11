@@ -11,7 +11,11 @@ import {
 export default function Footer(): JSX.Element {
   return (
     <>
-      <View container top={6} bottom={6} css={{ borderTop: '0.1rem solid $borderHover' }}>
+      <View
+        container
+        top={6}
+        bottom={6}
+        css={{ borderTop: '0.1rem solid $borderHover' }}>
         <Stack direction='row' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack
             direction='column'
@@ -75,7 +79,7 @@ export default function Footer(): JSX.Element {
 
       <View
         css={{
-          background: 'rgb(33, 52, 68) !important',
+          background: '$accentIHM !important',
           borderTop: '0.1rem solid $borderHover',
           zIndex: 201,
         }}

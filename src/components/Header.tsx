@@ -88,7 +88,7 @@ export default function Header(): JSX.Element {
                     background: 'rgb(95, 113, 128) !important',
                     color: '$background',
                   },
-                  'background': 'rgb(33, 52, 68) !important',
+                  'background': '$accentIHM !important',
                 }}>
                 Menu
               </Button>
@@ -196,7 +196,7 @@ export default function Header(): JSX.Element {
                   background: 'rgb(95, 113, 128) !important',
                   color: '$background',
                 },
-                'background': 'rgb(33, 52, 68) !important',
+                'background': '$accentIHM !important',
               }}
               ariaLabel='Sign Up'>
               Sign Up

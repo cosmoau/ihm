@@ -15,7 +15,7 @@ export default function Custom404(): JSX.Element {
             <Box
               theme='fill'
               css={{
-                background: 'rgb(33, 52, 68) !important',
+                background: '$accentIHM !important',
                 borderBottomRightRadius: '0 !important',
                 borderTopRightRadius: '0 !important',
                 padding: '$7 $6',
@@ -63,8 +63,8 @@ export default function Custom404(): JSX.Element {
           <Stack direction='column'>
             <Text as='h3'>Sorry, the page you are looking for is not available. </Text>
             <Text as='h5' bottom={6}>
-              Feel free to browse our site from the menu at the top of the page, or if you
-              have a question - get in touch
+              Feel free to browse our site from the menu at the top of the page, or if
+              you have a question - get in touch
             </Text>
             <Link href='/'>
               <Button ariaLabel='Go to our homepage'>Go to our homepage</Button>

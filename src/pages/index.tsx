@@ -1,4 +1,14 @@
-import { Stack, Text, View, Box, Badge, Image, Avatar, Input, fadeIn } from '@cosmoau/ui';
+import {
+  Stack,
+  Text,
+  View,
+  Box,
+  Badge,
+  Image,
+  Avatar,
+  Input,
+  fadeIn,
+} from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -70,7 +80,7 @@ export default function Home(): JSX.Element {
                   fontSize: '$p !important',
                   opacity: 0.6,
                 },
-                'background': 'rgb(33, 52, 68) !important',
+                'background': '$accentIHM !important',
                 'borderBottomRightRadius': '0 !important',
                 'borderTopRightRadius': '0 !important',
 
@@ -106,7 +116,7 @@ export default function Home(): JSX.Element {
                 css={{
                   animation: `${fadeIn}  0.8s ease-in-out`,
                 }}>
-                We're your local short-term property management experts. With{' '}
+                We&apos;re your local short-term property management experts. With{' '}
                 <b>ihostme</b>, you can achieve better occupancy rates and revenue on
                 Airbnb, Stayz, Vrbo, HomeAway, Booking.com and Homes & Villas Management
                 by Marriott.
@@ -173,12 +183,15 @@ export default function Home(): JSX.Element {
             </Text>
             <Text as='h5'>
               We are a team of highly skilled and experienced property managers who are
-              dedicated to providing the best service to owners and investors, from Point
-              Lonsdale to Hobart.
+              dedicated to providing the best service to owners and investors, from
+              Point Lonsdale to Hobart.
             </Text>
           </Stack>
         </Stack>
-        <Stack direction='row' top={6} css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack
+          direction='row'
+          top={6}
+          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column' width={100} align='center'>
             <Stack>
               <Link href='/locations'>
@@ -249,13 +262,13 @@ export default function Home(): JSX.Element {
             <Box theme='fill'>
               <Text as='h4'>Simple, Easy Pricing</Text>
               <Text as='h6' accent>
-                Our standard management fee is 20% + GST for fully hosted clients, or 14%
-                + GST for those who already have their own housekeeping and maintenance
-                team in place.
+                Our standard management fee is 20% + GST for fully hosted clients, or
+                14% + GST for those who already have their own housekeeping and
+                maintenance team in place.
               </Text>
               <Text as='h6' accent>
-                We also have a one-time set up fee from $400, and third-party charges are
-                at cost.
+                We also have a one-time set up fee from $400, and third-party charges
+                are at cost.
               </Text>
             </Box>
           </Stack>
@@ -270,8 +283,8 @@ export default function Home(): JSX.Element {
             <Box theme='fill'>
               <Text as='h4'>Your Holiday Home in Good Hands</Text>
               <Text as='h6' accent>
-                We&apos;ve developed an intuitive app that gives you full transparency of
-                bookings and property performance.
+                We&apos;ve developed an intuitive app that gives you full transparency
+                of bookings and property performance.
               </Text>
               <Text as='h6' accent>
                 We also have an experienced client support team available 7/11 and

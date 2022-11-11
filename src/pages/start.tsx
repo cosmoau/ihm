@@ -8,7 +8,9 @@ export default function Start(): JSX.Element {
   return (
     <>
       <NextSeo
-        title={router.query.city ? `${router.query.city} Property Management` : 'Sign Up'}
+        title={
+          router.query.city ? `${router.query.city} Property Management` : 'Sign Up'
+        }
       />
       <View
         inverted
@@ -19,7 +21,7 @@ export default function Start(): JSX.Element {
             <Box
               theme='fill'
               css={{
-                background: 'rgb(33, 52, 68) !important',
+                background: '$accentIHM !important',
                 borderBottomRightRadius: '0 !important',
                 borderTopRightRadius: '0 !important',
                 padding: '$7 $6',
@@ -34,7 +36,9 @@ export default function Start(): JSX.Element {
                 css={{
                   animation: `${fadeIn}  0.5s ease-in-out`,
                 }}>
-                {router.query.city ? `List your home in ${router.query.city}` : 'Sign Up'}
+                {router.query.city
+                  ? `List your home in ${router.query.city}`
+                  : 'Sign Up'}
               </Text>
               <Text
                 as='h5'
