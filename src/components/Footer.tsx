@@ -39,9 +39,7 @@ export default function Footer(): JSX.Element {
                 paddingLeft: '$3',
               },
             }}>
-            <Text as='h3'>
-              Let us help you unlock your property’s earning potential today
-            </Text>
+            <Text as='h3'>Unlock your full earning potential today</Text>
             <Text as='h5' accent>
               ihostme manages properties that earn $40,000 or more in rental income per
               year. We are interested in speaking to owners of homes and holiday rentals

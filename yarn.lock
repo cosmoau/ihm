@@ -251,22 +251,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typeform/embed-react@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@typeform/embed-react@npm:2.2.0"
+"@typeform/embed-react@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@typeform/embed-react@npm:2.3.0"
   dependencies:
-    "@typeform/embed": 2.1.0
+    "@typeform/embed": 2.2.0
     fast-deep-equal: ^3.1.3
   peerDependencies:
     react: ">=16.8.0"
-  checksum: 08d77f56cee578e1f8198f6a2320150ffe61b92eeb9b21335eb0eaba7313a6af0c9b8d77e47f650ae65430943f77b6d10d211aab8ba2e0a89c987915b6dd5188
+  checksum: 20a42ab95535066f7b782d3dc58ecb6ec2913342b29aa509e6de314dce02de1730750159b15f9f56a54fec102956b8ba21cebaba8bf5b658e635a5a6ca9a03d2
   languageName: node
   linkType: hard
 
-"@typeform/embed@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@typeform/embed@npm:2.1.0"
-  checksum: e5497b9eaf3152f116c2bba516917b077682b84f2806968e63a5756eacf7571217e0e6edde5dba3f23a0bb95d9b5d6719d7f324ad13c666f6605ff697b2d9476
+"@typeform/embed@npm:2.2.0":
+  version: 2.2.0
+  resolution: "@typeform/embed@npm:2.2.0"
+  checksum: 3841ee02ed98ddd009fd51bfd4e711def6c22a5d988f759337faa33c2ba99f7362bc7b6a49c94d592b7d983d6f8dbef03f9e5cc78734cf0ff287e8afe9720a0c
   languageName: node
   linkType: hard
 
@@ -1466,7 +1466,7 @@ __metadata:
   dependencies:
     "@cosmoau/ui": ^1.1.2
     "@stitches/react": ^1.2.8
-    "@typeform/embed-react": ^2.2.0
+    "@typeform/embed-react": ^2.3.0
     "@types/node": ^18.11.9
     "@types/react": ^18.0.25
     dayjs: ^1.11.6
@@ -1475,7 +1475,7 @@ __metadata:
     eslint-config-next: ^13.0.3
     next: ^13.0.3
     next-seo: ^5.14.1
-    next-sitemap: ^3.1.30
+    next-sitemap: ^3.1.31
     phosphor-react: ^1.4.1
     prettier: ^2.7.1
     react: ^18.2.0
@@ -1884,9 +1884,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^3.1.30":
-  version: 3.1.30
-  resolution: "next-sitemap@npm:3.1.30"
+"next-sitemap@npm:^3.1.31":
+  version: 3.1.31
+  resolution: "next-sitemap@npm:3.1.31"
   dependencies:
     "@corex/deepmerge": ^4.0.29
     minimist: ^1.2.6
@@ -1896,7 +1896,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: 93b50fae229bc693d8ae0e58d65af90a6d2034a1f9c0a3afa61aeffbe02f4240e9faf20859c17a39b73675e16425944ff5b237986570a206aed319fcd2316b21
+  checksum: d8013502edc2679a9d6afb21acdf2524aebc62486952cce9bab1b56bcca43088fa4b53f1d67deb519f4bf8c9edb7e5f98c7ce20ab0cd97d640657c9b7f022812
   languageName: node
   linkType: hard
 

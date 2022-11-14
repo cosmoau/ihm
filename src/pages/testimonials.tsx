@@ -85,7 +85,7 @@ export default function Testimonials(): JSX.Element {
                     display: 'inline-block',
                     verticalAlign: 'middle',
                   }}>
-                  <Text as='h4'>The Woodville, Ocean Grove</Text>
+                  <Text as='h3'>The Woodville, Ocean Grove</Text>
                   <Badge>Josie Pileio and Rob Farrugia, Owners</Badge>
                 </Stack>
               </Stack>
@@ -145,7 +145,7 @@ export default function Testimonials(): JSX.Element {
                     display: 'inline-block',
                     verticalAlign: 'middle',
                   }}>
-                  <Text as='h4'>Blue Waters Retreat, Ocean Grove</Text>
+                  <Text as='h3'>Blue Waters Retreat, Ocean Grove</Text>
                   <Badge>Lorien and Dean Platt, Owners</Badge>
                 </Stack>
               </Stack>

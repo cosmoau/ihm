@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       <DefaultSeo
         openGraph={{
           description:
-            'We are your local experts for managing the rental of your holiday home and all your hosting and short-term property management needs.',
+            'We are your local experts for managing the rental of your holiday home and all your Airbnb and short-term property management needs.',
           images: [
             {
               alt: 'Cosmo',

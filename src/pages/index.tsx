@@ -8,6 +8,7 @@ import {
   Avatar,
   Input,
   fadeIn,
+  Button,
 } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
@@ -64,7 +65,7 @@ export default function Home(): JSX.Element {
 
   return (
     <>
-      <NextSeo title='ihostme' titleTemplate='%s' />
+      <NextSeo title='ihostme | Airbnb Management' titleTemplate='%s' />
 
       <View
         inverted
@@ -181,11 +182,14 @@ export default function Home(): JSX.Element {
             <Text as='h3' top={5}>
               ihostme operates out of the top holiday destinations
             </Text>
-            <Text as='h5'>
+            <Text as='h5' bottom={5}>
               We are a team of highly skilled and experienced property managers who are
               dedicated to providing the best service to owners and investors, from
               Point Lonsdale to Hobart.
             </Text>
+            <Link href='/start'>
+              <Button>List your home</Button>
+            </Link>
           </Stack>
         </Stack>
         <Stack
