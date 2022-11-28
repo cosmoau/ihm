@@ -141,6 +141,7 @@ export default function Header(): JSX.Element {
           <Dropdown
             submenu
             last
+            filter
             width='16rem'
             align='left'
             options={[
@@ -154,6 +155,10 @@ export default function Header(): JSX.Element {
               },
               {
                 label: 'Airbnb Calculator',
+                value: 'https://cosmogroup.io/mini',
+              },
+              {
+                label: 'Contact Us',
                 value: 'https://cosmogroup.io/mini',
               },
               {

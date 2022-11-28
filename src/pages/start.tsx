@@ -1,7 +1,8 @@
-import { Stack, Text, View, Box, Image, fadeIn } from '@cosmoau/ui';
+import { Stack, Text, View, Box, Image, fadeIn, Divider, Button } from '@cosmoau/ui';
 import { Widget } from '@typeform/embed-react';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
+import { ArrowSquareOut } from 'phosphor-react';
 
 export default function Start(): JSX.Element {
   const router = useRouter();
@@ -84,18 +85,37 @@ export default function Start(): JSX.Element {
               css={{
                 borderRadius: '$3',
               }}>
-              <Widget
-                id='cAmtR2rI'
-                height={700}
-                opacity={0}
-                hidden={{
-                  email: router.query.email ? router.query.email.toString() : '',
-                  url: 'ihostme.com.au',
-                }}
-                style={{
-                  overflowY: 'visible',
-                }}
-              />
+              <Stack bottom={3}>
+                <Widget
+                  id='cAmtR2rI'
+                  height={700}
+                  opacity={0}
+                  hidden={{
+                    email: router.query.email
+                      ? router.query.email.toString()
+                      : 'Not provided somehow, Isaac check this',
+                    url: 'ihostme.com.au',
+                  }}
+                  style={{
+                    overflowY: 'visible',
+                  }}
+                />
+              </Stack>
+
+              <Divider bottom={4} theme='border' />
+              <Text as='p' accent inline={4}>
+                Form not working?
+              </Text>
+              <a
+                href={`https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au&email=${
+                  router.query.email ? router.query.email.toString() : 'NA'
+                }`}
+                target='_blank'
+                rel='noreferrer'>
+                <Button iconPosition='right' icon={<ArrowSquareOut />} small>
+                  cosmo-au.typeform.com/to/cAmtR2rI
+                </Button>
+              </a>
             </Box>
           </Stack>
         </Stack>

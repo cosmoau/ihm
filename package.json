@@ -9,9 +9,9 @@
   "dependencies": {
     "@cosmoau/ui": "^1.1.2",
     "@stitches/react": "^1.2.8",
-    "@typeform/embed-react": "^2.3.0",
+    "@typeform/embed-react": "^2.4.0",
     "dayjs": "^1.11.6",
-    "next": "^13.0.3",
+    "next": "^13.0.5",
     "next-seo": "^5.14.1",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
@@ -22,10 +22,10 @@
   "devDependencies": {
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "eslint-config-dolmios": "^1.3.0",
-    "eslint-config-next": "^13.0.3",
-    "next-sitemap": "^3.1.31",
+    "eslint-config-next": "^13.0.5",
+    "next-sitemap": "^3.1.32",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
