@@ -70,7 +70,7 @@ export default function Locations(): JSX.Element {
                 imageHeight='7.5rem'
                 image='/images/location-geelong.jpg'
                 imageAlt='Geelong'>
-                <Text as='h3'>Geelong</Text>
+                <Text as='h4'>Geelong</Text>
               </Box>
             </Link>
           </Stack>
@@ -87,7 +87,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-portarlington.jpg'>
-                <Text as='h3'>Portarlington</Text>
+                <Text as='h4'>Portarlington</Text>
               </Box>
             </Link>
           </Stack>
@@ -104,7 +104,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-queenscliff.jpg'>
-                <Text as='h3'>Queenscliff</Text>
+                <Text as='h4'>Queenscliff</Text>
               </Box>
             </Link>
           </Stack>
@@ -121,7 +121,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-pointlonsdale.jpg'>
-                <Text as='h3'>Point Lonsdale</Text>
+                <Text as='h4'>Point Lonsdale</Text>
               </Box>
             </Link>
           </Stack>
@@ -138,7 +138,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-oceangrove.jpg'>
-                <Text as='h3'>Ocean Grove</Text>
+                <Text as='h4'>Ocean Grove</Text>
               </Box>
             </Link>
           </Stack>
@@ -158,7 +158,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-barwonheads.jpg'>
-                <Text as='h3'>Barwon Heads</Text>
+                <Text as='h4'>Barwon Heads</Text>
               </Box>
             </Link>
           </Stack>
@@ -176,7 +176,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-torquay.jpg'>
-                <Text as='h3'>Torquay</Text>
+                <Text as='h4'>Torquay</Text>
               </Box>
             </Link>
           </Stack>
@@ -193,7 +193,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-janjuc.jpg'>
-                <Text as='h3'>Jan Juc</Text>
+                <Text as='h4'>Jan Juc</Text>
               </Box>
             </Link>
           </Stack>
@@ -210,7 +210,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-anglesea.jpg'>
-                <Text as='h3'>Anglesea</Text>
+                <Text as='h4'>Anglesea</Text>
               </Box>
             </Link>
           </Stack>
@@ -227,7 +227,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-bellarinepeninsula.jpg'>
-                <Text as='h3'>Bellarine Peninsula</Text>
+                <Text as='h4'>Bellarine Peninsula</Text>
               </Box>
             </Link>
           </Stack>
@@ -246,7 +246,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-aireysinlet.jpg'>
-                <Text as='h3'>Aireys Inlet</Text>
+                <Text as='h4'>Aireys Inlet</Text>
               </Box>
             </Link>
           </Stack>
@@ -263,7 +263,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-fairhaven.jpg'>
-                <Text as='h3'>Fairhaven</Text>
+                <Text as='h4'>Fairhaven</Text>
               </Box>
             </Link>
           </Stack>
@@ -277,7 +277,7 @@ export default function Locations(): JSX.Element {
             }}>
             <Link href='/start?city=Lorne'>
               <Box theme='fill' imageHeight='7.5rem' image='/images/location-lorne.jpg'>
-                <Text as='h3'>Lorne</Text>
+                <Text as='h4'>Lorne</Text>
               </Box>
             </Link>
           </Stack>
@@ -294,7 +294,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-apollobay.jpg'>
-                <Text as='h3'>Apollo Bay</Text>
+                <Text as='h4'>Apollo Bay</Text>
               </Box>
             </Link>
           </Stack>
@@ -311,7 +311,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-surfcoast.jpg'>
-                <Text as='h3'>Surf Coast</Text>
+                <Text as='h4'>Surf Coast</Text>
               </Box>
             </Link>
           </Stack>
@@ -330,7 +330,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-mornington.jpg'>
-                <Text as='h3'>Mornington</Text>
+                <Text as='h4'>Mornington</Text>
               </Box>
             </Link>
           </Stack>
@@ -347,7 +347,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-mteliza.jpg'>
-                <Text as='h3'>Mt Eliza</Text>
+                <Text as='h4'>Mt Eliza</Text>
               </Box>
             </Link>
           </Stack>
@@ -364,7 +364,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-mtmartha.jpg'>
-                <Text as='h3'>Mt Martha</Text>
+                <Text as='h4'>Mt Martha</Text>
               </Box>
             </Link>
           </Stack>
@@ -381,7 +381,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-sorrento.jpg'>
-                <Text as='h3'>Sorrento</Text>
+                <Text as='h4'>Sorrento</Text>
               </Box>
             </Link>
           </Stack>
@@ -398,7 +398,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-portsea.jpg'>
-                <Text as='h3'>Portsea</Text>
+                <Text as='h4'>Portsea</Text>
               </Box>
             </Link>
           </Stack>
@@ -414,7 +414,7 @@ export default function Locations(): JSX.Element {
             }}>
             <Link href='/start?city=Rye'>
               <Box theme='fill' imageHeight='7.5rem' image='/images/location-rye.jpg'>
-                <Text as='h3'>Rye</Text>
+                <Text as='h4'>Rye</Text>
               </Box>
             </Link>
           </Stack>
@@ -431,7 +431,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-flinders.jpg'>
-                <Text as='h3'>Flinders</Text>
+                <Text as='h4'>Flinders</Text>
               </Box>
             </Link>
           </Stack>
@@ -448,7 +448,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-balnarring.jpg'>
-                <Text as='h3'>Balnarring</Text>
+                <Text as='h4'>Balnarring</Text>
               </Box>
             </Link>
           </Stack>
@@ -465,7 +465,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-somers.jpg'>
-                <Text as='h3'>Somers</Text>
+                <Text as='h4'>Somers</Text>
               </Box>
             </Link>
           </Stack>
@@ -482,7 +482,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-redhill.jpg'>
-                <Text as='h3'>Red Hill</Text>
+                <Text as='h4'>Red Hill</Text>
               </Box>
             </Link>
           </Stack>
@@ -501,7 +501,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-safetybeach.jpg'>
-                <Text as='h3'>Safety Beach</Text>
+                <Text as='h4'>Safety Beach</Text>
               </Box>
             </Link>
           </Stack>
@@ -518,7 +518,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-morningtonpeninsula.jpg'>
-                <Text as='h3'>Mornington Peninsula</Text>
+                <Text as='h4'>Mornington Peninsula</Text>
               </Box>
             </Link>
           </Stack>
@@ -532,7 +532,7 @@ export default function Locations(): JSX.Element {
             }}>
             <Link href='/start?city=Cowes'>
               <Box theme='fill' imageHeight='7.5rem' image='/images/location-cowes.jpg'>
-                <Text as='h3'>Cowes</Text>
+                <Text as='h4'>Cowes</Text>
               </Box>
             </Link>
           </Stack>
@@ -549,7 +549,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-smithsbeach.jpg'>
-                <Text as='h3'>Smiths Beach</Text>
+                <Text as='h4'>Smiths Beach</Text>
               </Box>
             </Link>
           </Stack>
@@ -566,7 +566,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-ventnor.jpg'>
-                <Text as='h3'>Ventnor</Text>
+                <Text as='h4'>Ventnor</Text>
               </Box>
             </Link>
           </Stack>
@@ -585,7 +585,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-capewoolamai.jpg'>
-                <Text as='h3'>Cape Woolamai</Text>
+                <Text as='h4'>Cape Woolamai</Text>
               </Box>
             </Link>
           </Stack>
@@ -599,7 +599,7 @@ export default function Locations(): JSX.Element {
             }}>
             <Link href='/start?city=Rhyll'>
               <Box theme='fill' imageHeight='7.5rem' image='/images/location-rhyll.jpg'>
-                <Text as='h3'>Rhyll</Text>
+                <Text as='h4'>Rhyll</Text>
               </Box>
             </Link>
           </Stack>
@@ -616,7 +616,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-sanremo.jpg'>
-                <Text as='h3'>San Remo</Text>
+                <Text as='h4'>San Remo</Text>
               </Box>
             </Link>
           </Stack>
@@ -633,7 +633,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-phillipisland.jpg'>
-                <Text as='h3'>Phillip Island</Text>
+                <Text as='h4'>Phillip Island</Text>
               </Box>
             </Link>
           </Stack>
@@ -650,7 +650,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-capepaterson.jpg'>
-                <Text as='h3'>Cape Paterson</Text>
+                <Text as='h4'>Cape Paterson</Text>
               </Box>
             </Link>
           </Stack>
@@ -669,7 +669,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-venusbay.jpg'>
-                <Text as='h3'>Venus Bay</Text>
+                <Text as='h4'>Venus Bay</Text>
               </Box>
             </Link>
           </Stack>
@@ -686,7 +686,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-inverloch.jpg'>
-                <Text as='h3'>Inverloch</Text>
+                <Text as='h4'>Inverloch</Text>
               </Box>
             </Link>
           </Stack>
@@ -703,7 +703,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-basscoast.jpg'>
-                <Text as='h3'>Bass Coast</Text>
+                <Text as='h4'>Bass Coast</Text>
               </Box>
             </Link>
           </Stack>
@@ -720,7 +720,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-southgippsland.jpg'>
-                <Text as='h3'>South Gippsland</Text>
+                <Text as='h4'>South Gippsland</Text>
               </Box>
             </Link>
           </Stack>
@@ -737,7 +737,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-hobart.jpg'>
-                <Text as='h3'>Hobart & Huon Valley</Text>
+                <Text as='h4'>Hobart & Huon Valley</Text>
               </Box>
             </Link>
           </Stack>

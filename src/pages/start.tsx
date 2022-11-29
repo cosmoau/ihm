@@ -2,7 +2,6 @@ import { Stack, Text, View, Box, Image, fadeIn, Divider, Button } from '@cosmoau
 import { Widget } from '@typeform/embed-react';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
-import { ArrowSquareOut } from 'phosphor-react';
 
 export default function Start(): JSX.Element {
   const router = useRouter();
@@ -42,7 +41,7 @@ export default function Start(): JSX.Element {
                   : 'Sign Up'}
               </Text>
               <Text
-                as='h5'
+                as='h6'
                 accent
                 css={{
                   animation: `${fadeIn}  0.8s ease-in-out`,
@@ -78,6 +77,7 @@ export default function Start(): JSX.Element {
         <Stack
           direction='row'
           flex='stretch'
+          align='center'
           css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column'>
             <Box
@@ -101,9 +101,8 @@ export default function Start(): JSX.Element {
                   }}
                 />
               </Stack>
-
-              <Divider bottom={4} theme='border' />
-              <Text as='p' accent inline={4}>
+              <Divider bottom={5} />
+              <Text as='small' accent inline={4}>
                 Form not working?
               </Text>
               <a
@@ -112,7 +111,7 @@ export default function Start(): JSX.Element {
                 }`}
                 target='_blank'
                 rel='noreferrer'>
-                <Button iconPosition='right' icon={<ArrowSquareOut />} small>
+                <Button external small>
                   cosmo-au.typeform.com/to/cAmtR2rI
                 </Button>
               </a>

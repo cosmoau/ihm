@@ -1,4 +1,4 @@
-import { Stack, Text, View, Box, Avatar, Badge, Image, fadeIn } from '@cosmoau/ui';
+import { Stack, Text, Image, View, Box, Badge, fadeIn } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 
 export default function Testimonials(): JSX.Element {
@@ -78,23 +78,29 @@ export default function Testimonials(): JSX.Element {
                     },
                     verticalAlign: 'middle',
                   }}>
-                  <Avatar image='/images/testimonial-01.jpg' width={100} fallback='' />
+                  <Image
+                    src='/images/testimonial-01.jpg'
+                    width={100}
+                    height={100}
+                    borderRadius={3}
+                    alt='A photo of The Woodville, an Airbnb in Ocean Grove, Victoria, Australia.'
+                  />
                 </Stack>
                 <Stack
                   css={{
                     display: 'inline-block',
                     verticalAlign: 'middle',
                   }}>
-                  <Text as='h3'>The Woodville, Ocean Grove</Text>
+                  <Text as='h4'>The Woodville, Ocean Grove</Text>
                   <Badge>Josie Pileio and Rob Farrugia, Owners</Badge>
                 </Stack>
               </Stack>
-              <Text as='h6' accent top={4}>
+              <Text as='p' accent>
                 We were moving overseas and from the very beginning when we were just
                 considering our options, ihostme were able to provide advice, support
                 and the peace of mind to just make it happen!
               </Text>
-              <Text as='h6' accent>
+              <Text as='p' accent>
                 ihostme arranged everything from setting up our listing on the various
                 sites available, prepared the host information, all the welcome packs
                 and all other host related resources ready for our guests. The guest
@@ -103,13 +109,13 @@ export default function Testimonials(): JSX.Element {
                 our home.
               </Text>
 
-              <Text as='h6' accent>
+              <Text as='p' accent>
                 We find both Dave and Jayne to be very professional, attentive and very
                 knowledgeable about the management of our property and their friendly
                 and approachable manner makes it even more enjoyable to work with them.
               </Text>
 
-              <Text as='h6' accent>
+              <Text as='p' accent>
                 We have been with ihostme® for over 6 years and I wouldn’t consider
                 anyone else to manage our property.
               </Text>
@@ -138,19 +144,25 @@ export default function Testimonials(): JSX.Element {
                     },
                     verticalAlign: 'middle',
                   }}>
-                  <Avatar image='/images/testimonial-02.jpg' width={100} fallback='' />
+                  <Image
+                    src='/images/testimonial-02.jpg'
+                    width={100}
+                    height={100}
+                    borderRadius={3}
+                    alt='A photo of Blue Waters Retreat, an Airbnb in Ocean Grove, Victoria, Australia.'
+                  />
                 </Stack>
                 <Stack
                   css={{
                     display: 'inline-block',
                     verticalAlign: 'middle',
                   }}>
-                  <Text as='h3'>Blue Waters Retreat, Ocean Grove</Text>
+                  <Text as='h4'>Blue Waters Retreat, Ocean Grove</Text>
                   <Badge>Lorien and Dean Platt, Owners</Badge>
                 </Stack>
               </Stack>
 
-              <Text as='h6' accent top={4}>
+              <Text as='p' accent>
                 ihostme provided invaluable assistance and advice in getting my property
                 ready to list within 2 weeks of first contact, despite being away on
                 holidays themselves at the time! ihostme’s marketing expertise ensured
@@ -158,19 +170,19 @@ export default function Testimonials(): JSX.Element {
                 week days as well.
               </Text>
 
-              <Text as='h6' accent>
+              <Text as='p' accent>
                 I have found the services provided through ihostme® to be extremely
                 helpful, enabling me to leave all aspects of AirBnB management in their
                 capable and experienced hands, and providing peace of mind that it is
                 all under control.
               </Text>
-              <Text as='h6' accent>
+              <Text as='p' accent>
                 They are very professional, great communicators and problem solvers and
                 clearly willing to go the extra mile to facilitate a positive experience
                 all round for owners as well as the all-important guests.
               </Text>
 
-              <Text as='h6' accent>
+              <Text as='p' accent>
                 I highly recommend the ihostme® service and would be surprised if it
                 doesn’t continue to grow beyond Ocean Grove and the immediate surrounds
                 as word travels of their sterling service.

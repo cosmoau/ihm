@@ -75,7 +75,7 @@ export default function Team(): JSX.Element {
               </Stack>
 
               <Stack css={{ display: 'inline-block', verticalAlign: 'middle' }}>
-                <Text as='h3' css={{ marginBottom: '$2 !important' }}>
+                <Text as='h4' css={{ marginBottom: '$2 !important' }}>
                   Kyle Fitzsimmons
                 </Text>
                 <Badge>Managing Director</Badge>
@@ -101,7 +101,7 @@ export default function Team(): JSX.Element {
               </Stack>
 
               <Stack css={{ display: 'inline-block', verticalAlign: 'middle' }}>
-                <Text as='h3' css={{ marginBottom: '$2 !important' }}>
+                <Text as='h4' css={{ marginBottom: '$2 !important' }}>
                   Jayne Parker
                 </Text>
                 <Badge>Head of Projects</Badge>
@@ -127,7 +127,7 @@ export default function Team(): JSX.Element {
               </Stack>
 
               <Stack css={{ display: 'inline-block', verticalAlign: 'middle' }}>
-                <Text as='h3' css={{ marginBottom: '$2 !important' }}>
+                <Text as='h4' css={{ marginBottom: '$2 !important' }}>
                   Victoria Mills
                 </Text>
                 <Badge>Regional Coordinator</Badge>

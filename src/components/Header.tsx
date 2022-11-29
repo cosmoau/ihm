@@ -1,5 +1,4 @@
-import { View, Stack, Button, Dropdown, fadeIn } from '@cosmoau/ui';
-import Image from 'next/image';
+import { View, Image, Stack, Button, Dropdown, fadeIn } from '@cosmoau/ui';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { CaretDown } from 'phosphor-react';
@@ -9,15 +8,14 @@ export default function Header(): JSX.Element {
 
   return (
     <View
-      top={4}
+      top={3}
       css={{
-        borderBottom: '0.1rem solid $borderHover',
-
+        borderBottom: '0.1rem solid $border',
         position: 'sticky',
         top: 0,
         zIndex: 100,
       }}
-      bottom={4}>
+      bottom={3}>
       <Stack
         direction='row'
         flex='center'
@@ -68,7 +66,6 @@ export default function Header(): JSX.Element {
                 label: 'Locations',
                 value: '/locations',
               },
-
               {
                 label: 'Sign Up',
                 value: '/start',
@@ -141,8 +138,7 @@ export default function Header(): JSX.Element {
           <Dropdown
             submenu
             last
-            filter
-            width='16rem'
+            width='17rem'
             align='left'
             options={[
               {
