@@ -1,6 +1,6 @@
 # ihm
 
-A temporary home for ihostme during company acquisition.
+The ihostme landing page.
 
 ### Develop
 

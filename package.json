@@ -1,13 +1,13 @@
 {
   "name": "ihm",
-  "description": "A temporary home for ihostme during company acquisition.",
+  "description": "The ihostme landing page.",
   "version": "1.0.0",
   "author": "Jackson <mail@planare.dev>",
   "bugs": {
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.1.7",
+    "@cosmoau/ui": "^1.1.8",
     "@stitches/react": "^1.2.8",
     "@typeform/embed-react": "^2.5.0",
     "dayjs": "^1.11.6",

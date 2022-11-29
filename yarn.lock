@@ -31,9 +31,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cosmoau/ui@npm:^1.1.7":
-  version: 1.1.7
-  resolution: "@cosmoau/ui@npm:1.1.7"
+"@cosmoau/ui@npm:^1.1.8":
+  version: 1.1.8
+  resolution: "@cosmoau/ui@npm:1.1.8"
   dependencies:
     "@stitches/react": "npm:1.2.8"
     next: "npm:13.0.5"
@@ -43,7 +43,7 @@ __metadata:
     react-hot-toast: "npm:2.4.0"
     typescript: "npm:^4.9.3"
     usehooks-ts: "npm:2.9.1"
-  checksum: ebd84a23c3fd96a4ed09ad35b343112a4b1575efd40bcd35f09de7969a654b8d6ceb4a29083c93c4aef750115b460072e6b58ec5f3bfb2842a653f2e7506fe3d
+  checksum: 0f41742cbf9d157263a765dd02828f9a09b0bad6d2f7ad1fcf8875baf1e479d5056316d13807ce49d69b7792506ab2fcb1b39578926e58841ecdb315f1ce7edb
   languageName: node
   linkType: hard
 
@@ -1597,7 +1597,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ihm@workspace:."
   dependencies:
-    "@cosmoau/ui": "npm:^1.1.7"
+    "@cosmoau/ui": "npm:^1.1.8"
     "@stitches/react": "npm:^1.2.8"
     "@typeform/embed-react": "npm:^2.5.0"
     "@types/node": "npm:^18.11.9"

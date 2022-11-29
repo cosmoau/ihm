@@ -9,7 +9,7 @@ import {
 
 export default function Footer(): JSX.Element {
   return (
-    <>
+    <footer>
       <View container top={7} bottom={7} css={{ borderTop: '0.1rem solid $border' }}>
         <Stack direction='row' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack
@@ -89,16 +89,16 @@ export default function Footer(): JSX.Element {
           zIndex: 201,
         }}
         container
-        top={5}
+        top={6}
         inverted
-        bottom={5}>
+        bottom={6}>
         <Stack
           direction='row'
           flex='center'
           css={{
             animation: `${fadeIn}  0.8s ease-in-out`,
           }}>
-          <Stack direction='column' width={40} widthPhone={40}>
+          <Stack direction='column' width={40} widthPhone={30}>
             <Stack>
               <Badge
                 theme='border'
@@ -118,6 +118,7 @@ export default function Footer(): JSX.Element {
                   <Text
                     as='h5'
                     css={{
+                      hidden: 'phone',
                       lineHeight: '1.5rem',
                       marginBottom: '0 !important',
                     }}>
@@ -131,11 +132,19 @@ export default function Footer(): JSX.Element {
                     }}>
                     Powered by Cosmo
                   </Text>
+                  <Text
+                    as='p'
+                    bold
+                    css={{
+                      visible: 'phone',
+                    }}>
+                    IHM
+                  </Text>
                 </Stack>
               </Badge>
             </Stack>
           </Stack>
-          <Stack direction='column' width={60} widthPhone={60} align='right'>
+          <Stack direction='column' width={60} widthPhone={70} align='right'>
             <a href='https://www.facebook.com/cosmogroup.io'>
               <Button theme='fill' inline={4} ariaLabel='Facebook' name='facebook'>
                 <FacebookLogo size={20} />
@@ -173,6 +182,6 @@ export default function Footer(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-    </>
+    </footer>
   );
 }
