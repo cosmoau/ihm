@@ -153,7 +153,9 @@ export default function Home(): JSX.Element {
             }}>
             <Image
               src='/images/misc-07.jpg'
-              alt='airbnb'
+              alt='A photo of a couch in a living room, with a flower vase on the coffee table.'
+              placeholder='blur'
+              blurDataURL='/images/misc-07.jpg'
               fill
               css={{
                 img: {

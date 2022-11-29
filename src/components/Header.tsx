@@ -27,7 +27,16 @@ export default function Header(): JSX.Element {
                 display: 'inline-flex',
                 verticalAlign: 'middle',
               }}>
-              <Image src='/images/logo-new.png' alt='logo' width={120} height={36.5} />
+              <Image
+                src='/images/logo-new.png'
+                blurDataURL='/images/logo-new.png'
+                placeholder='blur'
+                alt='
+              ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
+              '
+                width={120}
+                height={36.5}
+              />
             </Stack>
           </Link>
         </Stack>

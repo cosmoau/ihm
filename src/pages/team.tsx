@@ -39,7 +39,9 @@ export default function Team(): JSX.Element {
             <Image
               src='/images/misc-12.jpg'
               fillPosition='left'
-              alt='airbnb'
+              alt='A photo of a dining table with festive decorations.'
+              placeholder='blur'
+              blurDataURL='/images/misc-12.jpg'
               fill
               css={{
                 img: {

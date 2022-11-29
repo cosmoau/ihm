@@ -39,7 +39,10 @@ export default function Locations(): JSX.Element {
           <Stack minimal direction='column' width={50} widthPhone={45}>
             <Image
               src='/images/misc-13.jpg'
-              alt='airbnb'
+              blurDataURL='/images/misc-13.jpg'
+              placeholder='blur'
+              alt='
+                A photo of a the Point Lonsdale Lighthouse, which is in one of the many locations we service.'
               fill
               css={{
                 img: {
@@ -69,7 +72,7 @@ export default function Locations(): JSX.Element {
                 theme='fill'
                 imageHeight='7.5rem'
                 image='/images/location-geelong.jpg'
-                imageAlt='Geelong'>
+                imageAlt='Airbnb Management in Victoria, Australia - Geelong'>
                 <Text as='h4'>Geelong</Text>
               </Box>
             </Link>

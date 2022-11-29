@@ -7,7 +7,7 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.1.6",
+    "@cosmoau/ui": "^1.1.7",
     "@stitches/react": "^1.2.8",
     "@typeform/embed-react": "^2.5.0",
     "dayjs": "^1.11.6",

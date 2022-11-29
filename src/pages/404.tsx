@@ -39,8 +39,11 @@ export default function Custom404(): JSX.Element {
           <Stack minimal direction='column' width={50} widthPhone={45}>
             <Image
               src='/images/misc-09.jpg'
-              alt='airbnb'
+              alt='
+                An overhead shot of the Great Ocean Road, where we wish we were driving right now.'
               fill
+              placeholder='blur'
+              blurDataURL='/images/misc-09.jpg'
               css={{
                 img: {
                   borderBottomRightRadius: '$3 !important',

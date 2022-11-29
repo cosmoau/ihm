@@ -55,7 +55,9 @@ export default function Start(): JSX.Element {
           <Stack minimal direction='column' width={50} css={{ hidden: 'phone' }}>
             <Image
               src='/images/misc-14.jpg'
-              alt='airbnb'
+              alt='A photo of the beach walk in Point Lonsdale, Victoria, Australia.'
+              blurDataURL='/images/misc-14.jpg'
+              placeholder='blur'
               fill
               css={{
                 img: {

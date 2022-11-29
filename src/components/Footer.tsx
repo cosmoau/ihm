@@ -20,7 +20,16 @@ export default function Footer(): JSX.Element {
                 height: '30rem',
               },
             }}>
-            <Image src='/images/misc-11.jpg' alt='airbnb' fill borderRadius={3} />
+            <Image
+              src='/images/misc-11.jpg'
+              alt='
+              A photo of coastal Victoria, Australia where ihostme is based and where we offer Airbnb management services to owners and investors.
+            '
+              fill
+              blurDataURL='/images/misc-11.jpg'
+              placeholder='blur'
+              borderRadius={3}
+            />
           </Stack>
           <Stack
             top={6}
@@ -94,7 +103,16 @@ export default function Footer(): JSX.Element {
               <Badge
                 theme='border'
                 icon={
-                  <Image src='/favicon.ico' width={33} height={33} alt='ihostme' />
+                  <Image
+                    src='/favicon.ico'
+                    width={33}
+                    height={33}
+                    placeholder='blur'
+                    blurDataURL='/favicon.ico'
+                    alt='
+                  ihostme logo, which is a pink icon of a house.
+                  '
+                  />
                 }>
                 <Stack>
                   <Text

@@ -38,7 +38,9 @@ export default function Testimonials(): JSX.Element {
           <Stack minimal direction='column' width={50} widthPhone={45}>
             <Image
               src='/images/misc-10.jpg'
-              alt='airbnb'
+              alt='A photo of a bed.'
+              placeholder='blur'
+              blurDataURL='/images/misc-10.jpg'
               fill
               css={{
                 img: {
