@@ -98,53 +98,30 @@ export default function Footer(): JSX.Element {
           css={{
             animation: `${fadeIn}  0.8s ease-in-out`,
           }}>
-          <Stack direction='column' width={40} widthPhone={30}>
+          <Stack direction='column' width={40} widthPhone={15}>
             <Stack>
-              <Badge
-                theme='border'
-                icon={
-                  <Image
-                    src='/favicon.ico'
-                    width={33}
-                    height={33}
-                    placeholder='blur'
-                    blurDataURL='/favicon.ico'
-                    alt='
+              <Badge theme='border'>
+                <Image
+                  src='/favicon.ico'
+                  width={25}
+                  height={25}
+                  placeholder='blur'
+                  blurDataURL='/favicon.ico'
+                  alt='
                   ihostme logo, which is a pink icon of a house.
                   '
-                  />
-                }>
-                <Stack>
-                  <Text
-                    as='h5'
-                    css={{
-                      hidden: 'phone',
-                      lineHeight: '1.5rem',
-                      marginBottom: '0 !important',
-                    }}>
-                    ihostme
-                  </Text>
-                  <Text
-                    as='small'
-                    accent
-                    css={{
-                      hidden: 'phone',
-                    }}>
-                    Powered by Cosmo
-                  </Text>
-                  <Text
-                    as='p'
-                    bold
-                    css={{
-                      visible: 'phone',
-                    }}>
-                    IHM
-                  </Text>
-                </Stack>
+                />
+                <Text
+                  as='h6'
+                  bold
+                  inline='auto'
+                  css={{ hiddenInline: 'phone', marginLeft: '$4' }}>
+                  ihostme
+                </Text>
               </Badge>
             </Stack>
           </Stack>
-          <Stack direction='column' width={60} widthPhone={70} align='right'>
+          <Stack direction='column' width={60} widthPhone={85} align='right'>
             <a href='https://www.facebook.com/cosmogroup.io'>
               <Button theme='fill' inline={4} ariaLabel='Facebook' name='facebook'>
                 <FacebookLogo size={20} />
