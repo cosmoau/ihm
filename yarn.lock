@@ -516,6 +516,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/analytics@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@vercel/analytics@npm:0.1.5"
+  peerDependencies:
+    react: ^16.8||^17||^18
+  checksum: e7f4dbe0456c6aa24ffc4b7930dbb373eccb27cf319ddda53c7c27873c2fbe11899b8dbf8aec93b986a601b27e93d0587717821ca58bd5fea253f000f8f8a452
+  languageName: node
+  linkType: hard
+
 "acorn-jsx@npm:^5.2.0, acorn-jsx@npm:^5.3.2":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
@@ -1602,6 +1611,7 @@ __metadata:
     "@typeform/embed-react": "npm:^2.5.0"
     "@types/node": "npm:^18.11.10"
     "@types/react": "npm:^18.0.25"
+    "@vercel/analytics": "npm:^0.1.5"
     dayjs: "npm:^1.11.6"
     eslint: "npm:^8.28.0"
     eslint-config-dolmios: "npm:^1.3.1"

@@ -1,4 +1,5 @@
 import { Provider } from '@cosmoau/ui';
+import { Analytics } from '@vercel/analytics/react';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       <Header />
       <Component {...pageProps} />
       <Footer />
+      <Analytics />
     </Provider>
   );
 }

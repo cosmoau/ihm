@@ -10,6 +10,7 @@
     "@cosmoau/ui": "^1.2.1",
     "@stitches/react": "^1.2.8",
     "@typeform/embed-react": "^2.5.0",
+    "@vercel/analytics": "^0.1.5",
     "dayjs": "^1.11.6",
     "next": "^13.0.5",
     "next-seo": "^5.14.1",
