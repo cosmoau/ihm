@@ -5,10 +5,7 @@ export default function Team(): JSX.Element {
   return (
     <>
       <NextSeo title='Meet the Team' />
-      <View
-        inverted
-        top={5}
-        css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
+      <View inverted top={5} css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
         <Stack direction='row' minimal>
           <Stack direction='column' width={50} widthPhone={55} minimal>
             <Box
@@ -61,10 +58,7 @@ export default function Team(): JSX.Element {
         css={{
           phone: { paddingBottom: '$5', paddingTop: '$5' },
         }}>
-        <Stack
-          direction='row'
-          flex='stretch'
-          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction='row' flex='stretch' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column' width={33}>
             <Box theme='fill'>
               <Stack
@@ -99,14 +93,14 @@ export default function Team(): JSX.Element {
                   marginRight: '$5',
                   verticalAlign: 'middle',
                 }}>
-                <Avatar image='/images/team-jayne.jpg' fallback='JP' width={66} />
+                <Avatar image='/images/team-harry.jpg' fallback='HK' width={66} />
               </Stack>
 
               <Stack css={{ display: 'inline-block', verticalAlign: 'middle' }}>
                 <Text as='h4' css={{ marginBottom: '$2 !important' }}>
-                  Jayne Parker
+                  Harrison Keck
                 </Text>
-                <Badge>Head of Projects</Badge>
+                <Badge>Regional Coordinator</Badge>
               </Stack>
             </Box>
           </Stack>
