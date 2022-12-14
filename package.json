@@ -7,8 +7,7 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.2.2",
-    "@stitches/react": "^1.2.8",
+    "@cosmoau/ui": "^1.2.4",
     "@typeform/embed-react": "^2.7.0",
     "@vercel/analytics": "^0.1.6",
     "dayjs": "^1.11.7",
@@ -31,13 +30,13 @@
     "prettier": "^2.8.1"
   },
   "homepage": "https://github.com/cosmoau/ihm#readme",
+  "license": "GPL-3.0",
   "prettier": "eslint-config-dolmios/.prettierrc.json",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cosmoau/ihm.git"
   },
-  "private": false,
-  "license": "GPL-3.0",
   "scripts": {
     "build": "next build",
     "dev": "echo '⚡️ Fetching device IP for development...' && ipconfig getifaddr en0 && echo '🫡' && next dev -p 420",

@@ -6,6 +6,71 @@ import { CaretDown } from 'phosphor-react';
 export default function Header(): JSX.Element {
   const router = useRouter();
 
+  const optionsPhone = [
+    {
+      label: 'Home',
+      value: '/',
+    },
+    {
+      label: 'Testimonials',
+      value: '/testimonials',
+    },
+    {
+      label: 'Team',
+      value: '/team',
+    },
+    {
+      label: 'Locations',
+      value: '/locations',
+    },
+    {
+      label: 'Sign Up',
+      value: '/start',
+    },
+    {
+      label: '🏡 Book a stay',
+      value: 'https://airbnb.com/p/cosmo',
+    },
+  ];
+
+  const optionsResources = [
+    {
+      label: 'Latest News',
+      value: 'https://cosmogroup.io/blog',
+    },
+    {
+      label: 'Legal Info',
+      value: 'https://cosmogroup.io/legal',
+    },
+    {
+      label: 'Airbnb Calculator',
+      value: 'https://cosmogroup.io/mini',
+    },
+    {
+      label: 'Contact Us',
+      value: 'https://cosmogroup.io/mini',
+    },
+    {
+      label: '🏡 Book a stay',
+      value: 'https://airbnb.com/p/cosmo',
+    },
+  ];
+
+  // now a function that handles the selection, and either router.pushes or window.open
+  const handleSelection = (value: string, label: string): void => {
+    if (value.includes('http')) {
+      // eslint-disable-next-line no-console
+      console.log('opening to external', label || value);
+      window.open(value, '_blank');
+    } else {
+      // eslint-disable-next-line no-console
+      console.log('opening to internal route', label || value);
+      router.push(value);
+    }
+  };
+
+  const activeSelection = optionsPhone.find((option) => option.value === router.pathname)?.value || '/';
+
   return (
     <header>
       <View
@@ -17,10 +82,7 @@ export default function Header(): JSX.Element {
           zIndex: 100,
         }}
         bottom={3}>
-        <Stack
-          direction='row'
-          flex='center'
-          css={{ animation: `${fadeIn}  0.5s ease-in-out` }}>
+        <Stack direction='row' flex='center' css={{ animation: `${fadeIn}  0.5s ease-in-out` }}>
           <Stack direction='column' width={25} widthTablet={40} widthPhone={50}>
             <Link href='/'>
               <Stack
@@ -55,36 +117,13 @@ export default function Header(): JSX.Element {
               </Button>
             </a>
             <Dropdown
-              submenu
+              locked={false}
+              onSelection={(value, label): void => handleSelection(value, label)}
+              selection={activeSelection}
               last
               width='16rem'
               align='right'
-              options={[
-                {
-                  label: 'Home',
-                  value: '/',
-                },
-                {
-                  label: 'Testimonials',
-                  value: '/testimonials',
-                },
-                {
-                  label: 'Team',
-                  value: '/team',
-                },
-                {
-                  label: 'Locations',
-                  value: '/locations',
-                },
-                {
-                  label: 'Sign Up',
-                  value: '/start',
-                },
-                {
-                  label: '🏡 Book a stay',
-                  value: 'https://airbnb.com/p/cosmo',
-                },
-              ]}
+              options={optionsPhone}
               trigger={
                 <Button
                   name='menu'
@@ -116,10 +155,7 @@ export default function Header(): JSX.Element {
               <Button
                 theme={router.pathname === '/testimonials' ? 'fill' : 'minimal'}
                 css={{
-                  color:
-                    router.pathname === '/testimonials'
-                      ? '$accent !important'
-                      : 'inherit',
+                  color: router.pathname === '/testimonials' ? '$accent !important' : 'inherit',
                 }}>
                 Testimonials
               </Button>
@@ -138,40 +174,20 @@ export default function Header(): JSX.Element {
               <Button
                 theme={router.pathname === '/locations' ? 'fill' : 'minimal'}
                 css={{
-                  color:
-                    router.pathname === '/locations' ? '$accent !important' : 'inherit',
+                  color: router.pathname === '/locations' ? '$accent !important' : 'inherit',
                 }}>
                 Locations
               </Button>
             </Link>
 
             <Dropdown
-              submenu
+              locked={false}
               last
               width='17rem'
               align='left'
-              options={[
-                {
-                  label: 'Latest News',
-                  value: 'https://cosmogroup.io/blog',
-                },
-                {
-                  label: 'Legal Info',
-                  value: 'https://cosmogroup.io/legal',
-                },
-                {
-                  label: 'Airbnb Calculator',
-                  value: 'https://cosmogroup.io/mini',
-                },
-                {
-                  label: 'Contact Us',
-                  value: 'https://cosmogroup.io/mini',
-                },
-                {
-                  label: '🏡 Book a stay',
-                  value: 'https://airbnb.com/p/cosmo',
-                },
-              ]}
+              options={optionsResources}
+              selection={activeSelection}
+              onSelection={(value, label): void => handleSelection(value, label)}
               trigger={
                 <Button
                   name='menu'
