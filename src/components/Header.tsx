@@ -1,4 +1,4 @@
-import { View, Image, Stack, Button, Dropdown, fadeIn } from '@cosmoau/ui';
+import { View, Image, Stack, Button, Select, fadeIn } from '@cosmoau/ui';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { CaretDown } from 'phosphor-react';
@@ -116,7 +116,7 @@ export default function Header(): JSX.Element {
                 Owners
               </Button>
             </a>
-            <Dropdown
+            <Select
               locked={false}
               onSelection={(value, label): void => handleSelection(value, label)}
               selection={activeSelection}
@@ -180,7 +180,7 @@ export default function Header(): JSX.Element {
               </Button>
             </Link>
 
-            <Dropdown
+            <Select
               locked={false}
               last
               width='17rem'
