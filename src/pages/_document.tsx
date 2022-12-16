@@ -88,13 +88,6 @@ class Document extends NextDocument<Props> {
               }, false);
           `}
           </Script>
-          <Script
-            defer
-            strategy='beforeInteractive'
-            src='https://api.pirsch.io/pirsch.js'
-            id='pirschjs'
-            data-code='Ef2zyoQZNHdet4OefRonvDGqc2NjYIQD'
-          />
         </body>
       </Html>
     );
