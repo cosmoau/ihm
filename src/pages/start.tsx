@@ -7,15 +7,8 @@ export default function Start(): JSX.Element {
   const router = useRouter();
   return (
     <>
-      <NextSeo
-        title={
-          router.query.city ? `${router.query.city} Property Management` : 'Sign Up'
-        }
-      />
-      <View
-        inverted
-        top={5}
-        css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
+      <NextSeo title={router.query.city ? `${router.query.city} Property Management` : 'Sign Up'} />
+      <View inverted top={5} css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
         <Stack direction='row' minimal>
           <Stack direction='column' width={50} minimal>
             <Box
@@ -36,12 +29,10 @@ export default function Start(): JSX.Element {
                 css={{
                   animation: `${fadeIn}  0.5s ease-in-out`,
                 }}>
-                {router.query.city
-                  ? `List your home in ${router.query.city}`
-                  : 'Sign Up'}
+                {router.query.city ? `List your home in ${router.query.city}` : 'Sign Up'}
               </Text>
               <Text
-                as='h6'
+                as='p'
                 accent
                 css={{
                   animation: `${fadeIn}  0.8s ease-in-out`,
@@ -76,11 +67,7 @@ export default function Start(): JSX.Element {
         css={{
           phone: { paddingBottom: '$5', paddingTop: '$5' },
         }}>
-        <Stack
-          direction='row'
-          flex='stretch'
-          align='center'
-          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction='row' flex='stretch' align='center' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column'>
             <Box
               theme='fill'
@@ -104,19 +91,20 @@ export default function Start(): JSX.Element {
                 />
               </Stack>
               <Divider bottom={5} />
-              <Text as='small' accent inline={4}>
+              <Text as='small' accent inline={4} css={{ verticalAlign: 'middle' }}>
                 Form not working?
               </Text>
-              <a
-                href={`https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au&email=${
-                  router.query.email ? router.query.email.toString() : 'NA'
-                }`}
-                target='_blank'
-                rel='noreferrer'>
-                <Button external small>
+
+              <Button external small css={{ verticalAlign: 'middle' }}>
+                <a
+                  href={`https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au&email=${
+                    router.query.email ? router.query.email.toString() : 'NA'
+                  }`}
+                  target='_blank'
+                  rel='noreferrer'>
                   cosmo-au.typeform.com/to/cAmtR2rI
-                </Button>
-              </a>
+                </a>
+              </Button>
             </Box>
           </Stack>
         </Stack>

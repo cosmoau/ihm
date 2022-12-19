@@ -1,11 +1,5 @@
 import { View, Image, Button, Stack, Text, Badge, fadeIn } from '@cosmoau/ui';
-import {
-  ChatCircle,
-  FacebookLogo,
-  InstagramLogo,
-  LinkedinLogo,
-  Phone,
-} from 'phosphor-react';
+import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from 'phosphor-react';
 
 export default function Footer(): JSX.Element {
   return (
@@ -44,13 +38,12 @@ export default function Footer(): JSX.Element {
               },
             }}>
             <Text as='h3'>Unlock your full earning potential today</Text>
-            <Text as='h6' accent>
-              ihostme manages properties that earn $40,000 or more in rental income per
-              year.
+            <Text as='p' accent>
+              ihostme manages properties that earn $40,000 or more in rental income per year.
             </Text>
-            <Text as='h6' accent>
-              We are interested in speaking to owners of homes and holiday rentals that
-              are available for at least 140 nights per year.
+            <Text as='p' accent>
+              We are interested in speaking to owners of homes and holiday rentals that are available for at least 140
+              nights per year.
             </Text>
             <Stack top={5}>
               <a href='mailto:ihostme@cosmogroup.io'>
@@ -111,11 +104,7 @@ export default function Footer(): JSX.Element {
                   ihostme logo, which is a pink icon of a house.
                   '
                 />
-                <Text
-                  as='h6'
-                  bold
-                  inline='auto'
-                  css={{ hiddenInline: 'phone', marginLeft: '$4' }}>
+                <Text as='p' bold inline='auto' css={{ hiddenInline: 'phone', marginLeft: '$4' }}>
                   ihostme
                 </Text>
               </Badge>
@@ -127,18 +116,12 @@ export default function Footer(): JSX.Element {
                 <FacebookLogo size={20} />
               </Button>
             </a>
-            <a
-              href='https://www.instagram.com/cosmogroup.io/'
-              rel='noreferrer'
-              target='_blank'>
+            <a href='https://www.instagram.com/cosmogroup.io/' rel='noreferrer' target='_blank'>
               <Button theme='fill' inline={4} ariaLabel='Instagram' name='instagram'>
                 <InstagramLogo size={20} />
               </Button>
             </a>
-            <a
-              href='https://www.linkedin.com/company/cosmoau/'
-              rel='noreferrer'
-              target='_blank'>
+            <a href='https://www.linkedin.com/company/cosmoau/' rel='noreferrer' target='_blank'>
               <Button theme='fill' inline={4} ariaLabel='LinkedIn' name='linkedin'>
                 <LinkedinLogo size={20} />
               </Button>
@@ -153,8 +136,7 @@ export default function Footer(): JSX.Element {
         <Stack direction='row' align='center' top={4}>
           <Stack direction='column'>
             <Text as='small' accent>
-              Made with love in Ocean Grove, Victoria, Australia. Services offered by
-              Cosmo AU Pty Ltd (22 139 144 915).
+              Made with love in Ocean Grove, Victoria, Australia. Services offered by Cosmo AU Pty Ltd (22 139 144 915).
             </Text>
           </Stack>
         </Stack>

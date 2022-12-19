@@ -71,8 +71,8 @@ export default function Testimonials(): JSX.Element {
                   }}>
                   <Image
                     src='/images/testimonial-01.jpg'
-                    width={100}
-                    height={100}
+                    width={60}
+                    height={60}
                     borderRadius={3}
                     alt='A photo of The Woodville, an Airbnb in Ocean Grove, Victoria, Australia.'
                   />
@@ -133,8 +133,8 @@ export default function Testimonials(): JSX.Element {
                   }}>
                   <Image
                     src='/images/testimonial-02.jpg'
-                    width={100}
-                    height={100}
+                    width={60}
+                    height={60}
                     borderRadius={3}
                     alt='A photo of Blue Waters Retreat, an Airbnb in Ocean Grove, Victoria, Australia.'
                   />

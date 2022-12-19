@@ -67,7 +67,7 @@ export default function Team(): JSX.Element {
                   marginRight: '$5',
                   verticalAlign: 'middle',
                 }}>
-                <Avatar image='/images/team-kyle.jpg' fallback='KF' width={66} />
+                <Avatar src='/images/team-kyle.jpg' fallback='KF' width={66} />
               </Stack>
 
               <Stack css={{ display: 'inline-block', verticalAlign: 'middle' }}>
@@ -93,7 +93,7 @@ export default function Team(): JSX.Element {
                   marginRight: '$5',
                   verticalAlign: 'middle',
                 }}>
-                <Avatar image='/images/team-harry.jpg' fallback='HK' width={66} />
+                <Avatar src='/images/team-harry.jpg' fallback='HK' width={66} />
               </Stack>
 
               <Stack css={{ display: 'inline-block', verticalAlign: 'middle' }}>
@@ -119,7 +119,7 @@ export default function Team(): JSX.Element {
                   marginRight: '$5',
                   verticalAlign: 'middle',
                 }}>
-                <Avatar image='/images/team-victoria.jpg' fallback='VM' width={66} />
+                <Avatar src='/images/team-victoria.jpg' fallback='VM' width={66} />
               </Stack>
 
               <Stack css={{ display: 'inline-block', verticalAlign: 'middle' }}>

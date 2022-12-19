@@ -6,10 +6,7 @@ export default function Custom404(): JSX.Element {
   return (
     <>
       <NextSeo title='Page not found' />
-      <View
-        inverted
-        top={5}
-        css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
+      <View inverted top={5} css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
         <Stack direction='row' minimal>
           <Stack direction='column' width={50} widthPhone={55} minimal>
             <Box
@@ -65,9 +62,8 @@ export default function Custom404(): JSX.Element {
         <Stack direction='row' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column'>
             <Text as='h3'>Sorry, the page you are looking for is not available. </Text>
-            <Text as='h6' bottom={6}>
-              Feel free to browse our site from the menu at the top of the page, or if
-              you have a question - get in touch
+            <Text as='p' bottom={6}>
+              Feel free to browse our site from the menu at the top of the page.
             </Text>
             <Link href='/'>
               <Button ariaLabel='Go to our homepage'>Go to our homepage</Button>

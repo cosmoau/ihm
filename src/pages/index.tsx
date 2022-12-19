@@ -1,15 +1,4 @@
-import {
-  Stack,
-  Text,
-  View,
-  Box,
-  Badge,
-  Image,
-  Avatar,
-  Input,
-  fadeIn,
-  Button,
-} from '@cosmoau/ui';
+import { Stack, Text, View, Box, Badge, Image, Avatar, Input, fadeIn, Button } from '@cosmoau/ui';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -67,10 +56,7 @@ export default function Home(): JSX.Element {
     <>
       <NextSeo title='ihostme | Airbnb Management' titleTemplate='%s' />
 
-      <View
-        inverted
-        top={5}
-        css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
+      <View inverted top={5} css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
         <Stack direction='row' minimal>
           <Stack direction='column' width={50} minimal>
             <Box
@@ -111,16 +97,15 @@ export default function Home(): JSX.Element {
                 Holiday Home Management on all the major booking platforms.
               </Text>
               <Text
-                as='h6'
+                as='p'
                 accent
                 bottom={6}
                 css={{
                   animation: `${fadeIn}  0.8s ease-in-out`,
                 }}>
-                We&apos;re your local short-term property management experts. With{' '}
-                <b>ihostme</b>, you can achieve better occupancy rates and revenue on
-                Airbnb, Stayz, Vrbo, HomeAway, Booking.com and Homes & Villas Management
-                by Marriott.
+                We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can achieve
+                better occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com and Homes & Villas
+                Management by Marriott.
               </Text>
 
               <Input
@@ -176,28 +161,21 @@ export default function Home(): JSX.Element {
       </View>
 
       <View container top={7}>
-        <Stack
-          direction='row'
-          align='center'
-          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction='row' align='center' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column' width={50} offset={25}>
             <Text as='h3' top={5}>
               ihostme operates out of the top holiday destinations
             </Text>
-            <Text as='h6' bottom={5}>
-              We are a team of highly skilled and experienced property managers who are
-              dedicated to providing the best service to owners and investors, from
-              Point Lonsdale to Hobart.
+            <Text as='p' bottom={5}>
+              We are a team of highly skilled and experienced property managers who are dedicated to providing the best
+              service to owners and investors, from Point Lonsdale to Hobart.
             </Text>
             <Link href='/start'>
               <Button>List your home</Button>
             </Link>
           </Stack>
         </Stack>
-        <Stack
-          direction='row'
-          top={6}
-          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction='row' top={6} css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column' width={100} align='center'>
             <Stack>
               <Link href='/locations'>
@@ -218,9 +196,7 @@ export default function Home(): JSX.Element {
                           verticalAlign: 'middle',
                         }}>
                         <Avatar
-                          image={`/images/location-${location
-                            .toLowerCase()
-                            .replace(/\s/g, '')}.jpg`}
+                          src={`/images/location-${location.toLowerCase().replace(/\s/g, '')}.jpg`}
                           width={15}
                           fallback=''
                         />{' '}
@@ -239,21 +215,16 @@ export default function Home(): JSX.Element {
         </Stack>
       </View>
       <View container top={7} bottom={7}>
-        <Stack
-          direction='row'
-          flex='stretch'
-          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction='row' flex='stretch' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction='column' width={33}>
             <Box theme='fill'>
               <Text as='h5'>Your One Stop Hosting Shop</Text>
               <Text as='p' accent>
-                We understand that your vacation rental is more than just an
-                investment—it’s your home away from home.
+                We understand that your vacation rental is more than just an investment—it’s your home away from home.
               </Text>
               <Text as='p' accent>
-                That’s why we offer a complete suite of services to help you manage your
-                property, from real-time pricing optimisation to guest and bookings
-                management.
+                That’s why we offer a complete suite of services to help you manage your property, from real-time
+                pricing optimisation to guest and bookings management.
               </Text>
             </Box>
           </Stack>
@@ -268,13 +239,11 @@ export default function Home(): JSX.Element {
             <Box theme='fill'>
               <Text as='h5'>Simple, Easy Pricing</Text>
               <Text as='p' accent>
-                Our standard management fee is 20% + GST for fully hosted clients, or
-                14% + GST for those who already have their own housekeeping and
-                maintenance team in place.
+                Our standard management fee is 20% + GST for fully hosted clients, or 14% + GST for those who already
+                have their own housekeeping and maintenance team in place.
               </Text>
               <Text as='p' accent>
-                We also have a one-time set up fee from $400, and third-party charges
-                are at cost.
+                We also have a one-time set up fee from $400, and third-party charges are at cost.
               </Text>
             </Box>
           </Stack>
@@ -289,12 +258,12 @@ export default function Home(): JSX.Element {
             <Box theme='fill'>
               <Text as='h5'>Your Holiday Home in Good Hands</Text>
               <Text as='p' accent>
-                We&apos;ve developed an intuitive app that gives you full transparency
-                of bookings and property performance.
+                We&apos;ve developed an intuitive app that gives you full transparency of bookings and property
+                performance.
               </Text>
               <Text as='p' accent>
-                We also have an experienced client support team available 7/11 and
-                specialist housekeepers to take care of all the little details.
+                We also have an experienced client support team available 7/11 and specialist housekeepers to take care
+                of all the little details.
               </Text>
             </Box>
           </Stack>
