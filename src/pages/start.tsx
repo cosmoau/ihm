@@ -1,59 +1,62 @@
-import { Stack, Text, View, Box, Image, fadeIn, Divider, Button } from '@cosmoau/ui';
-import { Widget } from '@typeform/embed-react';
-import { NextSeo } from 'next-seo';
-import { useRouter } from 'next/router';
+import { Stack, Text, View, Box, Image, fadeIn, Divider, Button } from "@cosmoau/ui";
+import { Widget } from "@typeform/embed-react";
+import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 export default function Start(): JSX.Element {
   const router = useRouter();
   return (
     <>
-      <NextSeo title={router.query.city ? `${router.query.city} Property Management` : 'Sign Up'} />
-      <View inverted top={5} css={{ background: '$text !important', paddingLeft: '$5', paddingRight: '$5' }}>
-        <Stack direction='row' minimal>
-          <Stack direction='column' width={50} minimal>
+      <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
+      <View
+        inverted
+        top={5}
+        css={{ background: "$text !important", paddingLeft: "$5", paddingRight: "$5" }}>
+        <Stack direction="row" minimal>
+          <Stack direction="column" width={50} minimal>
             <Box
-              theme='fill'
+              theme="fill"
               css={{
-                background: '$accentIHM !important',
-                borderBottomRightRadius: '0 !important',
-                borderTopRightRadius: '0 !important',
-                padding: '$7 $6',
+                background: "$accentIHM !important",
+                borderBottomRightRadius: "0 !important",
+                borderTopRightRadius: "0 !important",
+                padding: "$7 $6",
 
                 phone: {
-                  borderRadius: '$3 !important',
-                  padding: '$6 $5',
+                  borderRadius: "$3 !important",
+                  padding: "$6 $5",
                 },
               }}>
               <Text
-                as='h2'
+                as="h2"
                 css={{
                   animation: `${fadeIn}  0.5s ease-in-out`,
                 }}>
-                {router.query.city ? `List your home in ${router.query.city}` : 'Sign Up'}
+                {router.query.city ? `List your home in ${router.query.city}` : "Sign Up"}
               </Text>
               <Text
-                as='p'
+                as="p"
                 accent
                 css={{
                   animation: `${fadeIn}  0.8s ease-in-out`,
                 }}>
                 {router.query.email
                   ? `We will send your free earnings estimation, along with information on getting started to ${router.query.email}.`
-                  : 'Get your free earnings estimation today.'}
+                  : "Get your free earnings estimation today."}
               </Text>
             </Box>
           </Stack>
-          <Stack minimal direction='column' width={50} css={{ hidden: 'phone' }}>
+          <Stack minimal direction="column" width={50} css={{ hidden: "phone" }}>
             <Image
-              src='/images/misc-14.jpg'
-              alt='A photo of the beach walk in Point Lonsdale, Victoria, Australia.'
-              blurDataURL='/images/misc-14.jpg'
-              placeholder='blur'
+              src="/images/misc-14.jpg"
+              alt="A photo of the beach walk in Point Lonsdale, Victoria, Australia."
+              blurDataURL="/images/misc-14.jpg"
+              placeholder="blur"
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: '$3 !important',
-                  borderTopRightRadius: '$3 !important',
+                  borderBottomRightRadius: "$3 !important",
+                  borderTopRightRadius: "$3 !important",
                 },
               }}
             />
@@ -65,43 +68,47 @@ export default function Start(): JSX.Element {
         top={7}
         bottom={7}
         css={{
-          phone: { paddingBottom: '$5', paddingTop: '$5' },
+          phone: { paddingBottom: "$5", paddingTop: "$5" },
         }}>
-        <Stack direction='row' flex='stretch' align='center' css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
-          <Stack direction='column'>
+        <Stack
+          direction="row"
+          flex="stretch"
+          align="center"
+          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+          <Stack direction="column">
             <Box
-              theme='fill'
+              theme="fill"
               css={{
-                borderRadius: '$3',
+                borderRadius: "$3",
               }}>
               <Stack bottom={3}>
                 <Widget
-                  id='cAmtR2rI'
+                  id="cAmtR2rI"
                   height={700}
                   opacity={0}
                   hidden={{
                     email: router.query.email
                       ? router.query.email.toString()
-                      : 'Not provided somehow, Isaac check this',
-                    url: 'ihostme.com.au',
+                      : "Not provided somehow, Isaac check this",
+                    url: "ihostme.com.au",
                   }}
                   style={{
-                    overflowY: 'visible',
+                    overflowY: "visible",
                   }}
                 />
               </Stack>
               <Divider bottom={5} />
-              <Text as='small' accent inline={4} css={{ verticalAlign: 'middle' }}>
+              <Text as="small" accent inline={4} css={{ verticalAlign: "middle" }}>
                 Form not working?
               </Text>
 
-              <Button external small css={{ verticalAlign: 'middle' }}>
+              <Button external small css={{ verticalAlign: "middle" }}>
                 <a
                   href={`https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au&email=${
-                    router.query.email ? router.query.email.toString() : 'NA'
+                    router.query.email ? router.query.email.toString() : "NA"
                   }`}
-                  target='_blank'
-                  rel='noreferrer'>
+                  target="_blank"
+                  rel="noreferrer">
                   cosmo-au.typeform.com/to/cAmtR2rI
                 </a>
               </Button>

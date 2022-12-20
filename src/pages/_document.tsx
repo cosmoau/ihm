@@ -1,6 +1,6 @@
-import { getCssText } from '@cosmoau/ui';
-import NextDocument, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
-import Script from 'next/script';
+import { getCssText } from "@cosmoau/ui";
+import NextDocument, { DocumentContext, Head, Html, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 type Props = {
   css: string;
@@ -18,29 +18,29 @@ class Document extends NextDocument<Props> {
     return (
       <Html>
         <Head>
-          <style id='stitches' dangerouslySetInnerHTML={{ __html: ' ' + this.props.css }} />
-          <meta charSet='UTF-8' />
+          <style id="stitches" dangerouslySetInnerHTML={{ __html: " " + this.props.css }} />
+          <meta charSet="UTF-8" />
           <meta
-            name='description'
-            content='ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs.'
+            name="description"
+            content="ihostme are the go-to people for managing the rental of your holiday home and ALL your hosting and property management needs."
           />
           <meta
-            name='keywords'
-            content='ihostme, hosting, property, management, rental, stayz, booking, airbnb, stayz, cosmo, cosmogroup.io, booking, airbnb'
+            name="keywords"
+            content="ihostme, hosting, property, management, rental, stayz, booking, airbnb, stayz, cosmo, cosmogroup.io, booking, airbnb"
           />
 
-          <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
-          <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
-          <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
-          <link rel='manifest' href='/site.webmanifest' />
-          <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#d33b95' />
-          <meta name='msapplication-TileColor' content='#981a64' />
-          <meta name='theme-color' content='#fbd5ec' />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d33b95" />
+          <meta name="msapplication-TileColor" content="#981a64" />
+          <meta name="theme-color" content="#fbd5ec" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <Script strategy='afterInteractive' id='SmallChat' async>
+          <Script strategy="afterInteractive" id="SmallChat" async>
             {`
            window.Smallchat = {
                 config: {
