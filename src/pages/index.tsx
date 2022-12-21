@@ -219,7 +219,7 @@ export default function Home(): JSX.Element {
       </View>
       <View container top={7} bottom={7}>
         <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
-          <Stack direction="column" width={33}>
+          <Stack direction="column" width={33.334}>
             <Box theme="fill">
               <Text as="h5">Your One Stop Hosting Shop</Text>
               <Text as="p" accent>
@@ -234,7 +234,7 @@ export default function Home(): JSX.Element {
           </Stack>
           <Stack
             direction="column"
-            width={33}
+            width={33.334}
             css={{
               phone: {
                 paddingTop: "$5",
@@ -253,7 +253,7 @@ export default function Home(): JSX.Element {
           </Stack>
           <Stack
             direction="column"
-            width={33}
+            width={33.334}
             css={{
               phone: {
                 paddingTop: "$5",

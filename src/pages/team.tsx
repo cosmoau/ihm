@@ -62,7 +62,7 @@ export default function Team(): JSX.Element {
           phone: { paddingBottom: "$5", paddingTop: "$5" },
         }}>
         <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
-          <Stack direction="column" width={33}>
+          <Stack direction="column" width={33.334}>
             <Box theme="fill">
               <Stack
                 css={{
@@ -86,7 +86,7 @@ export default function Team(): JSX.Element {
           </Stack>
           <Stack
             direction="column"
-            width={33}
+            width={33.334}
             css={{
               phone: {
                 paddingTop: "$5",
@@ -112,7 +112,7 @@ export default function Team(): JSX.Element {
           </Stack>
           <Stack
             direction="column"
-            width={33}
+            width={33.334}
             css={{
               phone: {
                 paddingTop: "$5",
