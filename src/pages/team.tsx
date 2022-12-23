@@ -72,10 +72,6 @@ export default function Team(): JSX.Element {
                 }}>
                 <Avatar src="/images/team-kyle.jpg" fallback="KF" width={66} />
               </Stack>
-              <a href="#" target="_blank">
-                test
-              </a>
-
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
                 <Text as="h4" css={{ marginBottom: "$2 !important" }}>
                   Kyle Fitzsimmons
