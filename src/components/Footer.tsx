@@ -133,11 +133,10 @@ export default function Footer(): JSX.Element {
             </a>
           </Stack>
         </Stack>
-        <Stack direction="row" align="center" top={4}>
+        <Stack direction="row" align="center" top={5}>
           <Stack direction="column">
             <Text as="small" accent>
-              Made with love in Ocean Grove, Victoria, Australia. Services offered by Cosmo AU Pty
-              Ltd (22 139 144 915).
+              Made in Ocean Grove and Melbourne. Operated by Cosmo AU Pty Ltd (ABN 22139144915).
             </Text>
           </Stack>
         </Stack>
