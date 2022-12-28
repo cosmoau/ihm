@@ -75,14 +75,14 @@ export default function Header(): JSX.Element {
   return (
     <header>
       <View
-        top={3}
+        top="c"
         css={{
           borderBottom: "0.1rem solid $border",
           position: "sticky",
           top: 0,
           zIndex: 100,
         }}
-        bottom={3}>
+        bottom="c">
         <Stack direction="row" flex="center" css={{ animation: `${fadeIn}  0.5s ease-in-out` }}>
           <Stack direction="column" width={25} widthTablet={40} widthPhone={50}>
             <Link href="/">
@@ -113,7 +113,7 @@ export default function Header(): JSX.Element {
             widthTablet={60}
             widthPhone={50}>
             <a href="https://v1.cosmogroup.io" target="_blank" rel="noreferrer">
-              <Button name="sign-in" inline={4} ariaLabel="Owners Portal">
+              <Button name="sign-in" inline="d" ariaLabel="Owners Portal">
                 Owners
               </Button>
             </a>
@@ -210,7 +210,7 @@ export default function Header(): JSX.Element {
               hidden: "tablet",
             }}>
             <a href="https://v1.cosmogroup.io" target="_blank" rel="noreferrer">
-              <Button name="sign-in" inline={4} ariaLabel="Owners Portal">
+              <Button name="sign-in" inline="d" ariaLabel="Owners Portal">
                 Owners Portal
               </Button>
             </a>

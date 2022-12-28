@@ -10,8 +10,8 @@ export default function Start(): JSX.Element {
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
       <View
         inverted
-        top={5}
-        css={{ background: "$text !important", paddingLeft: "$5", paddingRight: "$5" }}>
+        top="e"
+        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} minimal>
             <Box
@@ -20,11 +20,11 @@ export default function Start(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$7 $6",
+                padding: "$g $f",
 
                 phone: {
-                  borderRadius: "$3 !important",
-                  padding: "$6 $5",
+                  borderRadius: "$c !important",
+                  padding: "$f $e",
                 },
               }}>
               <Text
@@ -55,8 +55,8 @@ export default function Start(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$3 !important",
-                  borderTopRightRadius: "$3 !important",
+                  borderBottomRightRadius: "$c !important",
+                  borderTopRightRadius: "$c !important",
                 },
               }}
             />
@@ -65,10 +65,10 @@ export default function Start(): JSX.Element {
       </View>
       <View
         container
-        top={7}
-        bottom={7}
+        top="g"
+        bottom="g"
         css={{
-          phone: { paddingBottom: "$5", paddingTop: "$5" },
+          phone: { paddingBottom: "$e", paddingTop: "$e" },
         }}>
         <Stack
           direction="row"
@@ -79,9 +79,9 @@ export default function Start(): JSX.Element {
             <Box
               theme="fill"
               css={{
-                borderRadius: "$3",
+                borderRadius: "$c",
               }}>
-              <Stack bottom={3}>
+              <Stack bottom="c">
                 <Widget
                   id="cAmtR2rI"
                   height={700}
@@ -97,8 +97,8 @@ export default function Start(): JSX.Element {
                   }}
                 />
               </Stack>
-              <Divider bottom={5} />
-              <Text as="small" accent inline={4} css={{ verticalAlign: "middle" }}>
+              <Divider bottom="e" />
+              <Text as="small" accent inline="d" css={{ verticalAlign: "middle" }}>
                 Form not working?
               </Text>
 

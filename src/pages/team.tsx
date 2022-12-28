@@ -7,8 +7,8 @@ export default function Team(): JSX.Element {
       <NextSeo title="Meet the Team" />
       <View
         inverted
-        top={5}
-        css={{ background: "$text !important", paddingLeft: "$5", paddingRight: "$5" }}>
+        top="e"
+        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} widthPhone={55} minimal>
             <Box
@@ -17,10 +17,10 @@ export default function Team(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$7 $6",
+                padding: "$g $f",
 
                 phone: {
-                  padding: "$6 $5",
+                  padding: "$f $e",
                 },
               }}>
               <Text
@@ -45,8 +45,8 @@ export default function Team(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$3 !important",
-                  borderTopRightRadius: "$3 !important",
+                  borderBottomRightRadius: "$c !important",
+                  borderTopRightRadius: "$c !important",
                 },
               }}
             />
@@ -56,10 +56,10 @@ export default function Team(): JSX.Element {
 
       <View
         container
-        top={7}
-        bottom={7}
+        top="g"
+        bottom="g"
         css={{
-          phone: { paddingBottom: "$5", paddingTop: "$5" },
+          phone: { paddingBottom: "$e", paddingTop: "$e" },
         }}>
         <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction="column" width={33.334}>
@@ -67,13 +67,13 @@ export default function Team(): JSX.Element {
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$5",
+                  marginRight: "$e",
                   verticalAlign: "middle",
                 }}>
                 <Avatar src="/images/team-kyle.jpg" fallback="KF" width={66} />
               </Stack>
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$2 !important" }}>
+                <Text as="h4" css={{ marginBottom: "$b !important" }}>
                   Kyle Fitzsimmons
                 </Text>
                 <Badge>Managing Director</Badge>
@@ -85,21 +85,21 @@ export default function Team(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$5",
+                  marginRight: "$e",
                   verticalAlign: "middle",
                 }}>
                 <Avatar src="/images/team-harry.jpg" fallback="HK" width={66} />
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$2 !important" }}>
+                <Text as="h4" css={{ marginBottom: "$b !important" }}>
                   Harrison Keck
                 </Text>
                 <Badge>Regional Coordinator</Badge>
@@ -111,21 +111,21 @@ export default function Team(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$5",
+                  marginRight: "$e",
                   verticalAlign: "middle",
                 }}>
                 <Avatar src="/images/team-victoria.jpg" fallback="VM" width={66} />
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$2 !important" }}>
+                <Text as="h4" css={{ marginBottom: "$b !important" }}>
                   Victoria Mills
                 </Text>
                 <Badge>Regional Coordinator</Badge>

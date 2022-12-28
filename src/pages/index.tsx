@@ -58,8 +58,8 @@ export default function Home(): JSX.Element {
 
       <View
         inverted
-        top={5}
-        css={{ background: "$text !important", paddingLeft: "$5", paddingRight: "$5" }}>
+        top="e"
+        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} minimal>
             <Box
@@ -82,14 +82,14 @@ export default function Home(): JSX.Element {
                   opacity: 1,
                 },
 
-                padding: "calc($8 * 1.5) $6",
+                padding: "calc($h * 1.5) $f",
 
                 phone: {
                   borderBottomLeftRadius: "0 !important",
                   borderBottomRightRadius: "0 !important",
-                  borderTopLeftRadius: "$3 !important",
-                  borderTopRightRadius: "$3 !important",
-                  padding: "$6 $5",
+                  borderTopLeftRadius: "$c !important",
+                  borderTopRightRadius: "$c !important",
+                  padding: "$f $e",
                 },
               }}>
               <Text
@@ -97,12 +97,12 @@ export default function Home(): JSX.Element {
                 css={{
                   animation: `${fadeIn}  0.5s ease-in-out`,
                 }}>
-                Holiday Home Management on all the major booking platforms.
+                Holiday Home Management on all the major booking platforms
               </Text>
               <Text
                 as="p"
                 accent
-                bottom={6}
+                bottom="f"
                 css={{
                   animation: `${fadeIn}  0.8s ease-in-out`,
                 }}>
@@ -147,12 +147,12 @@ export default function Home(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$3 !important",
-                  borderTopRightRadius: "$3 !important",
+                  borderBottomRightRadius: "$c !important",
+                  borderTopRightRadius: "$c !important",
 
                   phone: {
-                    borderBottomLeftRadius: "$3 !important",
-                    borderBottomRightRadius: "$3 !important",
+                    borderBottomLeftRadius: "$c !important",
+                    borderBottomRightRadius: "$c !important",
                     borderTopLeftRadius: "0 !important",
                     borderTopRightRadius: "0 !important",
                   },
@@ -163,13 +163,13 @@ export default function Home(): JSX.Element {
         </Stack>
       </View>
 
-      <View container top={7}>
+      <View container top="g">
         <Stack direction="row" align="center" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction="column" width={50} offset={25}>
-            <Text as="h3" top={5}>
+            <Text as="h3" top="e">
               ihostme operates out of the top holiday destinations
             </Text>
-            <Text as="p" bottom={5}>
+            <Text as="p" bottom="e">
               We are a team of highly skilled and experienced property managers who are dedicated to
               providing the best service to owners and investors, from Point Lonsdale to Hobart.
             </Text>
@@ -178,7 +178,7 @@ export default function Home(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" top={6} css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction="row" top="f" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction="column" width={100} align="center">
             <Stack>
               <Link href="/locations">
@@ -187,15 +187,15 @@ export default function Home(): JSX.Element {
                     key={index}
                     css={{
                       display: "inline-block",
-                      marginRight: "$4",
-                      paddingTop: "$4",
+                      marginRight: "$d",
+                      paddingTop: "$d",
                     }}>
                     <Badge theme="border" css={{ borderColor: "rgba(0,0,0,0.05)" }}>
                       <Stack
                         css={{
                           alignItems: "center",
                           display: "flex",
-                          marginRight: "$2",
+                          marginRight: "$b",
                           verticalAlign: "middle",
                         }}>
                         <Avatar
@@ -217,7 +217,7 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top={7} bottom={7}>
+      <View container top="g" bottom="g">
         <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction="column" width={33.334}>
             <Box theme="fill">
@@ -237,7 +237,7 @@ export default function Home(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Box theme="fill">
@@ -256,7 +256,7 @@ export default function Home(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Box theme="fill">

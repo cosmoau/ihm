@@ -8,8 +8,8 @@ export default function Locations(): JSX.Element {
       <NextSeo title="Service Locations" />
       <View
         inverted
-        top={5}
-        css={{ background: "$text !important", paddingLeft: "$5", paddingRight: "$5" }}>
+        top="e"
+        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} widthPhone={55} minimal>
             <Box
@@ -18,10 +18,10 @@ export default function Locations(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$7 $6",
+                padding: "$g $f",
 
                 phone: {
-                  padding: "$6 $5",
+                  padding: "$f $e",
                 },
               }}>
               <Text
@@ -46,8 +46,8 @@ export default function Locations(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$3 !important",
-                  borderTopRightRadius: "$3 !important",
+                  borderBottomRightRadius: "$c !important",
+                  borderTopRightRadius: "$c !important",
                 },
               }}
             />
@@ -57,10 +57,10 @@ export default function Locations(): JSX.Element {
 
       <View
         container
-        top={7}
-        bottom={7}
+        top="g"
+        bottom="g"
         css={{
-          phone: { paddingBottom: "$5", paddingTop: "$5" },
+          phone: { paddingBottom: "$e", paddingTop: "$e" },
         }}>
         <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction="column" width={20}>
@@ -79,7 +79,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Portarlington">
@@ -93,7 +93,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Queenscliff">
@@ -107,7 +107,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Point%20Lonsdale">
@@ -121,7 +121,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Ocean%20Grove">
@@ -134,10 +134,10 @@ export default function Locations(): JSX.Element {
         <Stack
           direction="row"
           flex="stretch"
-          top={6}
+          top="f"
           css={{
             phone: {
-              paddingTop: "$5",
+              paddingTop: "$e",
             },
           }}>
           <Stack direction="column" width={20}>
@@ -153,7 +153,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Torquay">
@@ -167,7 +167,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Jan%20Juc">
@@ -181,7 +181,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Anglesea">
@@ -195,7 +195,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Bellarine%20Peninsula">
@@ -208,13 +208,13 @@ export default function Locations(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" flex="stretch" top={6}>
+        <Stack direction="row" flex="stretch" top="f">
           <Stack
             direction="column"
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Aireys%20Inlet">
@@ -228,7 +228,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Fairhaven">
@@ -242,7 +242,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Lorne">
@@ -256,7 +256,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Apollo%20Bay">
@@ -270,7 +270,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Surf%20Coast">
@@ -280,13 +280,13 @@ export default function Locations(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" flex="stretch" top={6}>
+        <Stack direction="row" flex="stretch" top="f">
           <Stack
             direction="column"
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Mornington">
@@ -300,7 +300,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Mt%20Eliza">
@@ -314,7 +314,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Mt%20Martha">
@@ -328,7 +328,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Sorrento">
@@ -342,7 +342,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Portsea">
@@ -352,13 +352,13 @@ export default function Locations(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" flex="stretch" top={6}>
+        <Stack direction="row" flex="stretch" top="f">
           <Stack
             direction="column"
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Rye">
@@ -372,7 +372,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Flinders">
@@ -386,7 +386,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Balnarring">
@@ -400,7 +400,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Somers">
@@ -414,7 +414,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Red%20Hill">
@@ -424,13 +424,13 @@ export default function Locations(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" flex="stretch" top={6}>
+        <Stack direction="row" flex="stretch" top="f">
           <Stack
             direction="column"
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Safety%20Beach">
@@ -444,7 +444,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Mornington%20Peninsula">
@@ -461,7 +461,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Cowes">
@@ -475,7 +475,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Smiths%20Beach">
@@ -489,7 +489,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Ventnor">
@@ -499,13 +499,13 @@ export default function Locations(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" flex="stretch" top={6}>
+        <Stack direction="row" flex="stretch" top="f">
           <Stack
             direction="column"
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Cape%20Woolamai">
@@ -519,7 +519,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Rhyll">
@@ -533,7 +533,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=San%20Remo">
@@ -547,7 +547,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Phillip%20Island">
@@ -561,7 +561,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Cape%20Paterson">
@@ -571,13 +571,13 @@ export default function Locations(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" flex="stretch" top={6}>
+        <Stack direction="row" flex="stretch" top="f">
           <Stack
             direction="column"
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Venus%20Bay">
@@ -591,7 +591,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Inverloch">
@@ -605,7 +605,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Bass%20Coast">
@@ -619,7 +619,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=South%20Gippsland">
@@ -633,7 +633,7 @@ export default function Locations(): JSX.Element {
             width={20}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Link href="/start?city=Hobart">

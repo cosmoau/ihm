@@ -4,7 +4,7 @@ import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "ph
 export default function Footer(): JSX.Element {
   return (
     <footer>
-      <View container top={7} bottom={7} css={{ borderTop: "0.1rem solid $border" }}>
+      <View container top="g" bottom="g" css={{ borderTop: "0.1rem solid $border" }}>
         <Stack direction="row" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack
             direction="column"
@@ -26,15 +26,15 @@ export default function Footer(): JSX.Element {
             />
           </Stack>
           <Stack
-            top={6}
-            bottom={6}
+            top="f"
+            bottom="f"
             direction="column"
             width={50}
             css={{
-              paddingLeft: "$7",
+              paddingLeft: "$g",
               phone: {
                 paddingBottom: 0,
-                paddingLeft: "$3",
+                paddingLeft: "$c",
               },
             }}>
             <Text as="h3">Unlock your full earning potential today</Text>
@@ -45,15 +45,15 @@ export default function Footer(): JSX.Element {
               We are interested in speaking to owners of homes and holiday rentals that are
               available for at least 140 nights per year.
             </Text>
-            <Stack top={5}>
+            <Stack top="e">
               <a href="mailto:ihostme@cosmogroup.io">
                 <Badge
-                  inline={4}
+                  inline="d"
                   icon={<ChatCircle />}
                   css={{
                     phone: {
-                      marginBottom: "$3",
-                      marginTop: "$3",
+                      marginBottom: "$c",
+                      marginTop: "$c",
                     },
                   }}>
                   ihostme@cosmogroup.io
@@ -64,8 +64,8 @@ export default function Footer(): JSX.Element {
                 icon={<Phone />}
                 css={{
                   phone: {
-                    marginBottom: "$3",
-                    marginTop: "$3",
+                    marginBottom: "$c",
+                    marginTop: "$c",
                   },
                 }}>
                 <a href="tel:+61370355800">(03) 7035 5800</a>
@@ -82,9 +82,9 @@ export default function Footer(): JSX.Element {
           zIndex: 201,
         }}
         container
-        top={6}
+        top="f"
         inverted
-        bottom={6}>
+        bottom="f">
         <Stack
           direction="row"
           flex="center"
@@ -104,7 +104,7 @@ export default function Footer(): JSX.Element {
                   ihostme logo, which is a pink icon of a house.
                   "
                 />
-                <Text as="p" bold inline="auto" css={{ hiddenInline: "phone", marginLeft: "$4" }}>
+                <Text as="p" bold inline="auto" css={{ hiddenInline: "phone", marginLeft: "$d" }}>
                   ihostme
                 </Text>
               </Badge>
@@ -112,17 +112,17 @@ export default function Footer(): JSX.Element {
           </Stack>
           <Stack direction="column" width={60} widthPhone={85} align="right">
             <a href="https://www.facebook.com/cosmogroup.io">
-              <Button theme="fill" inline={4} ariaLabel="Facebook" name="facebook">
+              <Button theme="fill" inline="d" ariaLabel="Facebook" name="facebook">
                 <FacebookLogo size={20} />
               </Button>
             </a>
             <a href="https://www.instagram.com/cosmogroup.io/" rel="noreferrer" target="_blank">
-              <Button theme="fill" inline={4} ariaLabel="Instagram" name="instagram">
+              <Button theme="fill" inline="d" ariaLabel="Instagram" name="instagram">
                 <InstagramLogo size={20} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/cosmoau/" rel="noreferrer" target="_blank">
-              <Button theme="fill" inline={4} ariaLabel="LinkedIn" name="linkedin">
+              <Button theme="fill" inline="d" ariaLabel="LinkedIn" name="linkedin">
                 <LinkedinLogo size={20} />
               </Button>
             </a>
@@ -133,7 +133,7 @@ export default function Footer(): JSX.Element {
             </a>
           </Stack>
         </Stack>
-        <Stack direction="row" align="center" top={5}>
+        <Stack direction="row" align="center" top="e">
           <Stack direction="column">
             <Text as="small" accent>
               Made in Ocean Grove and Melbourne. Operated by Cosmo AU Pty Ltd (ABN 22139144915).

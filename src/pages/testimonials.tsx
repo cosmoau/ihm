@@ -7,8 +7,8 @@ export default function Testimonials(): JSX.Element {
       <NextSeo title="Client Testimonials" />
       <View
         inverted
-        top={5}
-        css={{ background: "$text !important", paddingLeft: "$5", paddingRight: "$5" }}>
+        top="e"
+        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} widthPhone={55} minimal>
             <Box
@@ -17,10 +17,10 @@ export default function Testimonials(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$7 $6",
+                padding: "$g $f",
 
                 phone: {
-                  padding: "$6 $5",
+                  padding: "$f $e",
                 },
               }}>
               <Text
@@ -44,8 +44,8 @@ export default function Testimonials(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$3 !important",
-                  borderTopRightRadius: "$3 !important",
+                  borderBottomRightRadius: "$c !important",
+                  borderTopRightRadius: "$c !important",
                 },
               }}
             />
@@ -55,21 +55,21 @@ export default function Testimonials(): JSX.Element {
 
       <View
         container
-        top={7}
-        bottom={7}
+        top="g"
+        bottom="g"
         css={{
-          phone: { paddingBottom: "$5", paddingTop: "$5" },
+          phone: { paddingBottom: "$e", paddingTop: "$e" },
         }}>
         <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
           <Stack direction="column" width={50}>
             <Box theme="fill">
-              <Stack bottom={5}>
+              <Stack bottom="e">
                 <Stack
                   css={{
                     alignItems: "center",
                     display: "inline-flex",
                     justifyContent: "center",
-                    marginRight: "$5",
+                    marginRight: "$e",
                     verticalAlign: "middle",
                   }}>
                   <Image
@@ -124,17 +124,17 @@ export default function Testimonials(): JSX.Element {
             width={50}
             css={{
               phone: {
-                paddingTop: "$5",
+                paddingTop: "$e",
               },
             }}>
             <Box theme="fill">
-              <Stack bottom={5}>
+              <Stack bottom="e">
                 <Stack
                   css={{
                     alignItems: "center",
                     display: "inline-flex",
                     justifyContent: "center",
-                    marginRight: "$5",
+                    marginRight: "$e",
                     verticalAlign: "middle",
                   }}>
                   <Image
