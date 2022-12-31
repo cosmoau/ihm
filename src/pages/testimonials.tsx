@@ -1,4 +1,4 @@
-import { Stack, Text, Image, View, Box, Badge, fadeIn } from "@cosmoau/ui";
+import { Stack, Text, Image, View, Box, Badge } from "@cosmoau/ui";
 import { NextSeo } from "next-seo";
 
 export default function Testimonials(): JSX.Element {
@@ -7,8 +7,8 @@ export default function Testimonials(): JSX.Element {
       <NextSeo title="Client Testimonials" />
       <View
         inverted
-        top="e"
-        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
+        top="large"
+        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} widthPhone={55} minimal>
             <Box
@@ -17,17 +17,13 @@ export default function Testimonials(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$g $f",
+                padding: "$larger",
 
                 phone: {
-                  padding: "$f $e",
+                  padding: "$larger $large",
                 },
               }}>
-              <Text
-                as="h2"
-                css={{
-                  animation: `${fadeIn}  0.5s ease-in-out`,
-                }}>
+              <Text as="h2">
                 <Text as="span" css={{ hiddenInline: "phone" }}>
                   Client&nbsp;
                 </Text>
@@ -44,8 +40,8 @@ export default function Testimonials(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$c !important",
-                  borderTopRightRadius: "$c !important",
+                  borderBottomRightRadius: "$large !important",
+                  borderTopRightRadius: "$large !important",
                 },
               }}
             />
@@ -55,28 +51,28 @@ export default function Testimonials(): JSX.Element {
 
       <View
         container
-        top="g"
-        bottom="g"
+        top="largest"
+        bottom="largest"
         css={{
-          phone: { paddingBottom: "$e", paddingTop: "$e" },
+          phone: { paddingBottom: "$large", paddingTop: "$large" },
         }}>
-        <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction="row" flex="stretch">
           <Stack direction="column" width={50}>
             <Box theme="fill">
-              <Stack bottom="e">
+              <Stack bottom="large">
                 <Stack
                   css={{
                     alignItems: "center",
                     display: "inline-flex",
                     justifyContent: "center",
-                    marginRight: "$e",
+                    marginRight: "$large",
                     verticalAlign: "middle",
                   }}>
                   <Image
                     src="/images/testimonial-01.jpg"
                     width={60}
                     height={60}
-                    borderRadius={3}
+                    borderRadius="large"
                     alt="A photo of The Woodville, an Airbnb in Ocean Grove, Victoria, Australia."
                   />
                 </Stack>
@@ -124,24 +120,24 @@ export default function Testimonials(): JSX.Element {
             width={50}
             css={{
               phone: {
-                paddingTop: "$e",
+                paddingTop: "$large",
               },
             }}>
             <Box theme="fill">
-              <Stack bottom="e">
+              <Stack bottom="large">
                 <Stack
                   css={{
                     alignItems: "center",
                     display: "inline-flex",
                     justifyContent: "center",
-                    marginRight: "$e",
+                    marginRight: "$large",
                     verticalAlign: "middle",
                   }}>
                   <Image
                     src="/images/testimonial-02.jpg"
                     width={60}
                     height={60}
-                    borderRadius={3}
+                    borderRadius="large"
                     alt="A photo of Blue Waters Retreat, an Airbnb in Ocean Grove, Victoria, Australia."
                   />
                 </Stack>

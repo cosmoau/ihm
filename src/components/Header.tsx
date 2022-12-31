@@ -1,4 +1,4 @@
-import { View, Image, Stack, Button, Select, fadeIn } from "@cosmoau/ui";
+import { View, Image, Stack, Button, Select } from "@cosmoau/ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { CaretDown } from "phosphor-react";
@@ -75,15 +75,15 @@ export default function Header(): JSX.Element {
   return (
     <header>
       <View
-        top="c"
+        top="small"
         css={{
           borderBottom: "0.1rem solid $border",
           position: "sticky",
           top: 0,
           zIndex: 100,
         }}
-        bottom="c">
-        <Stack direction="row" flex="center" css={{ animation: `${fadeIn}  0.5s ease-in-out` }}>
+        bottom="small">
+        <Stack direction="row" flex="center">
           <Stack direction="column" width={25} widthTablet={40} widthPhone={50}>
             <Link href="/">
               <Stack
@@ -113,7 +113,7 @@ export default function Header(): JSX.Element {
             widthTablet={60}
             widthPhone={50}>
             <a href="https://v1.cosmogroup.io" target="_blank" rel="noreferrer">
-              <Button name="sign-in" inline="d" ariaLabel="Owners Portal">
+              <Button name="sign-in" inline="medium" ariaLabel="Owners Portal">
                 Owners
               </Button>
             </a>
@@ -210,7 +210,7 @@ export default function Header(): JSX.Element {
               hidden: "tablet",
             }}>
             <a href="https://v1.cosmogroup.io" target="_blank" rel="noreferrer">
-              <Button name="sign-in" inline="d" ariaLabel="Owners Portal">
+              <Button name="sign-in" inline="medium" ariaLabel="Owners Portal">
                 Owners Portal
               </Button>
             </a>

@@ -1,11 +1,11 @@
-import { View, Image, Button, Stack, Text, Badge, fadeIn } from "@cosmoau/ui";
+import { View, Image, Button, Stack, Text, Badge } from "@cosmoau/ui";
 import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "phosphor-react";
 
 export default function Footer(): JSX.Element {
   return (
     <footer>
-      <View container top="g" bottom="g" css={{ borderTop: "0.1rem solid $border" }}>
-        <Stack direction="row" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+      <View container top="largest" bottom="largest" css={{ borderTop: "0.1rem solid $border" }}>
+        <Stack direction="row">
           <Stack
             direction="column"
             width={50}
@@ -22,38 +22,38 @@ export default function Footer(): JSX.Element {
               fill
               blurDataURL="/images/misc-11.jpg"
               placeholder="blur"
-              borderRadius={3}
+              borderRadius="large"
             />
           </Stack>
           <Stack
-            top="f"
-            bottom="f"
+            top="larger"
+            bottom="larger"
             direction="column"
             width={50}
             css={{
-              paddingLeft: "$g",
+              paddingLeft: "$larger",
               phone: {
                 paddingBottom: 0,
-                paddingLeft: "$c",
+                paddingLeft: "$small",
               },
             }}>
             <Text as="h3">Unlock your full earning potential today</Text>
             <Text as="p" accent>
-              ihostme manages properties that earn $40,000 or more in rental income per year.
+              ihostme manages properties that earn <b>$40,000 or more</b> in rental income per year.
             </Text>
             <Text as="p" accent>
               We are interested in speaking to owners of homes and holiday rentals that are
-              available for at least 140 nights per year.
+              available for at least <b>140 nights per year</b>.
             </Text>
-            <Stack top="e">
+            <Stack top="large">
               <a href="mailto:ihostme@cosmogroup.io">
                 <Badge
-                  inline="d"
+                  inline="medium"
                   icon={<ChatCircle />}
                   css={{
                     phone: {
-                      marginBottom: "$c",
-                      marginTop: "$c",
+                      marginBottom: "small",
+                      marginTop: "small",
                     },
                   }}>
                   ihostme@cosmogroup.io
@@ -64,8 +64,8 @@ export default function Footer(): JSX.Element {
                 icon={<Phone />}
                 css={{
                   phone: {
-                    marginBottom: "$c",
-                    marginTop: "$c",
+                    marginBottom: "small",
+                    marginTop: "small",
                   },
                 }}>
                 <a href="tel:+61370355800">(03) 7035 5800</a>
@@ -82,15 +82,10 @@ export default function Footer(): JSX.Element {
           zIndex: 201,
         }}
         container
-        top="f"
+        top="larger"
         inverted
-        bottom="f">
-        <Stack
-          direction="row"
-          flex="center"
-          css={{
-            animation: `${fadeIn}  0.8s ease-in-out`,
-          }}>
+        bottom="larger">
+        <Stack direction="row" flex="center">
           <Stack direction="column" width={40} widthPhone={15}>
             <Stack>
               <Badge theme="border">
@@ -104,7 +99,11 @@ export default function Footer(): JSX.Element {
                   ihostme logo, which is a pink icon of a house.
                   "
                 />
-                <Text as="p" bold inline="auto" css={{ hiddenInline: "phone", marginLeft: "$d" }}>
+                <Text
+                  as="p"
+                  bold
+                  inline="auto"
+                  css={{ hiddenInline: "phone", marginLeft: "$medium" }}>
                   ihostme
                 </Text>
               </Badge>
@@ -112,17 +111,17 @@ export default function Footer(): JSX.Element {
           </Stack>
           <Stack direction="column" width={60} widthPhone={85} align="right">
             <a href="https://www.facebook.com/cosmogroup.io">
-              <Button theme="fill" inline="d" ariaLabel="Facebook" name="facebook">
+              <Button theme="fill" inline="medium" ariaLabel="Facebook" name="facebook">
                 <FacebookLogo size={20} />
               </Button>
             </a>
             <a href="https://www.instagram.com/cosmogroup.io/" rel="noreferrer" target="_blank">
-              <Button theme="fill" inline="d" ariaLabel="Instagram" name="instagram">
+              <Button theme="fill" inline="medium" ariaLabel="Instagram" name="instagram">
                 <InstagramLogo size={20} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/cosmoau/" rel="noreferrer" target="_blank">
-              <Button theme="fill" inline="d" ariaLabel="LinkedIn" name="linkedin">
+              <Button theme="fill" inline="medium" ariaLabel="LinkedIn" name="linkedin">
                 <LinkedinLogo size={20} />
               </Button>
             </a>
@@ -133,7 +132,7 @@ export default function Footer(): JSX.Element {
             </a>
           </Stack>
         </Stack>
-        <Stack direction="row" align="center" top="e">
+        <Stack direction="row" align="center" top="large">
           <Stack direction="column">
             <Text as="small" accent>
               Made in Ocean Grove and Melbourne. Operated by Cosmo AU Pty Ltd (ABN 22139144915).

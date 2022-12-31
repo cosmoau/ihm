@@ -1,4 +1,4 @@
-import { Stack, Text, View, Box, Avatar, Image, Badge, fadeIn } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Avatar, Image, Badge } from "@cosmoau/ui";
 import { NextSeo } from "next-seo";
 
 export default function Team(): JSX.Element {
@@ -7,8 +7,8 @@ export default function Team(): JSX.Element {
       <NextSeo title="Meet the Team" />
       <View
         inverted
-        top="e"
-        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
+        top="large"
+        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} widthPhone={55} minimal>
             <Box
@@ -17,17 +17,13 @@ export default function Team(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$g $f",
+                padding: "$larger",
 
                 phone: {
-                  padding: "$f $e",
+                  padding: "$larger $large",
                 },
               }}>
-              <Text
-                as="h2"
-                css={{
-                  animation: `${fadeIn}  0.5s ease-in-out`,
-                }}>
+              <Text as="h2">
                 <Text as="span" css={{ hiddenInline: "phone" }}>
                   Meet The&nbsp;
                 </Text>
@@ -45,8 +41,8 @@ export default function Team(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$c !important",
-                  borderTopRightRadius: "$c !important",
+                  borderBottomRightRadius: "$large !important",
+                  borderTopRightRadius: "$large !important",
                 },
               }}
             />
@@ -56,24 +52,24 @@ export default function Team(): JSX.Element {
 
       <View
         container
-        top="g"
-        bottom="g"
+        top="largest"
+        bottom="largest"
         css={{
-          phone: { paddingBottom: "$e", paddingTop: "$e" },
+          phone: { paddingBottom: "$large", paddingTop: "$large" },
         }}>
-        <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction="row" flex="stretch">
           <Stack direction="column" width={33.334}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$e",
+                  marginRight: "$large",
                   verticalAlign: "middle",
                 }}>
                 <Avatar src="/images/team-kyle.jpg" fallback="KF" width={66} />
               </Stack>
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$b !important" }}>
+                <Text as="h4" css={{ marginBottom: "$smaller !important" }}>
                   Kyle Fitzsimmons
                 </Text>
                 <Badge>Managing Director</Badge>
@@ -85,21 +81,21 @@ export default function Team(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$e",
+                paddingTop: "$large",
               },
             }}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$e",
+                  marginRight: "$large",
                   verticalAlign: "middle",
                 }}>
                 <Avatar src="/images/team-harry.jpg" fallback="HK" width={66} />
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$b !important" }}>
+                <Text as="h4" css={{ marginBottom: "$smaller !important" }}>
                   Harrison Keck
                 </Text>
                 <Badge>Regional Coordinator</Badge>
@@ -111,21 +107,21 @@ export default function Team(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$e",
+                paddingTop: "$large",
               },
             }}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$e",
+                  marginRight: "$large",
                   verticalAlign: "middle",
                 }}>
                 <Avatar src="/images/team-victoria.jpg" fallback="VM" width={66} />
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$b !important" }}>
+                <Text as="h4" css={{ marginBottom: "$smaller !important" }}>
                   Victoria Mills
                 </Text>
                 <Badge>Regional Coordinator</Badge>

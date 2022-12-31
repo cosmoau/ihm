@@ -1,4 +1,4 @@
-import { Stack, Text, View, Box, Badge, Image, Avatar, Input, fadeIn, Button } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Badge, Image, Avatar, Input, Button } from "@cosmoau/ui";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -58,8 +58,8 @@ export default function Home(): JSX.Element {
 
       <View
         inverted
-        top="e"
-        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
+        top="large"
+        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} minimal>
             <Box
@@ -82,30 +82,18 @@ export default function Home(): JSX.Element {
                   opacity: 1,
                 },
 
-                padding: "calc($h * 1.5) $f",
+                padding: "calc($largest * 1.5) $larger",
 
                 phone: {
                   borderBottomLeftRadius: "0 !important",
                   borderBottomRightRadius: "0 !important",
-                  borderTopLeftRadius: "$c !important",
-                  borderTopRightRadius: "$c !important",
-                  padding: "$f $e",
+                  borderTopLeftRadius: "$large !important",
+                  borderTopRightRadius: "$large !important",
+                  padding: "$larger $large",
                 },
               }}>
-              <Text
-                as="h1"
-                css={{
-                  animation: `${fadeIn}  0.5s ease-in-out`,
-                }}>
-                Holiday Home Management on all the major booking platforms
-              </Text>
-              <Text
-                as="p"
-                accent
-                bottom="f"
-                css={{
-                  animation: `${fadeIn}  0.8s ease-in-out`,
-                }}>
+              <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
+              <Text as="p" accent bottom="larger">
                 We&apos;re your local short-term property management experts. With <b>ihostme</b>,
                 you can achieve better occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway,
                 Booking.com and Homes & Villas Management by Marriott.
@@ -125,9 +113,6 @@ export default function Home(): JSX.Element {
                 }}
                 submitValid
                 submit="💌 Free estimate"
-                css={{
-                  animation: `${fadeIn} 1s ease-in-out`,
-                }}
               />
             </Box>
           </Stack>
@@ -136,7 +121,6 @@ export default function Home(): JSX.Element {
             direction="column"
             width={50}
             css={{
-              animation: `${fadeIn} 0.5s ease-in-out`,
               phone: { height: "40rem" },
             }}>
             <Image
@@ -147,12 +131,12 @@ export default function Home(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$c !important",
-                  borderTopRightRadius: "$c !important",
+                  borderBottomRightRadius: "$large !important",
+                  borderTopRightRadius: "$large !important",
 
                   phone: {
-                    borderBottomLeftRadius: "$c !important",
-                    borderBottomRightRadius: "$c !important",
+                    borderBottomLeftRadius: "$large !important",
+                    borderBottomRightRadius: "$large !important",
                     borderTopLeftRadius: "0 !important",
                     borderTopRightRadius: "0 !important",
                   },
@@ -163,13 +147,11 @@ export default function Home(): JSX.Element {
         </Stack>
       </View>
 
-      <View container top="g">
-        <Stack direction="row" align="center" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+      <View container top="largest">
+        <Stack direction="row" align="center">
           <Stack direction="column" width={50} offset={25}>
-            <Text as="h3" top="e">
-              ihostme operates out of the top holiday destinations
-            </Text>
-            <Text as="p" bottom="e">
+            <Text as="h3">ihostme operates out of the top holiday destinations</Text>
+            <Text as="p" bottom="large">
               We are a team of highly skilled and experienced property managers who are dedicated to
               providing the best service to owners and investors, from Point Lonsdale to Hobart.
             </Text>
@@ -178,7 +160,7 @@ export default function Home(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" top="f" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction="row" top="larger">
           <Stack direction="column" width={100} align="center">
             <Stack>
               <Link href="/locations">
@@ -187,15 +169,15 @@ export default function Home(): JSX.Element {
                     key={index}
                     css={{
                       display: "inline-block",
-                      marginRight: "$d",
-                      paddingTop: "$d",
+                      marginRight: "$medium",
+                      paddingTop: "$medium",
                     }}>
                     <Badge theme="border" css={{ borderColor: "rgba(0,0,0,0.05)" }}>
                       <Stack
                         css={{
                           alignItems: "center",
                           display: "flex",
-                          marginRight: "$b",
+                          marginRight: "$smaller",
                           verticalAlign: "middle",
                         }}>
                         <Avatar
@@ -217,8 +199,8 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View container top="g" bottom="g">
-        <Stack direction="row" flex="stretch" css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+      <View container top="largest" bottom="largest">
+        <Stack direction="row" flex="stretch">
           <Stack direction="column" width={33.334}>
             <Box theme="fill">
               <Text as="h5">Your One Stop Hosting Shop</Text>
@@ -237,7 +219,7 @@ export default function Home(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$e",
+                paddingTop: "$large",
               },
             }}>
             <Box theme="fill">
@@ -256,7 +238,7 @@ export default function Home(): JSX.Element {
             width={33.334}
             css={{
               phone: {
-                paddingTop: "$e",
+                paddingTop: "$large",
               },
             }}>
             <Box theme="fill">

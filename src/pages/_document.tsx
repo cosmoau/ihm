@@ -1,6 +1,5 @@
 import { getCssText } from "@cosmoau/ui";
 import NextDocument, { DocumentContext, Head, Html, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 type Props = {
   css: string;
@@ -40,54 +39,6 @@ class Document extends NextDocument<Props> {
         <body>
           <Main />
           <NextScript />
-          <Script strategy="afterInteractive" id="SmallChat" async>
-            {`
-           window.Smallchat = {
-                config: {
-                  "slackTeamId": "TPZDU8ELR",
-                  "scChannelId": "-NDtQu1bXjfxtImq9ycg",
-                  "slackChannelId": "C046EH1B7LY",
-                  "uid": "-NDtQf1Mmva7dKd4TD6j",
-                  "planId": null,
-                  "accountCreated": 1665263382789
-                },
-                appearance: {
-                  "brand_color": "#fdfaf6",
-                  "contact_dismissible": false,
-                  "contact_enabled": true,
-                  "contact_field_label": "Email",
-                  "contact_immediately": false,
-                  "contact_prompt": "Add your name and email to make sure you see our reply:",
-                  "contact_reply": "Thanks {{name}}! You'll get a response here or we'll contact you at {{contact}}.",
-                  "custom_css": "",
-                  "hide_logo": true,
-                  "hide_team_icon": true,
-                  "launcher_pos": "right",
-                  "launcher_prompt": "Send a message",
-                  "launcher_type": "button",
-                  "messenger_blank": "Send a message, and we'll reply as soon as we can.",
-                  "messenger_entry": "Send a message...",
-                  "messenger_prompt": "How can we help?",
-                  "name_field_label": "Name",
-                  "offline_greeting": "We're offline right now but typically respond in about an hour.",
-                  "text_color": "#0a2540"
-                },
-              };
-              window.addEventListener('load', function(){
-                var styles = document.createElement('link');
-                styles.rel = 'stylesheet';
-                styles.href = 'https://static.small.chat/messenger.css';
-                document.head.appendChild(styles);
-                var wrapper = document.createElement('div');
-                wrapper.id = 'SmallchatWrapper';
-                document.body.appendChild(wrapper);
-                var script = document.createElement('script');
-                script.async = true;
-                script.src = 'https://static.small.chat/messenger.js';
-                document.body.appendChild(script);
-              }, false);
-          `}
-          </Script>
         </body>
       </Html>
     );

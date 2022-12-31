@@ -1,4 +1,4 @@
-import { Stack, Text, View, Box, Image, fadeIn, Divider, Button } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Image, Divider, Button } from "@cosmoau/ui";
 import { Widget } from "@typeform/embed-react";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
@@ -10,8 +10,8 @@ export default function Start(): JSX.Element {
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
       <View
         inverted
-        top="e"
-        css={{ background: "$text !important", paddingLeft: "$e", paddingRight: "$e" }}>
+        top="large"
+        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}>
         <Stack direction="row" minimal>
           <Stack direction="column" width={50} minimal>
             <Box
@@ -20,26 +20,17 @@ export default function Start(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$g $f",
+                padding: "$larger",
 
                 phone: {
-                  borderRadius: "$c !important",
-                  padding: "$f $e",
+                  borderRadius: "$large !important",
+                  padding: "$larger $large",
                 },
               }}>
-              <Text
-                as="h2"
-                css={{
-                  animation: `${fadeIn}  0.5s ease-in-out`,
-                }}>
+              <Text as="h2">
                 {router.query.city ? `List your home in ${router.query.city}` : "Sign Up"}
               </Text>
-              <Text
-                as="p"
-                accent
-                css={{
-                  animation: `${fadeIn}  0.8s ease-in-out`,
-                }}>
+              <Text as="p" accent>
                 {router.query.email
                   ? `We will send your free earnings estimation, along with information on getting started to ${router.query.email}.`
                   : "Get your free earnings estimation today."}
@@ -55,8 +46,8 @@ export default function Start(): JSX.Element {
               fill
               css={{
                 img: {
-                  borderBottomRightRadius: "$c !important",
-                  borderTopRightRadius: "$c !important",
+                  borderBottomRightRadius: "$large !important",
+                  borderTopRightRadius: "$large !important",
                 },
               }}
             />
@@ -65,23 +56,19 @@ export default function Start(): JSX.Element {
       </View>
       <View
         container
-        top="g"
-        bottom="g"
+        top="largest"
+        bottom="largest"
         css={{
-          phone: { paddingBottom: "$e", paddingTop: "$e" },
+          phone: { paddingBottom: "$large", paddingTop: "$large" },
         }}>
-        <Stack
-          direction="row"
-          flex="stretch"
-          align="center"
-          css={{ animation: `${fadeIn}  0.8s ease-in-out` }}>
+        <Stack direction="row" flex="stretch" align="center">
           <Stack direction="column">
             <Box
               theme="fill"
               css={{
-                borderRadius: "$c",
+                borderRadius: "large",
               }}>
-              <Stack bottom="c">
+              <Stack bottom="small">
                 <Widget
                   id="cAmtR2rI"
                   height={700}
@@ -97,8 +84,8 @@ export default function Start(): JSX.Element {
                   }}
                 />
               </Stack>
-              <Divider bottom="e" />
-              <Text as="small" accent inline="d" css={{ verticalAlign: "middle" }}>
+              <Divider bottom="large" />
+              <Text as="small" accent inline="medium" css={{ verticalAlign: "middle" }}>
                 Form not working?
               </Text>
 
