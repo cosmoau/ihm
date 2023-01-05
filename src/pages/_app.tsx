@@ -8,7 +8,7 @@ import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <Provider locked="light" default="light">
+    <Provider locked="light">
       <DefaultSeo
         openGraph={{
           description:

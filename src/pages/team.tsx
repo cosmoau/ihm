@@ -6,13 +6,12 @@ export default function Team(): JSX.Element {
     <>
       <NextSeo title="Meet the Team" />
       <View
+        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
         inverted
-        top="large"
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}>
+        top="large">
         <Stack direction="row" minimal>
-          <Stack direction="column" width={50} widthPhone={55} minimal>
+          <Stack direction="column" minimal width={50} widthPhone={55}>
             <Box
-              theme="fill"
               css={{
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
@@ -22,7 +21,8 @@ export default function Team(): JSX.Element {
                 phone: {
                   padding: "$larger $large",
                 },
-              }}>
+              }}
+              theme="fill">
               <Text as="h2">
                 <Text as="span" css={{ hiddenInline: "phone" }}>
                   Meet The&nbsp;
@@ -31,32 +31,32 @@ export default function Team(): JSX.Element {
               </Text>
             </Box>
           </Stack>
-          <Stack minimal direction="column" width={50} widthPhone={45}>
+          <Stack direction="column" minimal width={50} widthPhone={45}>
             <Image
-              src="/images/misc-12.jpg"
-              fillPosition="left"
               alt="A photo of a dining table with festive decorations."
-              placeholder="blur"
               blurDataURL="/images/misc-12.jpg"
-              fill
               css={{
                 img: {
                   borderBottomRightRadius: "$large !important",
                   borderTopRightRadius: "$large !important",
                 },
               }}
+              fill
+              fillPosition="left"
+              placeholder="blur"
+              src="/images/misc-12.jpg"
             />
           </Stack>
         </Stack>
       </View>
 
       <View
-        container
-        top="largest"
         bottom="largest"
+        container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}>
+        }}
+        top="largest">
         <Stack direction="row" flex="stretch">
           <Stack direction="column" width={33.334}>
             <Box theme="fill">
@@ -66,7 +66,7 @@ export default function Team(): JSX.Element {
                   marginRight: "$large",
                   verticalAlign: "middle",
                 }}>
-                <Avatar src="/images/team-kyle.jpg" fallback="KF" width={66} />
+                <Avatar fallback="KF" src="/images/team-kyle.jpg" width={66} />
               </Stack>
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
                 <Text as="h4" css={{ marginBottom: "$smaller !important" }}>
@@ -77,13 +77,13 @@ export default function Team(): JSX.Element {
             </Box>
           </Stack>
           <Stack
-            direction="column"
-            width={33.334}
             css={{
               phone: {
                 paddingTop: "$large",
               },
-            }}>
+            }}
+            direction="column"
+            width={33.334}>
             <Box theme="fill">
               <Stack
                 css={{
@@ -91,7 +91,7 @@ export default function Team(): JSX.Element {
                   marginRight: "$large",
                   verticalAlign: "middle",
                 }}>
-                <Avatar src="/images/team-harry.jpg" fallback="HK" width={66} />
+                <Avatar fallback="HK" src="/images/team-harry.jpg" width={66} />
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
@@ -103,13 +103,13 @@ export default function Team(): JSX.Element {
             </Box>
           </Stack>
           <Stack
-            direction="column"
-            width={33.334}
             css={{
               phone: {
                 paddingTop: "$large",
               },
-            }}>
+            }}
+            direction="column"
+            width={33.334}>
             <Box theme="fill">
               <Stack
                 css={{
@@ -117,7 +117,7 @@ export default function Team(): JSX.Element {
                   marginRight: "$large",
                   verticalAlign: "middle",
                 }}>
-                <Avatar src="/images/team-victoria.jpg" fallback="VM" width={66} />
+                <Avatar fallback="VM" src="/images/team-victoria.jpg" width={66} />
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>

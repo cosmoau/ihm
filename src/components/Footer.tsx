@@ -4,70 +4,70 @@ import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "ph
 export default function Footer(): JSX.Element {
   return (
     <footer>
-      <View container top="largest" bottom="largest" css={{ borderTop: "0.1rem solid $border" }}>
+      <View bottom="largest" container css={{ borderTop: "0.1rem solid $border" }} top="largest">
         <Stack direction="row">
           <Stack
-            direction="column"
-            width={50}
             css={{
               phone: {
                 height: "30rem",
               },
-            }}>
+            }}
+            direction="column"
+            width={50}>
             <Image
-              src="/images/misc-11.jpg"
               alt="
               A photo of coastal Victoria, Australia where ihostme is based and where we offer Airbnb management services to owners and investors.
             "
-              fill
               blurDataURL="/images/misc-11.jpg"
-              placeholder="blur"
               borderRadius="large"
+              fill
+              placeholder="blur"
+              src="/images/misc-11.jpg"
             />
           </Stack>
           <Stack
-            top="larger"
             bottom="larger"
-            direction="column"
-            width={50}
             css={{
               paddingLeft: "$larger",
               phone: {
                 paddingBottom: 0,
                 paddingLeft: "$small",
               },
-            }}>
+            }}
+            direction="column"
+            top="larger"
+            width={50}>
             <Text as="h3">Unlock your full earning potential today</Text>
-            <Text as="p" accent>
+            <Text accent as="p">
               ihostme manages properties that earn <b>$40,000 or more</b> in rental income per year.
             </Text>
-            <Text as="p" accent>
+            <Text accent as="p">
               We are interested in speaking to owners of homes and holiday rentals that are
               available for at least <b>140 nights per year</b>.
             </Text>
             <Stack top="large">
               <a href="mailto:ihostme@cosmogroup.io">
                 <Badge
-                  inline="medium"
-                  icon={<ChatCircle />}
                   css={{
                     phone: {
                       marginBottom: "small",
                       marginTop: "small",
                     },
-                  }}>
+                  }}
+                  icon={<ChatCircle />}
+                  inline="medium">
                   ihostme@cosmogroup.io
                 </Badge>
               </a>
               <Badge
-                inline="auto"
-                icon={<Phone />}
                 css={{
                   phone: {
                     marginBottom: "small",
                     marginTop: "small",
                   },
-                }}>
+                }}
+                icon={<Phone />}
+                inline="auto">
                 <a href="tel:+61370355800">(03) 7035 5800</a>
               </Badge>
             </Stack>
@@ -76,65 +76,65 @@ export default function Footer(): JSX.Element {
       </View>
 
       <View
+        bottom="larger"
+        container
         css={{
           background: "$accentIHM !important",
           borderTop: "0.1rem solid $border",
           zIndex: 201,
         }}
-        container
-        top="larger"
         inverted
-        bottom="larger">
+        top="larger">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={40} widthPhone={15}>
             <Stack>
               <Badge theme="border">
                 <Image
-                  src="/favicon.ico"
-                  width={25}
-                  height={25}
-                  placeholder="blur"
-                  blurDataURL="/favicon.ico"
                   alt="
                   ihostme logo, which is a pink icon of a house.
                   "
+                  blurDataURL="/favicon.ico"
+                  height={25}
+                  placeholder="blur"
+                  src="/favicon.ico"
+                  width={25}
                 />
                 <Text
                   as="p"
                   bold
-                  inline="auto"
-                  css={{ hiddenInline: "phone", marginLeft: "$medium" }}>
+                  css={{ hiddenInline: "phone", marginLeft: "$medium" }}
+                  inline="auto">
                   ihostme
                 </Text>
               </Badge>
             </Stack>
           </Stack>
-          <Stack direction="column" width={60} widthPhone={85} align="right">
+          <Stack align="right" direction="column" width={60} widthPhone={85}>
             <a href="https://www.facebook.com/cosmogroup.io">
-              <Button theme="fill" inline="medium" ariaLabel="Facebook" name="facebook">
+              <Button ariaLabel="Facebook" inline="medium" name="facebook" theme="fill">
                 <FacebookLogo size={20} />
               </Button>
             </a>
             <a href="https://www.instagram.com/cosmogroup.io/" rel="noreferrer" target="_blank">
-              <Button theme="fill" inline="medium" ariaLabel="Instagram" name="instagram">
+              <Button ariaLabel="Instagram" inline="medium" name="instagram" theme="fill">
                 <InstagramLogo size={20} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/cosmoau/" rel="noreferrer" target="_blank">
-              <Button theme="fill" inline="medium" ariaLabel="LinkedIn" name="linkedin">
+              <Button ariaLabel="LinkedIn" inline="medium" name="linkedin" theme="fill">
                 <LinkedinLogo size={20} />
               </Button>
             </a>
-            <a href="https://cosmogroup.io/legal" target="_blank" rel="noreferrer">
-              <Button theme="fill" external>
+            <a href="https://cosmogroup.io/legal" rel="noreferrer" target="_blank">
+              <Button external theme="fill">
                 Privacy
               </Button>
             </a>
           </Stack>
         </Stack>
-        <Stack direction="row" align="center" top="large">
+        <Stack align="center" direction="row" top="large">
           <Stack direction="column">
-            <Text as="small" accent>
+            <Text accent as="small">
               Made in Ocean Grove and Melbourne. Operated by Cosmo AU Pty Ltd (ABN 22139144915).
             </Text>
           </Stack>

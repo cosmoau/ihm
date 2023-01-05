@@ -7,13 +7,12 @@ export default function Custom404(): JSX.Element {
     <>
       <NextSeo title="Page not found" />
       <View
+        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
         inverted
-        top="large"
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}>
+        top="large">
         <Stack direction="row" minimal>
-          <Stack direction="column" width={50} widthPhone={55} minimal>
+          <Stack direction="column" minimal width={50} widthPhone={55}>
             <Box
-              theme="fill"
               css={{
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
@@ -23,7 +22,8 @@ export default function Custom404(): JSX.Element {
                 phone: {
                   padding: "$larger $large",
                 },
-              }}>
+              }}
+              theme="fill">
               <Text as="h2">
                 <Text as="span" css={{ hiddenInline: "phone" }}>
                   Page&nbsp;
@@ -32,13 +32,10 @@ export default function Custom404(): JSX.Element {
               </Text>
             </Box>
           </Stack>
-          <Stack minimal direction="column" width={50} widthPhone={45}>
+          <Stack direction="column" minimal width={50} widthPhone={45}>
             <Image
-              src="/images/misc-09.jpg"
               alt="
                 An overhead shot of the Great Ocean Road, where we wish we were driving right now."
-              fill
-              placeholder="blur"
               blurDataURL="/images/misc-09.jpg"
               css={{
                 img: {
@@ -46,18 +43,21 @@ export default function Custom404(): JSX.Element {
                   borderTopRightRadius: "$large !important",
                 },
               }}
+              fill
+              placeholder="blur"
+              src="/images/misc-09.jpg"
             />
           </Stack>
         </Stack>
       </View>
 
       <View
-        container
-        top="largest"
         bottom="largest"
+        container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}>
+        }}
+        top="largest">
         <Stack direction="row">
           <Stack direction="column">
             <Text as="h3">Sorry, the page you are looking for is not available. </Text>

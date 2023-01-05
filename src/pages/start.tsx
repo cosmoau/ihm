@@ -9,13 +9,12 @@ export default function Start(): JSX.Element {
     <>
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
       <View
+        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
         inverted
-        top="large"
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}>
+        top="large">
         <Stack direction="row" minimal>
-          <Stack direction="column" width={50} minimal>
+          <Stack direction="column" minimal width={50}>
             <Box
-              theme="fill"
               css={{
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
@@ -26,76 +25,77 @@ export default function Start(): JSX.Element {
                   borderRadius: "$large !important",
                   padding: "$larger $large",
                 },
-              }}>
+              }}
+              theme="fill">
               <Text as="h2">
                 {router.query.city ? `List your home in ${router.query.city}` : "Sign Up"}
               </Text>
-              <Text as="p" accent>
+              <Text accent as="p">
                 {router.query.email
                   ? `We will send your free earnings estimation, along with information on getting started to ${router.query.email}.`
                   : "Get your free earnings estimation today."}
               </Text>
             </Box>
           </Stack>
-          <Stack minimal direction="column" width={50} css={{ hidden: "phone" }}>
+          <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
             <Image
-              src="/images/misc-14.jpg"
               alt="A photo of the beach walk in Point Lonsdale, Victoria, Australia."
               blurDataURL="/images/misc-14.jpg"
-              placeholder="blur"
-              fill
               css={{
                 img: {
                   borderBottomRightRadius: "$large !important",
                   borderTopRightRadius: "$large !important",
                 },
               }}
+              fill
+              placeholder="blur"
+              src="/images/misc-14.jpg"
             />
           </Stack>
         </Stack>
       </View>
       <View
-        container
-        top="largest"
         bottom="largest"
+        container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}>
-        <Stack direction="row" flex="stretch" align="center">
+        }}
+        top="largest">
+        <Stack align="center" direction="row" flex="stretch">
           <Stack direction="column">
             <Box
-              theme="fill"
               css={{
                 borderRadius: "large",
-              }}>
+              }}
+              theme="fill">
               <Stack bottom="small">
                 <Widget
-                  id="cAmtR2rI"
                   height={700}
-                  opacity={0}
                   hidden={{
                     email: router.query.email
                       ? router.query.email.toString()
                       : "Not provided somehow, Isaac check this",
                     url: "ihostme.com.au",
                   }}
+                  id="cAmtR2rI"
+                  opacity={0}
                   style={{
                     overflowY: "visible",
                   }}
                 />
               </Stack>
               <Divider bottom="large" />
-              <Text as="small" accent inline="medium" css={{ verticalAlign: "middle" }}>
+              <Text accent as="small" css={{ verticalAlign: "middle" }} inline="medium">
                 Form not working?
               </Text>
 
-              <Button external small css={{ verticalAlign: "middle" }}>
+              <Button css={{ verticalAlign: "middle" }} external small>
                 <a
                   href={`https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au&email=${
                     router.query.email ? router.query.email.toString() : "NA"
                   }`}
-                  target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                  target="_blank">
                   cosmo-au.typeform.com/to/cAmtR2rI
                 </a>
               </Button>

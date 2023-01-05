@@ -75,16 +75,16 @@ export default function Header(): JSX.Element {
   return (
     <header>
       <View
-        top="small"
+        bottom="small"
         css={{
           borderBottom: "0.1rem solid $border",
           position: "sticky",
           top: 0,
           zIndex: 100,
         }}
-        bottom="small">
+        top="small">
         <Stack direction="row" flex="center">
-          <Stack direction="column" width={25} widthTablet={40} widthPhone={50}>
+          <Stack direction="column" width={25} widthPhone={50} widthTablet={40}>
             <Link href="/">
               <Stack
                 css={{
@@ -92,43 +92,39 @@ export default function Header(): JSX.Element {
                   verticalAlign: "middle",
                 }}>
                 <Image
-                  src="/images/logo-new.png"
-                  blurDataURL="/images/logo-new.png"
-                  placeholder="blur"
                   alt="
               ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
               "
-                  width={120}
+                  blurDataURL="/images/logo-new.png"
                   height={36.5}
+                  placeholder="blur"
+                  src="/images/logo-new.png"
+                  width={120}
                 />
               </Stack>
             </Link>
           </Stack>
           <Stack
-            direction="column"
+            align="right"
             css={{
               visible: "tablet",
             }}
-            align="right"
-            widthTablet={60}
-            widthPhone={50}>
-            <a href="https://v1.cosmogroup.io" target="_blank" rel="noreferrer">
-              <Button name="sign-in" inline="medium" ariaLabel="Owners Portal">
+            direction="column"
+            widthPhone={50}
+            widthTablet={60}>
+            <a href="https://v1.cosmogroup.io" rel="noreferrer" target="_blank">
+              <Button ariaLabel="Owners Portal" inline="medium" name="sign-in">
                 Owners
               </Button>
             </a>
             <Select
-              locked={false}
-              onSelection={(value, label): void => handleSelection(value, label)}
-              selection={activeSelection}
-              last
-              width="16rem"
               align="right"
+              last
+              locked={false}
               options={optionsPhone}
+              selection={activeSelection}
               trigger={
                 <Button
-                  name="menu"
-                  theme="solid"
                   ariaLabel="Open Navigation Menu"
                   css={{
                     "&:hover": {
@@ -136,89 +132,91 @@ export default function Header(): JSX.Element {
                       color: "$background",
                     },
                     background: "$accentIHM !important",
-                  }}>
+                  }}
+                  name="menu"
+                  theme="solid">
                   Menu
                 </Button>
               }
+              width="16rem"
+              onSelection={(value, label): void => handleSelection(value, label)}
             />
           </Stack>
           <Stack
-            direction="column"
             align="center"
-            width={50}
             css={{
               hidden: "tablet",
-            }}>
+            }}
+            direction="column"
+            width={50}>
             <Link href="/">
               <Button theme="minimal">Home</Button>
             </Link>
             <Link href="/testimonials">
               <Button
-                theme={router.pathname === "/testimonials" ? "fill" : "minimal"}
                 css={{
                   color: router.pathname === "/testimonials" ? "$accent !important" : "inherit",
-                }}>
+                }}
+                theme={router.pathname === "/testimonials" ? "fill" : "minimal"}>
                 Testimonials
               </Button>
             </Link>
             <Link href="/team">
               <Button
-                theme={router.pathname === "/team" ? "fill" : "minimal"}
                 css={{
                   color: router.pathname === "/team" ? "$accent !important" : "inherit",
-                }}>
+                }}
+                theme={router.pathname === "/team" ? "fill" : "minimal"}>
                 Team
               </Button>
             </Link>
 
             <Link href="/locations">
               <Button
-                theme={router.pathname === "/locations" ? "fill" : "minimal"}
                 css={{
                   color: router.pathname === "/locations" ? "$accent !important" : "inherit",
-                }}>
+                }}
+                theme={router.pathname === "/locations" ? "fill" : "minimal"}>
                 Locations
               </Button>
             </Link>
 
             <Select
-              locked={false}
-              last
-              width="17rem"
               align="left"
+              last
+              locked={false}
               options={optionsResources}
               selection={activeSelection}
-              onSelection={(value, label): void => handleSelection(value, label)}
               trigger={
                 <Button
-                  name="menu"
-                  theme="minimal"
                   ariaLabel="Open Navigation Menu"
                   icon={<CaretDown weight="light" />}
-                  iconPosition="right">
+                  iconPosition="right"
+                  name="menu"
+                  theme="minimal">
                   More
                 </Button>
               }
+              width="17rem"
+              onSelection={(value, label): void => handleSelection(value, label)}
             />
           </Stack>
 
           <Stack
-            direction="column"
             align="right"
-            width={25}
             css={{
               hidden: "tablet",
-            }}>
-            <a href="https://v1.cosmogroup.io" target="_blank" rel="noreferrer">
-              <Button name="sign-in" inline="medium" ariaLabel="Owners Portal">
+            }}
+            direction="column"
+            width={25}>
+            <a href="https://v1.cosmogroup.io" rel="noreferrer" target="_blank">
+              <Button ariaLabel="Owners Portal" inline="medium" name="sign-in">
                 Owners Portal
               </Button>
             </a>
             <Link href="/start">
               <Button
-                name="get-started"
-                inline="auto"
-                theme="solid"
+                ariaLabel="Sign Up"
                 css={{
                   "&:hover": {
                     background: "rgb(95, 113, 128) !important",
@@ -226,7 +224,9 @@ export default function Header(): JSX.Element {
                   },
                   background: "$accentIHM !important",
                 }}
-                ariaLabel="Sign Up">
+                inline="auto"
+                name="get-started"
+                theme="solid">
                 Sign Up
               </Button>
             </Link>
