@@ -44,11 +44,11 @@ export default function Header(): JSX.Element {
     },
     {
       label: "Airbnb Calculator",
-      value: "https://cosmogroup.io/mini",
+      value: "https://cosmogroup.io/airbnb-calculator",
     },
     {
       label: "Contact Us",
-      value: "https://cosmogroup.io/mini",
+      value: "https://cosmogroup.io/contact",
     },
     {
       label: "🏡 Book a stay",
