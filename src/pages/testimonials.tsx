@@ -6,9 +6,9 @@ export default function Testimonials(): JSX.Element {
     <>
       <NextSeo title="Client Testimonials" />
       <View
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
+        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
-        top="large">
+        top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50} widthPhone={55}>
             <Box
@@ -16,10 +16,9 @@ export default function Testimonials(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$larger",
-
+                padding: "$larger $large",
                 phone: {
-                  padding: "$larger $large",
+                  padding: "$large $medium",
                 },
               }}
               theme="fill">
@@ -50,7 +49,7 @@ export default function Testimonials(): JSX.Element {
       </View>
 
       <View
-        bottom="largest"
+        bottom="larger"
         container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },

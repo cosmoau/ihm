@@ -6,9 +6,9 @@ export default function Team(): JSX.Element {
     <>
       <NextSeo title="Meet the Team" />
       <View
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
+        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
-        top="large">
+        top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50} widthPhone={55}>
             <Box
@@ -16,10 +16,9 @@ export default function Team(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$larger",
-
+                padding: "$larger $large",
                 phone: {
-                  padding: "$larger $large",
+                  padding: "$large $medium",
                 },
               }}
               theme="fill">
@@ -51,19 +50,19 @@ export default function Team(): JSX.Element {
       </View>
 
       <View
-        bottom="largest"
+        bottom="larger"
         container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },
         }}
         top="largest">
         <Stack direction="row" flex="stretch">
-          <Stack direction="column" width={33.334}>
+          <Stack direction="column" width={33.33}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$large",
+                  marginRight: "$medium",
                   verticalAlign: "middle",
                 }}>
                 <Avatar fallback="KF" src="/images/team-kyle.jpg" width={66} />
@@ -83,12 +82,12 @@ export default function Team(): JSX.Element {
               },
             }}
             direction="column"
-            width={33.334}>
+            width={33.33}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$large",
+                  marginRight: "$medium",
                   verticalAlign: "middle",
                 }}>
                 <Avatar fallback="HK" src="/images/team-harry.jpg" width={66} />
@@ -109,12 +108,12 @@ export default function Team(): JSX.Element {
               },
             }}
             direction="column"
-            width={33.334}>
+            width={33.33}>
             <Box theme="fill">
               <Stack
                 css={{
                   display: "inline-flex",
-                  marginRight: "$large",
+                  marginRight: "$medium",
                   verticalAlign: "middle",
                 }}>
                 <Avatar fallback="VM" src="/images/team-victoria.jpg" width={66} />

@@ -4,7 +4,7 @@ import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "ph
 export default function Footer(): JSX.Element {
   return (
     <footer>
-      <View bottom="largest" container css={{ borderTop: "0.1rem solid $border" }} top="largest">
+      <View bottom="largest" container css={{ borderTop: "0.1rem solid $border" }} top="larger">
         <Stack direction="row">
           <Stack
             css={{
@@ -26,7 +26,7 @@ export default function Footer(): JSX.Element {
             />
           </Stack>
           <Stack
-            bottom="larger"
+            bottom="large"
             css={{
               paddingLeft: "$larger",
               phone: {
@@ -35,7 +35,7 @@ export default function Footer(): JSX.Element {
               },
             }}
             direction="column"
-            top="larger"
+            top="large"
             width={50}>
             <Text as="h3">Unlock your full earning potential today</Text>
             <Text accent as="p">
@@ -76,7 +76,7 @@ export default function Footer(): JSX.Element {
       </View>
 
       <View
-        bottom="larger"
+        bottom="large"
         container
         css={{
           background: "$accentIHM !important",
@@ -84,7 +84,7 @@ export default function Footer(): JSX.Element {
           zIndex: 201,
         }}
         inverted
-        top="larger">
+        top="large">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={40} widthPhone={15}>
             <Stack>
@@ -99,11 +99,7 @@ export default function Footer(): JSX.Element {
                   src="/favicon.ico"
                   width={25}
                 />
-                <Text
-                  as="p"
-                  bold
-                  css={{ hiddenInline: "phone", marginLeft: "$medium" }}
-                  inline="auto">
+                <Text as="p" css={{ hiddenInline: "phone", marginLeft: "$medium" }} inline="auto">
                   ihostme
                 </Text>
               </Badge>
@@ -111,17 +107,17 @@ export default function Footer(): JSX.Element {
           </Stack>
           <Stack align="right" direction="column" width={60} widthPhone={85}>
             <a href="https://www.facebook.com/cosmogroup.io">
-              <Button ariaLabel="Facebook" inline="medium" name="facebook" theme="fill">
+              <Button inline="medium" theme="fill">
                 <FacebookLogo size={20} />
               </Button>
             </a>
             <a href="https://www.instagram.com/cosmogroup.io/" rel="noreferrer" target="_blank">
-              <Button ariaLabel="Instagram" inline="medium" name="instagram" theme="fill">
+              <Button inline="medium" theme="fill">
                 <InstagramLogo size={20} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/cosmoau/" rel="noreferrer" target="_blank">
-              <Button ariaLabel="LinkedIn" inline="medium" name="linkedin" theme="fill">
+              <Button inline="medium" theme="fill">
                 <LinkedinLogo size={20} />
               </Button>
             </a>

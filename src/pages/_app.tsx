@@ -1,7 +1,7 @@
 import { Provider } from "@cosmoau/ui";
 import { Analytics } from "@vercel/analytics/react";
-import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
+import { DefaultSeo } from "next-seo";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";

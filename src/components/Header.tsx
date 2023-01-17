@@ -113,19 +113,16 @@ export default function Header(): JSX.Element {
             widthPhone={50}
             widthTablet={60}>
             <a href="https://v1.cosmogroup.io" rel="noreferrer" target="_blank">
-              <Button ariaLabel="Owners Portal" inline="medium" name="sign-in">
-                Owners
-              </Button>
+              <Button inline="medium">Owners</Button>
             </a>
             <Select
-              align="right"
+              horizontal="right"
               last
               locked={false}
               options={optionsPhone}
               selection={activeSelection}
               trigger={
                 <Button
-                  ariaLabel="Open Navigation Menu"
                   css={{
                     "&:hover": {
                       background: "rgb(95, 113, 128) !important",
@@ -133,7 +130,6 @@ export default function Header(): JSX.Element {
                     },
                     background: "$accentIHM !important",
                   }}
-                  name="menu"
                   theme="solid">
                   Menu
                 </Button>
@@ -182,18 +178,12 @@ export default function Header(): JSX.Element {
             </Link>
 
             <Select
-              align="left"
               last
               locked={false}
               options={optionsResources}
               selection={activeSelection}
               trigger={
-                <Button
-                  ariaLabel="Open Navigation Menu"
-                  icon={<CaretDown weight="light" />}
-                  iconPosition="right"
-                  name="menu"
-                  theme="minimal">
+                <Button icon={<CaretDown weight="light" />} iconPosition="right" theme="minimal">
                   More
                 </Button>
               }
@@ -210,13 +200,10 @@ export default function Header(): JSX.Element {
             direction="column"
             width={25}>
             <a href="https://v1.cosmogroup.io" rel="noreferrer" target="_blank">
-              <Button ariaLabel="Owners Portal" inline="medium" name="sign-in">
-                Owners Portal
-              </Button>
+              <Button inline="small">Owner App</Button>
             </a>
             <Link href="/start">
               <Button
-                ariaLabel="Sign Up"
                 css={{
                   "&:hover": {
                     background: "rgb(95, 113, 128) !important",
@@ -225,7 +212,6 @@ export default function Header(): JSX.Element {
                   background: "$accentIHM !important",
                 }}
                 inline="auto"
-                name="get-started"
                 theme="solid">
                 Sign Up
               </Button>

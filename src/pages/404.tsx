@@ -1,15 +1,15 @@
 import { Stack, Image, Text, View, Button, Box } from "@cosmoau/ui";
-import { NextSeo } from "next-seo";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 export default function Custom404(): JSX.Element {
   return (
     <>
       <NextSeo title="Page not found" />
       <View
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
+        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
-        top="large">
+        top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50} widthPhone={55}>
             <Box
@@ -17,10 +17,9 @@ export default function Custom404(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$largest $larger",
-
+                padding: "$larger $large",
                 phone: {
-                  padding: "$larger $large",
+                  padding: "$large $medium",
                 },
               }}
               theme="fill">
@@ -65,7 +64,7 @@ export default function Custom404(): JSX.Element {
               Feel free to browse our site from the menu at the top of the page.
             </Text>
             <Link href="/">
-              <Button ariaLabel="Go to our homepage">Go to our homepage</Button>
+              <Button>Go to our homepage</Button>
             </Link>
           </Stack>
         </Stack>

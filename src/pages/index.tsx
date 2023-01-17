@@ -1,7 +1,7 @@
 import { Stack, Text, View, Box, Badge, Image, Avatar, Input, Button } from "@cosmoau/ui";
-import { NextSeo } from "next-seo";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
@@ -57,18 +57,13 @@ export default function Home(): JSX.Element {
       <NextSeo title="ihostme | Airbnb Management" titleTemplate="%s" />
 
       <View
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
+        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
-        top="large">
+        top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                "::placeholder": {
-                  color: "$text",
-                  fontSize: "$p !important",
-                  opacity: 0.6,
-                },
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
@@ -81,14 +76,14 @@ export default function Home(): JSX.Element {
                   opacity: 1,
                 },
 
-                padding: "calc($largest * 1.5) $larger",
+                padding: "$largest $large",
 
                 phone: {
                   borderBottomLeftRadius: "0 !important",
                   borderBottomRightRadius: "0 !important",
                   borderTopLeftRadius: "$large !important",
                   borderTopRightRadius: "$large !important",
-                  padding: "$larger $large",
+                  padding: "$large $medium",
                 },
               }}
               theme="fill">
@@ -160,7 +155,7 @@ export default function Home(): JSX.Element {
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" top="larger">
+        <Stack direction="row" top="medium">
           <Stack align="center" direction="column" width={100}>
             <Stack>
               <Link href="/locations">
@@ -199,9 +194,9 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       </View>
-      <View bottom="largest" container top="largest">
+      <View bottom="larger" container top="largest">
         <Stack direction="row" flex="stretch">
-          <Stack direction="column" width={33.334}>
+          <Stack direction="column" width={33.33}>
             <Box theme="fill">
               <Text as="h5">Your One Stop Hosting Shop</Text>
               <Text accent as="p">
@@ -221,7 +216,7 @@ export default function Home(): JSX.Element {
               },
             }}
             direction="column"
-            width={33.334}>
+            width={33.33}>
             <Box theme="fill">
               <Text as="h5">Simple, Easy Pricing</Text>
               <Text accent as="p">
@@ -240,7 +235,7 @@ export default function Home(): JSX.Element {
               },
             }}
             direction="column"
-            width={33.334}>
+            width={33.33}>
             <Box theme="fill">
               <Text as="h5">Your Holiday Home in Good Hands</Text>
               <Text accent as="p">

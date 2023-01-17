@@ -1,7 +1,7 @@
 import { Stack, Text, View, Box, Image, Divider, Button } from "@cosmoau/ui";
 import { Widget } from "@typeform/embed-react";
-import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
 
 export default function Start(): JSX.Element {
   const router = useRouter();
@@ -9,9 +9,9 @@ export default function Start(): JSX.Element {
     <>
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
       <View
-        css={{ background: "$text !important", paddingLeft: "$large", paddingRight: "$large" }}
+        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
-        top="large">
+        top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
@@ -19,11 +19,9 @@ export default function Start(): JSX.Element {
                 background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                padding: "$larger",
-
+                padding: "$larger $large",
                 phone: {
-                  borderRadius: "$large !important",
-                  padding: "$larger $large",
+                  padding: "$large $medium",
                 },
               }}
               theme="fill">
