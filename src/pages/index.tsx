@@ -69,9 +69,9 @@ export default function Home(): JSX.Element {
                 borderTopRightRadius: "0 !important",
 
                 button: {
-                  background: "$blueOverlay !important",
-                  borderColor: "$blueBorder !important",
-                  color: "$text !important",
+                  background: "$blueBackground !important",
+                  borderColor: "$blueText !important",
+                  color: "$blueText !important",
                   fontWeight: "bold !important",
                   opacity: 1,
                 },
