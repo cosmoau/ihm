@@ -46,30 +46,15 @@ export default function Footer(): JSX.Element {
               available for at least <b>140 nights per year</b>.
             </Text>
             <Stack top="large">
-              <a href="mailto:ihostme@cosmogroup.io">
-                <Badge
-                  css={{
-                    phone: {
-                      marginBottom: "small",
-                      marginTop: "small",
-                    },
-                  }}
-                  icon={<ChatCircle />}
-                  inline="medium">
-                  ihostme@cosmogroup.io
-                </Badge>
-              </a>
-              <Badge
-                css={{
-                  phone: {
-                    marginBottom: "small",
-                    marginTop: "small",
-                  },
-                }}
-                icon={<Phone />}
-                inline="auto">
-                <a href="tel:+61370355800">(03) 7035 5800</a>
+              <Badge icon={<ChatCircle />}>
+                <a href="mailto:ihostme@cosmogroup.io">ihostme@cosmogroup.io</a>
               </Badge>
+
+              <Stack top="small">
+                <Badge icon={<Phone />}>
+                  <a href="tel:+61370355800">(03) 7035 5800</a>
+                </Badge>
+              </Stack>
             </Stack>
           </Stack>
         </Stack>
@@ -99,7 +84,7 @@ export default function Footer(): JSX.Element {
                   src="/favicon.ico"
                   width={25}
                 />
-                <Text as="p" css={{ hiddenInline: "phone", marginLeft: "$medium" }} inline="auto">
+                <Text as="h4" css={{ hiddenInline: "phone", marginLeft: "$small" }} inline="auto">
                   ihostme
                 </Text>
               </Badge>
@@ -107,17 +92,17 @@ export default function Footer(): JSX.Element {
           </Stack>
           <Stack align="right" direction="column" width={60} widthPhone={85}>
             <a href="https://www.facebook.com/cosmogroup.io">
-              <Button inline="medium" theme="fill">
+              <Button inline="small" theme="fill">
                 <FacebookLogo size={20} />
               </Button>
             </a>
             <a href="https://www.instagram.com/cosmogroup.io/" rel="noreferrer" target="_blank">
-              <Button inline="medium" theme="fill">
+              <Button inline="small" theme="fill">
                 <InstagramLogo size={20} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/cosmoau/" rel="noreferrer" target="_blank">
-              <Button inline="medium" theme="fill">
+              <Button inline="small" theme="fill">
                 <LinkedinLogo size={20} />
               </Button>
             </a>
@@ -131,7 +116,7 @@ export default function Footer(): JSX.Element {
         <Stack align="center" direction="row" top="large">
           <Stack direction="column">
             <Text accent as="small">
-              Made in Ocean Grove and Melbourne. Operated by Cosmo AU Pty Ltd (ABN 22139144915).
+              Made in Ocean Grove and Melbourne. © 2023 <a href="https://cosmogroup.io">Cosmo</a>
             </Text>
           </Stack>
         </Stack>

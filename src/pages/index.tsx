@@ -5,52 +5,11 @@ import { NextSeo } from "next-seo";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
+import { serviceLocations } from "./locations";
+
 export default function Home(): JSX.Element {
   const router = useRouter();
   const [email, setEmail] = useState("");
-
-  const locations = [
-    "Geelong",
-    "Portarlington",
-    "Queenscliff",
-    "Point Lonsdale",
-    "Ocean Grove",
-    "Barwon Heads",
-    "Torquay",
-    "Jan Juc",
-    "Anglesea",
-    "Bellarine Peninsula",
-    "Aireys Inlet",
-    "Fairhaven",
-    "Lorne",
-    "Apollo Bay",
-    "Surf Coast",
-    "Mornington",
-    "Mt Eliza",
-    "Mt Martha",
-    "Sorrento",
-    "Portsea",
-    "Rye",
-    "Flinders",
-    "Balnarring",
-    "Somers",
-    "Red Hill",
-    "Safety Beach",
-    "Mornington Peninsula",
-    "Cowes",
-    "Smiths Beach",
-    "Ventnor",
-    "Cape Woolamai",
-    "Rhyll",
-    "San Remo",
-    "Phillip Island",
-    "Cape Paterson",
-    "Venus Bay",
-    "Inverloch",
-    "Bass Coast",
-    "South Gippsland",
-    "Hobart",
-  ];
 
   return (
     <>
@@ -148,7 +107,9 @@ export default function Home(): JSX.Element {
             <Text as="h3">ihostme operates out of the top holiday destinations</Text>
             <Text as="p" bottom="large">
               We are a team of highly skilled and experienced property managers who are dedicated to
-              providing the best service to owners and investors, from Point Lonsdale to Hobart.
+              providing the best service to owners and investors across the Bellarine and Surf Coast
+              regions of Victoria. If you have a home in this area, beyond the places listed below,
+              we can still help you. Please contact us to discuss your needs.
             </Text>
             <Link href="/start">
               <Button>List your home</Button>
@@ -158,38 +119,37 @@ export default function Home(): JSX.Element {
         <Stack direction="row" top="medium">
           <Stack align="center" direction="column" width={100}>
             <Stack>
-              <Link href="/locations">
-                {locations.map((location, index) => (
-                  <Stack
-                    key={index}
-                    css={{
-                      display: "inline-block",
-                      marginRight: "$medium",
-                      paddingTop: "$medium",
-                    }}>
+              {serviceLocations.map((location, index) => (
+                <Stack
+                  key={index}
+                  css={{
+                    display: "inline-block",
+                    marginRight: "$small",
+                    paddingTop: "$small",
+                  }}>
+                  <Link href={`/start?city=${location.name}`}>
                     <Badge css={{ borderColor: "rgba(0,0,0,0.05)" }} theme="border">
                       <Stack
                         css={{
                           alignItems: "center",
                           display: "flex",
-                          marginRight: "$smaller",
+                          marginRight: "$small",
                           verticalAlign: "middle",
                         }}>
                         <Avatar
                           fallback=""
-                          src={`/images/location-${location.toLowerCase().replace(/\s/g, "")}.jpg`}
+                          src={`/images/location-${location.id}.jpg`}
                           width={15}
                         />{" "}
                       </Stack>
 
                       <Text accent as="span" inline={"auto"}>
-                        {location}
-                        {index !== locations.length - 1 ? "" : ""}
+                        {location.name}
                       </Text>
                     </Badge>
-                  </Stack>
-                ))}
-              </Link>
+                  </Link>
+                </Stack>
+              ))}
             </Stack>
           </Stack>
         </Stack>

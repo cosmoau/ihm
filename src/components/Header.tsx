@@ -113,7 +113,7 @@ export default function Header(): JSX.Element {
             widthPhone={50}
             widthTablet={60}>
             <a href="https://v1.cosmogroup.io" rel="noreferrer" target="_blank">
-              <Button inline="medium">Owners</Button>
+              <Button inline="small">Owners</Button>
             </a>
             <Select
               horizontal="right"

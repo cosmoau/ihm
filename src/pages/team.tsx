@@ -68,10 +68,8 @@ export default function Team(): JSX.Element {
                 <Avatar fallback="KF" src="/images/team-kyle.jpg" width={66} />
               </Stack>
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$smaller !important" }}>
-                  Kyle Fitzsimmons
-                </Text>
-                <Badge>Managing Director</Badge>
+                <Text as="h4">Kyle Fitzsimmons</Text>
+                <Badge theme="border">Managing Director</Badge>
               </Stack>
             </Box>
           </Stack>
@@ -94,10 +92,8 @@ export default function Team(): JSX.Element {
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$smaller !important" }}>
-                  Harrison Keck
-                </Text>
-                <Badge>Regional Coordinator</Badge>
+                <Text as="h4">Harrison Keck</Text>
+                <Badge theme="border">Regional Coordinator</Badge>
               </Stack>
             </Box>
           </Stack>
@@ -120,10 +116,8 @@ export default function Team(): JSX.Element {
               </Stack>
 
               <Stack css={{ display: "inline-block", verticalAlign: "middle" }}>
-                <Text as="h4" css={{ marginBottom: "$smaller !important" }}>
-                  Victoria Mills
-                </Text>
-                <Badge>Regional Coordinator</Badge>
+                <Text as="h4">Victoria Mills</Text>
+                <Badge theme="border">Regional Coordinator</Badge>
               </Stack>
             </Box>
           </Stack>

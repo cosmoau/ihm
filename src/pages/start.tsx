@@ -83,8 +83,8 @@ export default function Start(): JSX.Element {
                 />
               </Stack>
               <Divider bottom="large" />
-              <Text accent as="small" css={{ verticalAlign: "middle" }} inline="medium">
-                Form not working?
+              <Text accent as="small" css={{ verticalAlign: "middle" }} inline="small">
+                This form can also be found at:
               </Text>
 
               <Button css={{ verticalAlign: "middle" }} external small>

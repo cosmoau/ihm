@@ -57,38 +57,12 @@ export default function Testimonials(): JSX.Element {
         top="largest">
         <Stack direction="row" flex="stretch">
           <Stack direction="column" width={50}>
-            <Box theme="fill">
-              <Stack bottom="large">
-                <Stack
-                  css={{
-                    alignItems: "center",
-                    display: "inline-flex",
-                    justifyContent: "center",
-                    marginRight: "$large",
-                    verticalAlign: "middle",
-                  }}>
-                  <Image
-                    alt="A photo of The Woodville, an Airbnb in Ocean Grove, Victoria, Australia."
-                    borderRadius="large"
-                    height={60}
-                    src="/images/testimonial-01.jpg"
-                    width={60}
-                  />
-                </Stack>
-                <Stack
-                  css={{
-                    display: "inline-block",
-                    verticalAlign: "middle",
-                  }}>
-                  <Text as="h4">
-                    The Woodville
-                    <Text as="span" css={{ hidden: "phone" }}>
-                      , Ocean Grove
-                    </Text>
-                  </Text>
-                  <Badge>Josie Pileio and Rob Farrugia</Badge>
-                </Stack>
-              </Stack>
+            <Box
+              image="/images/testimonial-01.jpg"
+              imageAlt="A photo of The Woodville, an Airbnb in Ocean Grove, Victoria, Australia."
+              theme="fill">
+              <Text as="h4">The Woodville, Ocean Grove</Text>
+
               <Text accent as="p">
                 We were moving overseas and from the very beginning when we were just considering
                 our options, ihostme were able to provide advice, support and the peace of mind to
@@ -108,10 +82,11 @@ export default function Testimonials(): JSX.Element {
                 approachable manner makes it even more enjoyable to work with them.
               </Text>
 
-              <Text accent as="p">
+              <Text accent as="p" bottom="medium">
                 We have been with ihostme® for over 6 years and I wouldn’t consider anyone else to
                 manage our property.
               </Text>
+              <Badge theme="border">Josie P. and Rob F.</Badge>
             </Box>
           </Stack>
           <Stack
@@ -122,38 +97,11 @@ export default function Testimonials(): JSX.Element {
             }}
             direction="column"
             width={50}>
-            <Box theme="fill">
-              <Stack bottom="large">
-                <Stack
-                  css={{
-                    alignItems: "center",
-                    display: "inline-flex",
-                    justifyContent: "center",
-                    marginRight: "$large",
-                    verticalAlign: "middle",
-                  }}>
-                  <Image
-                    alt="A photo of Blue Waters Retreat, an Airbnb in Ocean Grove, Victoria, Australia."
-                    borderRadius="large"
-                    height={60}
-                    src="/images/testimonial-02.jpg"
-                    width={60}
-                  />
-                </Stack>
-                <Stack
-                  css={{
-                    display: "inline-block",
-                    verticalAlign: "middle",
-                  }}>
-                  <Text as="h4">
-                    Blue Waters Retreat
-                    <Text as="span" css={{ hidden: "phone" }}>
-                      , Ocean Grove
-                    </Text>
-                  </Text>
-                  <Badge>Lorien and Dean Platt</Badge>
-                </Stack>
-              </Stack>
+            <Box
+              image="/images/testimonial-02.jpg"
+              imageAlt="A photo of Blue Waters Retreat, an Airbnb in Ocean Grove, Victoria, Australia."
+              theme="fill">
+              <Text as="h4">Blue Waters Retreat, Ocean Grove</Text>
 
               <Text accent as="p">
                 ihostme provided invaluable assistance and advice in getting my property ready to
@@ -173,11 +121,12 @@ export default function Testimonials(): JSX.Element {
                 owners as well as the all-important guests.
               </Text>
 
-              <Text accent as="p">
+              <Text accent as="p" bottom="medium">
                 I highly recommend the ihostme® service and would be surprised if it doesn’t
                 continue to grow beyond Ocean Grove and the immediate surrounds as word travels of
                 their sterling service.
               </Text>
+              <Badge theme="border">Lorien and Dean P.</Badge>
             </Box>
           </Stack>
         </Stack>
