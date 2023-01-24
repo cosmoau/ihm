@@ -4,7 +4,10 @@ import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "ph
 export default function Footer(): JSX.Element {
   return (
     <footer>
-      <View bottom="largest" container css={{ borderTop: "0.1rem solid $border" }} top="larger">
+      <View
+        bottom="largest"
+        container
+        top="larger">
         <Stack direction="row">
           <Stack
             css={{
@@ -64,9 +67,9 @@ export default function Footer(): JSX.Element {
         bottom="large"
         container
         css={{
-          background: "$accentIHM !important",
           borderTop: "0.1rem solid $border",
           zIndex: 201,
+          backgroundImage: "url('/overlay.svg') !important",
         }}
         inverted
         top="large">

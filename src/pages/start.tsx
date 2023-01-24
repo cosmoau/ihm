@@ -16,12 +16,15 @@ export default function Start(): JSX.Element {
           <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                background: "$accentIHM !important",
+                backgroundColor: "$accentIHM",
+                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
                 phone: {
                   padding: "$large $medium",
+                  borderRadius: "$medium !important",
+                  textAlign: "center",
                 },
               }}
               theme="fill">

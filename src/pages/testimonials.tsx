@@ -10,27 +10,25 @@ export default function Testimonials(): JSX.Element {
         inverted
         top="medium">
         <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50} widthPhone={55}>
+          <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                background: "$accentIHM !important",
+                backgroundColor: "$accentIHM",
+                backgroundImage:  "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
                 phone: {
                   padding: "$large $medium",
+                  borderRadius: "$medium !important",
+                  textAlign: "center",
                 },
               }}
               theme="fill">
-              <Text as="h2">
-                <Text as="span" css={{ hiddenInline: "phone" }}>
-                  Client&nbsp;
-                </Text>
-                Testimonials
-              </Text>
+              <Text as="h2">Client Testimonials</Text>
             </Box>
           </Stack>
-          <Stack direction="column" minimal width={50} widthPhone={45}>
+          <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
             <Image
               alt="A photo of a bed."
               blurDataURL="/images/misc-10.jpg"

@@ -4,33 +4,35 @@ import { NextSeo } from "next-seo";
 export default function Team(): JSX.Element {
   return (
     <>
-      <NextSeo title="Meet the Team" />
+      <NextSeo title="Our Team" />
       <View
         css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
         top="medium">
         <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50} widthPhone={55}>
+          <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                background: "$accentIHM !important",
+                backgroundColor: "$accentIHM",
+                backgroundImage:  "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
                 phone: {
                   padding: "$large $medium",
+                  borderRadius: "$medium !important",
+                  textAlign: "center",
                 },
               }}
               theme="fill">
               <Text as="h2">
-                <Text as="span" css={{ hiddenInline: "phone" }}>
-                  Meet The&nbsp;
-                </Text>
-                Team
+                  Our Team
               </Text>
             </Box>
           </Stack>
-          <Stack direction="column" minimal width={50} widthPhone={45}>
+          <Stack css={{
+            hidden: "phone",
+          }} direction="column" minimal width={50}>
             <Image
               alt="A photo of a dining table with festive decorations."
               blurDataURL="/images/misc-12.jpg"

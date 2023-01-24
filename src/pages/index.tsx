@@ -23,9 +23,10 @@ export default function Home(): JSX.Element {
           <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                background: "$accentIHM !important",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
+                backgroundColor: "$accentIHM",
+                backgroundImage: "url('/overlay.svg')",
 
                 button: {
                   background: "$blueBackground !important",

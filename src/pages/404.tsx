@@ -11,15 +11,18 @@ export default function Custom404(): JSX.Element {
         inverted
         top="medium">
         <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50} widthPhone={55}>
+          <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                background: "$accentIHM !important",
+                backgroundColor: "$accentIHM",
+                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
                 phone: {
                   padding: "$large $medium",
+                  borderRadius: "$medium !important",
+                  textAlign: "center",
                 },
               }}
               theme="fill">
@@ -31,7 +34,7 @@ export default function Custom404(): JSX.Element {
               </Text>
             </Box>
           </Stack>
-          <Stack direction="column" minimal width={50} widthPhone={45}>
+          <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
             <Image
               alt="
                 An overhead shot of the Great Ocean Road, where we wish we were driving right now."

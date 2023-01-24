@@ -7,10 +7,10 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.2.47",
-    "@typeform/embed-react": "^2.12.0",
+    "@cosmoau/ui": "^1.2.49",
+    "@typeform/embed-react": "^2.13.0",
     "@vercel/analytics": "^0.1.8",
-    "next": "^13.1.2",
+    "next": "^13.1.5",
     "next-seo": "^5.15.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
@@ -24,7 +24,7 @@
     "@types/react": "^18.0.27",
     "eslint": "^8.32.0",
     "eslint-config-dolmios": "^1.4.0",
-    "next-sitemap": "^3.1.45",
+    "next-sitemap": "^3.1.47",
     "prettier": "^2.8.3"
   },
   "homepage": "https://github.com/cosmoau/ihm#readme",
