@@ -14,7 +14,7 @@ export default function Testimonials(): JSX.Element {
             <Box
               css={{
                 backgroundColor: "$accentIHM",
-                backgroundImage:  "url('/overlay.svg')",
+                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",

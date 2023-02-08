@@ -9,7 +9,8 @@ export default function Footer(): JSX.Element {
         container
         css={{
           borderTop: "0.1rem solid $border",
-        }} top="larger">
+        }}
+        top="larger">
         <Stack direction="row">
           <Stack
             css={{

@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cosmoau/ui': ^1.2.50
+  '@cosmoau/ui': ^1.2.51
   '@typeform/embed-react': ^2.15.0
   '@types/node': ^18.13.0
   '@types/react': ^18.0.27
@@ -12,7 +12,7 @@ specifiers:
   next-seo: ^5.15.0
   next-sitemap: ^3.1.50
   phosphor-react: ^1.4.1
-  prettier: ^2.8.3
+  prettier: ^2.8.4
   react: ^18.2.0
   react-dom: ^18.2.0
   react-hot-toast: ^2.4.0
@@ -20,7 +20,7 @@ specifiers:
   usehooks-ts: ^2.9.1
 
 dependencies:
-  '@cosmoau/ui': 1.2.50_ifnr62bgvk25oa3x3bddjrzaey
+  '@cosmoau/ui': 1.2.51_ifnr62bgvk25oa3x3bddjrzaey
   '@typeform/embed-react': 2.15.0_react@18.2.0
   '@vercel/analytics': 0.1.8_react@18.2.0
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
@@ -38,7 +38,7 @@ devDependencies:
   eslint: 8.33.0
   eslint-config-dolmios: 1.4.0
   next-sitemap: 3.1.50_next@13.1.6
-  prettier: 2.8.3
+  prettier: 2.8.4
 
 packages:
 
@@ -53,8 +53,8 @@ packages:
     resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
     dev: true
 
-  /@cosmoau/ui/1.2.50_ifnr62bgvk25oa3x3bddjrzaey:
-    resolution: {integrity: sha512-sl6zsxhKNdqgZvAdmteJ1oV/mpaUKBxOmZd4TIPRWJWeSbPO2zI0l1BGwooLZv2xgSu2f4hopg7RLODBeSoG3g==}
+  /@cosmoau/ui/1.2.51_ifnr62bgvk25oa3x3bddjrzaey:
+    resolution: {integrity: sha512-nRXKhnER1PVEb0w66wBL9HTi3MvVIgGb4nfNwaxAWcPQ9JMba9SXtWkKD5ze4u3i/31+JadQm62RzJR/NSToyw==}
     peerDependencies:
       next: ^13.1.1
       phosphor-react: ^1.4.1
@@ -249,7 +249,7 @@ packages:
     dependencies:
       cross-spawn: 7.0.3
       is-glob: 4.0.3
-      open: 8.4.0
+      open: 8.4.1
       picocolors: 1.0.0
       tiny-glob: 0.2.9
       tslib: 2.5.0
@@ -612,8 +612,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001450:
-    resolution: {integrity: sha512-qMBmvmQmFXaSxexkjjfMvD5rnDL0+m+dUMZKoDYsGG8iZN29RuYh9eRoMvKsT6uMAWlyUUGDEQGJJYjzCIO9ew==}
+  /caniuse-lite/1.0.30001451:
+    resolution: {integrity: sha512-XY7UbUpGRatZzoRft//5xOa69/1iGJRBlrieH6QYrkKLIFn3m7OVEJ81dSrKoy2BnKsdbX5cLrOispZNYo9v2w==}
 
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -844,7 +844,7 @@ packages:
       eslint-config-next: 13.1.6_4vsywjlpuriuw3tl5oq6zy5a64
       eslint-config-prettier: 8.6.0_eslint@8.33.0
       eslint-plugin-typescript-sort-keys: 2.1.0_b635kmla6dsb4frxfihkw4m47e
-      prettier: 2.8.3
+      prettier: 2.8.4
       typescript: 4.9.5
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
@@ -1803,7 +1803,7 @@ packages:
     dependencies:
       '@next/env': 13.1.6
       '@swc/helpers': 0.4.14
-      caniuse-lite: 1.0.30001450
+      caniuse-lite: 1.0.30001451
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -1898,8 +1898,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /open/8.4.0:
-    resolution: {integrity: sha512-XgFPPM+B28FtCCgSb9I+s9szOC1vZRSwgWsRUA5ylIxRTgKozqjOCrVOqGsYABPYK5qnfqClxZTFBa8PKt2v6Q==}
+  /open/8.4.1:
+    resolution: {integrity: sha512-/4b7qZNhv6Uhd7jjnREh1NjnPxlTq+XNWPG88Ydkj5AILcA5m3ajvcg57pB24EQjKv0dK62XnDqk9c/hkIG5Kg==}
     engines: {node: '>=12'}
     dependencies:
       define-lazy-prop: 2.0.0
@@ -1994,8 +1994,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.8.3:
-    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true

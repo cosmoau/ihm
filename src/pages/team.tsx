@@ -14,7 +14,7 @@ export default function Team(): JSX.Element {
             <Box
               css={{
                 backgroundColor: "$accentIHM",
-                backgroundImage:  "url('/overlay.svg')",
+                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
@@ -25,14 +25,16 @@ export default function Team(): JSX.Element {
                 },
               }}
               theme="fill">
-              <Text as="h2">
-                  Our Team
-              </Text>
+              <Text as="h2">Our Team</Text>
             </Box>
           </Stack>
-          <Stack css={{
-            hidden: "phone",
-          }} direction="column" minimal width={50}>
+          <Stack
+            css={{
+              hidden: "phone",
+            }}
+            direction="column"
+            minimal
+            width={50}>
             <Image
               alt="A photo of a dining table with festive decorations."
               blurDataURL="/images/misc-12.jpg"
