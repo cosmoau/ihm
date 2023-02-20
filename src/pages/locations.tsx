@@ -227,8 +227,8 @@ export default function Locations(): JSX.Element {
           {serviceLocations.map((location, index) => (
             <Stack
               key={location.id || index}
-              top="medium"
               direction="column"
+              top="medium"
               width={20}
               widthTablet={50}>
               <Box

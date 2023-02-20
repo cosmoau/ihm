@@ -7,7 +7,7 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.2.53",
+    "@cosmoau/ui": "^1.2.54",
     "@typeform/embed-react": "^2.15.0",
     "@vercel/analytics": "^0.1.10",
     "next": "^13.1.6",
