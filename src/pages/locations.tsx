@@ -217,25 +217,17 @@ export default function Locations(): JSX.Element {
       </View>
 
       <View
-        bottom="largest"
+        bottom="medium"
         container
         css={{
-          phone: { paddingBottom: "$large", paddingTop: "$large" },
+          phone: { paddingBottom: "$large", paddingTop: "$medium" },
         }}
-        top="largest">
+        top="large">
         <Stack direction="row">
           {serviceLocations.map((location, index) => (
             <Stack
               key={location.id || index}
-              css={{
-                phone: {
-                  paddingTop: index >= 1 ? "$medium" : 0,
-                },
-                tabletX: {
-                  paddingTop: index > 1 ? "$medium" : 0,
-                },
-                paddingTop: index >= 5 ? "$medium" : 0,
-              }}
+              top="medium"
               direction="column"
               width={20}
               widthTablet={50}>
