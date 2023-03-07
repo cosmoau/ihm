@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cosmoau/ui': ^1.2.63
+  '@cosmoau/ui': ^1.2.65
   '@typeform/embed-react': ^2.18.0
   '@types/node': ^18.14.6
   '@types/react': ^18.0.28
@@ -20,7 +20,7 @@ specifiers:
   usehooks-ts: ^2.9.1
 
 dependencies:
-  '@cosmoau/ui': 1.2.63_756sefcbldbt2hm2xkigsww4uq
+  '@cosmoau/ui': 1.2.65_756sefcbldbt2hm2xkigsww4uq
   '@typeform/embed-react': 2.18.0_react@18.2.0
   '@vercel/analytics': 0.1.11_react@18.2.0
   next: 13.2.3_biqbaboplfbrettd7655fr4n2y
@@ -53,8 +53,8 @@ packages:
     resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
     dev: true
 
-  /@cosmoau/ui/1.2.63_756sefcbldbt2hm2xkigsww4uq:
-    resolution: {integrity: sha512-j4/Bif9CXCYzVLA60AHmO44wCRpC8ShSELUDAIMiaYMR3Z4wiinC4DtBF7ZnG76DMlprCdgNN7Ve0bM+EySgkw==}
+  /@cosmoau/ui/1.2.65_756sefcbldbt2hm2xkigsww4uq:
+    resolution: {integrity: sha512-X6leb77h/YUIm8lNgS6zsOYqn5bkEIDGkMloEpS21CrV1vkftrRnSz/NlJnM3ZihN9ipK8R5X4HRPWzrw09MOQ==}
     peerDependencies:
       next: ^13.1.1
       phosphor-react: ^1.4.1
