@@ -106,18 +106,17 @@ export default function Home(): JSX.Element {
         <Stack align="center" direction="row">
           <Stack direction="column" offset={25} width={50}>
             <Text as="h3">ihostme operates out of the top holiday destinations</Text>
-            <Text as="p" bottom="large">
+            <Text as="p" bottom="medium">
               We are a team of highly skilled and experienced property managers who are dedicated to
               providing the best service to owners and investors across the Bellarine and Surf Coast
-              regions of Victoria. If you have a home in this area, beyond the places listed below,
-              we can still help you. Please contact us to discuss your needs.
+              regions of Victoria.
             </Text>
             <Link href="/start">
               <Button>List your home</Button>
             </Link>
           </Stack>
         </Stack>
-        <Stack direction="row" top="medium">
+        <Stack direction="row" top="large">
           <Stack align="center" direction="column" width={100}>
             <Stack>
               {serviceLocations.map((location, index) => (
@@ -144,7 +143,7 @@ export default function Home(): JSX.Element {
                         />{" "}
                       </Stack>
 
-                      <Text accent as="span" inline={"auto"}>
+                      <Text as="span" inline={"auto"}>
                         {location.name}
                       </Text>
                     </Badge>
@@ -185,7 +184,7 @@ export default function Home(): JSX.Element {
                 those who already have their own housekeeping and maintenance team in place.
               </Text>
               <Text accent as="p">
-                We also have a one-time set up fee from $400, and third-party charges are at cost.
+                We also have a one-time set up fee of $400, and third-party charges are at cost.
               </Text>
             </Box>
           </Stack>
