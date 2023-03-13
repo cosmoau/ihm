@@ -44,12 +44,14 @@ export default function Footer(): JSX.Element {
             top="large"
             width={50}>
             <Text as="h3">Unlock your full earning potential today</Text>
-            <Text accent as="p">
-              ihostme manages properties that earn <b>$40,000 or more</b> in rental income per year.
+            <Text as="p">
+              We manage properties that are available for at least <b>140 nights per year</b>, and
+              currently earn, or have the potential to earn, at least <b>$45,000 per year</b>.
             </Text>
-            <Text accent as="p">
-              We are interested in speaking to owners of homes and holiday rentals that are
-              available for at least <b>140 nights per year</b>.
+            <Text as="p">
+              We are interested in speaking to owners, investors and property managers who are
+              interested in earning more from their property while enjoying the benefits of a
+              professional Airbnb management service.
             </Text>
             <Stack top="large">
               <Badge icon={<ChatCircle />}>
