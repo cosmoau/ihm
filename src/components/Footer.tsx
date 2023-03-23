@@ -86,9 +86,7 @@ export default function Footer(): JSX.Element {
                   alt="
                   ihostme logo, which is a pink icon of a house.
                   "
-                  blurDataURL="/favicon.ico"
                   height={25}
-                  placeholder="blur"
                   src="/favicon.ico"
                   width={25}
                 />
