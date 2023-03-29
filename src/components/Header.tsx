@@ -69,8 +69,7 @@ export default function Header(): JSX.Element {
     }
   };
 
-  const activeSelection =
-    optionsPhone.find((option) => option.value === router.pathname)?.value || "/";
+  const activeSelection = optionsPhone.find((option) => option.value === router.pathname)?.value || "/";
 
   return (
     <header>

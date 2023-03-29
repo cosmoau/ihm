@@ -169,10 +169,7 @@ export default function Locations(): JSX.Element {
   return (
     <>
       <NextSeo title="Service Locations" />
-      <View
-        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
-        inverted
-        top="medium">
+      <View css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }} inverted top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
@@ -225,12 +222,7 @@ export default function Locations(): JSX.Element {
         top="large">
         <Stack direction="row">
           {serviceLocations.map((location, index) => (
-            <Stack
-              key={location.id || index}
-              direction="column"
-              top="medium"
-              width={20}
-              widthTablet={50}>
+            <Stack key={location.id || index} direction="column" top="medium" width={20} widthTablet={50}>
               <Box
                 image={`/images/location-${location.id}.jpg`}
                 imageAlt={`Airbnb Management in Victoria, Australia - ${location.name}`}
