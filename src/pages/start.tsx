@@ -5,10 +5,14 @@ import { NextSeo } from "next-seo";
 
 export default function Start(): JSX.Element {
   const router = useRouter();
+
   return (
     <>
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
-      <View css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }} inverted top="medium">
+      <View
+        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
+        inverted
+        top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
@@ -25,7 +29,9 @@ export default function Start(): JSX.Element {
                 },
               }}
               theme="fill">
-              <Text as="h2">{router.query.city ? `List your home in ${router.query.city}` : "Sign Up"}</Text>
+              <Text as="h2">
+                {router.query.city ? `List your home in ${router.query.city}` : "Sign Up"}
+              </Text>
               <Text accent as="p">
                 {router.query.email
                   ? `We will send your free earnings estimation, along with information on getting started to ${router.query.email}.`
@@ -68,7 +74,9 @@ export default function Start(): JSX.Element {
                 <Widget
                   height={700}
                   hidden={{
-                    email: router.query.email ? router.query.email.toString() : "Not provided somehow, Isaac check this",
+                    email: router.query.email
+                      ? router.query.email.toString()
+                      : "Not provided somehow, Isaac check this",
                     url: "ihostme.com.au",
                   }}
                   id="cAmtR2rI"

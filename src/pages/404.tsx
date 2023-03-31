@@ -6,7 +6,10 @@ export default function Custom404(): JSX.Element {
   return (
     <>
       <NextSeo title="Page not found" />
-      <View css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }} inverted top="medium">
+      <View
+        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
+        inverted
+        top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box

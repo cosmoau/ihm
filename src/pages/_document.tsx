@@ -11,6 +11,7 @@ class Document extends NextDocument<Props> {
   static async getInitialProps({ renderPage }: DocumentContext): Promise<any> {
     const page = await renderPage();
     const css = getCssText();
+
     return { ...page, css };
   }
 

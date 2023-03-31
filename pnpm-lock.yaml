@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@cosmoau/ui':
-    specifier: ^1.4.7
-    version: 1.4.7(next@13.2.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.0)(react@18.2.0)(usehooks-ts@2.9.1)
+    specifier: ^1.4.11
+    version: 1.4.11(next@13.2.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.0)(react@18.2.0)(usehooks-ts@2.9.1)
   '@typeform/embed-react':
     specifier: ^2.19.0
     version: 2.19.0(react@18.2.0)
@@ -46,8 +46,8 @@ devDependencies:
     specifier: ^8.37.0
     version: 8.37.0
   eslint-config-dolmios:
-    specifier: ^1.4.2
-    version: 1.4.2
+    specifier: ^1.4.3
+    version: 1.4.3
   next-sitemap:
     specifier: ^4.0.6
     version: 4.0.6(@next/env@13.2.4)(next@13.2.4)
@@ -68,8 +68,8 @@ packages:
     resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
     dev: true
 
-  /@cosmoau/ui@1.4.7(next@13.2.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.0)(react@18.2.0)(usehooks-ts@2.9.1):
-    resolution: {integrity: sha512-K10DZKEeQMMQyv5ziueLyvPYtqt7a9SZwU1b282/SdY0wSJGPR7++TZB8ksXmeqdfExWOdqw4+5mtQu49abtrA==}
+  /@cosmoau/ui@1.4.11(next@13.2.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.0)(react@18.2.0)(usehooks-ts@2.9.1):
+    resolution: {integrity: sha512-flHhzdsls/2MORDiPxg/rKY99bOO7+B8Ui5TjUogUBFj/0xO6S8Skkl5NGCN8tD1ZCAk0c+pTkZZ3FeTJ6s0mQ==}
     peerDependencies:
       next: ^13.1.1
       phosphor-react: ^1.4.1
@@ -654,8 +654,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite@1.0.30001472:
-    resolution: {integrity: sha512-xWC/0+hHHQgj3/vrKYY0AAzeIUgr7L9wlELIcAvZdDUHlhL/kNxMdnQLOSOQfP8R51ZzPhmHdyMkI0MMpmxCfg==}
+  /caniuse-lite@1.0.30001473:
+    resolution: {integrity: sha512-ewDad7+D2vlyy+E4UJuVfiBsU69IL+8oVmTuZnH5Q6CIUbxNfI50uVpRHbUPDD6SUaN2o0Lh4DhTrvLG/Tn1yg==}
 
   /chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -877,8 +877,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-dolmios@1.4.2:
-    resolution: {integrity: sha512-xUEvkf6jupHdiZxwNLJ6tzoI1qrRMlZnTFDNYF/saex102EV6WidumyZd3gxfMj8c5DWP7xlmPTv+CEwGGCLlg==}
+  /eslint-config-dolmios@1.4.3:
+    resolution: {integrity: sha512-GYkTzNUztq7qW7gvn2Qn/12jLG0QJIdWDEb/m2fMwVVVRXk3gjFgerwu6zHWQiRZ+UpAiNO7KY16tEmwpiruyQ==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.57.0(@typescript-eslint/parser@5.57.0)(eslint@8.37.0)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.57.0(eslint@8.37.0)(typescript@4.9.5)
@@ -1837,7 +1837,7 @@ packages:
     dependencies:
       '@next/env': 13.2.4
       '@swc/helpers': 0.4.14
-      caniuse-lite: 1.0.30001472
+      caniuse-lite: 1.0.30001473
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
