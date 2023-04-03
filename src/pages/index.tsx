@@ -56,8 +56,8 @@ export default function Home(): JSX.Element {
 
               <Input
                 listen
-                placeholder="Your email address"
-                submit="💌 Free estimate"
+                placeholder="ihostme@cosmogroup.io"
+                submit="Get Started"
                 submitFunction={(): void => {
                   if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
                     router.push(`/start?email=${email}`);
