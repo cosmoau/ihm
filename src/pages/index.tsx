@@ -56,7 +56,7 @@ export default function Home(): JSX.Element {
 
               <Input
                 listen
-                placeholder="ihostme@cosmogroup.io"
+                placeholder="Your email"
                 submit="Get Started"
                 submitFunction={(): void => {
                   if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
