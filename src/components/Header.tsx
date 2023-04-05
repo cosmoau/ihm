@@ -56,15 +56,10 @@ export default function Header(): JSX.Element {
     },
   ];
 
-  // now a function that handles the selection, and either router.pushes or window.open
-  const handleSelection = (value: string, label: string): void => {
+  const handleSelection = (value: string): void => {
     if (value.includes("http")) {
-      // eslint-disable-next-line no-console
-      console.log("opening to external", label || value);
       window.open(value, "_blank");
     } else {
-      // eslint-disable-next-line no-console
-      console.log("opening to internal route", label || value);
       router.push(value);
     }
   };
@@ -135,7 +130,7 @@ export default function Header(): JSX.Element {
                 </Button>
               }
               width="16rem"
-              onSelection={(value, label): void => handleSelection(value, label)}
+              onSelection={(value): void => handleSelection(value)}
             />
           </Stack>
           <Stack
@@ -188,7 +183,7 @@ export default function Header(): JSX.Element {
                 </Button>
               }
               width="17rem"
-              onSelection={(value, label): void => handleSelection(value, label)}
+              onSelection={(value): void => handleSelection(value)}
             />
           </Stack>
 
