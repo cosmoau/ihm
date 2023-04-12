@@ -29,30 +29,30 @@ export default function Header(): JSX.Element {
     },
     {
       label: "🏡 Book a stay",
-      value: "https://airbnb.com/p/cosmo",
+      value: "https://cosmo.homes",
     },
   ];
 
   const optionsResources = [
     {
-      label: "Latest News",
+      label: "Blog",
       value: "https://cosmogroup.io/blog",
     },
     {
-      label: "Legal Info",
+      label: "Legal",
       value: "https://cosmogroup.io/legal",
     },
     {
-      label: "Airbnb Calculator",
+      label: "Calculator",
       value: "https://cosmogroup.io/airbnb-calculator",
     },
     {
-      label: "Contact Us",
+      label: "Contact",
       value: "https://cosmogroup.io/contact",
     },
     {
       label: "🏡 Book a stay",
-      value: "https://airbnb.com/p/cosmo",
+      value: "https://cosmo.homes",
     },
   ];
 
@@ -115,7 +115,7 @@ export default function Header(): JSX.Element {
               last
               locked={false}
               options={optionsPhone}
-              selection={activeSelection}
+              selection={[activeSelection]}
               trigger={
                 <Button
                   css={{
@@ -141,33 +141,19 @@ export default function Header(): JSX.Element {
             direction="column"
             width={50}>
             <Link href="/">
-              <Button theme="minimal">Home</Button>
+              <Button theme={router.pathname === "/" ? "fill" : "minimal"}>Home</Button>
             </Link>
             <Link href="/testimonials">
-              <Button
-                css={{
-                  color: router.pathname === "/testimonials" ? "$accent !important" : "inherit",
-                }}
-                theme={router.pathname === "/testimonials" ? "fill" : "minimal"}>
+              <Button theme={router.pathname === "/testimonials" ? "fill" : "minimal"}>
                 Testimonials
               </Button>
             </Link>
             <Link href="/team">
-              <Button
-                css={{
-                  color: router.pathname === "/team" ? "$accent !important" : "inherit",
-                }}
-                theme={router.pathname === "/team" ? "fill" : "minimal"}>
-                Team
-              </Button>
+              <Button theme={router.pathname === "/team" ? "fill" : "minimal"}>Team</Button>
             </Link>
 
             <Link href="/locations">
-              <Button
-                css={{
-                  color: router.pathname === "/locations" ? "$accent !important" : "inherit",
-                }}
-                theme={router.pathname === "/locations" ? "fill" : "minimal"}>
+              <Button theme={router.pathname === "/locations" ? "fill" : "minimal"}>
                 Locations
               </Button>
             </Link>
@@ -176,13 +162,13 @@ export default function Header(): JSX.Element {
               last
               locked={false}
               options={optionsResources}
-              selection={activeSelection}
+              selection={[activeSelection]}
               trigger={
                 <Button icon={<CaretDown weight="light" />} iconPosition="right" theme="minimal">
                   More
                 </Button>
               }
-              width="17rem"
+              width="15rem"
               onSelection={(value): void => handleSelection(value)}
             />
           </Stack>
