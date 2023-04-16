@@ -30,7 +30,7 @@ export default function Start(): JSX.Element {
               }}
               theme="fill">
               <Text as="h2">
-                {router.query.city ? `List your home in ${router.query.city}` : "Sign Up"}
+                {router.query.city ? `List your Airbnb in ${router.query.city}` : "Sign Up"}
               </Text>
               <Text accent as="p">
                 {router.query.email

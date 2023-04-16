@@ -112,7 +112,7 @@ export default function Home(): JSX.Element {
               regions of Victoria.
             </Text>
             <Link href="/start">
-              <Button>List your home</Button>
+              <Button>List your Airbnb</Button>
             </Link>
           </Stack>
         </Stack>
