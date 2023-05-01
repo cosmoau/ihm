@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@cosmoau/ui':
-    specifier: ^1.4.40
-    version: 1.4.40(next@13.3.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1)
+    specifier: ^1.4.41
+    version: 1.4.41(next@13.3.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1)
   '@typeform/embed-react':
     specifier: ^2.20.0
     version: 2.20.0(react@18.2.0)
@@ -71,8 +71,8 @@ packages:
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
     dev: true
 
-  /@cosmoau/ui@1.4.40(next@13.3.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1):
-    resolution: {integrity: sha512-WLciJ5DQMRgCAbf1gk1/XmNLc9YyGKvLo+Ub7U96qGlZKY0SvXTiaVjZehmbd7zRwcUGQ8xocIBLiuAKAcUnsg==}
+  /@cosmoau/ui@1.4.41(next@13.3.4)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1):
+    resolution: {integrity: sha512-T5iJRhTJtIAlrD7TtS+HW35jmtl1LB0ZFQogbCQzsaZq43/20DQoTcVAsuTAgnRGwnfJdD20/1aaVABQhej4aQ==}
     peerDependencies:
       next: ^13.3.0
       phosphor-react: ^1.4.1
