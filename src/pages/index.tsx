@@ -103,8 +103,8 @@ export default function Home(): JSX.Element {
       </View>
 
       <View container top="largest">
-        <Stack align="center" direction="row">
-          <Stack direction="column" offset={25} width={50}>
+        <Stack direction="row">
+          <Stack align="center" direction="column" offset={20} width={60}>
             <Text as="h3">ihostme operates out of the top holiday destinations</Text>
             <Text as="p" bottom="medium">
               We are a team of highly skilled and experienced property managers who are dedicated to
@@ -115,8 +115,8 @@ export default function Home(): JSX.Element {
               <Button>List your Airbnb</Button>
             </Link>
           </Stack>
-        </Stack>
-        <Stack direction="row" top="large">
+          </Stack>
+              <Stack direction="row" top="large">
           <Stack align="center" direction="column" width={100}>
             <Stack>
               {serviceLocations.map((location, index) => (
@@ -125,10 +125,11 @@ export default function Home(): JSX.Element {
                   css={{
                     display: "inline-block",
                     marginRight: "$small",
-                    paddingTop: "$small",
+                    paddingTop: "$smaller",
+                    paddingBottom: "$smaller",
                   }}>
                   <Link href={`/start?city=${location.name}`}>
-                    <Badge css={{ borderColor: "rgba(0,0,0,0.05)" }} theme="border">
+                    <Badge small theme="border">
                       <Stack
                         css={{
                           alignItems: "center",
@@ -150,11 +151,15 @@ export default function Home(): JSX.Element {
                   </Link>
                 </Stack>
               ))}
+              <Badge css={{opacity: 0.5}} small theme="border">
+                + more
+              </Badge>
+
             </Stack>
           </Stack>
         </Stack>
       </View>
-      <View bottom="larger" container top="largest">
+      <View bottom="larger" container top="larger">
         <Stack direction="row" flex="stretch">
           <Stack direction="column" width={33.33}>
             <Box theme="fill">
