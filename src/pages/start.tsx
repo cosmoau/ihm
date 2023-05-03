@@ -3,6 +3,8 @@ import { Widget } from "@typeform/embed-react";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 
+import { Weather } from "../components/Weather";
+
 export default function Start(): JSX.Element {
   const router = useRouter();
 
@@ -10,15 +12,14 @@ export default function Start(): JSX.Element {
     <>
       <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
       <View
-        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
+        bottom="large"
+        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
         top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                backgroundColor: "$accentIHM",
-                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
@@ -37,6 +38,7 @@ export default function Start(): JSX.Element {
                   ? `We will send your free earnings estimation, along with information on getting started to ${router.query.email}.`
                   : "Get your free earnings estimation today."}
               </Text>
+              {router.query.city && <Weather city={router.query.city.toString()} />}
             </Box>
           </Stack>
           <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>

@@ -69,15 +69,7 @@ export default function Header(): JSX.Element {
 
   return (
     <header>
-      <View
-        bottom="small"
-        css={{
-          borderBottom: "0.1rem solid $border",
-          position: "sticky",
-          top: 0,
-          zIndex: 100,
-        }}
-        top="small">
+      <View bottom="small" inverted top="small">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={25} widthPhone={50} widthTablet={40}>
             <Link href="/">
@@ -90,10 +82,10 @@ export default function Header(): JSX.Element {
                   alt="
               ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
               "
-                  blurDataURL="/images/logo-new.png"
+                  blurDataURL="/images/logo-new-light.png"
                   height={36.5}
                   placeholder="blur"
-                  src="/images/logo-new.png"
+                  src="/images/logo-new-light.png"
                   width={120}
                 />
               </Stack>
@@ -116,19 +108,7 @@ export default function Header(): JSX.Element {
               locked={false}
               options={optionsPhone}
               selection={[activeSelection]}
-              trigger={
-                <Button
-                  css={{
-                    "&:hover": {
-                      background: "rgb(95, 113, 128) !important",
-                      color: "$background",
-                    },
-                    background: "$accentIHM !important",
-                  }}
-                  theme="solid">
-                  Menu
-                </Button>
-              }
+              trigger={<Button theme="solid">Menu</Button>}
               width="16rem"
               onSelection={(value): void => handleSelection(value)}
             />
@@ -184,16 +164,7 @@ export default function Header(): JSX.Element {
               <Button inline="small">Owner App</Button>
             </a>
             <Link href="/start">
-              <Button
-                css={{
-                  "&:hover": {
-                    background: "rgb(95, 113, 128) !important",
-                    color: "$background",
-                  },
-                  background: "$accentIHM !important",
-                }}
-                inline="auto"
-                theme="solid">
+              <Button inline="auto" theme="solid">
                 Sign Up
               </Button>
             </Link>

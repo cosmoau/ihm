@@ -16,7 +16,8 @@ export default function Home(): JSX.Element {
       <NextSeo title="ihostme | Airbnb Management" titleTemplate="%s" />
 
       <View
-        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
+        bottom="large"
+        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
         top="medium">
         <Stack direction="row" minimal>
@@ -25,15 +26,12 @@ export default function Home(): JSX.Element {
               css={{
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-                backgroundColor: "$accentIHM",
+
                 backgroundImage: "url('/overlay.svg')",
 
                 button: {
-                  background: "$blueBackground !important",
-                  borderColor: "$blueText !important",
-                  color: "$blueText !important",
-                  fontWeight: "bold !important",
-                  opacity: 1,
+                  background: "$text !important",
+                  color: "$background !important",
                 },
 
                 padding: "$largest $large",

@@ -69,15 +69,14 @@ export default function Footer(): JSX.Element {
       </View>
 
       <View
-        bottom="large"
+        bottom="medium"
         container
         css={{
           borderTop: "0.1rem solid $border",
           zIndex: 201,
           backgroundImage: "url('/overlay.svg') !important",
         }}
-        inverted
-        top="large">
+        top="medium">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={40} widthPhone={15}>
             <Stack>
@@ -98,24 +97,22 @@ export default function Footer(): JSX.Element {
           </Stack>
           <Stack align="right" direction="column" width={60} widthPhone={85}>
             <a href="https://www.facebook.com/cosmogroup.io">
-              <Button inline="small" theme="fill">
+              <Button inline="small">
                 <FacebookLogo size={20} />
               </Button>
             </a>
             <a href="https://www.instagram.com/cosmogroup.io/" rel="noreferrer" target="_blank">
-              <Button inline="small" theme="fill">
+              <Button inline="small">
                 <InstagramLogo size={20} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/cosmoau/" rel="noreferrer" target="_blank">
-              <Button inline="small" theme="fill">
+              <Button inline="small">
                 <LinkedinLogo size={20} />
               </Button>
             </a>
             <a href="https://cosmogroup.io/legal" rel="noreferrer" target="_blank">
-              <Button external theme="fill">
-                Privacy
-              </Button>
+              <Button external>Privacy</Button>
             </a>
           </Stack>
         </Stack>

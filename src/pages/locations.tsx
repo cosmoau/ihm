@@ -1,10 +1,9 @@
-import { Stack, Text, View, Box, Image, Button } from "@cosmoau/ui";
-import Link from "next/link";
+import { Stack, Text, View, Box, Image } from "@cosmoau/ui";
 import { NextSeo } from "next-seo";
 
 export const serviceLocations = [
   {
-    name: "Geelong, Victoria",
+    name: "Geelong",
     id: "geelong",
   },
   {
@@ -170,15 +169,14 @@ export default function Locations(): JSX.Element {
     <>
       <NextSeo title="Service Locations" />
       <View
-        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
+        bottom="large"
+        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
         top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                backgroundColor: "$accentIHM",
-                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
@@ -229,19 +227,15 @@ export default function Locations(): JSX.Element {
               key={location.id || index}
               direction="column"
               top="medium"
-              width={20}
+              width={25}
               widthTablet={50}>
               <Box
                 image={`/images/location-${location.id}.jpg`}
                 imageAlt={`Airbnb Management in Victoria, Australia - ${location.name}`}
-                imageHeight="7.5rem"
+                imageCTA={`/start?city=${location.name}`}
+                imageHeight="10rem"
                 theme="fill">
-                <Text as="h4" bottom="medium">
-                  {location.name}
-                </Text>
-                <Link href={`/start?city=${location.name}`}>
-                  <Button>Sign Up</Button>
-                </Link>
+                <Text as="h4">{location.name}</Text>
               </Box>
             </Stack>
           ))}

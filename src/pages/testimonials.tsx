@@ -6,15 +6,14 @@ export default function Testimonials(): JSX.Element {
     <>
       <NextSeo title="Client Testimonials" />
       <View
-        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
+        bottom="large"
+        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
         top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                backgroundColor: "$accentIHM",
-                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
@@ -84,9 +83,9 @@ export default function Testimonials(): JSX.Element {
                 We have been with ihostme® for over 6 years and I wouldn’t consider anyone else to
                 manage our property.
               </Text>
-              <Badge icon={
-                <Avatar colors fallback="R" width={20} />
-              } theme="border">Rob F and Josie P.</Badge>
+              <Badge icon={<Avatar colors fallback="R" width={20} />} theme="border">
+                Rob F and Josie P.
+              </Badge>
             </Box>
           </Stack>
           <Stack
@@ -126,9 +125,9 @@ export default function Testimonials(): JSX.Element {
                 continue to grow beyond Ocean Grove and the immediate surrounds as word travels of
                 their sterling service.
               </Text>
-              <Badge icon={
-                <Avatar colors fallback="L" width={20} />
-              } theme="border">Lorien and Dean P.</Badge>
+              <Badge icon={<Avatar colors fallback="L" width={20} />} theme="border">
+                Lorien and Dean P.
+              </Badge>
             </Box>
           </Stack>
         </Stack>

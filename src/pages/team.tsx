@@ -6,15 +6,14 @@ export default function Team(): JSX.Element {
     <>
       <NextSeo title="Our Team" />
       <View
-        css={{ background: "$text !important", paddingLeft: "$medium", paddingRight: "$medium" }}
+        bottom="large"
+        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
         inverted
         top="medium">
         <Stack direction="row" minimal>
           <Stack direction="column" minimal width={50}>
             <Box
               css={{
-                backgroundColor: "$accentIHM",
-                backgroundImage: "url('/overlay.svg')",
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
                 padding: "$larger $large",
