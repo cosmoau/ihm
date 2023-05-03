@@ -182,7 +182,7 @@ export default function Locations(): JSX.Element {
                 padding: "$larger $large",
                 phone: {
                   padding: "$large $medium",
-                  borderRadius: "$medium !important",
+                  borderRadius: "$large !important",
                   textAlign: "center",
                 },
               }}

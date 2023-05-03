@@ -19,7 +19,7 @@ export default function Team(): JSX.Element {
                 padding: "$larger $large",
                 phone: {
                   padding: "$large $medium",
-                  borderRadius: "$medium !important",
+                  borderRadius: "$large !important",
                   textAlign: "center",
                 },
               }}

@@ -20,7 +20,7 @@ export default function Custom404(): JSX.Element {
                 padding: "$larger $large",
                 phone: {
                   padding: "$large $medium",
-                  borderRadius: "$medium !important",
+                  borderRadius: "$large !important",
                   textAlign: "center",
                 },
               }}
