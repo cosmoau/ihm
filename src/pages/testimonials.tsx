@@ -1,4 +1,4 @@
-import { Stack, Text, Image, View, Box, Badge } from "@cosmoau/ui";
+import { Stack, Text, Image, View, Box, Badge, Avatar } from "@cosmoau/ui";
 import { NextSeo } from "next-seo";
 
 export default function Testimonials(): JSX.Element {
@@ -84,7 +84,9 @@ export default function Testimonials(): JSX.Element {
                 We have been with ihostme® for over 6 years and I wouldn’t consider anyone else to
                 manage our property.
               </Text>
-              <Badge theme="border">Josie P. and Rob F.</Badge>
+              <Badge icon={
+                <Avatar colors fallback="R" width={20} />
+              } theme="border">Rob F and Josie P.</Badge>
             </Box>
           </Stack>
           <Stack
@@ -124,7 +126,9 @@ export default function Testimonials(): JSX.Element {
                 continue to grow beyond Ocean Grove and the immediate surrounds as word travels of
                 their sterling service.
               </Text>
-              <Badge theme="border">Lorien and Dean P.</Badge>
+              <Badge icon={
+                <Avatar colors fallback="L" width={20} />
+              } theme="border">Lorien and Dean P.</Badge>
             </Box>
           </Stack>
         </Stack>

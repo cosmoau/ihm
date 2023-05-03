@@ -115,8 +115,8 @@ export default function Home(): JSX.Element {
               <Button>List your Airbnb</Button>
             </Link>
           </Stack>
-          </Stack>
-              <Stack direction="row" top="large">
+        </Stack>
+        <Stack direction="row" top="large">
           <Stack align="center" direction="column" width={100}>
             <Stack>
               {serviceLocations.map((location, index) => (
@@ -151,10 +151,9 @@ export default function Home(): JSX.Element {
                   </Link>
                 </Stack>
               ))}
-              <Badge css={{opacity: 0.5}} small theme="border">
+              <Badge css={{ opacity: 0.5 }} small theme="border">
                 + more
               </Badge>
-
             </Stack>
           </Stack>
         </Stack>
