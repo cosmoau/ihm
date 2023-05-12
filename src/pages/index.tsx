@@ -63,7 +63,7 @@ export default function Home(): JSX.Element {
                     toast.error("Please enter a valid email address");
                   }
                 }}
-                submitValid
+                submitValid={(): boolean => email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) !== null}
                 type="email"
                 onChange={(e): void => setEmail(e.target.value)}
               />
