@@ -1,170 +1,9 @@
 import { Stack, Text, View, Box, Image } from "@cosmoau/ui";
 import { NextSeo } from "next-seo";
 
-export const serviceLocations = [
-  {
-    name: "Geelong",
-    id: "geelong",
-  },
-  {
-    name: "Bellarine Peninsula",
-    id: "bellarine-peninsula",
-  },
-  {
-    name: "Portarlington",
-    id: "portarlington",
-  },
-  {
-    name: "Queenscliff",
-    id: "queenscliff",
-  },
-  {
-    name: "Point Lonsdale",
-    id: "point-lonsdale",
-  },
-  {
-    name: "Ocean Grove",
-    id: "ocean-grove",
-  },
-  {
-    name: "Barwon Heads",
-    id: "barwon-heads",
-  },
-  {
-    name: "Torquay",
-    id: "torquay",
-  },
-  {
-    name: "Jan Juc",
-    id: "jan-juc",
-  },
-  {
-    name: "Anglesea",
-    id: "anglesea",
-  },
-  {
-    name: "Bellarine Peninsula",
-    id: "bellarine-peninsula",
-  },
-  {
-    name: "Aireys Inlet",
-    id: "aireys-inlet",
-  },
-  {
-    name: "Fairhaven",
-    id: "fairhaven",
-  },
-  {
-    name: "Lorne",
-    id: "lorne",
-  },
-  {
-    name: "Apollo Bay",
-    id: "apollo-bay",
-  },
-  {
-    name: "Surf Coast",
-    id: "surf-coast",
-  },
-  {
-    name: "Mornington",
-    id: "mornington",
-  },
-  {
-    name: "Mt Eliza",
-    id: "mt-eliza",
-  },
-  {
-    name: "Mt Martha",
-    id: "mt-martha",
-  },
-  {
-    name: "Sorrento",
-    id: "sorrento",
-  },
-  {
-    name: "Portsea",
-    id: "portsea",
-  },
-  {
-    name: "Rye",
-    id: "rye",
-  },
-  {
-    name: "Flinders",
-    id: "flinders",
-  },
-  {
-    name: "Balnarring",
-    id: "balnarring",
-  },
-  {
-    name: "Somers",
-    id: "somers",
-  },
-  {
-    name: "Red Hill",
-    id: "red-hill",
-  },
-  {
-    name: "Safety Beach",
-    id: "safety-beach",
-  },
-  {
-    name: "Mornington Peninsula",
-    id: "mornington-peninsula",
-  },
-  {
-    name: "Cowes",
-    id: "cowes",
-  },
-  {
-    name: "Smiths Beach",
-    id: "smiths-beach",
-  },
-  {
-    name: "Ventnor",
-    id: "ventnor",
-  },
-  {
-    name: "Cape Woolamai",
-    id: "cape-woolamai",
-  },
-  {
-    name: "Rhyll",
-    id: "rhyll",
-  },
-  {
-    name: "San Remo",
-    id: "san-remo",
-  },
-  {
-    name: "Phillip Island",
-    id: "phillip-island",
-  },
-  {
-    name: "Cape Paterson",
-    id: "cape-paterson",
-  },
-  {
-    name: "Venus Bay",
-    id: "venus-bay",
-  },
-  {
-    name: "Inverloch",
-    id: "inverloch",
-  },
-  {
-    name: "Bass Coast",
-    id: "bass-coast",
-  },
-  {
-    name: "South Gippsland",
-    id: "south-gippsland",
-  },
-];
+import locations from "../../locations.json";
 
-export default function Locations(): JSX.Element {
+export default function LocationsPage(): JSX.Element {
   return (
     <>
       <NextSeo title="Service Locations" />
@@ -222,7 +61,7 @@ export default function Locations(): JSX.Element {
         }}
         top="large">
         <Stack direction="row">
-          {serviceLocations.map((location, index) => (
+          {locations.map((location, index) => (
             <Stack
               key={location.id || index}
               direction="column"
@@ -232,7 +71,7 @@ export default function Locations(): JSX.Element {
               <Box
                 image={`/images/location-${location.id}.jpg`}
                 imageAlt={`Airbnb Management in Victoria, Australia - ${location.name}`}
-                imageCTA={`/start?city=${location.name}`}
+                imageCTA={`/city/${location.id}`}
                 imageHeight="10rem"
                 theme="fill">
                 <Text as="h4">{location.name}</Text>

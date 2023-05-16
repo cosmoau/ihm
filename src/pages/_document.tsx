@@ -2,11 +2,11 @@
 import { getCssText } from "@cosmoau/ui";
 import NextDocument, { DocumentContext, Head, Html, Main, NextScript } from "next/document";
 
-type Props = {
+type I = {
   css: string;
 };
 
-class Document extends NextDocument<Props> {
+class Document extends NextDocument<I> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   static async getInitialProps({ renderPage }: DocumentContext): Promise<any> {
     const page = await renderPage();

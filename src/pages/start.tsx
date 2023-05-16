@@ -1,9 +1,7 @@
-import { Stack, Text, View, Box, Image, Divider, Button } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Image, Button } from "@cosmoau/ui";
 import { Widget } from "@typeform/embed-react";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
-
-import { Weather } from "../components/Weather";
 
 export default function Start(): JSX.Element {
   const router = useRouter();
@@ -38,7 +36,6 @@ export default function Start(): JSX.Element {
                   ? `We will send your free earnings estimation, along with information on getting started to ${router.query.email}.`
                   : "Get your free earnings estimation today."}
               </Text>
-              {router.query.city && <Weather city={router.query.city.toString()} />}
             </Box>
           </Stack>
           <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
@@ -65,45 +62,42 @@ export default function Start(): JSX.Element {
           phone: { paddingBottom: "$large", paddingTop: "$large" },
         }}
         top="largest">
-        <Stack align="center" direction="row" flex="stretch">
+        <Stack align="center" direction="row" flex="baseline">
           <Stack direction="column">
             <Box
               css={{
                 borderRadius: "large",
               }}
               theme="fill">
-              <Stack bottom="small">
-                <Widget
-                  height={700}
-                  hidden={{
-                    email: router.query.email
-                      ? router.query.email.toString()
-                      : "Not provided somehow, Isaac check this",
-                    url: "ihostme.com.au",
-                  }}
-                  id="cAmtR2rI"
-                  opacity={0}
-                  style={{
-                    overflowY: "visible",
-                  }}
-                />
-              </Stack>
-              <Divider bottom="large" />
+              <Widget
+                height={700}
+                hidden={{
+                  ...(router.query.email && {
+                    email: router.query.email.toString(),
+                  }),
+                  url: "ihostme.com.au",
+                }}
+                id="cAmtR2rI"
+                opacity={0}
+                style={{
+                  overflowY: "visible",
+                }}
+              />
+            </Box>
+            <Stack top="medium">
               <Text accent as="small" css={{ verticalAlign: "middle" }} inline="small">
                 This form can also be found at:
               </Text>
 
               <Button css={{ verticalAlign: "middle" }} external small>
                 <a
-                  href={`https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au&email=${
-                    router.query.email ? router.query.email.toString() : "NA"
-                  }`}
+                  href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"}
                   rel="noreferrer"
                   target="_blank">
                   cosmo-au.typeform.com/to/cAmtR2rI
                 </a>
               </Button>
-            </Box>
+            </Stack>
           </Stack>
         </Stack>
       </View>

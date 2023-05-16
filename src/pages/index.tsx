@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
-import { serviceLocations } from "./locations";
+import locations from "../../locations.json";
 
 export default function Home(): JSX.Element {
   const router = useRouter();
@@ -117,7 +117,7 @@ export default function Home(): JSX.Element {
         <Stack direction="row" top="large">
           <Stack align="center" direction="column" width={100}>
             <Stack>
-              {serviceLocations.map((location, index) => (
+              {locations.map((location, index) => (
                 <Stack
                   key={index}
                   css={{
@@ -126,7 +126,7 @@ export default function Home(): JSX.Element {
                     paddingTop: "$smaller",
                     paddingBottom: "$smaller",
                   }}>
-                  <Link href={`/start?city=${location.name}`}>
+                  <Link href={`/city/${location.id}`}>
                     <Badge small theme="border">
                       <Stack
                         css={{

@@ -1,7 +1,10 @@
-import { View, Image, Stack, Button, Select } from "@cosmoau/ui";
+import { View, Image, Stack, Button, Select, Avatar } from "@cosmoau/ui";
+import type { ISelect } from "@cosmoau/ui/dist/cjs/types";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { CaretDown } from "phosphor-react";
+import { CaretDown, GridFour } from "phosphor-react";
+
+import locations from "../../locations.json";
 
 export default function Header(): JSX.Element {
   const router = useRouter();
@@ -31,7 +34,7 @@ export default function Header(): JSX.Element {
       label: "🏡 Book a stay",
       value: "https://cosmo.homes",
     },
-  ];
+  ] as ISelect["options"];
 
   const optionsResources = [
     {
@@ -54,7 +57,32 @@ export default function Header(): JSX.Element {
       label: "🏡 Book a stay",
       value: "https://cosmo.homes",
     },
-  ];
+  ] as ISelect["options"];
+
+  const optionsLocations = [
+    {
+      label: "View All",
+      value: "/locations",
+      icon: <GridFour />,
+      iconPosition: "right",
+    },
+  ].concat(
+    locations.map((location) => ({
+      label: location.name,
+      value: `/city/${location.id}`,
+      icon: (
+        <Avatar
+          alt={location.name}
+          fallback={location.name
+            .split(" ")
+            .map((word) => word[0])
+            .join("")}
+          src={`/images/location-${location.id}.jpg`}
+        />
+      ),
+      iconPosition: "right",
+    }))
+  ) as ISelect["options"];
 
   const handleSelection = (value: string): void => {
     if (value.includes("http")) {
@@ -105,7 +133,6 @@ export default function Header(): JSX.Element {
             <Select
               horizontal="right"
               last
-              locked={false}
               options={optionsPhone}
               selection={[activeSelection]}
               trigger={<Button theme="solid">Menu</Button>}
@@ -132,15 +159,20 @@ export default function Header(): JSX.Element {
               <Button theme={router.pathname === "/team" ? "fill" : "minimal"}>Team</Button>
             </Link>
 
-            <Link href="/locations">
-              <Button theme={router.pathname === "/locations" ? "fill" : "minimal"}>
-                Locations
-              </Button>
-            </Link>
+            <Select
+              options={optionsLocations}
+              selection={[activeSelection]}
+              trigger={
+                <Button icon={<CaretDown weight="light" />} iconPosition="right" theme="minimal">
+                  Locations
+                </Button>
+              }
+              width="25rem"
+              onSelection={(value): void => handleSelection(value)}
+            />
 
             <Select
               last
-              locked={false}
               options={optionsResources}
               selection={[activeSelection]}
               trigger={

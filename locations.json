@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Geelong",
+    "id": "geelong"
+  },
+  {
+    "name": "Portarlington",
+    "id": "portarlington"
+  },
+  {
+    "name": "Queenscliff",
+    "id": "queenscliff"
+  },
+  {
+    "name": "Point Lonsdale",
+    "id": "point-lonsdale"
+  },
+  {
+    "name": "Ocean Grove",
+    "id": "ocean-grove"
+  },
+  {
+    "name": "Barwon Heads",
+    "id": "barwon-heads"
+  },
+  {
+    "name": "Torquay",
+    "id": "torquay"
+  },
+  {
+    "name": "Jan Juc",
+    "id": "jan-juc"
+  },
+  {
+    "name": "Anglesea",
+    "id": "anglesea"
+  },
+  {
+    "name": "Bellarine Peninsula",
+    "id": "bellarine-peninsula"
+  },
+  {
+    "name": "Aireys Inlet",
+    "id": "aireys-inlet"
+  },
+  {
+    "name": "Fairhaven",
+    "id": "fairhaven"
+  },
+  {
+    "name": "Lorne",
+    "id": "lorne"
+  },
+  {
+    "name": "Apollo Bay",
+    "id": "apollo-bay"
+  },
+  {
+    "name": "Surf Coast",
+    "id": "surf-coast"
+  },
+  {
+    "name": "Mornington",
+    "id": "mornington"
+  },
+  {
+    "name": "Mt Eliza",
+    "id": "mt-eliza"
+  },
+  {
+    "name": "Mt Martha",
+    "id": "mt-martha"
+  },
+  {
+    "name": "Sorrento",
+    "id": "sorrento"
+  },
+  {
+    "name": "Portsea",
+    "id": "portsea"
+  },
+  {
+    "name": "Rye",
+    "id": "rye"
+  },
+  {
+    "name": "Flinders",
+    "id": "flinders"
+  },
+  {
+    "name": "Balnarring",
+    "id": "balnarring"
+  },
+  {
+    "name": "Somers",
+    "id": "somers"
+  },
+  {
+    "name": "Red Hill",
+    "id": "red-hill"
+  },
+  {
+    "name": "Safety Beach",
+    "id": "safety-beach"
+  },
+  {
+    "name": "Mornington Peninsula",
+    "id": "mornington-peninsula"
+  },
+  {
+    "name": "Cowes",
+    "id": "cowes"
+  },
+  {
+    "name": "Smiths Beach",
+    "id": "smiths-beach"
+  },
+  {
+    "name": "Ventnor",
+    "id": "ventnor"
+  },
+  {
+    "name": "Cape Woolamai",
+    "id": "cape-woolamai"
+  },
+  {
+    "name": "Rhyll",
+    "id": "rhyll"
+  },
+  {
+    "name": "San Remo",
+    "id": "san-remo"
+  },
+  {
+    "name": "Phillip Island",
+    "id": "phillip-island"
+  },
+  {
+    "name": "Cape Paterson",
+    "id": "cape-paterson"
+  },
+  {
+    "name": "Venus Bay",
+    "id": "venus-bay"
+  },
+  {
+    "name": "Inverloch",
+    "id": "inverloch"
+  },
+  {
+    "name": "Bass Coast",
+    "id": "bass-coast"
+  },
+  {
+    "name": "South Gippsland",
+    "id": "south-gippsland"
+  }
+]
