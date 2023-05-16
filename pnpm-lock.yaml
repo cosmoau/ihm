@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@cosmoau/ui':
-    specifier: ^1.4.60
-    version: 1.4.60(next@13.4.2)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1)
+    specifier: ^1.5.0
+    version: 1.5.0(next@13.4.2)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1)
   '@typeform/embed-react':
     specifier: ^2.21.0
     version: 2.21.0(react@18.2.0)
@@ -41,13 +41,13 @@ dependencies:
     specifier: ^2.9.1
     version: 2.9.1(react-dom@18.2.0)(react@18.2.0)
   vercel:
-    specifier: ^29.3.1
-    version: 29.3.1(@types/node@20.1.5)
+    specifier: ^29.3.2
+    version: 29.3.2(@types/node@20.1.7)
 
 devDependencies:
   '@types/node':
-    specifier: ^20.1.5
-    version: 20.1.5
+    specifier: ^20.1.7
+    version: 20.1.7
   '@types/react':
     specifier: ^18.2.6
     version: 18.2.6
@@ -1262,8 +1262,8 @@ packages:
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
     dev: true
 
-  /@cosmoau/ui@1.4.60(next@13.4.2)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1):
-    resolution: {integrity: sha512-gid+6VwWCqQBVF+fRoTQJWyzwG5/Md70ABAnoS6YtqIdSylfX7b0wDfNTSqIllVzt3QHwAbkOgZJqVcJNh0sRQ==}
+  /@cosmoau/ui@1.5.0(next@13.4.2)(phosphor-react@1.4.1)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1):
+    resolution: {integrity: sha512-IBgTwDVT5neV58NOjTxJlIDw02W5RCuk0h9bxqvK0SDDf2wPgwawnmMOX0O2UQoL/4H6S6tVVHdbCKk/jDrs+w==}
     peerDependencies:
       next: ^13.3.4
       phosphor-react: ^1.4.1
@@ -1889,7 +1889,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
       '@types/responselike': 1.0.0
     dev: false
 
@@ -1919,7 +1919,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
     dev: false
 
   /@types/hast@2.3.4:
@@ -1942,7 +1942,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
     dev: false
 
   /@types/mdast@3.0.11:
@@ -1966,7 +1966,7 @@ packages:
   /@types/node-fetch@2.6.3:
     resolution: {integrity: sha512-ETTL1mOEdq/sxUtgtOhKjyB2Irra4cjxksvcMUR5Zr4n+PxVhsCD9WS46oPbHL3et9Zde7CNRr+WUNlcHvsX+w==}
     dependencies:
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
       form-data: 3.0.1
     dev: false
 
@@ -1974,8 +1974,8 @@ packages:
     resolution: {integrity: sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==}
     dev: false
 
-  /@types/node@20.1.5:
-    resolution: {integrity: sha512-IvGD1CD/nego63ySR7vrAKEX3AJTcmrAN2kn+/sDNLi1Ff5kBzDeEdqWDplK+0HAEoLYej137Sk0cUU8OLOlMg==}
+  /@types/node@20.1.7:
+    resolution: {integrity: sha512-WCuw/o4GSwDGMoonES8rcvwsig77dGCMbZDrZr2x4ZZiNW4P/gcoZXe/0twgtobcTkmg9TuKflxYL/DuwDyJzg==}
 
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -1992,7 +1992,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
     dev: false
 
   /@types/scheduler@0.16.3:
@@ -2174,7 +2174,7 @@ packages:
       outdent: 0.8.0
     dev: false
 
-  /@vanilla-extract/integration@6.2.1(@types/node@20.1.5):
+  /@vanilla-extract/integration@6.2.1(@types/node@20.1.7):
     resolution: {integrity: sha512-+xYJz07G7TFAMZGrOqArOsURG+xcYvqctujEkANjw2McCBvGEK505RxQqOuNiA9Mi9hgGdNp2JedSa94f3eoLg==}
     dependencies:
       '@babel/core': 7.21.8
@@ -2188,8 +2188,8 @@ packages:
       lodash: 4.17.21
       mlly: 1.2.1
       outdent: 0.8.0
-      vite: 4.3.7(@types/node@20.1.5)
-      vite-node: 0.28.5(@types/node@20.1.5)
+      vite: 4.3.7(@types/node@20.1.7)
+      vite-node: 0.28.5(@types/node@20.1.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2316,10 +2316,10 @@ packages:
       - supports-color
     dev: false
 
-  /@vercel/remix-builder@1.8.8(@types/node@20.1.5):
+  /@vercel/remix-builder@1.8.8(@types/node@20.1.7):
     resolution: {integrity: sha512-pXZ19gYVdrlLuxRlhrC5v1uYn53YdSLXSzbDlYgbWanE2dbMSRLIjhzq+GIow9TislkhZwJYEgaScho9dMQPDQ==}
     dependencies:
-      '@remix-run/dev': /@vercel/remix-run-dev@1.16.0-patch.1(@types/node@20.1.5)
+      '@remix-run/dev': /@vercel/remix-run-dev@1.16.0-patch.1(@types/node@20.1.7)
       '@vercel/build-utils': 6.7.2
       '@vercel/nft': 0.22.5
       '@vercel/static-config': 2.0.17
@@ -2342,7 +2342,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@vercel/remix-run-dev@1.16.0-patch.1(@types/node@20.1.5):
+  /@vercel/remix-run-dev@1.16.0-patch.1(@types/node@20.1.7):
     resolution: {integrity: sha512-W4ugL5WYJEye91kRsBnH2D3Ia+4nTN9IcCH72ykOr660svw9Xise0Zi5sPtV8FP2RncAVgs2wAyAblQzsm6IqQ==}
     engines: {node: '>=14'}
     hasBin: true
@@ -2363,7 +2363,7 @@ packages:
       '@babel/types': 7.21.5
       '@npmcli/package-json': 2.0.0
       '@remix-run/server-runtime': 1.16.0
-      '@vanilla-extract/integration': 6.2.1(@types/node@20.1.5)
+      '@vanilla-extract/integration': 6.2.1(@types/node@20.1.7)
       arg: 5.0.2
       cacache: 15.3.0
       chalk: 4.1.2
@@ -7920,8 +7920,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /vercel@29.3.1(@types/node@20.1.5):
-    resolution: {integrity: sha512-mvl745tjMRdlAzema2s72Hg1o9g6pgqRsGyID59HJqviPJj5+R/k42OQuWVwGR4wQtPT4lDijINusJruR7jPvQ==}
+  /vercel@29.3.2(@types/node@20.1.7):
+    resolution: {integrity: sha512-paauJPO5PETowJR8WZ6Nn2ABWB5vYYsEPd+Ob2mhI2vGkXDMFs5LvWHias0dncXsvQDJ8m/xuyGOyqa2U7SFZw==}
     engines: {node: '>= 14'}
     hasBin: true
     requiresBuild: true
@@ -7933,7 +7933,7 @@ packages:
       '@vercel/node': 2.14.2
       '@vercel/python': 3.1.60
       '@vercel/redwood': 1.1.15
-      '@vercel/remix-builder': 1.8.8(@types/node@20.1.5)
+      '@vercel/remix-builder': 1.8.8(@types/node@20.1.7)
       '@vercel/ruby': 1.3.76
       '@vercel/static-build': 1.3.30
     transitivePeerDependencies:
@@ -7970,7 +7970,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite-node@0.28.5(@types/node@20.1.5):
+  /vite-node@0.28.5(@types/node@20.1.7):
     resolution: {integrity: sha512-LmXb9saMGlrMZbXTvOveJKwMTBTNUH66c8rJnQ0ZPNX+myPEol64+szRzXtV5ORb0Hb/91yq+/D3oERoyAt6LA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -7982,7 +7982,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.3.7(@types/node@20.1.5)
+      vite: 4.3.7(@types/node@20.1.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -7993,7 +7993,7 @@ packages:
       - terser
     dev: false
 
-  /vite@4.3.7(@types/node@20.1.5):
+  /vite@4.3.7(@types/node@20.1.7):
     resolution: {integrity: sha512-MTIFpbIm9v7Hh5b0wSBgkcWzSBz7SAa6K/cBTwS4kUiQJfQLFlZZRJRQgqunCVzhTPCk674tW+0Qaqh3Q00dBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -8018,7 +8018,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
       esbuild: 0.17.6
       postcss: 8.4.23
       rollup: 3.21.8
