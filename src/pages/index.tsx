@@ -17,7 +17,9 @@ export default function Home(): JSX.Element {
 
       <View
         bottom="large"
-        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
+        css={{ paddingLeft: "$medium", paddingRight: "$medium",
+        backgroundImage: "url('/overlay.svg')",
+ }}
         inverted
         top="medium">
         <Stack direction="row" minimal>
@@ -26,9 +28,7 @@ export default function Home(): JSX.Element {
               css={{
                 borderBottomRightRadius: "0 !important",
                 borderTopRightRadius: "0 !important",
-
-                backgroundImage: "url('/overlay.svg')",
-
+                background: '#1b2536',
                 button: {
                   background: "$text !important",
                   color: "$background !important",

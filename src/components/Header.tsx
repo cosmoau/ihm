@@ -3,11 +3,15 @@ import type { ISelect } from "@cosmoau/ui/dist/cjs/types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { CaretDown, GridFour } from "phosphor-react";
+import { useEffect, useState } from "react";
 
 import locations from "../../locations.json";
+import logoLight from "../../public/images/logo-new-light.png";
+import logoDark from "../../public/images/logo-new.png";
 
 export default function Header(): JSX.Element {
   const router = useRouter();
+  const [inverted, setInverted] = useState(true);
 
   const optionsPhone = [
     {
@@ -95,9 +99,24 @@ export default function Header(): JSX.Element {
   const activeSelection =
     optionsPhone.find((option) => option.value === router.pathname)?.value || "/";
 
+    useEffect(() => {
+      if (typeof window !== "undefined") {
+           window.addEventListener("scroll", () => {
+          setInverted(window.scrollY < 500);
+        });
+      }
+    }, []);
+
   return (
-    <header>
-      <View bottom="small" inverted top="small">
+    <header id='header' style={{
+      position: "sticky",
+      top: 0,
+      zIndex: 100,
+    }}>
+      <View bottom="small" css={{
+        borderBottom: "0.1rem solid $border",
+      }} inverted={inverted
+      } top="small">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={25} widthPhone={50} widthTablet={40}>
             <Link href="/">
@@ -110,10 +129,11 @@ export default function Header(): JSX.Element {
                   alt="
               ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
               "
-                  blurDataURL="/images/logo-new-light.png"
+
+                  blurDataURL={inverted ? logoLight.blurDataURL : logoDark.blurDataURL}
                   height={36.5}
                   placeholder="blur"
-                  src="/images/logo-new-light.png"
+                  src={inverted ? logoLight.src : logoDark.src}
                   width={120}
                 />
               </Stack>
@@ -128,7 +148,7 @@ export default function Header(): JSX.Element {
             widthPhone={50}
             widthTablet={60}>
             <a href="https://v1.cosmogroup.io" rel="noreferrer" target="_blank">
-              <Button inline="small">Owners</Button>
+              <Button inline="small">Clients</Button>
             </a>
             <Select
               horizontal="right"
@@ -193,7 +213,7 @@ export default function Header(): JSX.Element {
             direction="column"
             width={25}>
             <a href="https://v1.cosmogroup.io" rel="noreferrer" target="_blank">
-              <Button inline="small">Owner App</Button>
+              <Button inline="small">Client App</Button>
             </a>
             <Link href="/start">
               <Button inline="auto" theme="solid">
