@@ -25,7 +25,7 @@ export default function Header(): JSX.Element {
     {
       label: "Locations",
       value: "/locations",
-    },  
+    },
     {
       label: "Pricing",
       value: "/pricing",
@@ -34,7 +34,7 @@ export default function Header(): JSX.Element {
       label: "Contact",
       value: "/contact",
     },
-       {
+    {
       label: "Blog",
       value: "https://cosmogroup.io/blog",
     },
@@ -42,7 +42,7 @@ export default function Header(): JSX.Element {
       label: "Bookings",
       value: "https://cosmo.homes",
     },
-      {
+    {
       label: "Sign Up",
       value: "/start",
     },

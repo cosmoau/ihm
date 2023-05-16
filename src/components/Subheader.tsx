@@ -24,16 +24,14 @@ export function Subheader({
       bottom="large"
       container
       css={{
-        paddingLeft: "$medium",
-        paddingRight: "$medium",
         backgroundImage: "url('/overlay.svg')",
       }}
       inverted
       top="large">
       <NextSeo title={title} titleTemplate={parent ? "%s" : undefined} />
 
-      <Stack direction="row" flex="normal" minimal>
-        <Stack direction="column" minimal width={50} widthTablet={100}>
+      <Stack direction="row" flex="normal">
+        <Stack direction="column" width={50} widthTablet={100}>
           <Box
             css={{
               borderBottomRightRadius: "0 !important",
@@ -56,7 +54,7 @@ export function Subheader({
         </Stack>
         <Stack
           css={{
-            tablet: { height: parent ? "40rem" : "20rem" },
+            tablet: { height: parent ? "40rem" : "15rem" },
           }}
           direction="column"
           minimal
