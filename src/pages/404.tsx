@@ -1,57 +1,19 @@
-import { Stack, Image, Text, View, Button, Box } from "@cosmoau/ui";
+import { Stack, Text, View, Button } from "@cosmoau/ui";
 import Link from "next/link";
-import { NextSeo } from "next-seo";
+
+import { Subheader } from "../components/Subheader";
 
 export default function Custom404(): JSX.Element {
   return (
     <>
-      <NextSeo title="Page not found" />
-      <View
-        bottom="large"
-        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
-        inverted
-        top="medium">
-        <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50}>
-            <Box
-              css={{
-                borderBottomRightRadius: "0 !important",
-                borderTopRightRadius: "0 !important",
-                padding: "$larger $large",
-                phone: {
-                  padding: "$large $medium",
-                  borderRadius: "$large !important",
-                  textAlign: "center",
-                },
-              }}
-              theme="fill">
-              <Text as="h2">
-                <Text as="span" css={{ hiddenInline: "phone" }}>
-                  Page&nbsp;
-                </Text>
-                Not Found
-              </Text>
-            </Box>
-          </Stack>
-          <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
-            <Image
-              alt="
-                An overhead shot of the Great Ocean Road, where we wish we were driving right now."
-              blurDataURL="/images/misc-09.jpg"
-              css={{
-                img: {
-                  borderBottomRightRadius: "$large !important",
-                  borderTopRightRadius: "$large !important",
-                },
-              }}
-              fill
-              placeholder="blur"
-              src="/images/misc-09.jpg"
-            />
-          </Stack>
-        </Stack>
-      </View>
-
+      <Subheader image="/images/misc-09.jpg" title="Page not found">
+        <Text as="h2">
+          <Text as="span" css={{ hiddenInline: "phone" }}>
+            Page&nbsp;
+          </Text>
+          Not Found
+        </Text>
+      </Subheader>
       <View
         bottom="largest"
         container

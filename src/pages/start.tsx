@@ -1,60 +1,30 @@
-import { Stack, Text, View, Box, Image, Button } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Button, Badge } from "@cosmoau/ui";
 import { Widget } from "@typeform/embed-react";
 import { useRouter } from "next/router";
-import { NextSeo } from "next-seo";
+
+import { Subheader } from "../components/Subheader";
 
 export default function Start(): JSX.Element {
   const router = useRouter();
 
   return (
     <>
-      <NextSeo title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"} />
-      <View
-        bottom="large"
-        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
-        inverted
-        top="medium">
-        <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50}>
-            <Box
-              css={{
-                borderBottomRightRadius: "0 !important",
-                borderTopRightRadius: "0 !important",
-                padding: "$larger $large",
-                phone: {
-                  padding: "$large $medium",
-                  borderRadius: "$large !important",
-                  textAlign: "center",
-                },
-              }}
-              theme="fill">
-              <Text as="h2">
-                {router.query.city ? `List your Airbnb in ${router.query.city}` : "Sign Up"}
-              </Text>
-              <Text accent as="p">
-                {router.query.email
-                  ? `We will send your free earnings estimation, along with information on getting started to ${router.query.email}.`
-                  : "Get your free earnings estimation today."}
-              </Text>
-            </Box>
+      <Subheader
+        image="/images/misc-09.jpg"
+        title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"}>
+        <Text as="h2">
+          {router.query.city ? `List your Airbnb in ${router.query.city}` : "Sign Up"}
+        </Text>
+        <Text accent as="p">
+          We will send information on getting started to your email address.
+        </Text>
+        {router.query.email && (
+          <Stack top="medium">
+            <Badge>{router.query.email}</Badge>
           </Stack>
-          <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
-            <Image
-              alt="A photo of the beach walk in Point Lonsdale, Victoria, Australia."
-              blurDataURL="/images/misc-14.jpg"
-              css={{
-                img: {
-                  borderBottomRightRadius: "$large !important",
-                  borderTopRightRadius: "$large !important",
-                },
-              }}
-              fill
-              placeholder="blur"
-              src="/images/misc-14.jpg"
-            />
-          </Stack>
-        </Stack>
-      </View>
+        )}
+      </Subheader>
+
       <View
         bottom="largest"
         container

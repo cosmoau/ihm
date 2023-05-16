@@ -1,8 +1,7 @@
 // generate static pages for each city from ../../../locations.json
 
-import { View, Stack, Text, Box, Image, Button, Badge } from "@cosmoau/ui";
+import { View, Stack, Text, Box, Button, Badge } from "@cosmoau/ui";
 import { Widget } from "@typeform/embed-react";
-import { NextSeo } from "next-seo";
 import {
   Cloud,
   CloudFog,
@@ -21,6 +20,7 @@ import { useState } from "react";
 import useSWR from "swr";
 
 import locations from "../../../locations.json";
+import { Subheader } from "../../components/Subheader";
 
 interface ILocation {
   id: string;
@@ -139,104 +139,69 @@ export default function City({ location }: { location: ILocation }): JSX.Element
 
   return (
     <>
-      <NextSeo title={`${location.name} Airbnb Management`} />
-      <View
-        bottom="large"
-        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
-        inverted
-        top="medium">
-        <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50}>
-            <Box
-              css={{
-                borderBottomRightRadius: "0 !important",
-                borderTopRightRadius: "0 !important",
-                padding: "$larger $large",
-                phone: {
-                  padding: "$large $medium",
-                  borderRadius: "$large !important",
-                  textAlign: "center",
-                },
-              }}
-              theme="fill">
-              <Text as="h2">Airbnb Management in {location.name}</Text>
-              <Text as="p">
-                {location.name} is a popular destination for Airbnb guests in Victoria, offering a
-                range of activities and attractions for visitors. We offer Airbnb management
-                services in {location.name} and surrounding areas.
-              </Text>
-              <Stack
-                css={{
-                  textTransform: "capitalize",
-                }}
-                top="medium">
-                <Stack flexduo>
-                  <Text accent>Weather</Text>
-                  <Badge icon={weather.icon}>{weather.description}</Badge>
-                </Stack>
-                <Stack flexduo top="small">
-                  <Text accent>Temperature</Text>
-                  <Badge>{weather.temp}</Badge>
-                </Stack>
-                <Stack flexduo top="small">
-                  <Text accent>Range</Text>
-                  <Badge>
-                    {weather.min} - {weather.max}
-                  </Badge>
-                </Stack>
-                <Stack flexduo top="small">
-                  <Text accent>Feels Like</Text>
-                  <Badge>{weather.feels_like}</Badge>
-                </Stack>
-                {expand && (
-                  <>
-                    <Stack flexduo top="small">
-                      <Text accent>Humidity</Text>
-                      <Badge>{weather.humidity}</Badge>
-                    </Stack>
-                    <Stack flexduo top="small">
-                      <Text accent>Wind</Text>
-                      <Badge>{weather.wind}</Badge>
-                    </Stack>
-                    <Stack flexduo top="small">
-                      <Text accent>Sunrise</Text>
-                      <Badge>{weather.sunrise}</Badge>
-                    </Stack>
-                    <Stack flexduo top="small">
-                      <Text accent>Sunset</Text>
-                      <Badge>{weather.sunset}</Badge>
-                    </Stack>
-                    <Stack flexduo top="small">
-                      <Text accent>Clouds</Text>
-                      <Badge>{weather.clouds}</Badge>
-                    </Stack>
-                  </>
-                )}
-                <Stack top="medium">
-                  <Button small onClick={(): void => setExpand(!expand)}>
-                    {expand ? "Less" : "More"} Details
-                  </Button>
-                </Stack>
-              </Stack>
-            </Box>
+      <Subheader
+        image={`/images/location-${location.id}.jpg`}
+        title={`${location.name} Airbnb Management`}>
+        <Text as="h2">Airbnb Management in {location.name}</Text>
+        <Text as="p">
+          {location.name} is a popular destination for Airbnb guests in Victoria, offering a range
+          of activities and attractions for visitors. We offer Airbnb management services in{" "}
+          {location.name} and surrounding areas.
+        </Text>
+        <Stack
+          css={{
+            textTransform: "capitalize",
+          }}
+          top="medium">
+          <Stack flexduo>
+            <Text accent>Weather</Text>
+            <Badge icon={weather.icon}>{weather.description}</Badge>
           </Stack>
-          <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
-            <Image
-              alt="A photo of the beach walk in Point Lonsdale, Victoria, Australia."
-              blurDataURL={`/images/location-${location.id}.jpg`}
-              css={{
-                img: {
-                  borderBottomRightRadius: "$large !important",
-                  borderTopRightRadius: "$large !important",
-                },
-              }}
-              fill
-              placeholder="blur"
-              src={`/images/location-${location.id}.jpg`}
-            />
+          <Stack flexduo top="small">
+            <Text accent>Temperature</Text>
+            <Badge>{weather.temp}</Badge>
+          </Stack>
+          <Stack flexduo top="small">
+            <Text accent>Range</Text>
+            <Badge>
+              {weather.min} - {weather.max}
+            </Badge>
+          </Stack>
+          <Stack flexduo top="small">
+            <Text accent>Feels Like</Text>
+            <Badge>{weather.feels_like}</Badge>
+          </Stack>
+          {expand && (
+            <>
+              <Stack flexduo top="small">
+                <Text accent>Humidity</Text>
+                <Badge>{weather.humidity}</Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Wind</Text>
+                <Badge>{weather.wind}</Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Sunrise</Text>
+                <Badge>{weather.sunrise}</Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Sunset</Text>
+                <Badge>{weather.sunset}</Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Clouds</Text>
+                <Badge>{weather.clouds}</Badge>
+              </Stack>
+            </>
+          )}
+          <Stack top="medium">
+            <Button small onClick={(): void => setExpand(!expand)}>
+              {expand ? "Less" : "More"} Details
+            </Button>
           </Stack>
         </Stack>
-      </View>
+      </Subheader>
       <View
         bottom="largest"
         container

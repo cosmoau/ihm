@@ -1,11 +1,11 @@
-import { Stack, Text, View, Box, Badge, Image, Avatar, Input, Button } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Badge, Avatar, Input, Button } from "@cosmoau/ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { NextSeo } from "next-seo";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
 import locations from "../../locations.json";
+import { Subheader } from "../components/Subheader";
 
 export default function Home(): JSX.Element {
   const router = useRouter();
@@ -13,92 +13,38 @@ export default function Home(): JSX.Element {
 
   return (
     <>
-      <NextSeo title="ihostme | Airbnb Management" titleTemplate="%s" />
-
-      <View
-        bottom="large"
-        css={{ paddingLeft: "$medium", paddingRight: "$medium",
-        backgroundImage: "url('/overlay.svg')",
- }}
-        inverted
-        top="medium">
-        <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50}>
-            <Box
-              css={{
-                borderBottomRightRadius: "0 !important",
-                borderTopRightRadius: "0 !important",
-                background: '#1b2536',
-                button: {
-                  background: "$text !important",
-                  color: "$background !important",
-                },
-
-                padding: "$largest $large",
-
-                phone: {
-                  borderBottomLeftRadius: "0 !important",
-                  borderBottomRightRadius: "0 !important",
-                  borderTopLeftRadius: "$large !important",
-                  borderTopRightRadius: "$large !important",
-                  padding: "$large $medium",
-                },
-              }}
-              theme="fill">
-              <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
-              <Text accent as="p" bottom="larger">
-                We&apos;re your local short-term property management experts. With <b>ihostme</b>,
-                you can achieve better occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway,
-                Booking.com and Homes & Villas Management by Marriott.
-              </Text>
-
-              <Input
-                listen
-                placeholder="Your email"
-                submit="Get Started"
-                submitFunction={(): void => {
-                  if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-                    router.push(`/start?email=${email}`);
-                  } else {
-                    toast.error("Please enter a valid email address");
-                  }
-                }}
-                submitValid={(): boolean => email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) !== null}
-                type="email"
-                onChange={(e): void => setEmail(e.target.value)}
-              />
-            </Box>
-          </Stack>
-          <Stack
-            css={{
-              phone: { height: "40rem" },
+      <Subheader image="/images/misc-07.jpg" parent title="ihostme | Airbnb Management">
+        <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
+        <Text as="p">
+          We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can
+          achieve better occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com
+          and Homes & Villas Management by Marriott.
+        </Text>
+        <Stack
+          css={{
+            button: {
+              background: "$text !important",
+              color: "$background !important",
+            },
+          }}
+          top="larger">
+          <Input
+            listen
+            placeholder="Your email"
+            submit="Get Started"
+            submitFunction={(): void => {
+              if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+                router.push(`/start?email=${email}`);
+              } else {
+                toast.error("Please enter a valid email address");
+              }
             }}
-            direction="column"
-            minimal
-            width={50}>
-            <Image
-              alt="A photo of a couch in a living room, with a flower vase on the coffee table."
-              blurDataURL="/images/misc-07.jpg"
-              css={{
-                img: {
-                  borderBottomRightRadius: "$large !important",
-                  borderTopRightRadius: "$large !important",
-
-                  phone: {
-                    borderBottomLeftRadius: "$large !important",
-                    borderBottomRightRadius: "$large !important",
-                    borderTopLeftRadius: "0 !important",
-                    borderTopRightRadius: "0 !important",
-                  },
-                },
-              }}
-              fill
-              placeholder="blur"
-              src="/images/misc-07.jpg"
-            />
-          </Stack>
+            submitValid={(): boolean => email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) !== null}
+            type="email"
+            onChange={(e): void => setEmail(e.target.value)}
+          />
         </Stack>
-      </View>
+      </Subheader>
 
       <View container top="largest">
         <Stack direction="row">
@@ -186,7 +132,7 @@ export default function Home(): JSX.Element {
                 those who already have their own housekeeping and maintenance team in place.
               </Text>
               <Text accent as="p">
-                We also have a one-time set up fee of $400, and third-party charges are at cost.
+                We also have a one-time set up fee of $500, and third-party charges are at cost.
               </Text>
             </Box>
           </Stack>

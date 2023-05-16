@@ -1,50 +1,13 @@
-import { Stack, Text, Image, View, Box, Badge, Avatar } from "@cosmoau/ui";
-import { NextSeo } from "next-seo";
+import { Stack, Text, View, Box, Badge, Avatar } from "@cosmoau/ui";
+
+import { Subheader } from "../components/Subheader";
 
 export default function Testimonials(): JSX.Element {
   return (
     <>
-      <NextSeo title="Client Testimonials" />
-      <View
-        bottom="large"
-        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
-        inverted
-        top="medium">
-        <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50}>
-            <Box
-              css={{
-                borderBottomRightRadius: "0 !important",
-                borderTopRightRadius: "0 !important",
-                padding: "$larger $large",
-                phone: {
-                  padding: "$large $medium",
-                  borderRadius: "$large !important",
-                  textAlign: "center",
-                },
-              }}
-              theme="fill">
-              <Text as="h2">Client Testimonials</Text>
-            </Box>
-          </Stack>
-          <Stack css={{ hidden: "phone" }} direction="column" minimal width={50}>
-            <Image
-              alt="A photo of a bed."
-              blurDataURL="/images/misc-10.jpg"
-              css={{
-                img: {
-                  borderBottomRightRadius: "$large !important",
-                  borderTopRightRadius: "$large !important",
-                },
-              }}
-              fill
-              placeholder="blur"
-              src="/images/misc-10.jpg"
-            />
-          </Stack>
-        </Stack>
-      </View>
-
+      <Subheader image="/images/misc-10.jpg" title="Client Testimonials">
+        <Text as="h2">Client Testimonials</Text>
+      </Subheader>
       <View
         bottom="larger"
         container

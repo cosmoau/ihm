@@ -3,7 +3,7 @@ import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "ph
 
 export default function Footer(): JSX.Element {
   return (
-    <footer>
+    <footer id="footer">
       <View
         bottom="largest"
         container
@@ -53,6 +53,16 @@ export default function Footer(): JSX.Element {
               interested in earning more from their property while enjoying the benefits of a
               professional Airbnb management service.
             </Text>
+            <Text as="p">
+              To get an estimate of your property&apos;s potential earnings, try our free Airbnb
+              Calculator. There is no need to sign up or share personal information; you&apos;ll get
+              instant results on-screen.
+            </Text>
+            <Stack top="large">
+              <a href="https://cosmogroup.io/airbnb-calculator" target="_blank">
+                <Button external>Airbnb Calculator</Button>
+              </a>
+            </Stack>
             <Stack top="large">
               <Badge icon={<ChatCircle />}>
                 <a href="mailto:ihostme@cosmogroup.io">ihostme@cosmogroup.io</a>
@@ -74,8 +84,9 @@ export default function Footer(): JSX.Element {
         css={{
           borderTop: "0.1rem solid $border",
           zIndex: 201,
-          backgroundImage: "url('/overlay.svg') !important",
+          backgroundColor: "#26111a !important",
         }}
+        inverted
         top="medium">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={40} widthPhone={15}>

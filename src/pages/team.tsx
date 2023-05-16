@@ -1,56 +1,13 @@
-import { Stack, Text, View, Box, Avatar, Image, Badge } from "@cosmoau/ui";
-import { NextSeo } from "next-seo";
+import { Stack, Text, View, Box, Avatar, Badge } from "@cosmoau/ui";
+
+import { Subheader } from "../components/Subheader";
 
 export default function Team(): JSX.Element {
   return (
     <>
-      <NextSeo title="Our Team" />
-      <View
-        bottom="large"
-        css={{ paddingLeft: "$medium", paddingRight: "$medium" }}
-        inverted
-        top="medium">
-        <Stack direction="row" minimal>
-          <Stack direction="column" minimal width={50}>
-            <Box
-              css={{
-                borderBottomRightRadius: "0 !important",
-                borderTopRightRadius: "0 !important",
-                padding: "$larger $large",
-                phone: {
-                  padding: "$large $medium",
-                  borderRadius: "$large !important",
-                  textAlign: "center",
-                },
-              }}
-              theme="fill">
-              <Text as="h2">Our Team</Text>
-            </Box>
-          </Stack>
-          <Stack
-            css={{
-              hidden: "phone",
-            }}
-            direction="column"
-            minimal
-            width={50}>
-            <Image
-              alt="A photo of a dining table with festive decorations."
-              blurDataURL="/images/misc-12.jpg"
-              css={{
-                img: {
-                  borderBottomRightRadius: "$large !important",
-                  borderTopRightRadius: "$large !important",
-                },
-              }}
-              fill
-              fillPosition="left"
-              placeholder="blur"
-              src="/images/misc-12.jpg"
-            />
-          </Stack>
-        </Stack>
-      </View>
+      <Subheader image="/images/misc-12.jpg" title="Our Team">
+        <Text as="h2">Our Team</Text>
+      </Subheader>
 
       <View
         bottom="larger"

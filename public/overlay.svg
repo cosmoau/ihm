@@ -1,2 +1,5 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg" width="30" height="60" viewBox="0 0 30 60"><g style="opacity: 0.1;" fill="#fff"><path d="M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z"></path></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="120" viewBox="0 0 60 120">
+  <g style="opacity: 0.075;" fill="#f2ebee">
+    <path d="M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z"></path>
+  </g>
+</svg>

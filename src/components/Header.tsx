@@ -23,43 +23,28 @@ export default function Header(): JSX.Element {
       value: "/testimonials",
     },
     {
-      label: "Team",
-      value: "/team",
-    },
-    {
       label: "Locations",
       value: "/locations",
+    },  
+    {
+      label: "Pricing",
+      value: "/pricing",
     },
     {
-      label: "Sign Up",
-      value: "/start",
+      label: "Contact",
+      value: "/contact",
     },
-    {
-      label: "🏡 Book a stay",
-      value: "https://cosmo.homes",
-    },
-  ] as ISelect["options"];
-
-  const optionsResources = [
-    {
+       {
       label: "Blog",
       value: "https://cosmogroup.io/blog",
     },
     {
-      label: "Legal",
-      value: "https://cosmogroup.io/legal",
-    },
-    {
-      label: "Calculator",
-      value: "https://cosmogroup.io/airbnb-calculator",
-    },
-    {
-      label: "Contact",
-      value: "https://cosmogroup.io/contact",
-    },
-    {
-      label: "🏡 Book a stay",
+      label: "Bookings",
       value: "https://cosmo.homes",
+    },
+      {
+      label: "Sign Up",
+      value: "/start",
     },
   ] as ISelect["options"];
 
@@ -96,27 +81,29 @@ export default function Header(): JSX.Element {
     }
   };
 
-  const activeSelection =
-    optionsPhone.find((option) => option.value === router.pathname)?.value || "/";
-
-    useEffect(() => {
-      if (typeof window !== "undefined") {
-           window.addEventListener("scroll", () => {
-          setInverted(window.scrollY < 500);
-        });
-      }
-    }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => {
+        setInverted(window.scrollY < 500);
+      });
+    }
+  }, []);
 
   return (
-    <header id='header' style={{
-      position: "sticky",
-      top: 0,
-      zIndex: 100,
-    }}>
-      <View bottom="small" css={{
-        borderBottom: "0.1rem solid $border",
-      }} inverted={inverted
-      } top="small">
+    <header
+      id="header"
+      style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 100,
+      }}>
+      <View
+        bottom="small"
+        css={{
+          borderBottom: "0.1rem solid $border",
+        }}
+        inverted={inverted}
+        top="small">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={25} widthPhone={50} widthTablet={40}>
             <Link href="/">
@@ -129,7 +116,6 @@ export default function Header(): JSX.Element {
                   alt="
               ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
               "
-
                   blurDataURL={inverted ? logoLight.blurDataURL : logoDark.blurDataURL}
                   height={36.5}
                   placeholder="blur"
@@ -154,7 +140,9 @@ export default function Header(): JSX.Element {
               horizontal="right"
               last
               options={optionsPhone}
-              selection={[activeSelection]}
+              selection={[
+                optionsPhone.find((option) => option.value === router.pathname)?.value || "/",
+              ]}
               trigger={<Button theme="solid">Menu</Button>}
               width="16rem"
               onSelection={(value): void => handleSelection(value)}
@@ -170,39 +158,38 @@ export default function Header(): JSX.Element {
             <Link href="/">
               <Button theme={router.pathname === "/" ? "fill" : "minimal"}>Home</Button>
             </Link>
+            <Link href="/pricing">
+              <Button theme={router.pathname === "/pricing" ? "fill" : "minimal"}>Pricing</Button>
+            </Link>
             <Link href="/testimonials">
               <Button theme={router.pathname === "/testimonials" ? "fill" : "minimal"}>
                 Testimonials
               </Button>
             </Link>
-            <Link href="/team">
-              <Button theme={router.pathname === "/team" ? "fill" : "minimal"}>Team</Button>
-            </Link>
-
             <Select
               options={optionsLocations}
-              selection={[activeSelection]}
+              selection={[router.asPath]}
               trigger={
-                <Button icon={<CaretDown weight="light" />} iconPosition="right" theme="minimal">
+                <Button
+                  icon={<CaretDown weight="light" />}
+                  iconPosition="right"
+                  theme={
+                    router.pathname === "/locations" || router.pathname.includes("/city/")
+                      ? "fill"
+                      : "minimal"
+                  }>
                   Locations
                 </Button>
               }
               width="25rem"
               onSelection={(value): void => handleSelection(value)}
             />
-
-            <Select
-              last
-              options={optionsResources}
-              selection={[activeSelection]}
-              trigger={
-                <Button icon={<CaretDown weight="light" />} iconPosition="right" theme="minimal">
-                  More
-                </Button>
-              }
-              width="15rem"
-              onSelection={(value): void => handleSelection(value)}
-            />
+            <Link href="/contact">
+              <Button theme={router.pathname === "/contact" ? "fill" : "minimal"}>Contact</Button>
+            </Link>
+            <a href="https://cosmogroup.io/blog" rel="noreferrer" target="_blank">
+              <Button theme="minimal">Blog</Button>
+            </a>
           </Stack>
 
           <Stack
