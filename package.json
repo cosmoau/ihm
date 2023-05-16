@@ -7,7 +7,7 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.4.59",
+    "@cosmoau/ui": "^1.4.60",
     "@typeform/embed-react": "^2.21.0",
     "@vercel/analytics": "^1.0.1",
     "next": "^13.4.2",
@@ -20,13 +20,13 @@
     "swr": "^2.1.5",
     "typescript": "^5.0.4",
     "usehooks-ts": "^2.9.1",
-    "vercel": "^29.3.0"
+    "vercel": "^29.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.1.5",
     "@types/react": "^18.2.6",
     "eslint": "^8.40.0",
-    "eslint-config-dolmios": "^1.5.0",
+    "eslint-config-dolmios": "^1.5.1",
     "next-sitemap": "^4.0.9",
     "prettier": "^2.8.8"
   },
