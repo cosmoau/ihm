@@ -2,23 +2,14 @@ import { Provider } from "@cosmoau/ui";
 import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
-import { useState, useEffect } from "react";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const systemPreference =
-    mounted && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
   return (
-    <Provider dark={mounted && systemPreference === "dark"}>
+    <Provider>
       <DefaultSeo
         openGraph={{
           description:

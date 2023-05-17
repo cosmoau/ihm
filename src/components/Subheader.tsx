@@ -31,7 +31,9 @@ export function Subheader({
       <NextSeo title={title} titleTemplate={parent ? "%s" : undefined} />
 
       <Stack direction="row" flex="normal">
-        <Stack direction="column" width={50} widthTablet={100}>
+        <Stack css={{
+          paddingRight: 0,
+        }} direction="column" width={50} widthTablet={100}>
           <Box
             css={{
               borderBottomRightRadius: "0 !important",
@@ -54,6 +56,7 @@ export function Subheader({
         </Stack>
         <Stack
           css={{
+            paddingLeft: 0,
             tablet: { height: parent ? "40rem" : "15rem" },
           }}
           direction="column"

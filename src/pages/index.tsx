@@ -1,20 +1,61 @@
-import { Stack, Text, View, Box, Badge, Avatar, Input, Button } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Badge, Avatar, Input, Button, fadeIn, fadeOut } from "@cosmoau/ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { HouseSimple } from "phosphor-react";
+import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 
 import locations from "../../locations.json";
 import { Subheader } from "../components/Subheader";
 
+const nextMonth = new Date();
+
+nextMonth.setMonth(nextMonth.getMonth() + 1);
+
 export default function Home(): JSX.Element {
   const router = useRouter();
   const [email, setEmail] = useState("");
+  const [location, setLocation] = useState(0);
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimate(true);
+      setTimeout(() => {
+        setAnimate(false);
+        setLocation((location + 1) % locations.length);
+      }, 400);
+    }, 5000);
+
+    return (): void => clearInterval(interval);
+  }, [location]);
 
   return (
     <>
       <Subheader image="/images/misc-07.jpg" parent title="ihostme | Airbnb Management">
-        <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
+        <Link href={`/city/${locations[location].id}`}>
+          <Badge
+            css={{
+              transition: "$default",
+              backgroundColor: "#f3bcd5",
+            }}
+            icon={<HouseSimple />}
+            theme="purple">
+          List your home in&nbsp;
+            <Text
+              as="span"
+              css={{
+                color: "$background",
+                animation: animate ? `${fadeOut} .4s ease-in-out` : `${fadeIn} .4s ease-in-out`,
+                animationFillMode: "forwards",
+              }}>
+              {locations[location].name}
+            </Text>
+          </Badge>
+        </Link>
+        <Text as="h1" top="large">
+          Holiday Home Management on all the major booking platforms
+        </Text>
         <Text as="p">
           We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can
           achieve better occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com
@@ -27,7 +68,7 @@ export default function Home(): JSX.Element {
               color: "$background !important",
             },
           }}
-          top="larger">
+          top="large">
           <Input
             listen
             placeholder="Your email"

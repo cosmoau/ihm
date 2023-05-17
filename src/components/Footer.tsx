@@ -84,7 +84,6 @@ export default function Footer(): JSX.Element {
         css={{
           borderTop: "0.1rem solid $border",
           zIndex: 201,
-          backgroundColor: "#26111a !important",
         }}
         inverted
         top="medium">
