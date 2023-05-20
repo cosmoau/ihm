@@ -1,7 +1,6 @@
 // generate static pages for each city from ../../../locations.json
 
 import { View, Stack, Text, Box, Button, Badge } from "@cosmoau/ui";
-import { Widget } from "@typeform/embed-react";
 import {
   Cloud,
   CloudFog,
@@ -15,7 +14,8 @@ import {
   Sun,
   ThermometerSimple,
   Umbrella,
-} from "phosphor-react";
+} from "@phosphor-icons/react";
+import { Widget } from "@typeform/embed-react";
 import { useState } from "react";
 import useSWR from "swr";
 

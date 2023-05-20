@@ -1,16 +1,16 @@
 import { View, Image, Button, Stack, Text, Badge } from "@cosmoau/ui";
-import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "phosphor-react";
+import {
+  ChatCircle,
+  FacebookLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  Phone,
+} from "@phosphor-icons/react";
 
 export default function Footer(): JSX.Element {
   return (
     <footer id="footer">
-      <View
-        bottom="largest"
-        container
-        css={{
-          borderTop: "0.1rem solid $border",
-        }}
-        top="larger">
+      <View bottom="largest" container>
         <Stack direction="row">
           <Stack
             css={{

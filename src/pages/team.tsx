@@ -10,7 +10,7 @@ export default function Team(): JSX.Element {
       </Subheader>
 
       <View
-        bottom="larger"
+        bottom="largest"
         container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },

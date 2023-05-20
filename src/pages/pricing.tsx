@@ -1,6 +1,6 @@
 import { Stack, Text, View, Box, Badge, Button } from "@cosmoau/ui";
+import { CloudCheck, CloudSlash } from "@phosphor-icons/react";
 import Link from "next/link";
-import { CloudCheck, CloudSlash } from "phosphor-react";
 
 import { Subheader } from "../components/Subheader";
 
@@ -67,7 +67,7 @@ export default function Pricing(): JSX.Element {
       </Subheader>
 
       <View
-        bottom="larger"
+        bottom="largest"
         container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },
@@ -77,17 +77,17 @@ export default function Pricing(): JSX.Element {
           <Stack direction="column" width={50}>
             <Box image="/images/misc-16.jpg" imageAlt="">
               <Text as="h3">Collaborate Plan</Text>
-              <Text as="h4">14% of the total booking value</Text>
-              <Text accent>
+              <Text as="h6">14% of the total booking value</Text>
+              <Text>
                 We handle all marketing, bookings and guest support to enable owners to focus on
                 keeping their homes clean and comfortable.
               </Text>
-              <Text accent>Available in all locations.</Text>
+              <Text>Available in all locations.</Text>
               {services.map((service, index) => (
                 <Stack
                   key={index}
                   css={{
-                    opacity: service.both ? 1 : 0.5,
+                    opacity: service.both ? 1 : 0.3,
                   }}
                   top={index === 0 ? "medium" : "small"}>
                   <Badge icon={service.both ? <CloudCheck size={24} /> : <CloudSlash size={24} />}>
@@ -112,14 +112,12 @@ export default function Pricing(): JSX.Element {
             width={50}>
             <Box image="/images/misc-15.jpg" imageAlt="">
               <Text as="h3">Complete Plan</Text>
-              <Text as="h4">20% of the total booking value</Text>
-              <Text accent>
+              <Text as="h6">20% of the total booking value</Text>
+              <Text>
                 We take care of all aspects of management, including professional housekeeping,
                 linen, consumables and maintenance facilitation.
               </Text>
-              <Text accent>
-                Not available in all locations. Please contact us for more information.
-              </Text>
+              <Text>Not available in all locations. Please contact us for more information.</Text>
               {services.map((service, index) => (
                 <Stack key={index} top={index === 0 ? "medium" : "small"}>
                   <Badge icon={<CloudCheck size={24} />}>{service.title}</Badge>

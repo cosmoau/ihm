@@ -1,7 +1,7 @@
 import { Stack, Text, View, Box, Badge, Avatar, Input, Button, fadeIn, fadeOut } from "@cosmoau/ui";
+import { HouseSimple } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { HouseSimple } from "phosphor-react";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 
@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
             }}
             icon={<HouseSimple />}
             theme="purple">
-          List your home in&nbsp;
+            List your home in&nbsp;
             <Text
               as="span"
               css={{
@@ -87,7 +87,7 @@ export default function Home(): JSX.Element {
         </Stack>
       </Subheader>
 
-      <View container top="largest">
+      <View bottom="largest" container top="largest">
         <Stack direction="row">
           <Stack align="center" direction="column" offset={20} width={60}>
             <Text as="h3">ihostme operates out of the top holiday destinations</Text>
@@ -102,49 +102,42 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
         <Stack direction="row" top="large">
-          <Stack align="center" direction="column" width={100}>
-            <Stack>
-              {locations.map((location, index) => (
-                <Stack
-                  key={index}
-                  css={{
-                    display: "inline-block",
-                    marginRight: "$small",
-                    paddingTop: "$smaller",
-                    paddingBottom: "$smaller",
-                  }}>
-                  <Link href={`/city/${location.id}`}>
-                    <Badge small theme="border">
-                      <Stack
-                        css={{
-                          alignItems: "center",
-                          display: "flex",
-                          marginRight: "$small",
-                          verticalAlign: "middle",
-                        }}>
-                        <Avatar
-                          fallback=""
-                          src={`/images/location-${location.id}.jpg`}
-                          width={15}
-                        />{" "}
-                      </Stack>
+          <Stack align="center" direction="column">
+            {locations.slice(0, 14).map((location, index) => (
+              <Stack
+                key={index}
+                css={{
+                  display: "inline-block",
+                  marginRight: "$small",
+                  paddingTop: "$smaller",
+                  paddingBottom: "$smaller",
+                }}>
+                <Link href={`/city/${location.id}`}>
+                  <Badge theme="border">
+                    <Stack
+                      css={{
+                        alignItems: "center",
+                        display: "flex",
+                        marginRight: "$small",
+                        verticalAlign: "middle",
+                      }}>
+                      <Avatar fallback="" src={`/images/location-${location.id}.jpg`} width={15} />{" "}
+                    </Stack>
 
-                      <Text as="span" inline={"auto"}>
-                        {location.name}
-                      </Text>
-                    </Badge>
-                  </Link>
-                </Stack>
-              ))}
-              <Badge css={{ opacity: 0.5 }} small theme="border">
-                + more
-              </Badge>
-            </Stack>
+                    <Text as="span" inline={"auto"}>
+                      {location.name}
+                    </Text>
+                  </Badge>
+                </Link>
+              </Stack>
+            ))}
+            <Badge css={{ opacity: 0.5 }} small theme="border">
+              + more
+            </Badge>
           </Stack>
         </Stack>
-      </View>
-      <View bottom="larger" container top="larger">
-        <Stack direction="row" flex="stretch">
+
+        <Stack direction="row" flex="stretch" top="larger">
           <Stack direction="column" width={33.33}>
             <Box theme="fill">
               <Text as="h5">Your One Stop Hosting Shop</Text>

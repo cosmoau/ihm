@@ -1,4 +1,5 @@
 import { Stack, Text, View, Box } from "@cosmoau/ui";
+import Link from "next/link";
 
 import locations from "../../locations.json";
 import { Subheader } from "../components/Subheader";
@@ -10,7 +11,7 @@ export default function LocationsPage(): JSX.Element {
         <Text as="h2">Serviced Locations</Text>
       </Subheader>
       <View
-        bottom="medium"
+        bottom="largest"
         container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$medium" },
@@ -21,7 +22,7 @@ export default function LocationsPage(): JSX.Element {
             <Stack
               key={location.id || index}
               direction="column"
-              top="medium"
+              top="large"
               width={25}
               widthTablet={50}>
               <Box
@@ -30,7 +31,9 @@ export default function LocationsPage(): JSX.Element {
                 imageCTA={`/city/${location.id}`}
                 imageHeight="10rem"
                 theme="fill">
-                <Text as="h4">{location.name}</Text>
+                <Link href={`/city/${location.id}`}>
+                  <Text as="h4">{location.name}</Text>
+                </Link>
               </Box>
             </Stack>
           ))}

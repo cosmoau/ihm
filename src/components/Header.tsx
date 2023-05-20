@@ -1,8 +1,8 @@
 import { View, Image, Stack, Button, Select, Avatar } from "@cosmoau/ui";
 import type { ISelect } from "@cosmoau/ui/dist/cjs/types";
+import { CaretDown, GridFour } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { CaretDown, GridFour } from "phosphor-react";
 import { useEffect, useState } from "react";
 
 import locations from "../../locations.json";

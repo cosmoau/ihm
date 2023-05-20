@@ -9,7 +9,7 @@ export default function Testimonials(): JSX.Element {
         <Text as="h2">Client Testimonials</Text>
       </Subheader>
       <View
-        bottom="larger"
+        bottom="largest"
         container
         css={{
           phone: { paddingBottom: "$large", paddingTop: "$large" },

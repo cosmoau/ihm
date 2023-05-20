@@ -31,15 +31,21 @@ export function Subheader({
       <NextSeo title={title} titleTemplate={parent ? "%s" : undefined} />
 
       <Stack direction="row" flex="normal">
-        <Stack css={{
-          paddingRight: 0,
-        }} direction="column" width={50} widthTablet={100}>
+        <Stack
+          css={{
+            paddingRight: 0,
+          }}
+          direction="column"
+          width={50}
+          widthTablet={100}>
           <Box
             css={{
               borderBottomRightRadius: "0 !important",
               borderTopRightRadius: "0 !important",
-              background: "#1b2536",
 
+              background: "rgba(255, 255, 255, 0.06)",
+              borderRadius: "$large",
+              backdropFilter: "blur(2.75px)",
               padding: parent ? "$largest $large" : "$larger $large",
 
               tablet: {
@@ -50,7 +56,7 @@ export function Subheader({
                 padding: "$large $medium",
               },
             }}
-            theme="fill">
+            theme="transparent">
             {children}
           </Box>
         </Stack>
