@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@cosmoau/ui':
-    specifier: ^1.5.2
-    version: 1.5.2(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1)
+    specifier: ^1.5.4
+    version: 1.5.4(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)
   '@phosphor-icons/react':
     specifier: ^2.0.9
     version: 2.0.9(react-dom@18.2.0)(react@18.2.0)
@@ -1262,14 +1262,13 @@ packages:
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
     dev: true
 
-  /@cosmoau/ui@1.5.2(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)(usehooks-ts@2.9.1):
-    resolution: {integrity: sha512-fxp3em8p7NqRUxl/2GDqRvYWiieXVaG5WQqeoQt/gd+qXm5ORf4MptyTcp1BMHnQjEbSi2mUgCAZawc99CshQA==}
+  /@cosmoau/ui@1.5.4(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0):
+    resolution: {integrity: sha512-kAuAmf1YAWVtu2HA/34zUUrWlYZJQCeNraUMj8Bk1OgX1CGVVBRQYkjGekMAecCPtZvRjVn2f3udGpuPuAqQ8Q==}
     peerDependencies:
       next: ^13.4.3
       react: ^18.2.0
       react-dom: ^18.2.0
       react-hot-toast: ^2.4.1
-      usehooks-ts: ^2.9.1
     dependencies:
       '@stitches/react': 1.2.8(react@18.2.0)
       fast-sort: 3.4.0
@@ -1277,7 +1276,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-hot-toast: 2.4.1(csstype@3.1.2)(react-dom@18.2.0)(react@18.2.0)
-      usehooks-ts: 2.9.1(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@cspotcode/source-map-support@0.8.1:
