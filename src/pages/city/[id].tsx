@@ -202,13 +202,7 @@ export default function City({ location }: { location: ILocation }): JSX.Element
           </Stack>
         </Stack>
       </Subheader>
-      <View
-        bottom="largest"
-        container
-        css={{
-          phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}
-        top="largest">
+      <View bottom="largest" container top="largest">
         <Stack align="center" direction="row" flex="baseline">
           <Stack direction="column">
             <Box

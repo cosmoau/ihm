@@ -8,13 +8,7 @@ export default function Testimonials(): JSX.Element {
       <Subheader image="/images/misc-10.jpg" title="Client Testimonials">
         <Text as="h2">Client Testimonials</Text>
       </Subheader>
-      <View
-        bottom="largest"
-        container
-        css={{
-          phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}
-        top="largest">
+      <View bottom="largest" container top="largest">
         <Stack direction="row" flex="stretch">
           <Stack direction="column" width={50}>
             <Box

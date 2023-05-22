@@ -66,13 +66,7 @@ export default function Pricing(): JSX.Element {
         <Text as="h2">Management Pricing</Text>
       </Subheader>
 
-      <View
-        bottom="largest"
-        container
-        css={{
-          phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}
-        top="largest">
+      <View bottom="largest" container top="largest">
         <Stack direction="row" flex="stretch">
           <Stack direction="column" width={50}>
             <Box image="/images/misc-16.jpg" imageAlt="">

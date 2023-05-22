@@ -9,13 +9,7 @@ export default function Team(): JSX.Element {
         <Text as="h2">Our Team</Text>
       </Subheader>
 
-      <View
-        bottom="largest"
-        container
-        css={{
-          phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}
-        top="largest">
+      <View bottom="largest" container top="largest">
         <Stack direction="row" flex="stretch">
           <Stack direction="column" width={33.33}>
             <Box theme="fill">

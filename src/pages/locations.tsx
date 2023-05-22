@@ -10,13 +10,7 @@ export default function LocationsPage(): JSX.Element {
       <Subheader image="/images/misc-13.jpg" title="Service Locations">
         <Text as="h2">Serviced Locations</Text>
       </Subheader>
-      <View
-        bottom="largest"
-        container
-        css={{
-          phone: { paddingBottom: "$large", paddingTop: "$medium" },
-        }}
-        top="large">
+      <View bottom="largest" container top="large">
         <Stack direction="row">
           {locations.map((location, index) => (
             <Stack

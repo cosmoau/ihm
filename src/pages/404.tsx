@@ -14,13 +14,7 @@ export default function Custom404(): JSX.Element {
           Not Found
         </Text>
       </Subheader>
-      <View
-        bottom="largest"
-        container
-        css={{
-          phone: { paddingBottom: "$large", paddingTop: "$large" },
-        }}
-        top="largest">
+      <View bottom="largest" container top="largest">
         <Stack direction="row">
           <Stack direction="column">
             <Text as="h3">Sorry, the page you are looking for is not available. </Text>
