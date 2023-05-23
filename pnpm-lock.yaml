@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@cosmoau/ui':
-    specifier: ^1.5.4
-    version: 1.5.4(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)
+    specifier: ^1.5.7
+    version: 1.5.7(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)
   '@phosphor-icons/react':
     specifier: ^2.0.9
     version: 2.0.9(react-dom@18.2.0)(react@18.2.0)
@@ -41,8 +41,8 @@ dependencies:
     specifier: ^2.9.1
     version: 2.9.1(react-dom@18.2.0)(react@18.2.0)
   vercel:
-    specifier: ^29.3.6
-    version: 29.3.6(@types/node@20.2.3)
+    specifier: ^29.4.0
+    version: 29.4.0(@types/node@20.2.3)
 
 devDependencies:
   '@types/node':
@@ -1262,15 +1262,17 @@ packages:
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
     dev: true
 
-  /@cosmoau/ui@1.5.4(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0):
-    resolution: {integrity: sha512-kAuAmf1YAWVtu2HA/34zUUrWlYZJQCeNraUMj8Bk1OgX1CGVVBRQYkjGekMAecCPtZvRjVn2f3udGpuPuAqQ8Q==}
+  /@cosmoau/ui@1.5.7(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0):
+    resolution: {integrity: sha512-fGZnwYGZZ01EtR+yh5D6HAsNg625ARvm/KTMY2JdMzSyMrcw/XRymyRk6j4MulK7tKfVlDZ6XRFuEt3zI7OeEQ==}
     peerDependencies:
       next: ^13.4.3
       react: ^18.2.0
       react-dom: ^18.2.0
       react-hot-toast: ^2.4.1
     dependencies:
+      '@googlemaps/js-api-loader': github.com/googlemaps/js-api-loader/e8d1ecda22455b08cc8acb6b6c293c092d1c94ed
       '@stitches/react': 1.2.8(react@18.2.0)
+      '@types/google.maps': 3.53.1
       fast-sort: 3.4.0
       next: 13.4.3(@babel/core@7.21.8)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
@@ -1900,8 +1902,8 @@ packages:
       '@types/responselike': 1.0.0
     dev: false
 
-  /@types/debug@4.1.7:
-    resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
+  /@types/debug@4.1.8:
+    resolution: {integrity: sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==}
     dependencies:
       '@types/ms': 0.7.31
     dev: false
@@ -1927,6 +1929,10 @@ packages:
     dependencies:
       '@types/minimatch': 5.1.2
       '@types/node': 20.2.3
+    dev: false
+
+  /@types/google.maps@3.53.1:
+    resolution: {integrity: sha512-+7JVpq+kFzTU3TweSz6huYuFedZ4s60WeABaXYU6rDZczdpfoQ5DuZNCDc/eAAcdFJpxMMDpzf3d9YTMNodBFg==}
     dev: false
 
   /@types/hast@2.3.4:
@@ -2835,7 +2841,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001489
-      electron-to-chromium: 1.4.402
+      electron-to-chromium: 1.4.403
       node-releases: 2.0.11
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
 
@@ -3415,8 +3421,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
 
-  /electron-to-chromium@1.4.402:
-    resolution: {integrity: sha512-gWYvJSkohOiBE6ecVYXkrDgNaUjo47QEKK0kQzmWyhkH+yoYiG44bwuicTGNSIQRG3WDMsWVZJLRnJnLNkbWvA==}
+  /electron-to-chromium@1.4.403:
+    resolution: {integrity: sha512-evCMqXJWmbQHdlh307peXNguqVIMmcLGrQwXiR+Qc98js8jPDeT9rse1+EF2YRjWgueuzj1r4WWLAe4/U+xjMg==}
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -5862,7 +5868,7 @@ packages:
   /micromark@3.1.0:
     resolution: {integrity: sha512-6Mj0yHLdUZjHnOPgr5xfWIMqMWS12zDN6iws9SLuSz76W8jTtAv24MN4/CL7gJrl5vtxGInkkqDv/JIoRsQOvA==}
     dependencies:
-      '@types/debug': 4.1.7
+      '@types/debug': 4.1.8
       debug: 4.3.4
       decode-named-character-reference: 1.0.2
       micromark-core-commonmark: 1.0.6
@@ -6548,8 +6554,8 @@ packages:
       postcss: 8.4.23
     dev: false
 
-  /postcss-modules-local-by-default@4.0.1(postcss@8.4.23):
-    resolution: {integrity: sha512-Zr/dB+IlXaEqdoslLHhhqecwj73vc3rDmOpsBNBEVk7P2aqAlz+Ijy0fFbU5Ie9PtreDOIgGa9MsLWakVGl+fA==}
+  /postcss-modules-local-by-default@4.0.2(postcss@8.4.23):
+    resolution: {integrity: sha512-mR/pcIsQhU2UgKYOPjRCSgacmjn08pyrHk+Vrm8WEKjDWgqO43vdRkzmxyZOZWiKr6Ed9gpReQHhLUGVAcn9jw==}
     engines: {node: ^10 || ^12 || >= 14}
     peerDependencies:
       postcss: ^8.1.0
@@ -6590,7 +6596,7 @@ packages:
       lodash.camelcase: 4.3.0
       postcss: 8.4.23
       postcss-modules-extract-imports: 3.0.0(postcss@8.4.23)
-      postcss-modules-local-by-default: 4.0.1(postcss@8.4.23)
+      postcss-modules-local-by-default: 4.0.2(postcss@8.4.23)
       postcss-modules-scope: 3.0.0(postcss@8.4.23)
       postcss-modules-values: 4.0.0(postcss@8.4.23)
       string-hash: 1.1.3
@@ -7918,8 +7924,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /vercel@29.3.6(@types/node@20.2.3):
-    resolution: {integrity: sha512-fwld21d9WoCTUJcbyTWvq0c9VchUCJ2qs0kaczcYo9Vs8+ORnxC8FFgbysR2f7B4iwL2hUxTMEWkQGV2782LjQ==}
+  /vercel@29.4.0(@types/node@20.2.3):
+    resolution: {integrity: sha512-sVfg87dhF3q6Nhrr5zv2oaOU1zQQd+MlsjhdNkB9MfrQyXqluAdHKiNz0+g/+wJeh/y7sUhWk2/XJb5CDlF70w==}
     engines: {node: '>= 14'}
     hasBin: true
     requiresBuild: true
@@ -8204,4 +8210,14 @@ packages:
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
+    dev: false
+
+  github.com/googlemaps/js-api-loader/e8d1ecda22455b08cc8acb6b6c293c092d1c94ed:
+    resolution: {tarball: https://codeload.github.com/googlemaps/js-api-loader/tar.gz/e8d1ecda22455b08cc8acb6b6c293c092d1c94ed}
+    name: '@googlemaps/js-api-loader'
+    version: 1.15.2
+    prepare: true
+    requiresBuild: true
+    dependencies:
+      fast-deep-equal: 3.1.3
     dev: false
