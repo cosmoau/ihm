@@ -2,13 +2,25 @@ import { Provider } from "@cosmoau/ui";
 import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
+import { useState, useEffect } from "react";
+import { useTernaryDarkMode } from "usehooks-ts";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+  const { isDarkMode } = useTernaryDarkMode();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    if (!mounted) {
+      setMounted(true);
+    }
+  }, [mounted]);
+
   return (
-    <Provider>
+    <Provider dark={mounted && isDarkMode}>
       <DefaultSeo
         openGraph={{
           description:

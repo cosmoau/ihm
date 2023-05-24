@@ -1,13 +1,52 @@
-import { View, Image, Button, Stack, Text, Badge } from "@cosmoau/ui";
+import { View, Image, Button, Stack, Text, Badge, Select, Places } from "@cosmoau/ui";
 import {
   ChatCircle,
   FacebookLogo,
+  Gear,
   InstagramLogo,
   LinkedinLogo,
+  Moon,
   Phone,
+  Sun,
 } from "@phosphor-icons/react";
+import { track } from "@vercel/analytics";
+import { useState } from "react";
+import { useIsMounted, useTernaryDarkMode } from "usehooks-ts";
+
+export function ProviderToggle(): JSX.Element {
+  const { ternaryDarkMode, setTernaryDarkMode } = useTernaryDarkMode();
+
+  return (
+    <Select
+      horizontal="left"
+      options={[
+        { icon: <Moon />, iconPosition: "right", label: "Dark", value: "dark" },
+        { icon: <Sun />, iconPosition: "right", label: "Light", value: "light" },
+        { icon: <Gear />, iconPosition: "right", label: "System", value: "system" },
+      ]}
+      selection={[ternaryDarkMode]}
+      trigger={
+        <Button
+          css={{
+            textTransform: "capitalize",
+          }}
+          icon={
+            ternaryDarkMode === "dark" ? <Moon /> : ternaryDarkMode === "light" ? <Sun /> : <Gear />
+          }
+          small>
+          {ternaryDarkMode} Theme
+        </Button>
+      }
+      vertical="top"
+      onSelection={(value): void => setTernaryDarkMode(value as "dark" | "light" | "system")}
+    />
+  );
+}
 
 export default function Footer(): JSX.Element {
+  const [showInput, setShowInput] = useState(false);
+  const isMounted = useIsMounted();
+
   return (
     <footer id="footer">
       <View bottom="largest" container>
@@ -59,9 +98,29 @@ export default function Footer(): JSX.Element {
               instant results on-screen.
             </Text>
             <Stack top="large">
-              <a href="https://cosmogroup.io/airbnb-calculator" target="_blank">
-                <Button external>Airbnb Calculator</Button>
-              </a>
+              {showInput ? (
+                <Places
+                  apiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY || ""}
+                  placeholder="Main St, Mornington VIC 3931"
+                  restrict
+                  submit="Go"
+                  submitFunction={(value): void => {
+                    track("Pressed Airbnb Calculator (from Footer Address Capture)", {
+                      location: "homepage",
+                    });
+                    if (typeof window === "undefined") return;
+                    if (value) {
+                      window.open(
+                        `https://cosmogroup.io/airbnb-calculator?query=${encodeURIComponent(value)}`
+                      );
+                    } else {
+                      window.open(`https://cosmogroup.io/airbnb-calculator`);
+                    }
+                  }}
+                />
+              ) : (
+                <Button onClick={(): void => setShowInput(true)}>Airbnb Calculator</Button>
+              )}
             </Stack>
             <Stack top="large">
               <Badge icon={<ChatCircle />}>
@@ -90,7 +149,7 @@ export default function Footer(): JSX.Element {
         <Stack direction="row" flex="center">
           <Stack direction="column" width={40} widthPhone={15}>
             <Stack>
-              <Badge theme="border">
+              <Badge>
                 <Image
                   alt="
                   ihostme logo, which is a pink icon of a house.
@@ -99,7 +158,7 @@ export default function Footer(): JSX.Element {
                   src="/favicon.ico"
                   width={25}
                 />
-                <Text as="h4" css={{ hiddenInline: "phone", marginLeft: "$small" }} inline="auto">
+                <Text as="span" css={{ hiddenInline: "phone", marginLeft: "$small" }} inline="auto">
                   ihostme
                 </Text>
               </Badge>
@@ -131,6 +190,9 @@ export default function Footer(): JSX.Element {
             <Text accent as="small">
               Made in Ocean Grove and Melbourne. © 2023 <a href="https://cosmogroup.io">Cosmo</a>
             </Text>
+            <Stack bottom="medium" top="small">
+              {isMounted() && <ProviderToggle />}
+            </Stack>
           </Stack>
         </Stack>
       </View>

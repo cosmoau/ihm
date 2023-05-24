@@ -4,6 +4,7 @@ import { CaretDown, GridFour } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { useTernaryDarkMode } from "usehooks-ts";
 
 import locations from "../../locations.json";
 import logoLight from "../../public/images/logo-new-light.png";
@@ -12,6 +13,7 @@ import logoDark from "../../public/images/logo-new.png";
 export default function Header(): JSX.Element {
   const router = useRouter();
   const [inverted, setInverted] = useState(true);
+  const { isDarkMode } = useTernaryDarkMode();
 
   const optionsPhone = [
     {
@@ -116,10 +118,8 @@ export default function Header(): JSX.Element {
                   alt="
               ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
               "
-                  blurDataURL={inverted ? logoLight.blurDataURL : logoDark.blurDataURL}
                   height={36.5}
-                  placeholder="blur"
-                  src={inverted ? logoLight.src : logoDark.src}
+                  src={!inverted && !isDarkMode ? logoDark.src : logoLight.src}
                   width={120}
                 />
               </Stack>
