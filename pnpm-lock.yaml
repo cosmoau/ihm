@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@cosmoau/ui':
-    specifier: ^1.5.16
-    version: 1.5.16(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)
+    specifier: ^1.5.18
+    version: 1.5.18(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)
   '@phosphor-icons/react':
     specifier: ^2.0.9
     version: 2.0.9(react-dom@18.2.0)(react@18.2.0)
@@ -1262,8 +1262,8 @@ packages:
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
     dev: true
 
-  /@cosmoau/ui@1.5.16(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0):
-    resolution: {integrity: sha512-db15uvCCplmmfw3PGGl6lyYXlMnSnIULOt9aBjQKGxvfqLBwqVRsEKkAVJOYVbZoLezO1Juu141yeQwJN/AsfQ==}
+  /@cosmoau/ui@1.5.18(next@13.4.3)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0):
+    resolution: {integrity: sha512-pmk8gHSziIIAwbigxVXj2n0XFIvmsTcde9weD8QmiTO2n2v7EoXgE71ODL2n6X1kcRTmcuOFE2OSIgr2MPqqag==}
     peerDependencies:
       next: ^13.4.3
       react: ^18.2.0
