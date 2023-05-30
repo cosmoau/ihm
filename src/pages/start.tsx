@@ -31,6 +31,8 @@ export default function Start(): JSX.Element {
             <Box
               css={{
                 borderRadius: "large",
+                height: 700,
+                width: "100%",
               }}
               theme="fill">
               <Widget
