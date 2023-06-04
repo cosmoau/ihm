@@ -1,51 +1,21 @@
-import { View, Image, Button, Stack, Text, Badge, Select, Places } from "@cosmoau/ui";
+import { View, Image, Button, Stack, Text, Badge } from "@cosmoau/ui";
 import {
   ChatCircle,
   FacebookLogo,
-  Gear,
   InstagramLogo,
   LinkedinLogo,
-  Moon,
   Phone,
-  Sun,
 } from "@phosphor-icons/react";
 import { track } from "@vercel/analytics";
+import dynamic from "next/dynamic";
 import { useState } from "react";
-import { useIsMounted, useTernaryDarkMode } from "usehooks-ts";
 
-export function ProviderToggle(): JSX.Element {
-  const { ternaryDarkMode, setTernaryDarkMode } = useTernaryDarkMode();
-
-  return (
-    <Select
-      horizontal="left"
-      options={[
-        { icon: <Moon />, iconPosition: "right", label: "Dark", value: "dark" },
-        { icon: <Sun />, iconPosition: "right", label: "Light", value: "light" },
-        { icon: <Gear />, iconPosition: "right", label: "System", value: "system" },
-      ]}
-      selection={[ternaryDarkMode]}
-      trigger={
-        <Button
-          css={{
-            textTransform: "capitalize",
-          }}
-          icon={
-            ternaryDarkMode === "dark" ? <Moon /> : ternaryDarkMode === "light" ? <Sun /> : <Gear />
-          }
-          small>
-          {ternaryDarkMode} Theme
-        </Button>
-      }
-      vertical="top"
-      onSelection={(value): void => setTernaryDarkMode(value as "dark" | "light" | "system")}
-    />
-  );
-}
+const Places = dynamic(() => import("@cosmoau/ui").then((mod) => mod.Places), {
+  ssr: false,
+});
 
 export default function Footer(): JSX.Element {
   const [showInput, setShowInput] = useState(false);
-  const isMounted = useIsMounted();
 
   return (
     <footer id="footer">
@@ -141,7 +111,6 @@ export default function Footer(): JSX.Element {
         bottom="medium"
         container
         css={{
-          borderTop: "0.1rem solid $border",
           zIndex: 201,
         }}
         inverted
@@ -188,11 +157,8 @@ export default function Footer(): JSX.Element {
         <Stack align="center" direction="row" top="large">
           <Stack direction="column">
             <Text accent as="small">
-              Made in Ocean Grove and Melbourne. © 2023 <a href="https://cosmogroup.io">Cosmo</a>
+              Made in Ocean Grove and Melbourne. © 2023 <a href="https://cosmogroup.io">Cosmo</a>.
             </Text>
-            <Stack bottom="medium" top="small">
-              {isMounted() && <ProviderToggle />}
-            </Stack>
           </Stack>
         </Stack>
       </View>

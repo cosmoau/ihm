@@ -14,19 +14,19 @@ export default function Contact(): JSX.Element {
         </Text>
         <Stack flexduo top="medium">
           <Text accent>Email</Text>
-          <Badge copy copyText="ihostme@cosmogroup.io">
+          <Badge copy="ihostme@cosmogroup.io" theme="alternate">
             ihostme@cosmogroup.io
           </Badge>
         </Stack>
         <Stack flexduo top="small">
           <Text accent>Phone</Text>
-          <Badge copy copyText="+61370355800">
+          <Badge copy="+61370355800" theme="alternate">
             (03) 7035 5800
           </Badge>
         </Stack>
         <Stack flexduo top="small">
           <Text accent>Head Office</Text>
-          <Badge copy copyText="COSMO AU PTY LTD, 8/100 Dover St, Cremorne VIC 3121">
+          <Badge copy="COSMO AU PTY LTD, 8/100 Dover St, Cremorne VIC 3121" theme="alternate">
             8/100 Dover St, Cremorne VIC
           </Badge>
         </Stack>
@@ -38,6 +38,9 @@ export default function Contact(): JSX.Element {
             <Box
               css={{
                 borderRadius: "large",
+                darkModeSpec: {
+                  backgroundColor: "$text"
+                }
               }}
               theme="fill">
               <Widget

@@ -23,9 +23,6 @@ export function Subheader({
     <View
       bottom="large"
       container
-      css={{
-        backgroundImage: "url('/overlay.svg')",
-      }}
       inverted
       top="large">
       <NextSeo title={title} titleTemplate={parent ? "%s" : undefined} />
@@ -43,7 +40,7 @@ export function Subheader({
               borderBottomRightRadius: "0 !important",
               borderTopRightRadius: "0 !important",
 
-              background: "rgba(255, 255, 255, 0.06)",
+              background: "$default",
               borderRadius: "$large",
               backdropFilter: "blur(2.75px)",
               padding: parent ? "$largest $large" : "$larger $large",

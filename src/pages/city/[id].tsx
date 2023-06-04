@@ -2,6 +2,8 @@
 
 import { View, Stack, Text, Box, Button, Badge } from "@cosmoau/ui";
 import {
+  ArrowDown,
+  ArrowUp,
   Cloud,
   CloudFog,
   CloudLightning,
@@ -155,49 +157,54 @@ export default function City({ location }: { location: ILocation }): JSX.Element
           top="medium">
           <Stack flexduo>
             <Text accent>Weather</Text>
-            <Badge icon={weather.icon}>{weather.description}</Badge>
+            <Badge icon={weather.icon} theme="alternate">
+              {weather.description}
+            </Badge>
           </Stack>
           <Stack flexduo top="small">
             <Text accent>Temperature</Text>
-            <Badge>{weather.temp}</Badge>
+            <Badge theme="alternate">{weather.temp}</Badge>
           </Stack>
           <Stack flexduo top="small">
             <Text accent>Range</Text>
-            <Badge>
+            <Badge theme="alternate">
               {weather.min} - {weather.max}
             </Badge>
           </Stack>
           <Stack flexduo top="small">
             <Text accent>Feels Like</Text>
-            <Badge>{weather.feels_like}</Badge>
+            <Badge theme="alternate">{weather.feels_like}</Badge>
           </Stack>
           {expand && (
             <>
               <Stack flexduo top="small">
                 <Text accent>Humidity</Text>
-                <Badge>{weather.humidity}</Badge>
+                <Badge theme="alternate">{weather.humidity}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Wind</Text>
-                <Badge>{weather.wind}</Badge>
+                <Badge theme="alternate">{weather.wind}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Sunrise</Text>
-                <Badge>{weather.sunrise}</Badge>
+                <Badge theme="alternate">{weather.sunrise}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Sunset</Text>
-                <Badge>{weather.sunset}</Badge>
+                <Badge theme="alternate">{weather.sunset}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Clouds</Text>
-                <Badge>{weather.clouds}</Badge>
+                <Badge theme="alternate">{weather.clouds}</Badge>
               </Stack>
             </>
           )}
           <Stack top="medium">
-            <Button small onClick={(): void => setExpand(!expand)}>
-              {expand ? "Less" : "More"} Details
+            <Button
+              icon={expand ? <ArrowUp /> : <ArrowDown />}
+              small
+              onClick={(): void => setExpand(!expand)}>
+              {expand ? "Less" : "More"}
             </Button>
           </Stack>
         </Stack>

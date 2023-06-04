@@ -101,9 +101,6 @@ export default function Header(): JSX.Element {
       }}>
       <View
         bottom="small"
-        css={{
-          borderBottom: "0.1rem solid $border",
-        }}
         inverted={inverted}
         top="small">
         <Stack direction="row" flex="center">

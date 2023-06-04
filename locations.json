@@ -28,16 +28,8 @@
     "id": "torquay"
   },
   {
-    "name": "Jan Juc",
-    "id": "jan-juc"
-  },
-  {
     "name": "Anglesea",
     "id": "anglesea"
-  },
-  {
-    "name": "Bellarine Peninsula",
-    "id": "bellarine-peninsula"
   },
   {
     "name": "Aireys Inlet",
@@ -102,10 +94,6 @@
   {
     "name": "Safety Beach",
     "id": "safety-beach"
-  },
-  {
-    "name": "Mornington Peninsula",
-    "id": "mornington-peninsula"
   },
   {
     "name": "Cowes",

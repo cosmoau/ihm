@@ -1,8 +1,7 @@
-import { Stack, Text, View, Box, Badge, Avatar, Input, Button, fadeIn, fadeOut } from "@cosmoau/ui";
-import { HouseSimple } from "@phosphor-icons/react";
+import { Stack, Text, View, Box, Badge, Avatar, Input, Button } from "@cosmoau/ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toast } from "react-hot-toast";
 
 import locations from "../../locations.json";
@@ -15,44 +14,10 @@ nextMonth.setMonth(nextMonth.getMonth() + 1);
 export default function Home(): JSX.Element {
   const router = useRouter();
   const [email, setEmail] = useState("");
-  const [location, setLocation] = useState(0);
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimate(true);
-      setTimeout(() => {
-        setAnimate(false);
-        setLocation((location + 1) % locations.length);
-      }, 400);
-    }, 5000);
-
-    return (): void => clearInterval(interval);
-  }, [location]);
 
   return (
     <>
       <Subheader image="/images/misc-07.jpg" parent title="ihostme | Airbnb Management">
-        <Link href={`/city/${locations[location].id}`}>
-          <Badge
-            css={{
-              transition: "$default",
-              backgroundColor: "#f3bcd5",
-            }}
-            icon={<HouseSimple />}
-            theme="purple">
-            List your home in&nbsp;
-            <Text
-              as="span"
-              css={{
-                color: "$background",
-                animation: animate ? `${fadeOut} .4s ease-in-out` : `${fadeIn} .4s ease-in-out`,
-                animationFillMode: "forwards",
-              }}>
-              {locations[location].name}
-            </Text>
-          </Badge>
-        </Link>
         <Text as="h1" top="large">
           Holiday Home Management on all the major booking platforms
         </Text>
