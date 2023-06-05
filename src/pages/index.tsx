@@ -78,7 +78,7 @@ export default function Home(): JSX.Element {
                   paddingBottom: "$smaller",
                 }}>
                 <Link href={`/city/${location.id}`}>
-                  <Badge theme="border" link>
+                  <Badge link theme="border">
                     <Stack
                       css={{
                         alignItems: "center",
