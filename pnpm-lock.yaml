@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@cosmoau/ui':
-    specifier: ^1.5.22
-    version: 1.5.22(next@13.4.4)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)
+    specifier: ^1.5.26
+    version: 1.5.26(next@13.4.4)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0)
   '@phosphor-icons/react':
     specifier: ^2.0.9
     version: 2.0.9(react-dom@18.2.0)(react@18.2.0)
@@ -1324,8 +1324,8 @@ packages:
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
     dev: true
 
-  /@cosmoau/ui@1.5.22(next@13.4.4)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0):
-    resolution: {integrity: sha512-xmoQukTSe1Pa3XDl8iGqudHIdkjhlyYoaekf+2wM9sK4oyGvI30rtjvLAacUIASifkPbksqZleXdVsb9Mf6KKg==}
+  /@cosmoau/ui@1.5.26(next@13.4.4)(react-dom@18.2.0)(react-hot-toast@2.4.1)(react@18.2.0):
+    resolution: {integrity: sha512-CGc9W4r+0I42HGpSGxvIUeImyjEvdfQT3rJjj2zCDP2qEHjmInlmwJn48+TK4bTfekgCHwsHbxnrEqTL5ZwOSA==}
     peerDependencies:
       next: ^13.4.3
       react: ^18.2.0
@@ -2235,14 +2235,14 @@ packages:
       - supports-color
     dev: false
 
-  /@vanilla-extract/css@1.11.0:
-    resolution: {integrity: sha512-uohj+8cGWbnrVzTfrjlJeXqdGjH3d3TcscdQxKe3h5bb5QQXTpPSq+c+SeWADIGiZybzcW0CBvZV8jsy1ywY9w==}
+  /@vanilla-extract/css@1.11.1:
+    resolution: {integrity: sha512-iLalh4K4sXgkfzsiFUsiek4IY1/N4jtJKdr1ubpyszPE7W7G2v+DAl8KcmKkRA6vS7k5mFNW34e4fNki6T2cbQ==}
     dependencies:
       '@emotion/hash': 0.9.1
       '@vanilla-extract/private': 1.0.3
       ahocorasick: 1.0.2
       chalk: 4.1.2
-      css-what: 5.1.0
+      css-what: 6.1.0
       cssesc: 3.0.0
       csstype: 3.1.2
       deep-object-diff: 1.1.9
@@ -2257,7 +2257,7 @@ packages:
       '@babel/core': 7.22.1
       '@babel/plugin-syntax-typescript': 7.21.4(@babel/core@7.22.1)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.3
-      '@vanilla-extract/css': 1.11.0
+      '@vanilla-extract/css': 1.11.1
       esbuild: 0.17.6
       eval: 0.1.6
       find-up: 5.0.0
@@ -3211,8 +3211,8 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  /css-what@5.1.0:
-    resolution: {integrity: sha512-arSMRWIIFY0hV8pIxZMEfmMI47Wj3R/aWpZDDxWYCPEiOMv6tfOrnpDtgxBYPEQD4V0Y/958+1TdC3iWTFcUPw==}
+  /css-what@6.1.0:
+    resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
     engines: {node: '>= 6'}
     dev: false
 
@@ -7117,8 +7117,8 @@ packages:
     dependencies:
       glob: 7.2.3
 
-  /rollup@3.23.0:
-    resolution: {integrity: sha512-h31UlwEi7FHihLe1zbk+3Q7z1k/84rb9BSwmBSr/XjOCEaBJ2YyedQDuM0t/kfOS0IxM+vk1/zI9XxYj9V+NJQ==}
+  /rollup@3.23.1:
+    resolution: {integrity: sha512-ybRdFVHOoljGEFILHLd2g/qateqUdjE6YS41WXq4p3C/WwD3xtWxV4FYWETA1u9TeXQc5K8L8zHE5d/scOvrOQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -8094,7 +8094,7 @@ packages:
       '@types/node': 20.2.5
       esbuild: 0.17.6
       postcss: 8.4.24
-      rollup: 3.23.0
+      rollup: 3.23.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: false

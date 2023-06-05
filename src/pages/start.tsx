@@ -15,7 +15,7 @@ export default function Start(): JSX.Element {
         <Text as="h2">
           {router.query.city ? `List your Airbnb in ${router.query.city}` : "Sign Up"}
         </Text>
-        <Text accent as="p">
+        <Text accent >
           We will send information on getting started to your email address.
         </Text>
         {router.query.email && (

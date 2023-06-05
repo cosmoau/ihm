@@ -24,7 +24,7 @@ export function Subheader({
       bottom="large"
       container
       inverted
-      top="large">
+      top="medium">
       <NextSeo title={title} titleTemplate={parent ? "%s" : undefined} />
 
       <Stack direction="row" flex="normal">

@@ -145,7 +145,7 @@ export default function City({ location }: { location: ILocation }): JSX.Element
         image={`/images/location-${location.id}.jpg`}
         title={`${location.name} Airbnb Management`}>
         <Text as="h2">Airbnb Management in {location.name}</Text>
-        <Text as="p">
+        <Text >
           {location.name} is a popular destination for Airbnb guests in Victoria, offering a range
           of activities and attractions for visitors. We offer Airbnb management services in{" "}
           {location.name} and surrounding areas.
