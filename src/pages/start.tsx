@@ -33,6 +33,9 @@ export default function Start(): JSX.Element {
                 borderRadius: "large",
                 height: 700,
                 width: "100%",
+                darkModeSpec: {
+                  backgroundColor: "$text"
+                }
               }}
               theme="fill">
               <Widget

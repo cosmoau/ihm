@@ -215,6 +215,9 @@ export default function City({ location }: { location: ILocation }): JSX.Element
             <Box
               css={{
                 borderRadius: "large",
+                darkModeSpec: {
+                  backgroundColor: "$text"
+                }
               }}
               theme="fill">
               <Widget
