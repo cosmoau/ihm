@@ -8,7 +8,7 @@ export default function Contact(): JSX.Element {
     <>
       <Subheader image="/images/misc-06.jpg" title="Contact Us">
         <Text as="h2">Contact Us</Text>
-        <Text >
+        <Text>
           Our team is here to help you with any questions you may have. Please fill out the form
           below and we will get back to you as soon as possible.
         </Text>
@@ -39,8 +39,8 @@ export default function Contact(): JSX.Element {
               css={{
                 borderRadius: "large",
                 darkModeSpec: {
-                  backgroundColor: "$text"
-                }
+                  backgroundColor: "$text",
+                },
               }}
               theme="fill">
               <Widget

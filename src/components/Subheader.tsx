@@ -20,11 +20,7 @@ export function Subheader({
   title: string;
 }): JSX.Element {
   return (
-    <View
-      bottom="large"
-      container
-      inverted
-      top="medium">
+    <View bottom="large" container inverted top="medium">
       <NextSeo title={title} titleTemplate={parent ? "%s" : undefined} />
 
       <Stack direction="row" flex="normal">

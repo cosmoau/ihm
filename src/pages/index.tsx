@@ -18,10 +18,8 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Subheader image="/images/misc-07.jpg" parent title="ihostme | Airbnb Management">
-        <Text as="h1">
-          Holiday Home Management on all the major booking platforms
-        </Text>
-        <Text >
+        <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
+        <Text>
           We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can
           achieve better occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com
           and Homes & Villas Management by Marriott.
@@ -106,11 +104,11 @@ export default function Home(): JSX.Element {
           <Stack direction="column" width={33.33}>
             <Box theme="fill">
               <Text as="h5">Your One Stop Hosting Shop</Text>
-              <Text accent >
+              <Text accent>
                 We understand that your vacation rental is more than just an investment—it’s your
                 home away from home.
               </Text>
-              <Text accent >
+              <Text accent>
                 That’s why we offer a complete suite of services to help you manage your property,
                 from real-time pricing optimisation to guest and bookings management.
               </Text>
@@ -126,11 +124,11 @@ export default function Home(): JSX.Element {
             width={33.33}>
             <Box theme="fill">
               <Text as="h5">Simple, Easy Pricing</Text>
-              <Text accent >
+              <Text accent>
                 Our standard management fee is 20% + GST for fully hosted clients, or 14% + GST for
                 those who already have their own housekeeping and maintenance team in place.
               </Text>
-              <Text accent >
+              <Text accent>
                 We also have a one-time set up fee of $500, and third-party charges are at cost.
               </Text>
             </Box>
@@ -145,11 +143,11 @@ export default function Home(): JSX.Element {
             width={33.33}>
             <Box theme="fill">
               <Text as="h5">Your Holiday Home in Good Hands</Text>
-              <Text accent >
+              <Text accent>
                 We&apos;ve developed an intuitive app that gives you full transparency of bookings
                 and property performance.
               </Text>
-              <Text accent >
+              <Text accent>
                 We also have an experienced client support team available 7/11 and specialist
                 housekeepers to take care of all the little details.
               </Text>

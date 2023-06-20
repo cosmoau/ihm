@@ -15,9 +15,7 @@ export default function Start(): JSX.Element {
         <Text as="h2">
           {router.query.city ? `List your Airbnb in ${router.query.city}` : "Sign Up"}
         </Text>
-        <Text accent >
-          We will send information on getting started to your email address.
-        </Text>
+        <Text accent>We will send information on getting started to your email address.</Text>
         {router.query.email && (
           <Stack top="medium">
             <Badge>{router.query.email}</Badge>
@@ -34,8 +32,8 @@ export default function Start(): JSX.Element {
                 height: 700,
                 width: "100%",
                 darkModeSpec: {
-                  backgroundColor: "$text"
-                }
+                  backgroundColor: "$text",
+                },
               }}
               theme="fill">
               <Widget

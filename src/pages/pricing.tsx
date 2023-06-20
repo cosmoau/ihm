@@ -71,7 +71,7 @@ export default function Pricing(): JSX.Element {
           <Stack direction="column" width={50}>
             <Box image="/images/misc-16.jpg" imageAlt="">
               <Text as="h3">Collaborate Plan</Text>
-              <Text >14% of the total booking value</Text>
+              <Text>14% of the total booking value</Text>
               <Text>
                 We handle all marketing, bookings and guest support to enable owners to focus on
                 keeping their homes clean and comfortable.
@@ -106,7 +106,7 @@ export default function Pricing(): JSX.Element {
             width={50}>
             <Box image="/images/misc-15.jpg" imageAlt="">
               <Text as="h3">Complete Plan</Text>
-              <Text >20% of the total booking value</Text>
+              <Text>20% of the total booking value</Text>
               <Text>
                 We take care of all aspects of management, including professional housekeeping,
                 linen, consumables and maintenance facilitation.

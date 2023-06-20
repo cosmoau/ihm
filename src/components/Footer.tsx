@@ -53,16 +53,16 @@ export default function Footer(): JSX.Element {
             top="large"
             width={50}>
             <Text as="h3">Unlock your full earning potential today</Text>
-            <Text >
+            <Text>
               We manage properties that are available for at least <b>140 nights per year</b>, and
               currently earn, or have the potential to earn, at least <b>$45,000 per year</b>.
             </Text>
-            <Text >
+            <Text>
               We are interested in speaking to owners, investors and property managers who are
               interested in earning more from their property while enjoying the benefits of a
               professional Airbnb management service.
             </Text>
-            <Text >
+            <Text>
               To get an estimate of your property&apos;s potential earnings, try our free Airbnb
               Calculator. There is no need to sign up or share personal information; you&apos;ll get
               instant results on-screen.
@@ -113,7 +113,6 @@ export default function Footer(): JSX.Element {
         css={{
           zIndex: 201,
         }}
-
         top="medium">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={40} widthPhone={15}>

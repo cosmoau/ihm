@@ -99,10 +99,7 @@ export default function Header(): JSX.Element {
         top: 0,
         zIndex: 100,
       }}>
-      <View
-        bottom="small"
-        inverted={inverted}
-        top="small">
+      <View bottom="small" inverted={inverted} top="small">
         <Stack direction="row" flex="center">
           <Stack direction="column" width={25} widthPhone={50} widthTablet={40}>
             <Link href="/">
