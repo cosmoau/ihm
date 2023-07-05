@@ -20,9 +20,8 @@ export default function Home(): JSX.Element {
       <Subheader image="/images/misc-07.jpg" parent title="ihostme | Airbnb Management">
         <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
         <Text>
-          We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can
-          achieve better occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com
-          and Homes & Villas Management by Marriott.
+          We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can achieve better occupancy
+          rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com and Homes & Villas Management by Marriott.
         </Text>
         <Stack
           css={{
@@ -55,9 +54,8 @@ export default function Home(): JSX.Element {
           <Stack align="center" direction="column" offset={20} width={60}>
             <Text as="h3">ihostme operates out of the top holiday destinations</Text>
             <Text bottom="medium">
-              We are a team of highly skilled and experienced property managers who are dedicated to
-              providing the best service to owners and investors across the Bellarine and Surf Coast
-              regions of Victoria.
+              We are a team of highly skilled and experienced property managers who are dedicated to providing the best service to
+              owners and investors across the Bellarine and Surf Coast regions of Victoria.
             </Text>
             <Link href="/start">
               <Button>List your Airbnb</Button>
@@ -105,12 +103,11 @@ export default function Home(): JSX.Element {
             <Box theme="fill">
               <Text as="h5">Your One Stop Hosting Shop</Text>
               <Text accent>
-                We understand that your vacation rental is more than just an investment—it’s your
-                home away from home.
+                We understand that your vacation rental is more than just an investment—it’s your home away from home.
               </Text>
               <Text accent>
-                That’s why we offer a complete suite of services to help you manage your property,
-                from real-time pricing optimisation to guest and bookings management.
+                That’s why we offer a complete suite of services to help you manage your property, from real-time pricing
+                optimisation to guest and bookings management.
               </Text>
             </Box>
           </Stack>
@@ -125,12 +122,10 @@ export default function Home(): JSX.Element {
             <Box theme="fill">
               <Text as="h5">Simple, Easy Pricing</Text>
               <Text accent>
-                Our standard management fee is 20% + GST for fully hosted clients, or 14% + GST for
-                those who already have their own housekeeping and maintenance team in place.
+                Our standard management fee is 20% + GST for fully hosted clients, or 14% + GST for those who already have their
+                own housekeeping and maintenance team in place.
               </Text>
-              <Text accent>
-                We also have a one-time set up fee of $500, and third-party charges are at cost.
-              </Text>
+              <Text accent>We also have a one-time set up fee of $500, and third-party charges are at cost.</Text>
             </Box>
           </Stack>
           <Stack
@@ -144,12 +139,11 @@ export default function Home(): JSX.Element {
             <Box theme="fill">
               <Text as="h5">Your Holiday Home in Good Hands</Text>
               <Text accent>
-                We&apos;ve developed an intuitive app that gives you full transparency of bookings
-                and property performance.
+                We&apos;ve developed an intuitive app that gives you full transparency of bookings and property performance.
               </Text>
               <Text accent>
-                We also have an experienced client support team available 7/11 and specialist
-                housekeepers to take care of all the little details.
+                We also have an experienced client support team available 7/11 and specialist housekeepers to take care of all the
+                little details.
               </Text>
             </Box>
           </Stack>

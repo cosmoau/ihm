@@ -18,9 +18,7 @@ export default function Custom404(): JSX.Element {
         <Stack direction="row">
           <Stack direction="column">
             <Text as="h3">Sorry, the page you are looking for is not available. </Text>
-            <Text bottom="large">
-              Feel free to browse our site from the menu at the top of the page.
-            </Text>
+            <Text bottom="large">Feel free to browse our site from the menu at the top of the page.</Text>
             <Link href="/">
               <Button>Go to our homepage</Button>
             </Link>

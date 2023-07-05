@@ -13,12 +13,7 @@ export default function LocationsPage(): JSX.Element {
       <View bottom="largest" container top="large">
         <Stack direction="row">
           {locations.map((location, index) => (
-            <Stack
-              key={location.id || index}
-              direction="column"
-              top="large"
-              width={25}
-              widthTablet={50}>
+            <Stack key={location.id || index} direction="column" top="large" width={25} widthTablet={50}>
               <Box
                 image={`/images/location-${location.id}.jpg`}
                 imageAlt={`Airbnb Management in Victoria, Australia - ${location.name}`}

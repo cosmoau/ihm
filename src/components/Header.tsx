@@ -1,5 +1,4 @@
-import { View, Image, Stack, Button, Select, Avatar } from "@cosmoau/ui";
-import type { ISelect } from "@cosmoau/ui/dist/cjs/types";
+import { View, Image, Stack, Button, Select, Avatar, type ISelect } from "@cosmoau/ui";
 import { CaretDown, GridFour } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -72,7 +71,7 @@ export default function Header(): JSX.Element {
         />
       ),
       iconPosition: "right",
-    }))
+    })),
   ) as ISelect["options"];
 
   const handleSelection = (value: string): void => {
@@ -134,9 +133,7 @@ export default function Header(): JSX.Element {
               horizontal="right"
               last
               options={optionsPhone}
-              selection={[
-                optionsPhone.find((option) => option.value === router.pathname)?.value || "/",
-              ]}
+              selection={[optionsPhone.find((option) => option.value === router.pathname)?.value || "/"]}
               trigger={<Button theme="solid">Menu</Button>}
               width="16rem"
               onSelection={(value): void => handleSelection(value)}
@@ -156,9 +153,7 @@ export default function Header(): JSX.Element {
               <Button theme={router.pathname === "/pricing" ? "fill" : "minimal"}>Pricing</Button>
             </Link>
             <Link href="/testimonials">
-              <Button theme={router.pathname === "/testimonials" ? "fill" : "minimal"}>
-                Testimonials
-              </Button>
+              <Button theme={router.pathname === "/testimonials" ? "fill" : "minimal"}>Testimonials</Button>
             </Link>
             <Select
               options={optionsLocations}
@@ -167,11 +162,7 @@ export default function Header(): JSX.Element {
                 <Button
                   icon={<CaretDown weight="light" />}
                   iconPosition="right"
-                  theme={
-                    router.pathname === "/locations" || router.pathname.includes("/city/")
-                      ? "fill"
-                      : "minimal"
-                  }>
+                  theme={router.pathname === "/locations" || router.pathname.includes("/city/") ? "fill" : "minimal"}>
                   Locations
                 </Button>
               }
