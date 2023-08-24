@@ -39,7 +39,7 @@ export default function Footer(): JSX.Element {
             css={{
               paddingLeft: "$larger",
               phone: {
-                paddingBottom: 0,
+                paddingBottom: "0 !important",
                 paddingLeft: "$small",
               },
             }}

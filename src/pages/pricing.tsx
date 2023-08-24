@@ -71,7 +71,7 @@ export default function Pricing(): JSX.Element {
           <Stack direction="column" width={50}>
             <Box image="/images/misc-16.jpg" imageAlt="">
               <Text as="h3">Collaborate Plan</Text>
-              <Text>14% of the total booking value</Text>
+              <Text>14% of the booking total</Text>
               <Text>
                 We handle all marketing, bookings and guest support to enable owners to focus on keeping their homes clean and
                 comfortable.
@@ -104,7 +104,7 @@ export default function Pricing(): JSX.Element {
             width={50}>
             <Box image="/images/misc-15.jpg" imageAlt="">
               <Text as="h3">Complete Plan</Text>
-              <Text>20% of the total booking value</Text>
+              <Text>20% of the booking total</Text>
               <Text>
                 We take care of all aspects of management, including professional housekeeping, linen, consumables and maintenance
                 facilitation.
@@ -126,7 +126,7 @@ export default function Pricing(): JSX.Element {
         <Stack direction="row" top="large">
           <Stack align="center" direction="column" offset={10} width={80}>
             <Text accent as="small">
-              * All prices are in AUD and exclude GST. Total booking value is the total amount paid by the guest including
+              * All prices are in AUD and exclude GST. Booking total is the total amount paid by the guest including
               cleaning fees and other charges. A setup fee of $500 applies to all new listings and existing listings that do not
               meet our minimum standards.
             </Text>
