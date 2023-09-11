@@ -7,7 +7,7 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.6.28",
+    "@cosmoau/ui": "^1.6.31",
     "@phosphor-icons/react": "2.0.9",
     "@typeform/embed-react": "^2.31.0",
     "@vercel/analytics": "^1.0.2",
@@ -19,7 +19,7 @@
     "sharp": "^0.32.5",
     "swr": "^2.2.2",
     "typescript": "^5.2.2",
-    "vercel": "^32.2.0"
+    "vercel": "^32.2.1"
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
