@@ -135,8 +135,8 @@ export default function City({ location }: { location: ILocation }): JSX.Element
       <Subheader image={`/images/location-${location.id}.jpg`} title={`${location.name} Airbnb Management`}>
         <Text as="h2">Airbnb Management in {location.name}</Text>
         <Text>
-          {location.name} is a popular destination for Airbnb guests in Victoria, offering a range of activities and attractions
-          for visitors. We offer Airbnb management services in {location.name} and surrounding areas.
+          {location.name} is a popular destination for Airbnb guests in Victoria, offering a range of activities and
+          attractions for visitors. We offer Airbnb management services in {location.name} and surrounding areas.
         </Text>
         <Stack
           css={{
@@ -223,7 +223,10 @@ export default function City({ location }: { location: ILocation }): JSX.Element
               </Text>
 
               <Button css={{ verticalAlign: "middle" }} external small>
-                <a href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"} rel="noreferrer" target="_blank">
+                <a
+                  href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"}
+                  rel="noreferrer"
+                  target="_blank">
                   cosmo-au.typeform.com/to/cAmtR2rI
                 </a>
               </Button>

@@ -9,7 +9,9 @@ export default function Start(): JSX.Element {
 
   return (
     <>
-      <Subheader image="/images/misc-09.jpg" title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"}>
+      <Subheader
+        image="/images/misc-09.jpg"
+        title={router.query.city ? `${router.query.city} Property Management` : "Sign Up"}>
         <Text as="h2">{router.query.city ? `List your Airbnb in ${router.query.city}` : "Sign Up"}</Text>
         <Text accent>We will send information on getting started to your email address.</Text>
         {router.query.email && (
@@ -53,7 +55,10 @@ export default function Start(): JSX.Element {
               </Text>
 
               <Button css={{ verticalAlign: "middle" }} external small>
-                <a href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"} rel="noreferrer" target="_blank">
+                <a
+                  href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"}
+                  rel="noreferrer"
+                  target="_blank">
                   cosmo-au.typeform.com/to/cAmtR2rI
                 </a>
               </Button>

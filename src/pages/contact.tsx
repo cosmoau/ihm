@@ -9,8 +9,8 @@ export default function Contact(): JSX.Element {
       <Subheader image="/images/misc-06.jpg" title="Contact Us">
         <Text as="h2">Contact Us</Text>
         <Text>
-          Our team is here to help you with any questions you may have. Please fill out the form below and we will get back to you
-          as soon as possible.
+          Our team is here to help you with any questions you may have. Please fill out the form below and we will get
+          back to you as soon as possible.
         </Text>
         <Stack flexduo top="medium">
           <Text accent>Email</Text>
@@ -61,7 +61,10 @@ export default function Contact(): JSX.Element {
               </Text>
 
               <Button css={{ verticalAlign: "middle" }} external small>
-                <a href={"https://cosmo-au.typeform.com/to/dA0mHRs2#url=ihostme.com.au"} rel="noreferrer" target="_blank">
+                <a
+                  href={"https://cosmo-au.typeform.com/to/dA0mHRs2#url=ihostme.com.au"}
+                  rel="noreferrer"
+                  target="_blank">
                   cosmo-au.typeform.com/to/dA0mHRs2
                 </a>
               </Button>

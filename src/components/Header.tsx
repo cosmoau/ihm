@@ -1,9 +1,8 @@
-import { View, Image, Stack, Button, Select, Avatar, type ISelect } from "@cosmoau/ui";
+import { View, Image, Stack, Button, Select, Avatar, type ISelect, useTheme } from "@cosmoau/ui";
 import { CaretDown, GridFour } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { useTernaryDarkMode } from "usehooks-ts";
 
 import locations from "../../locations.json";
 import logoLight from "../../public/images/logo-new-light.png";
@@ -12,7 +11,7 @@ import logoDark from "../../public/images/logo-new.png";
 export default function Header(): JSX.Element {
   const router = useRouter();
   const [inverted, setInverted] = useState(true);
-  const { isDarkMode } = useTernaryDarkMode();
+  const { isDarkTheme } = useTheme();
 
   const optionsPhone = [
     {
@@ -112,7 +111,7 @@ export default function Header(): JSX.Element {
               ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
               "
                   height={36.5}
-                  src={!inverted && !isDarkMode ? logoDark.src : logoLight.src}
+                  src={!inverted && !isDarkTheme ? logoDark.src : logoLight.src}
                   width={120}
                 />
               </Stack>
