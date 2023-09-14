@@ -157,19 +157,21 @@ export default function Header(): JSX.Element {
           <Stack direction="row" flex="center">
             <Stack direction="column" width={80}>
               <Stack
+                bottom="smaller"
                 css={{
                   display: "inline-flex",
                   verticalAlign: "middle",
-                  paddingRight: "$medium",
-                }}>
+                  paddingRight: "$small",
+                }}
+                top="smaller">
                 <Link href="/">
                   <Image
                     alt="
               ihostme logo, which is a pink icon of a house with black sans-serif text next to it.
               "
-                    height={36.5}
+                    height={36.5 * 0.95}
                     src={!inverted && !isDarkTheme ? logoDark.src : logoLight.src}
-                    width={120}
+                    width={120 * 0.95}
                   />{" "}
                 </Link>
               </Stack>

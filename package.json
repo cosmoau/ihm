@@ -44,7 +44,7 @@
   },
   "scripts": {
     "build": "next build",
-    "bump": "bun install && bun tidy && bun run build && bun sitemap",
+    "bump": "bun update && bun tidy && bun run build && bun sitemap",
     "dev": "bun open && bun ip && next dev  --port 420",
     "env:link": "vercel link",
     "env:local": "vercel env pull .env.local",
