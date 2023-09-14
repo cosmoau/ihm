@@ -19,7 +19,7 @@
     "sharp": "^0.32.5",
     "swr": "^2.2.2",
     "typescript": "^5.2.2",
-    "vercel": "^32.2.1"
+    "vercel": "^32.2.2"
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
@@ -44,12 +44,15 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "echo '⚡️ Fetching device IP for development...' && ipconfig getifaddr en0 && echo '🫡' && next dev -p 420",
-    "lint": "eslint . --ext js,jsx,ts,tsx --fix",
-    "prettier": "prettier --write '**/*.{js,jsx,tsx}' '!node_modules/**' '!.git/**' '!.next/**'",
-    "sitemap": "next-sitemap",
-    "tidy": "pnpm lint && pnpm prettier",
+    "bump": "bun install && bun tidy && bun run build && bun sitemap",
+    "dev": "bun open && bun ip && next dev  --port 420",
     "env:link": "vercel link",
-    "env:local": "vercel env pull .env.local"
+    "env:local": "vercel env pull .env.local",
+    "ip": "ipconfig getifaddr en0 && echo && echo",
+    "lint": "eslint . --ext js,jsx,ts,tsx,ts --fix ",
+    "open": "open http://localhost:420",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,json}' '!node_modules/**' '!.git/**' '!.next/**'",
+    "sitemap": "next-sitemap",
+    "tidy": "bun lint && bun prettier"
   }
 }
