@@ -7,25 +7,25 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.6.31",
+    "@cosmoau/ui": "^1.6.32",
     "@phosphor-icons/react": "2.0.9",
     "@typeform/embed-react": "^2.31.0",
     "@vercel/analytics": "^1.0.2",
-    "next": "^13.4.19",
+    "next": "^13.5.2",
     "next-seo": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
-    "sharp": "^0.32.5",
+    "sharp": "^0.32.6",
     "swr": "^2.2.2",
     "typescript": "^5.2.2",
-    "vercel": "^32.2.2"
+    "vercel": "^32.2.5"
   },
   "devDependencies": {
-    "@types/node": "^20.6.0",
-    "@types/react": "^18.2.21",
+    "@types/node": "^20.6.3",
+    "@types/react": "^18.2.22",
     "eslint": "^8.49.0",
-    "eslint-config-dolmios": "^1.8.1",
+    "eslint-config-dolmios": "^1.8.2",
     "next-sitemap": "^4.2.3",
     "prettier": "^3.0.3"
   },
@@ -44,8 +44,8 @@
   },
   "scripts": {
     "build": "next build",
-    "bump": "bun update && bun tidy && bun run build && bun sitemap",
-    "dev": "bun open && bun ip && next dev  --port 420",
+    "bump": "pnpm up -r && pnpm tidy && pnpm build && pnpm sitemap",
+    "dev": "pnpm open && pnpm ip && next dev  --port 420",
     "env:link": "vercel link",
     "env:local": "vercel env pull .env.local",
     "ip": "ipconfig getifaddr en0 && echo && echo",
@@ -53,6 +53,6 @@
     "open": "open http://localhost:420",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,json}' '!node_modules/**' '!.git/**' '!.next/**'",
     "sitemap": "next-sitemap",
-    "tidy": "bun lint && bun prettier"
+    "tidy": "pnpm lint && pnpm prettier"
   }
 }
