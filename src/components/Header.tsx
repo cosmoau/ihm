@@ -48,16 +48,12 @@ export default function Header(): JSX.Element {
       value: "/contact",
     },
     {
-      label: "Blog",
-      value: "https://cosmogroup.io/blog",
-    },
-    {
       label: "Bookings",
       value: "https://cosmo.homes",
     },
     {
       label: "Sign Up",
-      value: "/start",
+      value: "https://cosmogroup.io/start",
     },
   ];
 
@@ -203,11 +199,11 @@ export default function Header(): JSX.Element {
               </a>
             </Stack>
             <Stack align="right" direction="column" width={20}>
-              <Link href="/start">
+              <a href="https://cosmogroup.io/start" target="_blank">
                 <Button inline="auto" theme="fill">
                   Sign Up
                 </Button>
-              </Link>
+              </a>
             </Stack>
           </Stack>
         </Stack>
