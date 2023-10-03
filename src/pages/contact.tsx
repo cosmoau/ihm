@@ -15,9 +15,12 @@ export default function Contact(): JSX.Element {
       </Subheader>
 
       <View bottom="largest" container top="largest">
-        <Stack align="center" direction="row" flex="baseline">
+        <Stack direction="row" flex="baseline">
           <Stack direction="column" offset={25} width={50}>
             <Box>
+              <Text as="h4" bottom="medium">
+                Contact Details
+              </Text>
               <Stack flexduo>
                 <Text accent>Email</Text>
                 <Badge copy="ihostme@cosmogroup.io">ihostme@cosmogroup.io</Badge>
@@ -32,7 +35,7 @@ export default function Contact(): JSX.Element {
               </Stack>
             </Box>
           </Stack>
-          <Stack direction="column" top="large">
+          <Stack align="center" direction="column" top="larger">
             <Box
               css={{
                 borderRadius: "large",
