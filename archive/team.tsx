@@ -1,6 +1,6 @@
 import { Stack, Text, View, Box, Avatar, Badge } from "@cosmoau/ui";
 
-import { Subheader } from "../components/Subheader";
+import { Subheader } from "../src/components/Subheader";
 
 export default function Team(): JSX.Element {
   return (

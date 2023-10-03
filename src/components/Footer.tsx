@@ -2,6 +2,7 @@ import { View, Image, Button, Stack, Text, Badge } from "@cosmoau/ui";
 import { ChatCircle, FacebookLogo, InstagramLogo, LinkedinLogo, Phone } from "@phosphor-icons/react";
 import { track } from "@vercel/analytics";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 const Places = dynamic(() => import("@cosmoau/ui").then((mod) => mod.Places), {
@@ -9,7 +10,12 @@ const Places = dynamic(() => import("@cosmoau/ui").then((mod) => mod.Places), {
 });
 
 export default function Footer(): JSX.Element {
+  const router = useRouter();
   const [showInput, setShowInput] = useState(false);
+
+  if (router.pathname === "/acquisition") {
+    return <> </>;
+  }
 
   return (
     <footer id="footer">
@@ -98,56 +104,64 @@ export default function Footer(): JSX.Element {
       </View>
 
       <View
-        bottom="medium"
+        bottom="large"
         container
         css={{
           zIndex: 201,
         }}
-        top="medium">
+        inverted
+        top="large">
         <Stack direction="row" flex="center">
-          <Stack direction="column" width={40} widthPhone={15}>
+          <Stack direction="column" width={40}>
             <Stack>
               <Badge>
                 <Image
                   alt="
                   ihostme logo, which is a pink icon of a house.
                   "
-                  height={25}
+                  height={28}
                   src="/favicon.ico"
-                  width={25}
+                  width={28}
                 />
-                <Text as="span" css={{ hiddenInline: "phone", marginLeft: "$small" }} inline="auto">
+                <Text as="h4" css={{ marginLeft: "$small" }} inline="auto">
                   ihostme
                 </Text>
               </Badge>
+              <Text accent as="small" top="small">
+                Made in Ocean Grove and Melbourne. © 2023 <a href="https://cosmogroup.io">Cosmo AU Pty Ltd</a>.
+              </Text>
             </Stack>
           </Stack>
-          <Stack align="right" direction="column" width={60} widthPhone={85}>
+          <Stack
+            align="right"
+            css={{
+              phone: {
+                paddingTop: "$medium",
+                textAlign: "left !important",
+              },
+            }}
+            direction="column"
+            width={60}>
             <a href="https://www.facebook.com/cosmogroup.io">
-              <Button inline="small">
+              <Button inline="small" small>
                 <FacebookLogo size={20} />
               </Button>
             </a>
             <a href="https://www.instagram.com/cosmogroup.io/" rel="noreferrer" target="_blank">
-              <Button inline="small">
+              <Button inline="small" small>
                 <InstagramLogo size={20} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/cosmoau/" rel="noreferrer" target="_blank">
-              <Button inline="small">
+              <Button inline="small" small>
                 <LinkedinLogo size={20} />
               </Button>
             </a>
             <a href="https://cosmogroup.io/legal" rel="noreferrer" target="_blank">
-              <Button external>Privacy</Button>
+              <Button external small>
+                Privacy
+              </Button>
             </a>
-          </Stack>
-        </Stack>
-        <Stack align="center" direction="row" top="large">
-          <Stack direction="column">
-            <Text accent as="small">
-              Made in Ocean Grove and Melbourne. © 2023 <a href="https://cosmogroup.io">Cosmo</a>.
-            </Text>
           </Stack>
         </Stack>
       </View>

@@ -1,6 +1,5 @@
-import { Stack, Text, View, Box, Badge, Avatar, Input, Button } from "@cosmoau/ui";
+import { Stack, Text, View, Box, Badge, Avatar, Input } from "@cosmoau/ui";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
@@ -12,41 +11,42 @@ const nextMonth = new Date();
 nextMonth.setMonth(nextMonth.getMonth() + 1);
 
 export default function Home(): JSX.Element {
-  const router = useRouter();
   const [email, setEmail] = useState("");
 
   return (
     <>
       <Subheader image="/images/misc-07.jpg" parent title="ihostme | Airbnb Management">
-        <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
-        <Text>
-          We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can achieve better
-          occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com and Homes & Villas Management by
-          Marriott.
-        </Text>
-        <Stack
-          css={{
-            button: {
-              background: "$text !important",
-              color: "$background !important",
-            },
-          }}
-          top="large">
-          <Input
-            listen
-            placeholder="Your email"
-            submit="Get Started"
-            submitFunction={(): void => {
-              if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-                router.push(`/start?email=${email}`);
-              } else {
-                toast.error("Please enter a valid email address");
-              }
-            }}
-            submitValid={(): boolean => email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) !== null}
-            type="email"
-            onChange={(e): void => setEmail(e.target.value)}
-          />
+        <Stack bottom="medium" top="medium">
+          <Text as="h1">Holiday Home Management on all the major booking platforms</Text>
+          <Text accent>
+            We&apos;re your local short-term property management experts. With <b>ihostme</b>, you can achieve better
+            occupancy rates and revenue on Airbnb, Stayz, Vrbo, HomeAway, Booking.com and Homes & Villas Management by
+            Marriott.
+          </Text>
+          <Stack top="large">
+            <Box
+              css={{
+                border: 0,
+                backgroundColor: "rgba(14, 22, 35, 0.65)",
+              }}
+              minimal>
+              <Input
+                listen
+                placeholder="Your email"
+                submit="Continue"
+                submitFunction={(): void => {
+                  if (email?.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) && typeof window !== "undefined") {
+                    window.location.href = `https://cosmogroup.io/start?email=${email}`;
+                  } else {
+                    toast.error("Please enter a valid email address");
+                  }
+                }}
+                submitValid={(): boolean => email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) !== null}
+                type="email"
+                onChange={(e): void => setEmail(e.target.value)}
+              />
+            </Box>
+          </Stack>
         </Stack>
       </Subheader>
 
@@ -54,13 +54,10 @@ export default function Home(): JSX.Element {
         <Stack direction="row">
           <Stack align="center" direction="column" offset={20} width={60}>
             <Text as="h3">ihostme operates out of the top holiday destinations</Text>
-            <Text bottom="medium">
+            <Text>
               We are a team of highly skilled and experienced property managers who are dedicated to providing the best
               service to owners and investors across the Bellarine and Surf Coast regions of Victoria.
             </Text>
-            <Link href="/start">
-              <Button>List your Airbnb</Button>
-            </Link>
           </Stack>
         </Stack>
         <Stack direction="row" top="large">
@@ -144,8 +141,8 @@ export default function Home(): JSX.Element {
                 performance.
               </Text>
               <Text accent>
-                We also have an experienced client support team available 7/11 and specialist housekeepers to take care
-                of all the little details.
+                We also have an experienced client support team available and specialist housekeepers to take care of
+                all the little details.
               </Text>
             </Box>
           </Stack>

@@ -2,7 +2,7 @@ import { Stack, Text, View, Box, Button, Badge } from "@cosmoau/ui";
 import { Widget } from "@typeform/embed-react";
 import { useRouter } from "next/router";
 
-import { Subheader } from "../components/Subheader";
+import { Subheader } from "../src/components/Subheader";
 
 export default function Start(): JSX.Element {
   const router = useRouter();

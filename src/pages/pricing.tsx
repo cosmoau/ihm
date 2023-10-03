@@ -1,6 +1,5 @@
 import { Stack, Text, View, Box, Badge, Button } from "@cosmoau/ui";
 import { CloudCheck, CloudSlash } from "@phosphor-icons/react";
-import Link from "next/link";
 
 import { Subheader } from "../components/Subheader";
 
@@ -90,9 +89,9 @@ export default function Pricing(): JSX.Element {
                 </Stack>
               ))}
               <Stack top="large">
-                <Link href="/start">
-                  <Button>Get Started</Button>
-                </Link>
+                <a href="https://cosmogroup.io/start">
+                  <Button>Sign Up</Button>
+                </a>
               </Stack>
             </Box>
           </Stack>
@@ -118,9 +117,9 @@ export default function Pricing(): JSX.Element {
                 </Stack>
               ))}
               <Stack top="large">
-                <Link href="/start">
-                  <Button>Get Started</Button>
-                </Link>
+                <a href="https://cosmogroup.io/start">
+                  <Button>Sign Up</Button>
+                </a>
               </Stack>
             </Box>
           </Stack>

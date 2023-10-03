@@ -1,9 +1,7 @@
 // generate static pages for each city from ../../../locations.json
 
-import { View, Stack, Text, Box, Button, Badge } from "@cosmoau/ui";
+import { View, Stack, Text, Box, Button, Badge, Icon } from "@cosmoau/ui";
 import {
-  ArrowDown,
-  ArrowUp,
   Cloud,
   CloudFog,
   CloudLightning,
@@ -18,7 +16,6 @@ import {
   Umbrella,
 } from "@phosphor-icons/react";
 import { Widget } from "@typeform/embed-react";
-import { useState } from "react";
 import useSWR from "swr";
 
 import locations from "../../../locations.json";
@@ -58,54 +55,54 @@ const fetcher = (url: string): any => fetch(url).then((res) => res.json());
 const selectEmoji = (icon: string): JSX.Element => {
   switch (icon) {
     case "01d": // clear sky
-      return <Sun />;
+      return <Sun weight="fill" />;
 
     case "01n": // clear sky (night
-      return <MoonStars />;
+      return <MoonStars weight="fill" />;
 
     case "02d": // few clouds
-      return <CloudSun />;
+      return <CloudSun weight="fill" />;
 
     case "02n": // few clouds (night)
-      return <CloudMoon />;
+      return <CloudMoon weight="fill" />;
 
     case "03d": // scattered clouds
-      return <Cloud />;
+      return <Cloud weight="fill" />;
 
     case "03n": // scattered clouds (night)
-      return <Cloud />;
+      return <Cloud weight="fill" />;
 
     case "04d": // broken clouds
-      return <Cloud />;
+      return <Cloud weight="fill" />;
 
     case "04n": // broken clouds (night)
-      return <Cloud />;
+      return <Cloud weight="fill" />;
 
     case "09d": // shower rain
-      return <CloudRain />;
+      return <CloudRain weight="fill" />;
 
     case "09n": // shower rain (night)
-      return <CloudRain />;
+      return <CloudRain weight="fill" />;
 
     case "10d": // rain
-      return <Umbrella />;
+      return <Umbrella weight="fill" />;
 
     case "10n": // rain (night)
-      return <CloudRain />;
+      return <CloudRain weight="fill" />;
     case "11d": // thunderstorm
-      return <CloudLightning />;
+      return <CloudLightning weight="fill" />;
     case "11n": // thunderstorm (night)
-      return <CloudLightning />;
+      return <CloudLightning weight="fill" />;
     case "13d": // snow
-      return <CloudSnow />;
+      return <CloudSnow weight="fill" />;
     case "13n": // snow (night)
-      return <Snowflake />;
+      return <Snowflake weight="fill" />;
     case "50d": // mist
-      <CloudFog />;
+      <CloudFog weight="fill" />;
     case "50n": // mist (night)
-      return <CloudFog />;
+      return <CloudFog weight="fill" />;
     default:
-      return <ThermometerSimple />;
+      return <ThermometerSimple weight="fill" />;
   }
 };
 
@@ -113,7 +110,6 @@ const unavailable = "No data";
 
 export default function City({ location }: { location: ILocation }): JSX.Element {
   const query = `${location.name}, Victoria AU`;
-  const [expand, setExpand] = useState(false);
   const { data } = useSWR(`/openweathermap/${query}`, fetcher);
 
   const weather = {
@@ -134,69 +130,95 @@ export default function City({ location }: { location: ILocation }): JSX.Element
     <>
       <Subheader image={`/images/location-${location.id}.jpg`} title={`${location.name} Airbnb Management`}>
         <Text as="h2">Airbnb Management in {location.name}</Text>
-        <Text>
+        <Text accent>
           {location.name} is a popular destination for Airbnb guests in Victoria, offering a range of activities and
-          attractions for visitors. We offer Airbnb management services in {location.name} and surrounding areas.
+          attractions for visitors.
         </Text>
-        <Stack
-          css={{
-            textTransform: "capitalize",
-          }}
-          top="medium">
-          <Stack flexduo>
-            <Text accent>Weather</Text>
-            <Badge icon={weather.icon} theme="alternate">
-              {weather.description}
-            </Badge>
-          </Stack>
-          <Stack flexduo top="small">
-            <Text accent>Temperature</Text>
-            <Badge theme="alternate">{weather.temp}</Badge>
-          </Stack>
-          <Stack flexduo top="small">
-            <Text accent>Range</Text>
-            <Badge theme="alternate">
-              {weather.min} - {weather.max}
-            </Badge>
-          </Stack>
-          <Stack flexduo top="small">
-            <Text accent>Feels Like</Text>
-            <Badge theme="alternate">{weather.feels_like}</Badge>
-          </Stack>
-          {expand && (
-            <>
+      </Subheader>
+      <View bottom="largest" container top="largest">
+        <Stack direction="row">
+          <Stack
+            css={{
+              hidden: "phone",
+            }}
+            direction="column"
+            width={40}>
+            <Box>
+              <Icon forceSize={33} inline="small">
+                {weather.icon}
+              </Icon>
+              <Text
+                as="h4"
+                css={{
+                  textTransform: "capitalize",
+                }}
+                inline="auto">
+                {weather?.description || "Weather"} in {location.name}
+              </Text>
+
+              <Stack flexduo top="small">
+                <Text accent>Temperature</Text>
+                <Badge small>{weather.temp}</Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Range</Text>
+                <Badge small>
+                  {weather.min} - {weather.max}
+                </Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Feels Like</Text>
+                <Badge small>{weather.feels_like}</Badge>
+              </Stack>
+
               <Stack flexduo top="small">
                 <Text accent>Humidity</Text>
-                <Badge theme="alternate">{weather.humidity}</Badge>
+                <Badge small>{weather.humidity}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Wind</Text>
-                <Badge theme="alternate">{weather.wind}</Badge>
+                <Badge small>{weather.wind}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Sunrise</Text>
-                <Badge theme="alternate">{weather.sunrise}</Badge>
+                <Badge small>{weather.sunrise}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Sunset</Text>
-                <Badge theme="alternate">{weather.sunset}</Badge>
+                <Badge>{weather.sunset}</Badge>
               </Stack>
               <Stack flexduo top="small">
                 <Text accent>Clouds</Text>
-                <Badge theme="alternate">{weather.clouds}</Badge>
+                <Badge small>{weather.clouds}</Badge>
               </Stack>
-            </>
-          )}
-          <Stack top="medium">
-            <Button icon={expand ? <ArrowUp /> : <ArrowDown />} small onClick={(): void => setExpand(!expand)}>
-              {expand ? "Less" : "More"}
-            </Button>
+              <Stack
+                align="left"
+                css={{
+                  // position at bottom of container
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-end",
+                  position: "absolute",
+                  bottom: "$medium",
+                }}>
+                <Text accent as="small" top="medium">
+                  This form can also be found at:
+                </Text>
+
+                <Stack top="smallest">
+                  <Button external small>
+                    <a
+                      href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"}
+                      rel="noreferrer"
+                      target="_blank">
+                      cosmo-au.typeform.com/to/cAmtR2rI
+                    </a>
+                  </Button>
+                </Stack>
+              </Stack>
+            </Box>
           </Stack>
-        </Stack>
-      </Subheader>
-      <View bottom="largest" container top="largest">
-        <Stack align="center" direction="row" flex="baseline">
-          <Stack direction="column">
+          <Stack direction="column" width={60}>
             <Box
               css={{
                 borderRadius: "large",
@@ -206,7 +228,7 @@ export default function City({ location }: { location: ILocation }): JSX.Element
               }}
               theme="fill">
               <Widget
-                height={700}
+                height={600}
                 hidden={{
                   url: "ihostme.com.au",
                 }}
@@ -217,20 +239,6 @@ export default function City({ location }: { location: ILocation }): JSX.Element
                 }}
               />
             </Box>
-            <Stack top="medium">
-              <Text accent as="small" css={{ verticalAlign: "middle" }} inline="small">
-                This form can also be found at:
-              </Text>
-
-              <Button css={{ verticalAlign: "middle" }} external small>
-                <a
-                  href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"}
-                  rel="noreferrer"
-                  target="_blank">
-                  cosmo-au.typeform.com/to/cAmtR2rI
-                </a>
-              </Button>
-            </Stack>
           </Stack>
         </Stack>
       </View>

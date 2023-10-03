@@ -52,7 +52,7 @@ export default function Header(): JSX.Element {
       value: "https://cosmo.homes",
     },
     {
-      label: "Sign Up",
+      label: "Get Started",
       value: "https://cosmogroup.io/start",
     },
   ];
@@ -93,22 +93,33 @@ export default function Header(): JSX.Element {
   useEffect(() => {
     if (mounted) {
       window.addEventListener("scroll", () => {
-        setInverted(window.scrollY < 500);
+        setInverted(window.scrollY < 50);
       });
     }
   }, [mounted]);
 
   const activeSelection = optionsPhone.find((option) => option.value === router.pathname)?.value || "";
 
+  if (router.pathname === "/acquisition") {
+    return <> </>;
+  }
+
   return (
     <header
       id="header"
       style={{
-        position: "sticky",
+        position: "fixed",
         top: 0,
+        width: "100%",
         zIndex: 100,
       }}>
-      <View bottom="small" inverted={inverted} top="small">
+      <View
+        bottom="small"
+        css={{
+          background: inverted ? "transparent !important" : "$background !important",
+        }}
+        inverted={inverted}
+        top="small">
         <Stack css={{ visible: "tablet" }}>
           <Stack direction="row" flex="center">
             <Stack direction="column" width={70} widthPhone={70}>
@@ -194,14 +205,14 @@ export default function Header(): JSX.Element {
               <Link href="/contact">
                 <Button theme={router.pathname === "/contact" ? "fill" : "minimal"}>Contact</Button>
               </Link>
-              <a href="https://cosmogroup.io/blog" rel="noreferrer" target="_blank">
-                <Button theme="minimal">Blog</Button>
+              <a href="https://cosmo.homes" rel="noreferrer" target="_blank">
+                <Button theme="minimal">Bookings</Button>
               </a>
             </Stack>
             <Stack align="right" direction="column" width={20}>
               <a href="https://cosmogroup.io/start" target="_blank">
-                <Button inline="auto" theme="fill">
-                  Sign Up
+                <Button inline="auto" theme={!inverted ? "default" : "fill"}>
+                  Get Started
                 </Button>
               </a>
             </Stack>

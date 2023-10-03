@@ -12,6 +12,22 @@ const nextConfig = {
       },
     ];
   },
+  // redirects
+  async redirects() {
+    return [
+      {
+        source: "/start",
+        destination: "https://cosmogroup.io/start",
+        permanent: true,
+      },
+      {
+        source: "/team",
+        destination: "https://cosmogroup.io/about",
+        permanent: true,
+      },
+    ];
+  },
+
   reactStrictMode: true,
 
   swcMinify: true,

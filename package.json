@@ -7,11 +7,11 @@
     "url": "https://github.com/cosmoau/ihm/issues"
   },
   "dependencies": {
-    "@cosmoau/ui": "^1.6.35",
+    "@cosmoau/ui": "^1.6.37",
     "@phosphor-icons/react": "2.0.9",
     "@typeform/embed-react": "^2.31.0",
     "@vercel/analytics": "^1.0.2",
-    "next": "^13.5.3",
+    "next": "^13.5.4",
     "next-seo": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,11 +19,11 @@
     "sharp": "^0.32.6",
     "swr": "^2.2.4",
     "typescript": "^5.2.2",
-    "vercel": "^32.3.1"
+    "vercel": "^32.4.0"
   },
   "devDependencies": {
-    "@types/node": "^20.7.0",
-    "@types/react": "^18.2.23",
+    "@types/node": "^20.8.2",
+    "@types/react": "^18.2.24",
     "eslint": "^8.50.0",
     "eslint-config-dolmios": "^1.8.3",
     "next-sitemap": "^4.2.3",
@@ -49,7 +49,7 @@
     "env:link": "vercel link",
     "env:local": "vercel env pull .env.local",
     "ip": "ipconfig getifaddr en0 && echo && echo",
-    "lint": "eslint . --ext js,jsx,ts,tsx,ts --fix ",
+    "lint": "eslint . --ext js,jsx,ts,tsx,ts --fix",
     "open": "open http://localhost:420",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,json}' '!node_modules/**' '!.git/**' '!.next/**'",
     "sitemap": "next-sitemap",

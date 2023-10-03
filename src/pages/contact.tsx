@@ -8,33 +8,31 @@ export default function Contact(): JSX.Element {
     <>
       <Subheader image="/images/misc-06.jpg" title="Contact Us">
         <Text as="h2">Contact Us</Text>
-        <Text>
+        <Text accent>
           Our team is here to help you with any questions you may have. Please fill out the form below and we will get
           back to you as soon as possible.
         </Text>
-        <Stack flexduo top="medium">
-          <Text accent>Email</Text>
-          <Badge copy="ihostme@cosmogroup.io" theme="alternate">
-            ihostme@cosmogroup.io
-          </Badge>
-        </Stack>
-        <Stack flexduo top="small">
-          <Text accent>Phone</Text>
-          <Badge copy="+61370355800" theme="alternate">
-            (03) 7035 5800
-          </Badge>
-        </Stack>
-        <Stack flexduo top="small">
-          <Text accent>Head Office</Text>
-          <Badge copy="COSMO AU PTY LTD, 8/100 Dover St, Cremorne VIC 3121" theme="alternate">
-            8/100 Dover St, Cremorne VIC
-          </Badge>
-        </Stack>
       </Subheader>
 
       <View bottom="largest" container top="largest">
         <Stack align="center" direction="row" flex="baseline">
-          <Stack direction="column">
+          <Stack direction="column" offset={25} width={50}>
+            <Box>
+              <Stack flexduo>
+                <Text accent>Email</Text>
+                <Badge copy="ihostme@cosmogroup.io">ihostme@cosmogroup.io</Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Phone</Text>
+                <Badge copy="+61370355800">(03) 7035 5800</Badge>
+              </Stack>
+              <Stack flexduo top="small">
+                <Text accent>Head Office</Text>
+                <Badge copy="COSMO AU PTY LTD, 8/100 Dover St, Cremorne VIC 3121">8/100 Dover St, Cremorne VIC</Badge>
+              </Stack>
+            </Box>
+          </Stack>
+          <Stack direction="column" top="large">
             <Box
               css={{
                 borderRadius: "large",
