@@ -208,10 +208,10 @@ export default function City({ location }: { location: ILocation }): JSX.Element
                 <Stack top="smallest">
                   <Button external small>
                     <a
-                      href={"https://cosmo-au.typeform.com/to/cAmtR2rI#url=ihostme.com.au"}
+                      href={"https://form.typeform.com/to/e1FniAH6#url=ihostme.com.au"}
                       rel="noreferrer"
                       target="_blank">
-                      cosmo-au.typeform.com/to/cAmtR2rI
+                      form.typeform.com/to/e1FniAH6
                     </a>
                   </Button>
                 </Stack>
@@ -232,7 +232,7 @@ export default function City({ location }: { location: ILocation }): JSX.Element
                 hidden={{
                   url: "ihostme.com.au",
                 }}
-                id="cAmtR2rI"
+                id="e1FniAH6"
                 opacity={0}
                 style={{
                   overflowY: "visible",

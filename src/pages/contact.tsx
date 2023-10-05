@@ -62,11 +62,8 @@ export default function Contact(): JSX.Element {
               </Text>
 
               <Button css={{ verticalAlign: "middle" }} external small>
-                <a
-                  href={"https://cosmo-au.typeform.com/to/dA0mHRs2#url=ihostme.com.au"}
-                  rel="noreferrer"
-                  target="_blank">
-                  cosmo-au.typeform.com/to/dA0mHRs2
+                <a href={"https://form.typeform.com/to/dA0mHRs2#url=ihostme.com.au"} rel="noreferrer" target="_blank">
+                  form.typeform.com/to/dA0mHRs2
                 </a>
               </Button>
             </Stack>
